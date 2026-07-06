@@ -1,0 +1,399 @@
+- id: ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr
+  institutionName: "Kantonsspital Winterthur"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Winterthur"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSW page explicitly covering Unterassistenz, Famulatur, and Wahlstudienjahr; availability and departments need manual review."
+  priority: 1
+  status: "candidate"
+
+- id: luks-luzern-universitaere-lehre
+  institutionName: "Luzerner Kantonsspital"
+  institutionType: "hospital"
+  canton: "LU"
+  city: "Luzern"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official LUKS university teaching page mentions human medicine students; include as a candidate until a direct Unterassistenz page is found."
+  priority: 2
+  status: "candidate"
+
+- id: usz-zuerich-medizinstudium-overview
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ medical studies overview from the education section; useful parent page for placement-related department pages."
+  priority: 1
+  status: "candidate"
+
+- id: usz-zuerich-neuroradiologie-unterassistenzen-famulatur
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/unterassistenzen-famulatur-der-klinik-fuer-neuroradiologie/"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ page explicitly names Unterassistenzen and Famulatur for neuroradiology; extract details after manual review."
+  priority: 1
+  status: "candidate"
+
+- id: usz-zuerich-medizin-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ department page in the medical studies section; candidate for internal medicine placement/application information."
+  priority: 2
+  status: "candidate"
+
+- id: usz-zuerich-chirurgie-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ surgery page in the medical studies section; include to check for clinical placement details."
+  priority: 2
+  status: "candidate"
+
+- id: usz-zuerich-anaesthesiologie-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ anaesthesiology page in the medical studies section; candidate for placement and application data."
+  priority: 2
+  status: "candidate"
+
+- id: usz-zuerich-frauenheilkunde-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ gynaecology page in the medical studies section; candidate for placement and application data."
+  priority: 2
+  status: "candidate"
+
+- id: usz-zuerich-neurologie-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/neurologie/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ neurology page in the medical studies section; candidate for clinical placement information."
+  priority: 3
+  status: "candidate"
+
+- id: usz-zuerich-radiologie-medizinstudium
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USZ radiology page in the medical studies section; candidate for clinical placement information."
+  priority: 3
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-stellen
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen"
+      pageType: "hospital-placement-index"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA Unterassistenz Stellen index; likely entry point for department-specific placement pages."
+  priority: 1
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-informationen
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA general information page for Unterassistenz; include for application rules and contributor-friendly context."
+  priority: 1
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-3534
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-3534"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
+  priority: 2
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-4260
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4260"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
+  priority: 2
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-4273
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4273"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
+  priority: 2
+  status: "candidate"
+
+- id: ksa-aarau-unterassistenz-4282
+  institutionName: "Kantonsspital Aarau"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Aarau"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4282"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
+  priority: 2
+  status: "candidate"
+
+- id: ksb-baden-unterassistenzen-overview
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs-karriere/aus-und-weiterbildung/aerztinnen-aerzte/unterassistenzen"
+      pageType: "hospital-placement-index"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB Unterassistenzen overview page; include as parent for department-specific postings."
+  priority: 1
+  status: "candidate"
+
+- id: ksb-baden-unterassistentin-innere-medizin
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB job page for Unterassistentin Innere Medizin; availability may reflect a live posting and needs review."
+  priority: 1
+  status: "candidate"
+
+- id: ksb-baden-unterassistentin-chirurgie
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB job page for Unterassistentin Chirurgie; availability may reflect a live posting and needs review."
+  priority: 1
+  status: "candidate"
+
+- id: ksb-baden-unterassistentin-anaesthesie
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-anaesthesie-100"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB job page for Unterassistentin Anaesthesie; availability may reflect a live posting and needs review."
+  priority: 2
+  status: "candidate"
+
+- id: ksb-baden-unterassistentin-notfallzentrum
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-interdisziplinaeres-notfallzentrum-100"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB job page for Unterassistentin in the interdisciplinary emergency centre; availability needs review."
+  priority: 2
+  status: "candidate"
+
+- id: ksb-baden-unterassistentin-paediatrie
+  institutionName: "Kantonsspital Baden"
+  institutionType: "hospital"
+  canton: "AG"
+  city: "Baden"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-paediatrie-100"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSB job page for Unterassistentin Paediatrie; availability may reflect a live posting and needs review."
+  priority: 2
+  status: "candidate"
+
+- id: kssg-stgallen-h-och-orthopaedie-unterassistenzstellen
+  institutionName: "Kantonsspital St. Gallen"
+  institutionType: "hospital"
+  canton: "SG"
+  city: "St. Gallen"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.h-och.ch/orthopaedie-traumatologie/karriere/unterassistenzstellen/"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official H-OCH/KSSG-related orthopaedics and traumatology page explicitly listing Unterassistenzstellen; affiliation and details need review."
+  priority: 2
+  status: "candidate"
+
+- id: ksgr-chur-blockstudenten-unterassistenten
+  institutionName: "Kantonsspital Graubuenden"
+  institutionType: "hospital"
+  canton: "GR"
+  city: "Chur"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten"
+      pageType: "hospital-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSGR page explicitly names Blockstudenten and Unterassistenten; include for placement rules and application details."
+  priority: 1
+  status: "candidate"
+
+- id: spital-uster-chirurgie-unterassistenten-pdf
+  institutionName: "Spital Uster"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Uster"
+  language: "de"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf"
+      pageType: "hospital-placement-pdf"
+      expectedParser: "generic"
+      fetchMode: "pdf"
+  notes: "Official Spital Uster PDF programme for surgical-clinic Unterassistenten; PDF extraction and currentness need manual review."
+  priority: 3
+  status: "candidate"

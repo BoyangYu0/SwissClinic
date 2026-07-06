@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+.turbo/
+.vite/
+.env
+.env.*
+!.env.example
+*.log
+pnpm-debug.log*

@@ -1,0 +1,22 @@
+{
+  "name": "@scpi/sources",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check src tests"
+  },
+  "dependencies": {
+    "@scpi/schema": "workspace:*",
+    "yaml": "^2.8.1"
+  }
+}

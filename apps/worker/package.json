@@ -1,0 +1,14 @@
+{
+  "name": "@scpi/worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check src tests",
+    "crawl": "echo \"Crawler command is not implemented yet.\"",
+    "build:data": "echo \"Static data builder is not implemented yet.\""
+  }
+}

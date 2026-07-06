@@ -1,0 +1,24 @@
+{
+  "name": "swiss-clinical-placement-index",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open-source TypeScript platform for Swiss clinical placement source indexing.",
+  "license": "MIT",
+  "packageManager": "pnpm@11.7.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "test": "pnpm -r --if-present test",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "pnpm -r --if-present lint",
+    "format": "biome format --write .",
+    "crawl": "pnpm --filter @scpi/worker crawl",
+    "build:data": "pnpm --filter @scpi/worker build:data"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
