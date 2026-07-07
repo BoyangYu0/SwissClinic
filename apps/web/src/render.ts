@@ -2,14 +2,27 @@ import type {
   ChangeRecord,
   LeadTimeSummary,
   PlacementRecord,
+  ReliabilitySummary,
   SourceRegistryEntry,
 } from "@scpi/schema";
-import { createPlacementIndexViewModel } from "./placement-index.js";
+import {
+  createPlacementIndexViewModel,
+  createReviewQueue,
+  type ReviewQueueItem,
+} from "./placement-index.js";
+import {
+  buildFeedbackIssueUrl,
+  type FeedbackType,
+  feedbackLabel,
+  feedbackTypes,
+  REVIEW_ISSUE_URL,
+} from "./review-mode.js";
 
 export interface RenderPlacementIndexOptions {
   placements: PlacementRecord[];
   sources: SourceRegistryEntry[];
   leadTimeSummaries?: LeadTimeSummary[];
+  reliabilitySummaries?: ReliabilitySummary[];
   csvHref: string;
   dataHref: string;
   sourceDetailBaseHref?: string;
@@ -29,6 +42,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
     placements: viewModel.placements,
     sources: viewModel.sources,
     leadTimeSummaries: options.leadTimeSummaries ?? [],
+    reliabilitySummaries: options.reliabilitySummaries ?? [],
   });
 
   return `<!doctype html>
@@ -163,11 +177,14 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         border-radius: var(--radius);
         background: #ffffff;
         color: #20242b;
+        display: inline-flex;
+        align-items: center;
         min-height: 38px;
         padding: 8px 12px;
         text-decoration: none;
         font-weight: 700;
         font-size: 14px;
+        cursor: pointer;
       }
 
       .main {
@@ -198,7 +215,8 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
       }
 
       input,
-      select {
+      select,
+      textarea {
         width: 100%;
         min-height: 38px;
         border: 1px solid var(--line);
@@ -208,6 +226,83 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         padding: 8px 10px;
         font: inherit;
         font-size: 14px;
+      }
+
+      textarea {
+        min-height: 92px;
+        resize: vertical;
+      }
+
+      .review-panel {
+        border: 1px solid #b8c7dc;
+        border-radius: var(--radius);
+        background: #f7fbff;
+        padding: 12px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .review-panel h3 {
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0;
+      }
+
+      .review-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .review-actions a,
+      .review-actions button {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #ffffff;
+        color: var(--ink);
+        min-height: 36px;
+        padding: 8px 10px;
+        font: inherit;
+        font-weight: 800;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .review-json {
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+        min-height: 140px;
+      }
+
+      .feedback-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .feedback-link {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #ffffff;
+        color: var(--blue);
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        min-height: 32px;
+        padding: 6px 8px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .source-cell {
+        display: grid;
+        justify-items: start;
+        gap: 6px;
+      }
+
+      .source-cell .cell-subtitle {
+        margin-top: 2px;
       }
 
       .table-wrap {
@@ -435,6 +530,8 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           <a class="button" href="${escapeHtml(options.dataHref)}">JSON</a>
           <a class="button" href="data/current/coverage-by-baseline.md">Coverage</a>
           <a class="button" href="data/current/missing-sources.md">Missing</a>
+          <a class="button" href="review-queue.html">Review queue</a>
+          <button class="button" type="button" id="review-mode-toggle">Enable review mode</button>
         </div>
         <div class="coverage-note">
           <p>Record count is not national clinic coverage.</p>
@@ -495,7 +592,14 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
     <script>
       const state = JSON.parse(document.getElementById("placement-data").textContent);
       const records = state.placements;
+      const sources = state.sources || [];
       const leadTimeSummaries = state.leadTimeSummaries || [];
+      const reliabilitySummaries = state.reliabilitySummaries || [];
+      const reviewIssueUrl = ${escapeScriptJson(REVIEW_ISSUE_URL)};
+      const feedbackTypes = ${escapeScriptJson(feedbackTypes)};
+      const feedbackLabels = ${escapeScriptJson(
+        Object.fromEntries(feedbackTypes.map((type) => [type, feedbackLabel(type)])),
+      )};
       const rows = document.getElementById("placement-rows");
       const form = document.getElementById("filters");
       const empty = document.getElementById("empty-state");
@@ -504,6 +608,9 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
       const detailSubtitle = document.getElementById("detail-subtitle");
       const detailBody = document.getElementById("detail-body");
       const closeButton = document.getElementById("detail-close");
+      const reviewModeToggle = document.getElementById("review-mode-toggle");
+      let activeRecord = null;
+      let reviewModeEnabled = new URLSearchParams(window.location.search).get("review") === "1";
 
       function text(value) {
         return value === null || value === undefined || value === "" ? "Not specified" : String(value);
@@ -517,6 +624,10 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           "fully-booked-until": "Fully booked until",
           "generic-parser": "Generic parser",
           "hospital-confirmed": "Hospital confirmed",
+          "student-checked": "Student checked",
+          "multiple-student-checked": "Multiple student checked",
+          "conflicting-reports": "Conflicting reports",
+          "unverified": "Unverified",
           "needs-human-review": "Needs human review",
           "not-specified": "Not specified",
           "site-parser": "Site parser"
@@ -594,6 +705,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           const apply = record.applicationUrl
             ? '<a href="' + escapeHtml(record.applicationUrl) + '">' + escapeHtml(record.applicationMethod) + '</a>'
             : escapeHtml(record.applicationMethod);
+          const reliability = reliabilitySummaryFor(record)?.reliabilityLabel || "unverified";
           return '<tr tabindex="0" data-record-id="' + escapeHtml(record.id) + '">'
             + '<td class="primary-cell"><span class="cell-title">' + escapeHtml(record.institutionName) + '</span><span class="cell-subtitle">' + escapeHtml(record.originalDepartmentName || record.department) + " / " + escapeHtml(record.departmentNormalized) + " / " + escapeHtml(record.roleTypeOriginal || record.roleType) + '</span></td>'
             + '<td>' + escapeHtml([record.canton, record.city].filter(Boolean).join(" / ")) + '</td>'
@@ -601,8 +713,8 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
             + '<td>' + escapeHtml(duration) + '</td>'
             + '<td>' + badge(record.extractionLanguage || record.language) + '<br><span class="cell-subtitle">' + escapeHtml(record.region) + '</span></td>'
             + '<td>' + apply + '</td>'
-            + '<td>' + badge(record.confidence) + '<br>' + badge(record.reviewStatus) + '</td>'
-            + '<td><a href="' + escapeHtml(record.sourceUrl) + '">Official source</a><br><a href="${escapeHtml(sourceDetailBaseHref)}/' + encodeURIComponent(record.sourceId) + '/">Source detail</a><br><span class="cell-subtitle">' + escapeHtml(record.lastChecked.slice(0, 10)) + '</span></td>'
+            + '<td>' + badge(record.confidence) + '<br>' + badge(record.reviewStatus) + '<br>' + badge(reliability) + '</td>'
+            + '<td><div class="source-cell"><a href="' + escapeHtml(record.sourceUrl) + '">Official source</a><a href="${escapeHtml(sourceDetailBaseHref)}/' + encodeURIComponent(record.sourceId) + '/">Source detail</a><a class="feedback-link" target="_blank" rel="noopener" href="' + escapeHtml(reportErrorLink(record, "other")) + '">Report error</a><span class="cell-subtitle">' + escapeHtml(record.lastChecked.slice(0, 10)) + '</span></div></td>'
             + '</tr>';
         }).join("");
         empty.style.display = visible.length === 0 ? "block" : "none";
@@ -610,6 +722,77 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
 
       function detailField(label, value) {
         return '<div class="detail-field"><span>' + escapeHtml(label) + '</span>' + escapeHtml(displayLabel(value)) + '</div>';
+      }
+
+      function sourceFor(record) {
+        return sources.find((source) => source.id === record.sourceId) || null;
+      }
+
+      function reliabilitySummaryFor(record) {
+        return reliabilitySummaries.find((summary) => summary.recordId === record.id) || null;
+      }
+
+      function feedbackMetadataForRecord(record) {
+        const source = sourceFor(record);
+        return {
+          record: {
+            id: record.id,
+            sourceId: record.sourceId,
+            institutionName: record.institutionName,
+            departmentNormalized: record.departmentNormalized,
+            availabilityStatus: record.availabilityStatus,
+            availableFrom: record.availableFrom,
+            fullyBookedUntil: record.fullyBookedUntil,
+            applicationUrl: record.applicationUrl,
+            sourceLanguage: record.sourceLanguage,
+            region: record.region,
+            confidence: record.confidence,
+            extractionMethod: record.extractionMethod,
+            sourceUrl: record.sourceUrl,
+            lastChecked: record.lastChecked
+          },
+          source: source ? {
+            id: source.id,
+            institutionName: source.institutionName,
+            canton: source.canton,
+            city: source.city,
+            sourceLanguage: source.sourceLanguage,
+            region: source.region,
+            status: source.status,
+            urls: source.sourceUrls.map((sourceUrl) => sourceUrl.url)
+          } : undefined
+        };
+      }
+
+      function feedbackIssueHref(feedbackType, metadata) {
+        const titleSubject = metadata.record?.id || metadata.source?.id || metadata.coverageReport?.reportPath || "static-feedback";
+        const params = new URLSearchParams();
+        params.set("title", "[Feedback] " + feedbackLabels[feedbackType] + ": " + titleSubject);
+        params.set("body", [
+          "Structured static feedback submission.",
+          "",
+          "Feedback type: " + feedbackLabels[feedbackType] + " (" + feedbackType + ")",
+          "",
+          "Please describe what should change:",
+          "",
+          "\`\`\`json",
+          JSON.stringify({ feedbackType, ...metadata }, null, 2),
+          "\`\`\`",
+          "",
+          "Please do not paste private emails, patient information, or unredacted screenshots."
+        ].join("\\n"));
+        return reviewIssueUrl + "?" + params.toString();
+      }
+
+      function reportErrorLink(record, feedbackType) {
+        return feedbackIssueHref(feedbackType, feedbackMetadataForRecord(record));
+      }
+
+      function feedbackLinksHtml(record) {
+        const metadata = feedbackMetadataForRecord(record);
+        return '<section class="review-panel feedback-panel"><h3>Report error</h3><div class="feedback-links">'
+          + feedbackTypes.map((type) => '<a class="feedback-link" target="_blank" rel="noopener" href="' + escapeHtml(feedbackIssueHref(type, metadata)) + '">' + escapeHtml(feedbackLabels[type]) + '</a>').join("")
+          + '</div></section>';
       }
 
       function leadTimeSummaryFor(record) {
@@ -644,7 +827,299 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           : '<div><strong>Lead time</strong><p>No explicit or historical lead-time evidence yet.</p></div>';
       }
 
+      function communityReliabilityHtml(record) {
+        const summary = reliabilitySummaryFor(record);
+        const label = summary ? summary.reliabilityLabel : "unverified";
+        const leadTimeLine = !summary || summary.leadTimeReportCount === 0
+          ? "No community lead-time reports yet."
+          : summary.communityLeadTimeMedianMonthsAhead !== null
+            ? "Unofficial community reports: median " + summary.communityLeadTimeMedianMonthsAhead + " months ahead (range " + summary.communityLeadTimeRangeMinMonthsAhead + "-" + summary.communityLeadTimeRangeMaxMonthsAhead + ")."
+            : "Unofficial community reports are present, but not enough for a recommendation.";
+        const warningLines = summary && summary.warnings.length
+          ? '<ul class="warning-list">' + summary.warnings.map((warning) => '<li>' + escapeHtml(warning) + '</li>').join("") + '</ul>'
+          : "";
+
+        return '<div><strong>Community verification</strong><div class="detail-grid">'
+          + detailField("Reliability", displayLabel(label))
+          + detailField("Verification reports", summary ? summary.verificationCount : 0)
+          + detailField("Positive reports", summary ? summary.positiveReports : 0)
+          + detailField("Negative reports", summary ? summary.negativeReports : 0)
+          + detailField("Latest verification", summary ? summary.latestVerificationDate : null)
+          + '</div><p>' + escapeHtml(leadTimeLine) + '</p>'
+          + warningLines
+          + '<p class="cell-subtitle">Community evidence is unofficial. Verify current requirements with the hospital before applying.</p></div>';
+      }
+
+      function reviewSelect(name, label, options, selectedValue) {
+        return '<label>' + escapeHtml(label) + '<select name="' + escapeHtml(name) + '">'
+          + options.map((option) => '<option value="' + escapeHtml(option.value) + '"' + (option.value === selectedValue ? " selected" : "") + '>' + escapeHtml(option.label) + '</option>').join("")
+          + '</select></label>';
+      }
+
+      function reviewPanelHtml(record) {
+        if (!reviewModeEnabled) return "";
+        const source = sourceFor(record);
+        const answerOptions = [
+          { value: "unsure", label: "Unsure" },
+          { value: "yes", label: "Yes" },
+          { value: "no", label: "No" }
+        ];
+        return '<section class="review-panel verification-panel" data-review-record-id="' + escapeHtml(record.id) + '">'
+          + '<h3>Verify this record</h3>'
+          + '<p class="cell-subtitle">No login is used. Generate a GitHub issue URL or copy the JSON block after checking the official source page.</p>'
+          + '<div class="detail-grid">'
+          + reviewSelect("reviewerRole", "Reviewer role", [
+            { value: "unknown", label: "Not specified" },
+            { value: "medical-student", label: "Medical student" },
+            { value: "resident", label: "Resident" },
+            { value: "doctor", label: "Doctor" },
+            { value: "administrator", label: "Administrator" },
+            { value: "other", label: "Other" }
+          ], "unknown")
+          + reviewSelect("reviewerRegion", "Reviewer region", [
+            { value: "unknown", label: "Not specified" },
+            { value: "de-CH", label: "German-speaking Switzerland" },
+            { value: "fr-CH", label: "French-speaking Switzerland" },
+            { value: "it-CH", label: "Italian-speaking Switzerland" },
+            { value: "mixed", label: "Mixed" }
+          ], "unknown")
+          + reviewSelect("verdict", "Verdict", [
+            { value: "unknown", label: "Unknown" },
+            { value: "correct", label: "Correct" },
+            { value: "partly-wrong", label: "Partly wrong" },
+            { value: "wrong", label: "Wrong" },
+            { value: "not-relevant", label: "Not relevant" }
+          ], "unknown")
+          + reviewSelect("officialSourceCorrect", "Official source correct", answerOptions, "unsure")
+          + reviewSelect("departmentCorrect", "Department correct", answerOptions, "unsure")
+          + reviewSelect("availabilityCorrect", "Availability correct", answerOptions, "unsure")
+          + reviewSelect("applicationLinkCorrect", "Application link correct", answerOptions, "unsure")
+          + reviewSelect("confidenceSuggested", "Suggested confidence", [
+            { value: "unknown", label: "Unknown" },
+            { value: "high", label: "High" },
+            { value: "medium", label: "Medium" },
+            { value: "low", label: "Low" }
+          ], "unknown")
+          + '</div>'
+          + '<label>Optional comment<textarea name="comment" placeholder="Do not paste private emails or unredacted screenshots."></textarea></label>'
+          + '<p class="cell-subtitle">Submit via GitHub issue opens a pre-filled GitHub page in a new tab. Review the text there, sign in if GitHub asks, then click Submit new issue on GitHub. Nothing is sent until you submit it there.</p>'
+          + '<div class="review-actions"><a class="review-issue-link" target="_blank" rel="noopener">Submit via GitHub issue</a><button type="button" class="review-copy">Copy JSON instead</button></div>'
+          + '<textarea class="review-json" readonly aria-label="Copyable JSON review block"></textarea>'
+          + '<p class="cell-subtitle">Official source pages remain authoritative.</p>'
+          + '<input type="hidden" name="sourceId" value="' + escapeHtml(record.sourceId) + '">'
+          + '<input type="hidden" name="currentParserType" value="' + escapeHtml(source ? source.sourceUrls.map((url) => url.expectedParser).join(", ") : record.extractionMethod) + '">'
+          + '</section>';
+      }
+
+      function leadTimeReportPanelHtml(record) {
+        if (!reviewModeEnabled) return "";
+        return '<section class="review-panel leadtime-report-panel" data-leadtime-record-id="' + escapeHtml(record.id) + '">'
+          + '<h3>Report application lead time</h3>'
+          + '<p class="cell-subtitle">Use this for your own application timing or clearly labelled second-hand evidence. This stays separate from official scraped data.</p>'
+          + '<div class="detail-grid">'
+          + '<label>Desired start month<input type="month" name="desiredStartMonth"></label>'
+          + '<label>Application month<input type="month" name="applicationMonth"></label>'
+          + reviewSelect("outcome", "Outcome", [
+            { value: "unknown", label: "Unknown" },
+            { value: "accepted", label: "Accepted" },
+            { value: "rejected-full", label: "Rejected: full" },
+            { value: "waitlisted", label: "Waitlisted" },
+            { value: "no-response", label: "No response" },
+            { value: "told-apply-later", label: "Told to apply later" }
+          ], "unknown")
+          + reviewSelect("evidenceType", "Evidence type", [
+            { value: "own-application", label: "Own application" },
+            { value: "hospital-email-reported", label: "Hospital email reported" },
+            { value: "classmate-report", label: "Classmate report" },
+            { value: "official-source", label: "Official source" },
+            { value: "estimate", label: "Estimate" }
+          ], "own-application")
+          + reviewSelect("reviewerRegion", "Reviewer region", [
+            { value: "unknown", label: "Not specified" },
+            { value: "de-CH", label: "German-speaking Switzerland" },
+            { value: "fr-CH", label: "French-speaking Switzerland" },
+            { value: "it-CH", label: "Italian-speaking Switzerland" },
+            { value: "mixed", label: "Mixed" }
+          ], "unknown")
+          + '<label>Display anonymously<select name="canDisplayAnonymously"><option value="true" selected>Yes</option><option value="false">No</option></select></label>'
+          + '</div>'
+          + '<p class="cell-subtitle leadtime-computed">Computed months ahead: not available until both months are entered.</p>'
+          + '<label>Optional comment<textarea name="comment" placeholder="Do not include private emails or identifying details."></textarea></label>'
+          + '<p class="cell-subtitle">Submit via GitHub issue opens a pre-filled GitHub page in a new tab. Review it there before submitting.</p>'
+          + '<div class="review-actions"><a class="leadtime-issue-link" target="_blank" rel="noopener">Submit via GitHub issue</a><button type="button" class="leadtime-copy">Copy JSON instead</button></div>'
+          + '<textarea class="leadtime-json" readonly aria-label="Copyable JSON lead-time report"></textarea>'
+          + '<p class="cell-subtitle">Unofficial reports are reviewed before they affect recommendations. Always verify with the hospital.</p>'
+          + '</section>';
+      }
+
+      function reviewAnswers(panel) {
+        const data = {};
+        panel.querySelectorAll("select, textarea").forEach((field) => {
+          if (field.name) data[field.name] = field.value;
+        });
+        return {
+          reviewerRole: data.reviewerRole || "unknown",
+          reviewerRegion: data.reviewerRegion || "unknown",
+          verdict: data.verdict || "unknown",
+          officialSourceCorrect: data.officialSourceCorrect || "unsure",
+          departmentCorrect: data.departmentCorrect || "unsure",
+          availabilityCorrect: data.availabilityCorrect || "unsure",
+          applicationLinkCorrect: data.applicationLinkCorrect || "unsure",
+          confidenceSuggested: data.confidenceSuggested || "unknown",
+          comment: data.comment || ""
+        };
+      }
+
+      function buildReviewPayload(record, panel) {
+        const answers = reviewAnswers(panel);
+        return {
+          recordId: record.id,
+          sourceId: record.sourceId,
+          institutionName: record.institutionName,
+          departmentNormalized: record.departmentNormalized,
+          reviewerRole: answers.reviewerRole,
+          reviewerRegion: answers.reviewerRegion,
+          verdict: answers.verdict,
+          officialSourceCorrect: answers.officialSourceCorrect,
+          departmentCorrect: answers.departmentCorrect,
+          availabilityCorrect: answers.availabilityCorrect,
+          applicationLinkCorrect: answers.applicationLinkCorrect,
+          confidenceSuggested: answers.confidenceSuggested,
+          comment: answers.comment,
+          createdAt: new Date().toISOString(),
+          currentExtractedValues: {
+            availabilityStatus: record.availabilityStatus,
+            availableFrom: record.availableFrom,
+            fullyBookedUntil: record.fullyBookedUntil,
+            applicationUrl: record.applicationUrl,
+            confidence: record.confidence,
+            extractionMethod: record.extractionMethod,
+            sourceUrl: record.sourceUrl,
+            lastChecked: record.lastChecked
+          }
+        };
+      }
+
+      function reviewIssueHref(payload) {
+        const params = new URLSearchParams();
+        params.set("title", "Placement review: " + payload.recordId);
+        params.set("body", [
+          "Static medical-student review submission.",
+          "",
+          "Please do not paste private emails or unredacted screenshots.",
+          "",
+          "\`\`\`json",
+          JSON.stringify(payload, null, 2),
+          "\`\`\`"
+        ].join("\\n"));
+        return reviewIssueUrl + "?" + params.toString();
+      }
+
+      function communityEvidenceIssueHref(evidenceKind, payload) {
+        const params = new URLSearchParams();
+        params.set("title", (evidenceKind === "verification" ? "Record verification: " : "Lead-time report: ") + payload.recordId);
+        params.set("body", [
+          "Structured community evidence submission for the static beta.",
+          "",
+          "This is not stored by the website. Maintainers review accepted evidence before it affects public data.",
+          "",
+          "Please do not paste private emails, patient information, or unredacted screenshots.",
+          "",
+          "\`\`\`json",
+          JSON.stringify({ evidenceKind, ...payload }, null, 2),
+          "\`\`\`"
+        ].join("\\n"));
+        return reviewIssueUrl + "?" + params.toString();
+      }
+
+      function monthValue(panel, name) {
+        return panel.querySelector('[name="' + name + '"]')?.value || "";
+      }
+
+      function computeMonthsAhead(applicationMonth, desiredStartMonth) {
+        if (!applicationMonth || !desiredStartMonth) return null;
+        const application = applicationMonth.split("-").map(Number);
+        const desired = desiredStartMonth.split("-").map(Number);
+        return (desired[0] - application[0]) * 12 + (desired[1] - application[1]);
+      }
+
+      function buildLeadTimeReportPayload(record, panel) {
+        const desiredStartMonth = monthValue(panel, "desiredStartMonth");
+        const applicationMonth = monthValue(panel, "applicationMonth");
+        return {
+          recordId: record.id,
+          sourceId: record.sourceId,
+          institutionName: record.institutionName,
+          departmentNormalized: record.departmentNormalized,
+          desiredStartMonth,
+          applicationMonth,
+          computedMonthsAhead: computeMonthsAhead(applicationMonth, desiredStartMonth),
+          outcome: panel.querySelector('[name="outcome"]').value,
+          evidenceType: panel.querySelector('[name="evidenceType"]').value,
+          reviewerRegion: panel.querySelector('[name="reviewerRegion"]').value,
+          comment: panel.querySelector('[name="comment"]').value || "",
+          createdAt: new Date().toISOString(),
+          canDisplayAnonymously: panel.querySelector('[name="canDisplayAnonymously"]').value === "true",
+          currentExtractedValues: {
+            availabilityStatus: record.availabilityStatus,
+            availableFrom: record.availableFrom,
+            fullyBookedUntil: record.fullyBookedUntil,
+            explicitApplicationLeadTimeMonths: record.explicitApplicationLeadTimeMonths,
+            observedMonthsAhead: record.observedMonthsAhead,
+            sourceUrl: record.sourceUrl,
+            lastChecked: record.lastChecked
+          }
+        };
+      }
+
+      function updateReviewPanel(panel, record) {
+        const payload = buildReviewPayload(record, panel);
+        const json = JSON.stringify(payload, null, 2);
+        panel.querySelector(".review-json").value = json;
+        panel.querySelector(".review-issue-link").href = communityEvidenceIssueHref("verification", payload);
+      }
+
+      function updateLeadTimeReportPanel(panel, record) {
+        const payload = buildLeadTimeReportPayload(record, panel);
+        const json = JSON.stringify(payload, null, 2);
+        const computedLabel = payload.computedMonthsAhead === null
+          ? "Computed months ahead: not available until both months are entered."
+          : "Computed months ahead: " + payload.computedMonthsAhead;
+        panel.querySelector(".leadtime-computed").textContent = computedLabel;
+        panel.querySelector(".leadtime-json").value = json;
+        panel.querySelector(".leadtime-issue-link").href = communityEvidenceIssueHref("lead-time-report", payload);
+      }
+
+      function bindReviewPanel(record) {
+        const panel = detailBody.querySelector(".verification-panel");
+        if (!panel) return;
+        updateReviewPanel(panel, record);
+        panel.addEventListener("input", () => updateReviewPanel(panel, record));
+        panel.querySelector(".review-copy").addEventListener("click", async () => {
+          updateReviewPanel(panel, record);
+          const json = panel.querySelector(".review-json").value;
+          if (navigator.clipboard) {
+            await navigator.clipboard.writeText(json);
+          }
+        });
+      }
+
+      function bindLeadTimeReportPanel(record) {
+        const panel = detailBody.querySelector(".leadtime-report-panel");
+        if (!panel) return;
+        updateLeadTimeReportPanel(panel, record);
+        panel.addEventListener("input", () => updateLeadTimeReportPanel(panel, record));
+        panel.querySelector(".leadtime-copy").addEventListener("click", async () => {
+          updateLeadTimeReportPanel(panel, record);
+          const json = panel.querySelector(".leadtime-json").value;
+          if (navigator.clipboard) {
+            await navigator.clipboard.writeText(json);
+          }
+        });
+      }
+
       function openDetail(record) {
+        activeRecord = record;
         detailTitle.textContent = record.institutionName;
         detailSubtitle.textContent = [record.department || record.departmentNormalized, record.roleType].filter(Boolean).join(" / ");
         detailBody.innerHTML = '<div class="detail-grid">'
@@ -660,14 +1135,34 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           + detailField("Last checked", record.lastChecked.slice(0, 10))
           + '</div>'
           + leadTimeDetailHtml(record)
+          + communityReliabilityHtml(record)
           + '<div><strong>Source</strong><p><a href="' + escapeHtml(record.sourceUrl) + '">' + escapeHtml(record.sourceUrl) + '</a></p></div>'
           + '<div><strong>Warnings</strong>' + (record.warnings.length ? '<ul class="warning-list">' + record.warnings.map((warning) => '<li>' + escapeHtml(warning) + '</li>').join("") + '</ul>' : '<p>No parser warnings.</p>') + '</div>'
-          + '<div><strong>Source snippet</strong><p class="snippet">' + escapeHtml(record.extractedSnippet) + '</p></div>';
+          + '<div><strong>Source snippet</strong><p class="snippet">' + escapeHtml(record.extractedSnippet) + '</p></div>'
+          + feedbackLinksHtml(record)
+          + reviewPanelHtml(record)
+          + leadTimeReportPanelHtml(record);
         drawer.classList.add("open");
         drawer.setAttribute("aria-hidden", "false");
+        bindReviewPanel(record);
+        bindLeadTimeReportPanel(record);
       }
 
+      function updateReviewModeToggle() {
+        reviewModeToggle.textContent = reviewModeEnabled ? "Review mode enabled" : "Enable review mode";
+      }
+
+      reviewModeToggle.addEventListener("click", () => {
+        reviewModeEnabled = true;
+        const url = new URL(window.location.href);
+        url.searchParams.set("review", "1");
+        window.history.replaceState({}, "", url);
+        updateReviewModeToggle();
+        if (activeRecord) openDetail(activeRecord);
+      });
+
       rows.addEventListener("click", (event) => {
+        if (event.target.closest("a, button, input, select, textarea")) return;
         const row = event.target.closest("tr[data-record-id]");
         if (!row) return;
         const record = records.find((item) => item.id === row.dataset.recordId);
@@ -676,6 +1171,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
 
       rows.addEventListener("keydown", (event) => {
         if (event.key !== "Enter") return;
+        if (event.target.closest("a, button, input, select, textarea")) return;
         const row = event.target.closest("tr[data-record-id]");
         if (!row) return;
         const record = records.find((item) => item.id === row.dataset.recordId);
@@ -688,7 +1184,117 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
       });
 
       form.addEventListener("input", renderRows);
+      updateReviewModeToggle();
       renderRows();
+    </script>
+  </body>
+</html>`;
+}
+
+export function renderReviewQueuePage(options: RenderPlacementIndexOptions): string {
+  const queue = createReviewQueue(options.placements, options.sources);
+  const initialState = escapeScriptJson({
+    queue: queue.map((item) => ({
+      ...item,
+      record: item.record,
+    })),
+  });
+  const filters = reviewQueueFilters(queue);
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Student Review Queue</title>
+    ${renderDetailStyles()}
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topline">
+        <a href="index.html?review=1">All placements in review mode</a>
+        <span>Static beta review queue</span>
+      </nav>
+      <header class="source-head">
+        <div>
+          <h1>Medical Student Review Queue</h1>
+          <p>Prioritized by low confidence, generic parsing, non-German sources, availability dates, and lead-time evidence.</p>
+        </div>
+        <div class="status-stack">${badge("needs-human-review")}</div>
+      </header>
+      <section class="section">
+        <form id="queue-filters" class="summary-grid" aria-label="Review queue filters">
+          ${renderSelect("canton", "Canton", filters.cantons)}
+          ${renderSelect("language", "Language", filters.languages)}
+          ${renderSelect("confidence", "Confidence", filters.confidences)}
+          ${renderSelect("parserType", "Parser type", filters.parserTypes)}
+        </form>
+      </section>
+      <section class="section">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Placement</th>
+                <th>Language</th>
+                <th>Confidence</th>
+                <th>Parser</th>
+                <th>Review</th>
+              </tr>
+            </thead>
+            <tbody id="queue-rows"></tbody>
+          </table>
+        </div>
+        <p id="queue-empty" class="muted" style="display: none;">No records match the selected queue filters.</p>
+      </section>
+    </main>
+    <script id="review-queue-data" type="application/json">${initialState}</script>
+    <script>
+      const queueState = JSON.parse(document.getElementById("review-queue-data").textContent);
+      const queueItems = queueState.queue;
+      const queueRows = document.getElementById("queue-rows");
+      const queueEmpty = document.getElementById("queue-empty");
+      const queueFilters = document.getElementById("queue-filters");
+
+      function queueEscape(value) {
+        return String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function queueMatches(value, filterValue) {
+        return !filterValue || value === filterValue;
+      }
+
+      function renderQueueRows() {
+        const filters = Object.fromEntries(new FormData(queueFilters).entries());
+        const visible = queueItems.filter((item) =>
+          queueMatches(item.record.canton, filters.canton)
+            && queueMatches(item.record.language, filters.language)
+            && queueMatches(item.record.confidence, filters.confidence)
+            && queueMatches(item.parserType, filters.parserType)
+        );
+
+        queueRows.innerHTML = visible.map((item) => {
+          const record = item.record;
+          return '<tr>'
+            + '<td>' + queueEscape(item.priorityScore) + '<br><span class="muted">' + queueEscape(item.priorityReasons.join(", ")) + '</span></td>'
+            + '<td><strong>' + queueEscape(record.institutionName) + '</strong><br><span class="muted">' + queueEscape(record.departmentNormalized || record.department) + '</span></td>'
+            + '<td>' + queueEscape(record.language) + '<br><span class="muted">' + queueEscape(record.region) + '</span></td>'
+            + '<td>' + queueEscape(record.confidence) + '</td>'
+            + '<td>' + queueEscape(item.parserType) + '</td>'
+            + '<td><a href="index.html?review=1#' + encodeURIComponent(record.id) + '">Open in review mode</a></td>'
+            + '</tr>';
+        }).join("");
+        queueEmpty.style.display = visible.length === 0 ? "block" : "none";
+      }
+
+      queueFilters.addEventListener("input", renderQueueRows);
+      renderQueueRows();
     </script>
   </body>
 </html>`;
@@ -724,6 +1330,9 @@ export function renderSourceDetailPage(options: RenderSourceDetailOptions): stri
         <div>
           <h1>${escapeHtml(source.institutionName)}</h1>
           <p>${escapeHtml([source.institutionType, source.canton, source.city].filter(Boolean).join(" / "))}</p>
+          <p><a class="feedback-link" href="${escapeHtml(
+            sourceFeedbackUrl(source, "other"),
+          )}">Report error</a></p>
         </div>
         <div class="status-stack">
           ${parserStatuses.map((status) => badge(status)).join("")}
@@ -740,6 +1349,19 @@ export function renderSourceDetailPage(options: RenderSourceDetailOptions): stri
         <ul class="link-list">
           ${sourceUrls.map((url) => `<li><a href="${escapeHtml(url)}">${escapeHtml(url)}</a></li>`).join("")}
         </ul>
+      </section>
+      <section class="section">
+        <h2>Report Error</h2>
+        <div class="feedback-links">
+          ${sourceFeedbackTypes()
+            .map(
+              (type) =>
+                `<a class="feedback-link" href="${escapeHtml(sourceFeedbackUrl(source, type))}">${escapeHtml(
+                  feedbackLabel(type),
+                )}</a>`,
+            )
+            .join("")}
+        </div>
       </section>
       <section class="section">
         <h2>Related Placement Records</h2>
@@ -958,6 +1580,25 @@ function renderDetailStyles(): string {
       color: var(--accent);
     }
 
+    .feedback-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .feedback-link {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      color: var(--blue);
+      display: inline-flex;
+      min-height: 32px;
+      padding: 6px 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
     .table-wrap {
       overflow: auto;
       border: 1px solid var(--line);
@@ -1091,6 +1732,32 @@ function parserStatusLabels(placements: PlacementRecord[]): string[] {
   return ["parsed"];
 }
 
+function sourceFeedbackTypes(): FeedbackType[] {
+  return [
+    "irrelevant-source",
+    "broken-source-url",
+    "wrong-language-region",
+    "parser-bug",
+    "missing-hospital-source",
+    "other",
+  ];
+}
+
+function sourceFeedbackUrl(source: SourceRegistryEntry, feedbackType: FeedbackType): string {
+  return buildFeedbackIssueUrl(feedbackType, {
+    source: {
+      id: source.id,
+      institutionName: source.institutionName,
+      canton: source.canton,
+      city: source.city,
+      sourceLanguage: source.sourceLanguage,
+      region: source.region,
+      status: source.status,
+      urls: source.sourceUrls.map((sourceUrl) => sourceUrl.url),
+    },
+  });
+}
+
 function unique(values: string[]): string[] {
   return [...new Set(values.filter((value) => value !== ""))].sort((left, right) =>
     left.localeCompare(right),
@@ -1125,6 +1792,26 @@ function renderSelect(
     .join("")}</select></label>`;
 }
 
+function reviewQueueFilters(queue: ReviewQueueItem[]): {
+  cantons: Array<{ value: string; label: string }>;
+  languages: Array<{ value: string; label: string }>;
+  confidences: Array<{ value: string; label: string }>;
+  parserTypes: Array<{ value: string; label: string }>;
+} {
+  return {
+    cantons: toFilterOptions(queue.map((item) => item.record.canton)),
+    languages: toFilterOptions(queue.map((item) => item.record.language)),
+    confidences: toFilterOptions(queue.map((item) => item.record.confidence)),
+    parserTypes: toFilterOptions(queue.map((item) => item.parserType)),
+  };
+}
+
+function toFilterOptions(values: Array<string | null>): Array<{ value: string; label: string }> {
+  return [...new Set(values.filter((value): value is string => value !== null && value !== ""))]
+    .sort((left, right) => left.localeCompare(right))
+    .map((value) => ({ value, label: displayLabel(value) }));
+}
+
 function formatDate(value: string | null): string {
   return value ? value.slice(0, 10) : "Not checked";
 }
@@ -1137,6 +1824,10 @@ function displayLabel(value: string | null | undefined): string {
     "fully-booked-until": "Fully booked until",
     "generic-parser": "Generic parser",
     "hospital-confirmed": "Hospital confirmed",
+    "student-checked": "Student checked",
+    "multiple-student-checked": "Multiple student checked",
+    "conflicting-reports": "Conflicting reports",
+    unverified: "Unverified",
     "needs-human-review": "Needs human review",
     "not-specified": "Not specified",
     "site-parser": "Site parser",

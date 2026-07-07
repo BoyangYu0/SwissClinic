@@ -14,6 +14,13 @@ export interface PlacementFilters {
   region?: string;
 }
 
+export interface ReviewQueueItem {
+  record: PlacementRecord;
+  parserType: string;
+  priorityScore: number;
+  priorityReasons: string[];
+}
+
 export interface FilterOption {
   value: string;
   label: string;
@@ -99,6 +106,62 @@ export function filterPlacements(
   });
 }
 
+export function createReviewQueue(
+  placements: PlacementRecord[],
+  sources: SourceRegistryEntry[],
+): ReviewQueueItem[] {
+  const sourcesById = new Map(sources.map((source) => [source.id, source]));
+
+  return placements
+    .map((record) => {
+      const source = sourcesById.get(record.sourceId);
+      const parserType = sourceParserType(source, record);
+      const priorityReasons: string[] = [];
+
+      if (record.confidence === "low") {
+        priorityReasons.push("low confidence");
+      }
+
+      if (parserType !== "site-specific") {
+        priorityReasons.push("no site-specific parser");
+      }
+
+      if ((record.sourceLanguage ?? record.language) !== "de") {
+        priorityReasons.push("non-German source");
+      }
+
+      if (record.availableFrom || record.fullyBookedUntil) {
+        priorityReasons.push("availability date");
+      }
+
+      if (
+        record.explicitApplicationLeadTimeMonths !== null ||
+        record.observedMonthsAhead !== null ||
+        record.leadTimeSummaryId !== null
+      ) {
+        priorityReasons.push("lead-time evidence");
+      }
+
+      return {
+        record,
+        parserType,
+        priorityScore: priorityReasons.length,
+        priorityReasons,
+      };
+    })
+    .sort((left, right) => {
+      if (left.priorityScore !== right.priorityScore) {
+        return right.priorityScore - left.priorityScore;
+      }
+
+      if (left.record.confidence !== right.record.confidence) {
+        return confidenceRank(left.record.confidence) - confidenceRank(right.record.confidence);
+      }
+
+      return left.record.institutionName.localeCompare(right.record.institutionName);
+    });
+}
+
 function placementSearchText(record: PlacementRecord): string {
   return normalize(
     [
@@ -160,4 +223,28 @@ function displayLabel(value: string): string {
   };
 
   return labels[value] ?? value;
+}
+
+function sourceParserType(
+  source: SourceRegistryEntry | undefined,
+  record: PlacementRecord,
+): string {
+  if (
+    record.extractionMethod === "site-parser" ||
+    source?.sourceUrls.some((sourceUrl) => sourceUrl.expectedParser !== "generic")
+  ) {
+    return "site-specific";
+  }
+
+  return "generic";
+}
+
+function confidenceRank(confidence: PlacementRecord["confidence"]): number {
+  const ranks: Record<PlacementRecord["confidence"], number> = {
+    low: 0,
+    medium: 1,
+    high: 2,
+  };
+
+  return ranks[confidence];
 }

@@ -1,6 +1,8 @@
 # Coverage By Baseline
 
-Generated at: 2026-07-07T15:59:01.191Z
+Generated at: 2026-07-07T21:56:58.854Z
+
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-07T21%3A56%3A58.854Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured against selected baselines. Candidate sources may not yet be verified, and some hospitals may not publish placement availability online.
 

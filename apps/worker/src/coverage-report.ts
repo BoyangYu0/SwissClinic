@@ -12,6 +12,18 @@ const DEFAULT_SOURCES_PATH = "packages/sources/sources.yaml";
 const DEFAULT_DATA_DIR = "data/current";
 const DEFAULT_OUT_DIR = "data/current";
 const DEFAULT_BASELINES_DIR = "packages/sources/baselines";
+const FEEDBACK_ISSUE_URL = "https://github.com/BoyangYu0/SwissClinic/issues/new";
+
+type CoverageFeedbackType =
+  | "wrong-availability"
+  | "wrong-department"
+  | "wrong-application-link"
+  | "missing-hospital-source"
+  | "irrelevant-source"
+  | "broken-source-url"
+  | "wrong-language-region"
+  | "parser-bug"
+  | "other";
 
 export type BaselineCoverageStatus =
   | "covered"
@@ -554,6 +566,8 @@ function renderSourceCoverageMarkdown(report: ExtendedSourceCoverageReport): str
 
 Generated at: ${report.generatedAt}
 
+[Report error](${coverageFeedbackUrl("other", "source-coverage.md", "Source Coverage", report.generatedAt)})
+
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
 ## Summary
@@ -584,6 +598,8 @@ function renderInstitutionCoverageMarkdown(report: InstitutionCoverageReport): s
 
 Generated at: ${report.generatedAt}
 
+[Report error](${coverageFeedbackUrl("missing-hospital-source", "institution-coverage.md", "Institution Coverage", report.generatedAt)})
+
 Coverage is measured by normalized institution names from the source registry and extracted placement records. Candidate sources may not yet be verified.
 
 ## Summary
@@ -609,6 +625,8 @@ function renderRecordCoverageMarkdown(report: RecordCoverageReport): string {
   return `# Record Coverage
 
 Generated at: ${report.generatedAt}
+
+[Report error](${coverageFeedbackUrl("parser-bug", "record-coverage.md", "Record Coverage", report.generatedAt)})
 
 Record count is not national clinic coverage. Some hospitals may not publish placement availability online.
 
@@ -644,6 +662,8 @@ function renderMissingSourcesMarkdown(report: BaselineCoverageReport): string {
 
 Generated at: ${report.generatedAt}
 
+[Report error](${coverageFeedbackUrl("missing-hospital-source", "missing-sources.md", "Missing Sources", report.generatedAt)})
+
 Coverage is measured against selected baselines. These example baseline files are not complete unless manually verified.
 
 ## Summary
@@ -667,6 +687,8 @@ function renderBaselineCoverageMarkdown(report: BaselineCoverageReport): string 
   return `# Coverage By Baseline
 
 Generated at: ${report.generatedAt}
+
+[Report error](${coverageFeedbackUrl("missing-hospital-source", "coverage-by-baseline.md", "Coverage By Baseline", report.generatedAt)})
 
 Coverage is measured against selected baselines. Candidate sources may not yet be verified, and some hospitals may not publish placement availability online.
 
@@ -703,6 +725,45 @@ function renderCountTable(title: string, counts: Record<string, number>): string
 | --- | ---: |
 ${rows || "| None | 0 |"}
 `;
+}
+
+function coverageFeedbackUrl(
+  feedbackType: CoverageFeedbackType,
+  reportPath: string,
+  reportName: string,
+  generatedAt: string,
+): string {
+  const url = new URL(FEEDBACK_ISSUE_URL);
+  url.searchParams.set("title", `[Feedback] ${feedbackLabel(feedbackType)}: ${reportPath}`);
+  url.searchParams.set(
+    "body",
+    [
+      "Structured static feedback submission.",
+      "",
+      `Feedback type: ${feedbackLabel(feedbackType)} (${feedbackType})`,
+      "",
+      "Please describe what should change:",
+      "",
+      "```json",
+      JSON.stringify(
+        {
+          feedbackType,
+          coverageReport: {
+            reportName,
+            reportPath,
+            generatedAt,
+          },
+        },
+        null,
+        2,
+      ),
+      "```",
+      "",
+      "Please do not paste private emails, patient information, or unredacted screenshots.",
+    ].join("\n"),
+  );
+
+  return url.toString();
 }
 
 function renderSourceItems(items: SourceCoverageSourceItem[]): string {
@@ -800,6 +861,22 @@ function displayLabel(value: string): string {
     .split("-")
     .map((part) => part.slice(0, 1).toUpperCase() + part.slice(1))
     .join(" ");
+}
+
+function feedbackLabel(feedbackType: CoverageFeedbackType): string {
+  const labels: Record<CoverageFeedbackType, string> = {
+    "wrong-availability": "Wrong availability",
+    "wrong-department": "Wrong department",
+    "wrong-application-link": "Wrong application link",
+    "missing-hospital-source": "Missing hospital/source",
+    "irrelevant-source": "Irrelevant source",
+    "broken-source-url": "Broken source URL",
+    "wrong-language-region": "Wrong language/region",
+    "parser-bug": "Parser bug",
+    other: "Other",
+  };
+
+  return labels[feedbackType];
 }
 
 async function main(): Promise<void> {

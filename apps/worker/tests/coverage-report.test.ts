@@ -187,6 +187,9 @@ describe("coverage report", () => {
     await expect(readFile(join(outDir, "record-coverage.md"), "utf8")).resolves.toContain(
       "| Metric | Count |",
     );
+    await expect(readFile(join(outDir, "record-coverage.md"), "utf8")).resolves.toContain(
+      "Report error",
+    );
     await expect(readFile(join(outDir, "coverage-by-baseline.md"), "utf8")).resolves.toContain(
       "| Baseline entries | 1 |",
     );

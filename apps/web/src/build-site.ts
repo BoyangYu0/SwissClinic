@@ -3,14 +3,23 @@ import { join, resolve } from "node:path";
 import {
   type ChangeRecord,
   ChangeRecordArraySchema,
+  type LeadTimeReport,
+  LeadTimeReportArraySchema,
   type LeadTimeSummary,
   LeadTimeSummaryArraySchema,
   type PlacementRecord,
   PlacementRecordArraySchema,
   type SourceRegistryEntry,
   SourceRegistrySchema,
+  type VerificationEvidence,
+  VerificationEvidenceArraySchema,
 } from "@scpi/schema";
-import { renderPlacementIndexPage, renderSourceDetailPage } from "./render.js";
+import { buildReliabilitySummaries } from "./community-evidence.js";
+import {
+  renderPlacementIndexPage,
+  renderReviewQueuePage,
+  renderSourceDetailPage,
+} from "./render.js";
 
 export interface BuildSiteOptions {
   dataDir: string;
@@ -31,6 +40,17 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
   const changes = await readChanges(join(options.dataDir, "changes.json"));
   const leadTimeSummaries = await readLeadTimeSummaries(
     join(options.dataDir, "lead-time-summary.json"),
+  );
+  const verificationEvidence = await readVerificationEvidence(
+    join(options.dataDir, "verification-evidence.json"),
+  );
+  const leadTimeReports = await readLeadTimeReports(
+    join(options.dataDir, "lead-time-reports.json"),
+  );
+  const reliabilitySummaries = buildReliabilitySummaries(
+    placements,
+    verificationEvidence,
+    leadTimeReports,
   );
   const currentDataOut = join(options.outDir, "data", "current");
   const exportsOut = join(options.outDir, "data", "exports");
@@ -92,6 +112,15 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
     join(options.dataDir, "lead-time-summary.json"),
     join(currentDataOut, "lead-time-summary.json"),
   );
+  await copyIfExists(
+    join(options.dataDir, "verification-evidence.json"),
+    join(currentDataOut, "verification-evidence.json"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "lead-time-reports.json"),
+    join(currentDataOut, "lead-time-reports.json"),
+  );
+  await writeJson(join(currentDataOut, "reliability-summary.json"), reliabilitySummaries);
   await copyFile(join(options.exportsDir, "placements.csv"), join(exportsOut, "placements.csv"));
 
   const indexPath = join(options.outDir, "index.html");
@@ -99,10 +128,23 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
     placements,
     sources,
     leadTimeSummaries,
+    reliabilitySummaries,
     csvHref: "data/exports/placements.csv",
     dataHref: "data/current/placements.json",
   });
   await writeFile(indexPath, html, "utf8");
+  await writeFile(
+    join(options.outDir, "review-queue.html"),
+    renderReviewQueuePage({
+      placements,
+      sources,
+      leadTimeSummaries,
+      reliabilitySummaries,
+      csvHref: "data/exports/placements.csv",
+      dataHref: "data/current/placements.json",
+    }),
+    "utf8",
+  );
   await writeSourcePages(options.outDir, sources, placements, changes);
 
   return {
@@ -166,6 +208,30 @@ async function readChanges(path: string): Promise<ChangeRecord[]> {
 async function readLeadTimeSummaries(path: string): Promise<LeadTimeSummary[]> {
   try {
     return LeadTimeSummaryArraySchema.parse(JSON.parse(await readFile(path, "utf8")));
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
+async function readVerificationEvidence(path: string): Promise<VerificationEvidence[]> {
+  try {
+    return VerificationEvidenceArraySchema.parse(JSON.parse(await readFile(path, "utf8")));
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
+async function readLeadTimeReports(path: string): Promise<LeadTimeReport[]> {
+  try {
+    return LeadTimeReportArraySchema.parse(JSON.parse(await readFile(path, "utf8")));
   } catch (error) {
     if (error instanceof Error && "code" in error && error.code === "ENOENT") {
       return [];

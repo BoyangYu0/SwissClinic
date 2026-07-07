@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import {
   type ChangeRecord,
   makePlacementId,
@@ -6,8 +8,20 @@ import {
   type SourceRegistryEntry,
 } from "@scpi/schema";
 import { describe, expect, it } from "vitest";
-import { filterPlacements } from "../src/placement-index.js";
-import { renderPlacementIndexPage, renderSourceDetailPage } from "../src/render.js";
+import { createReviewQueue, filterPlacements } from "../src/placement-index.js";
+import {
+  renderPlacementIndexPage,
+  renderReviewQueuePage,
+  renderSourceDetailPage,
+} from "../src/render.js";
+import {
+  buildFeedbackIssueUrl,
+  buildReviewIssueUrl,
+  buildStaticReviewPayload,
+  feedbackLabel,
+  feedbackTypes,
+  reviewPayloadToJson,
+} from "../src/review-mode.js";
 
 const lastChecked = "2026-07-07T08:00:00.000Z";
 
@@ -97,6 +111,113 @@ describe("placement index frontend", () => {
     expect(html).toContain("Some hospitals may not publish placement availability online.");
     expect(html).toContain("data/current/coverage-by-baseline.md");
     expect(html).toContain("data/current/missing-sources.md");
+    expect(html).toContain("review-queue.html");
+    expect(html).toContain("Enable review mode");
+    expect(html).toContain("Report error");
+    expect(html).toContain("Community verification");
+    expect(html).toContain("community lead-time reports");
+  });
+
+  it("keeps review mode hidden by default but enables it from the query string", () => {
+    const html = renderPlacementIndexPage({
+      placements: [placement()],
+      sources: [source("example-source")],
+      csvHref: "data/exports/placements.csv",
+      dataHref: "data/current/placements.json",
+    });
+
+    expect(html).toContain('new URLSearchParams(window.location.search).get("review") === "1"');
+    expect(html).toContain('if (!reviewModeEnabled) return ""');
+    expect(html).toContain("Verify this record");
+    expect(html).toContain("Report application lead time");
+  });
+
+  it("builds a GitHub issue URL containing record ID and selected review answers", () => {
+    const record = placement();
+    const payload = buildStaticReviewPayload(
+      record,
+      {
+        verdict: "partly-wrong",
+        departmentCorrect: "no",
+        availabilityCorrect: "yes",
+        officialSourceCorrect: "yes",
+        applicationLinkCorrect: "unsure",
+      },
+      lastChecked,
+    );
+    const issueUrl = buildReviewIssueUrl(payload, "https://github.com/example/repo/issues/new");
+    const issueBody = new URL(issueUrl).searchParams.get("body") ?? "";
+
+    expect(issueUrl).toContain(encodeURIComponent(record.id));
+    expect(issueBody).toContain('"verdict": "partly-wrong"');
+    expect(issueBody).toContain('"departmentCorrect": "no"');
+  });
+
+  it("generates copyable valid JSON review blocks", () => {
+    const payload = buildStaticReviewPayload(placement(), { verdict: "correct" }, lastChecked);
+    const parsed = JSON.parse(reviewPayloadToJson(payload));
+
+    expect(parsed.recordId).toBe(payload.recordId);
+    expect(parsed.verdict).toBe("correct");
+    expect(parsed.currentExtractedValues.sourceUrl).toBe("https://example.ch/placement");
+  });
+
+  it("builds structured feedback issue URLs with record and source metadata", () => {
+    const record = placement();
+    const issueUrl = buildFeedbackIssueUrl(
+      "wrong-availability",
+      {
+        record,
+        source: {
+          ...source("example-source"),
+          urls: ["https://example.ch/placement"],
+        },
+      },
+      "https://github.com/example/repo/issues/new",
+    );
+    const issue = new URL(issueUrl);
+    const body = issue.searchParams.get("body") ?? "";
+
+    expect(issue.searchParams.get("title")).toContain("Wrong availability");
+    expect(body).toContain('"feedbackType": "wrong-availability"');
+    expect(body).toContain(record.id);
+    expect(body).toContain("example-source");
+  });
+
+  it("prioritizes low-confidence, multilingual, generic-parser records in the review queue", () => {
+    const highGerman = placement({ confidence: "high", reviewStatus: "auto-published" });
+    const lowFrench = placement({
+      sourceId: "fr-source",
+      institutionName: "Hopital Example",
+      confidence: "low",
+      warnings: ["Synthetic low confidence record."],
+      language: "fr",
+      sourceLanguage: "fr",
+      region: "fr-CH",
+      extractionMethod: "generic-parser",
+      availableFrom: "2027-07",
+    });
+    const queue = createReviewQueue(
+      [highGerman, lowFrench],
+      [source("example-source"), source("fr-source")],
+    );
+
+    expect(queue[0]?.record.id).toBe(lowFrench.id);
+    expect(queue[0]?.priorityReasons).toContain("low confidence");
+    expect(queue[0]?.priorityReasons).toContain("non-German source");
+  });
+
+  it("renders a generated review queue page with filters", () => {
+    const html = renderReviewQueuePage({
+      placements: [placement()],
+      sources: [source("example-source")],
+      csvHref: "data/exports/placements.csv",
+      dataHref: "data/current/placements.json",
+    });
+
+    expect(html).toContain("Medical Student Review Queue");
+    expect(html).toContain('name="parserType"');
+    expect(html).toContain("index.html?review=1");
   });
 
   it("filters records by search and structured fields", () => {
@@ -150,6 +271,8 @@ describe("placement index frontend", () => {
     expect(html).toContain("Innere Medizin");
     expect(html).toContain("Availability changed for Example Hospital.");
     expect(html).toContain("Parser could not infer exact month.");
+    expect(html).toContain("Report error");
+    expect(html).toContain("Broken source URL");
   });
 
   it("renders a graceful missing source page", () => {
@@ -163,6 +286,18 @@ describe("placement index frontend", () => {
     expect(html).toContain("Source not found");
     expect(html).toContain("This source is not present in the current static dataset.");
     expect(html).toContain("../../index.html");
+  });
+
+  it("defines a GitHub issue template with all feedback types", async () => {
+    const template = await readFile(
+      join(process.cwd(), "..", "..", ".github", "ISSUE_TEMPLATE", "structured-feedback.yml"),
+      "utf8",
+    );
+
+    expect(template).toContain("name: Structured placement feedback");
+    for (const feedbackType of feedbackTypes) {
+      expect(template).toContain(`- ${feedbackLabel(feedbackType)}`);
+    }
   });
 });
 
