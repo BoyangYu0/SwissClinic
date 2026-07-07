@@ -112,6 +112,9 @@ describe("placement index frontend", () => {
     expect(html).toContain("data/current/coverage-by-baseline.md");
     expect(html).toContain("data/current/missing-sources.md");
     expect(html).toContain("review-queue.html");
+    expect(html).toContain("https://github.com/BoyangYu0/SwissClinic");
+    expect(html).toContain("mailto:karl_ychen@outlook.com");
+    expect(html).toContain("karl_ychen@outlook.com");
     expect(html).toContain("Enable review mode");
     expect(html).toContain("Report error");
     expect(html).toContain("Community verification");

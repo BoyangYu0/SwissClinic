@@ -531,6 +531,8 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           <a class="button" href="data/current/coverage-by-baseline.md">Coverage</a>
           <a class="button" href="data/current/missing-sources.md">Missing</a>
           <a class="button" href="review-queue.html">Review queue</a>
+          <a class="button" href="https://github.com/BoyangYu0/SwissClinic">GitHub</a>
+          <a class="button" href="mailto:karl_ychen@outlook.com">Email</a>
           <button class="button" type="button" id="review-mode-toggle">Enable review mode</button>
         </div>
         <div class="coverage-note">
@@ -538,6 +540,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           <p>Coverage is measured against selected baselines.</p>
           <p>Candidate sources may not yet be verified.</p>
           <p>Some hospitals may not publish placement availability online.</p>
+          <p>Project: <a href="https://github.com/BoyangYu0/SwissClinic">GitHub</a> / <a href="mailto:karl_ychen@outlook.com">karl_ychen@outlook.com</a></p>
         </div>
       </aside>
       <main class="main">

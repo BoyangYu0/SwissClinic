@@ -5,18 +5,19 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "build:deps": "pnpm --filter @scpi/schema --filter @scpi/utils --filter @scpi/sources --filter @scpi/parsers build",
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "biome check src tests",
-    "crawl": "tsc -p tsconfig.json && node dist/crawl.js",
-    "build:data": "tsc -p tsconfig.json && node dist/build-static-data.js",
-    "coverage:report": "tsc -p tsconfig.json && node dist/coverage-report.js",
-    "data:validate": "tsc -p tsconfig.json && node dist/data-validate.js",
-    "diff:snapshots": "tsc -p tsconfig.json && node dist/diff-snapshots.js",
-    "review:report": "tsc -p tsconfig.json && node dist/review-report.js",
-    "source:coverage": "tsc -p tsconfig.json && node dist/source-coverage.js",
-    "lead-time:build": "tsc -p tsconfig.json && node dist/lead-time.js",
-    "reliability:audit": "tsc -p tsconfig.json && node dist/reliability-audit.js"
+    "crawl": "pnpm run build:deps && tsc -p tsconfig.json && node dist/crawl.js",
+    "build:data": "pnpm run build:deps && tsc -p tsconfig.json && node dist/build-static-data.js",
+    "coverage:report": "pnpm run build:deps && tsc -p tsconfig.json && node dist/coverage-report.js",
+    "data:validate": "pnpm run build:deps && tsc -p tsconfig.json && node dist/data-validate.js",
+    "diff:snapshots": "pnpm run build:deps && tsc -p tsconfig.json && node dist/diff-snapshots.js",
+    "review:report": "pnpm run build:deps && tsc -p tsconfig.json && node dist/review-report.js",
+    "source:coverage": "pnpm run build:deps && tsc -p tsconfig.json && node dist/source-coverage.js",
+    "lead-time:build": "pnpm run build:deps && tsc -p tsconfig.json && node dist/lead-time.js",
+    "reliability:audit": "pnpm run build:deps && tsc -p tsconfig.json && node dist/reliability-audit.js"
   },
   "dependencies": {
     "@scpi/parsers": "workspace:*",
