@@ -97,6 +97,7 @@ swiss-clinical-placement-index/
       src/
         placement.ts
         source.ts
+        leadTime.ts
         feedback.ts
         index.ts
       tests/
@@ -109,6 +110,7 @@ swiss-clinical-placement-index/
         luks.ts
         usz.ts
         inselspital.ts
+        language-packs/
       fixtures/
         luks/
         usz/
@@ -138,6 +140,13 @@ swiss-clinical-placement-index/
       sources.json
       changes.json
       parser-health.json
+      source-coverage.json
+      source-coverage.md
+      reliability-audit.json
+      reliability-audit.md
+      lead-time-evidence.json
+      lead-time-summary.json
+      review-needed.md
     snapshots/
       .gitkeep
     exports/
@@ -228,6 +237,8 @@ Example entries:
   canton: "LU"
   city: "Luzern"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://example.org/path"
@@ -249,6 +260,8 @@ Fields:
 - `canton`
 - `city`
 - `language`
+- `sourceLanguage`
+- `region`
 - `country`
 - `sourceUrls`
 - `notes`
@@ -270,6 +283,23 @@ Allowed `fetchMode`:
 - `pdf`
 - `manual`
 
+Allowed `sourceLanguage`:
+
+- `de`
+- `fr`
+- `it`
+- `en`
+- `mixed`
+- `unknown`
+
+Allowed `region`:
+
+- `de-CH`
+- `fr-CH`
+- `it-CH`
+- `mixed`
+- `unknown`
+
 ### Automated tests
 
 Create tests for:
@@ -284,6 +314,7 @@ Create tests for:
 
 - Confirm the fields are understandable to non-developer student contributors.
 - Confirm the registry can represent hospitals, university catalogues, and student association pages.
+- Confirm the registry can represent German, French, Italian, English, and mixed-language official sources.
 
 ---
 
@@ -414,6 +445,8 @@ Define `PlacementRecordSchema` with fields:
   canton: string | null;
   city: string | null;
   language: "de" | "fr" | "it" | "en" | "unknown";
+  sourceLanguage: "de" | "fr" | "it" | "en" | "mixed" | "unknown";
+  region: "de-CH" | "fr-CH" | "it-CH" | "mixed" | "unknown";
 
   availabilityStatus:
     | "available"
@@ -428,6 +461,9 @@ Define `PlacementRecordSchema` with fields:
   durationMinWeeks: number | null;
   durationMaxWeeks: number | null;
   applicationLeadTimeMonths: number | null;
+  explicitApplicationLeadTimeMonths: number | null;
+  observedMonthsAhead: number | null;
+  leadTimeSummaryId: string | null;
 
   applicationMethod:
     | "online-form"
@@ -442,6 +478,8 @@ Define `PlacementRecordSchema` with fields:
   contactEmail: string | null;
   contactName: string | null;
 
+  originalDepartmentName: string | null;
+  roleTypeOriginal: string | null;
   eligibilityNotes: string | null;
   languageRequirement: string | null;
   compensation: string | null;
@@ -461,6 +499,7 @@ Define `PlacementRecordSchema` with fields:
     | "student-feedback"
     | "llm-suggested";
 
+  extractionLanguage: "de" | "fr" | "it" | "en" | "unknown";
   confidence: "high" | "medium" | "low";
   reviewStatus:
     | "auto-published"
@@ -790,6 +829,9 @@ keine freien Plätze bis Ende 2026
 ausgebucht bis Dezember 2027
 Bewerbungen 12 Monate im Voraus
 Bewerbungen ein Jahr im Voraus
+Bewerbungen 18 Monate im Voraus
+Bewerbungen frühestens 12 Monate vor Beginn
+Bewerbungen spätestens 18 Monate vor Beginn
 für mindestens 4 Wochen
 1 bis 4 Monate
 ```
@@ -801,6 +843,8 @@ dès juillet 2027
 à partir du 01.07.2027
 complet jusqu'à fin 2026
 candidature 12 mois à l'avance
+candidature un an à l'avance
+candidature 18 mois avant le début
 ```
 
 Italian:
@@ -810,6 +854,8 @@ da luglio 2027
 a partire dal 01.07.2027
 occupato fino a fine 2026
 candidatura con 12 mesi di anticipo
+candidatura un anno prima
+candidatura 18 mesi prima dell'inizio
 ```
 
 Functions:
@@ -817,6 +863,7 @@ Functions:
 ```ts
 parseMonthExpression(text: string, language?: string): string | null
 parseLeadTimeMonths(text: string): number | null
+monthsBetweenObservedAndTarget(observedAt: string, targetMonthOrDate: string): number | null
 parseDurationWeeks(text: string): { minWeeks: number | null; maxWeeks: number | null }
 parseAvailabilityStatus(text: string): AvailabilityParseResult
 ```
@@ -1440,6 +1487,406 @@ Include:
 
 ---
 
+# Phase G4 — Multilingual Source Registry and Parser Support
+
+## Step G4.1. Extend schemas for language-aware records
+
+### Goal
+
+Support German, French, Italian, English, mixed-language, and unknown-language sources without changing the static architecture.
+
+### Codex tasks
+
+Extend source and placement schemas with backward-compatible fields:
+
+- `sourceLanguage`: `de | fr | it | en | mixed | unknown`
+- `region`: `de-CH | fr-CH | it-CH | mixed | unknown`
+- `originalDepartmentName`
+- `departmentNormalized`
+- `roleTypeOriginal`
+- `extractionLanguage`
+
+Keep defaults for existing data so older records still validate.
+
+### Automated tests
+
+- Source schema accepts German/French/Italian/English/mixed metadata.
+- Placement schema defaults new fields for older records.
+- Non-German checked-in sources must declare concrete `sourceLanguage` and `region`.
+
+### Manual checks
+
+- Confirm labels make sense to maintainers who are not developers.
+- Confirm mixed-language cantons and national pages can be represented without forcing a single language.
+
+---
+
+## Step G4.2. Add multilingual parser language packs
+
+### Goal
+
+Make deterministic parsing language-aware for Swiss German, French, Italian, and English pages.
+
+### Codex tasks
+
+Add language packs under:
+
+```txt
+packages/parsers/src/language-packs/
+```
+
+Each pack should contain:
+
+- role keywords
+- application keywords
+- availability keywords
+- fully-booked/unavailable keywords
+- month names
+- duration patterns
+- lead-time patterns
+- department aliases
+
+Normalize common departments across languages:
+
+- Innere Medizin / Médecine interne / Medicina interna → `internal-medicine`
+- Chirurgie / Chirurgie / Chirurgia → `surgery`
+- Pädiatrie / Pédiatrie / Pediatria → `pediatrics`
+- Gynäkologie / Gynécologie / Ginecologia → `gynecology`
+- Psychiatrie / Psychiatrie / Psichiatria → `psychiatry`
+- Anästhesie / Anesthésiologie / Anestesia → `anesthesiology`
+- Notfallmedizin / Urgences / Pronto soccorso → `emergency-medicine`
+
+### Automated tests
+
+- Table-driven German/French/Italian month parsing.
+- Generic parser fixture tests for one German, one French, and one Italian synthetic page.
+- Department normalization display tests.
+
+### Manual checks
+
+- Ask native or fluent French/Italian speakers to review phrase coverage before treating real pages as reliable.
+
+---
+
+## Step G4.3. Expand official source registry nationally
+
+### Goal
+
+Broaden source coverage from German-speaking Switzerland to official sources across German-, French-, Italian-, English-, and mixed-language contexts.
+
+### Codex tasks
+
+Update `packages/sources/sources.yaml` with official hospital, university, and student-association candidates only.
+
+Every source must include:
+
+- `sourceLanguage`
+- `region`
+- `expectedParser`
+- `fetchMode`
+- `priority`
+- `status`
+- notes explaining why it is included
+
+Do not scrape or include:
+
+- login-only pages
+- private documents
+- email-only information not publicly posted
+- unofficial pages
+- pages where placement relevance cannot be explained in notes
+
+### Automated tests
+
+- Duplicate IDs fail.
+- Duplicate URLs fail.
+- Invalid canton/language/region fails.
+- Candidate sources require notes.
+- Non-German sources require `sourceLanguage` and `region`.
+
+### Manual checks
+
+For every new official source:
+
+- Is it public?
+- Is it official?
+- Is medical-student placement relevance plausible?
+- Is the fetch mode correct?
+- Should the source remain `candidate` or `needs-review`?
+
+---
+
+## Step G4.4. Add source coverage report
+
+### Goal
+
+Make registry coverage auditable before broad crawling starts.
+
+### Codex tasks
+
+Generate:
+
+```txt
+data/current/source-coverage.json
+data/current/source-coverage.md
+```
+
+Reports must include:
+
+- counts by canton
+- counts by `sourceLanguage`
+- counts by `region`
+- counts by `status`
+- counts by `priority`
+- manual verification list
+- special fetch mode list
+
+Expose report artifacts in static output if easy.
+
+### Automated tests
+
+- Report generator summarizes source counts correctly.
+- Manual/PDF/Playwright fetch modes appear in the special fetch mode list.
+
+### Manual checks
+
+- Maintainer can use the report as a source-review checklist.
+
+---
+
+# Phase G5 — Multilingual Reliability and Sparse-Information Audit
+
+## Step G5.1. Add reliability audit report
+
+### Goal
+
+Prevent broad multilingual source coverage from looking more reliable than it is.
+
+### Codex tasks
+
+Generate:
+
+```txt
+data/current/reliability-audit.json
+data/current/reliability-audit.md
+```
+
+The report must compare the full source registry against generated placement records and include:
+
+- phase A-G status checks
+- source counts by language and region
+- placement counts by language and region
+- source-only language groups
+- sparse placement counts
+- risky auto-published counts
+- manual verification counts
+
+Rules:
+
+- Non-German real sources should remain source-only until crawled fixtures/native-language checks exist.
+- Low-confidence and sparse records must remain review-needed.
+- No source should be promoted to verified just because it is official.
+
+### Automated tests
+
+- Synthetic multilingual source-only case is reported.
+- Sparse placement records are flagged.
+- Risky auto-published records are counted.
+
+### Manual checks
+
+- Review `reliability-audit.md` before enabling scheduled crawling.
+- Confirm French/Italian/mixed sources are clearly labeled as pending manual verification until checked.
+
+---
+
+## Step G5.2. Standardize user-facing labels
+
+### Goal
+
+Keep machine-readable enum values stable while making UI/report labels readable and consistent.
+
+### Codex tasks
+
+Display values like:
+
+- `not-specified` → `Not specified`
+- `needs-human-review` → `Needs human review`
+- `available-from` → `Available from`
+- `fully-booked-until` → `Fully booked until`
+
+Do not change the underlying JSON enum values.
+
+### Automated tests
+
+- Filter option keeps `value="not-specified"` but displays `Not specified`.
+- Badges and detail fields use display labels.
+
+### Manual checks
+
+- Scan static HTML for inconsistent user-facing casing.
+
+---
+
+# Phase G6 — Application Lead-Time Intelligence
+
+## Step G6.1. Add lead-time schemas
+
+### Goal
+
+Track how far before a desired start month students usually need to apply, without presenting estimates as facts.
+
+### Codex tasks
+
+Add:
+
+- `LeadTimeEvidenceSchema`
+- `LeadTimeSummarySchema`
+
+Support evidence types:
+
+- `explicit-source`
+- `historical-observed`
+- `student-reported`
+- `hospital-confirmed`
+- `estimated`
+
+Add placement fields only if necessary and keep them backward compatible:
+
+- `explicitApplicationLeadTimeMonths`
+- `observedMonthsAhead`
+- `leadTimeSummaryId`
+
+### Automated tests
+
+- Lead-time evidence validates.
+- Lead-time summary validates.
+- Older placement records still validate.
+
+### Manual checks
+
+- Confirm maintainers understand the difference between evidence and recommendation.
+
+---
+
+## Step G6.2. Parse multilingual explicit lead-time phrases
+
+### Goal
+
+Extract explicit application lead-time statements from public source text.
+
+### Codex tasks
+
+Support phrases such as:
+
+German:
+
+- `ein Jahr im Voraus`
+- `12 Monate im Voraus`
+- `18 Monate im Voraus`
+- `Bewerbungen frühestens/spätestens X Monate vor Beginn`
+
+French:
+
+- `12 mois à l'avance`
+- `un an à l'avance`
+- `18 mois avant le début`
+
+Italian:
+
+- `12 mesi di anticipo`
+- `un anno prima`
+- `18 mesi prima dell'inizio`
+
+### Automated tests
+
+- Table-driven multilingual lead-time phrase parsing.
+- Negative cases where no lead time is present.
+
+### Manual checks
+
+- Native-language review for French/Italian wording before relying on real pages.
+
+---
+
+## Step G6.3. Generate historical lead-time evidence and summaries
+
+### Goal
+
+Use dated availability observations as low-confidence evidence, not as recommendations by themselves.
+
+### Codex tasks
+
+For records with `availableFrom` or `fullyBookedUntil`:
+
+- compute months between `lastChecked`/`observedAt` and target start month
+- store as `LeadTimeEvidence` with `evidenceType = historical-observed`
+- do not overinterpret one observation as a recommendation
+
+For each stable placement key, summarize evidence:
+
+- `hospital-confirmed` overrides all
+- `explicit-source` has highest normal priority
+- historical observations provide median/range
+- student-reported evidence is lower confidence
+- estimated values must be low confidence
+
+Generate:
+
+```txt
+data/current/lead-time-evidence.json
+data/current/lead-time-summary.json
+```
+
+### Automated tests
+
+- Month difference calculation.
+- Historical observation evidence generation.
+- Summarizer priority rules.
+- Fewer than 3 historical observations remain low confidence.
+
+### Manual checks
+
+- Check that empty lead-time files are acceptable when current records have no evidence.
+- Confirm no estimated lead-time recommendation appears as a fact.
+
+---
+
+## Step G6.4. Display lead-time evidence in frontend and review reports
+
+### Goal
+
+Show lead-time information carefully and visibly mark estimate quality.
+
+### Codex tasks
+
+On placement detail pages show:
+
+- explicit lead time if the source states it
+- observed months ahead if derived from availability history
+- recommended apply-ahead window only if confidence is medium/high
+- labels such as `explicitly stated by source` or `estimated from public page history`
+
+Review-needed should flag:
+
+- lead time greater than 24 months
+- availability date in the past
+- source says fully booked but parser marks available
+- estimated recommendation based on fewer than 3 observations
+
+### Automated tests
+
+- Frontend renders explicit and estimated lead time differently.
+- Low-confidence estimates are warning-labeled.
+- Review report includes lead-time warnings.
+
+### Manual checks
+
+- Students should not mistake low-confidence estimates for hospital guidance.
+- Do not enable user-submitted lead-time reports yet.
+
+---
+
 # Phase H — GitHub Actions Automation
 
 ## Step H1. CI workflow
@@ -1452,7 +1899,12 @@ pnpm typecheck
 pnpm lint
 pnpm test
 pnpm build
+pnpm source:coverage -- --sources packages/sources/sources.yaml --out data/current
+pnpm reliability:audit -- --data data/current --sources packages/sources/sources.yaml --out data/current
+pnpm lead-time:build -- --data data/current
 ```
+
+CI must treat generated report commands as validation of report code, but it should not automatically commit generated data during pull-request checks.
 
 ---
 
@@ -1482,17 +1934,23 @@ Workflow:
 2. setup Node/pnpm
 3. install
 4. run tests
-5. run crawler
-6. build data
-7. generate review report
-8. commit updated data or upload artifact
-9. optionally open PR instead of pushing directly
+5. validate source registry
+6. generate source coverage report
+7. run crawler
+8. build data
+9. generate lead-time evidence and summary
+10. generate review-needed report
+11. generate reliability audit
+12. build static site
+13. commit updated data or upload artifact
+14. optionally open PR instead of pushing directly
 
 Recommended early behavior:
 
 - open PR with data changes
 - human reviews PR
 - merge after sanity check
+- never push directly to the default branch from a scheduled crawl
 
 ### Automated tests
 
@@ -1502,6 +1960,10 @@ Local equivalent:
 pnpm test
 pnpm crawl --dry-run
 pnpm build:data
+pnpm lead-time:build -- --data data/current
+pnpm review:report -- --data data/current --out data/current/review-needed.md
+pnpm source:coverage -- --sources packages/sources/sources.yaml --out data/current
+pnpm reliability:audit -- --data data/current --sources packages/sources/sources.yaml --out data/current
 ```
 
 ### Manual checks
@@ -1509,9 +1971,13 @@ pnpm build:data
 Before enabling schedule:
 
 - Confirm crawl frequency is conservative.
-- Confirm all source pages are public.
+- Confirm all scheduled-crawled source pages are public and official.
+- Confirm non-German and mixed-language sources have native-language/manual review coverage.
+- Confirm source-only languages remain clearly labeled if they have no parsed records.
+- Confirm lead-time estimates are not displayed as fact.
 - Confirm generated PR is understandable.
 - Confirm failed sources do not break the whole run.
+- Confirm `reliability-audit.md`, `source-coverage.md`, and `review-needed.md` are usable by maintainers.
 
 ### Codex stop
 
@@ -1559,6 +2025,8 @@ Before public deployment:
 
 - Review liability disclaimer.
 - Review data accuracy for first 20–30 records.
+- Review source coverage and reliability audit for all languages represented.
+- Review lead-time display labels for explicit vs estimated data.
 - Ask at least 2 medical students to test.
 - Confirm no login-only or private data was used.
 - Confirm source links work.
@@ -2010,12 +2478,16 @@ Manual validation:
 
 Must have:
 
-- 30–50 source URLs
+- 30–50 official source URLs across German/French/Italian/mixed-language regions where possible
 - 5 hospital-specific parsers
+- multilingual schema fields and parser language packs
 - static frontend
 - confidence badges
 - source detail pages
 - review-needed report
+- source coverage report
+- reliability audit report
+- lead-time evidence/summary files, even if empty
 - GitHub issue feedback templates
 - CI passing
 - scheduled crawl disabled or PR-only
@@ -2024,7 +2496,10 @@ Manual validation:
 
 - 2–3 medical students test UX
 - maintainer reviews all high-confidence records
+- maintainer reviews all non-German source-only coverage labels
+- native/fluent reviewer checks at least representative French and Italian source wording before publishing extracted records from those languages
 - no private/non-public data included
+- no lead-time estimate is shown as a hospital fact
 
 ---
 
@@ -2037,6 +2512,9 @@ Must have:
 - generated PR workflow
 - change detection
 - parser health report
+- source coverage report
+- reliability audit report
+- lead-time report generation
 - at least 10 parser regression tests based on real pages
 - deployment docs
 
@@ -2045,6 +2523,8 @@ Manual validation:
 - monitor 2–4 scheduled runs
 - check noise level in changes
 - check source pages are not hit too often
+- confirm generated PRs make multilingual/source-only/review-needed status obvious
+- confirm lead-time evidence remains low confidence unless explicit or hospital-confirmed
 
 ---
 
@@ -2053,6 +2533,7 @@ Manual validation:
 Must have:
 
 - structured feedback via GitHub Issues or form
+- schema support for future student-reported lead-time evidence
 - manual review guide
 - feedback-to-regression-test workflow
 - public changelog
@@ -2076,6 +2557,7 @@ Must have:
 - documented maintainer workflow
 - source onboarding guide
 - hospital feed schema draft
+- hospital-confirmed lead-time evidence path
 - audit trail for corrections
 - exportable open dataset
 
@@ -2151,31 +2633,49 @@ Implement Phase F2 and F3. Parse snapshots into placements.json, sources.json, c
 Implement Phase G1–G3. Build a static frontend that loads data/current/placements.json and shows filters, source links, confidence badges, record detail, and review warnings. Add component tests with sample data.
 ```
 
-## Prompt 11 — Add CI and scheduled crawl PR workflow
+## Prompt 11 — Add multilingual support and source expansion
 
 ```txt
-Implement Phase H1 and H2. Add CI and a scheduled crawl workflow, but configure scheduled crawl to open a PR or upload artifacts rather than pushing directly. Include manual workflow_dispatch. Keep crawl frequency conservative.
+Implement Phase G4. Add multilingual schema fields, parser language packs for German/French/Italian/English, department normalization across languages, expanded official source registry coverage, source validation tests, and source coverage reports. Use synthetic parser fixtures; do not add scheduled crawling or LLM extraction.
 ```
 
-## Prompt 12 — Add deployment
+## Prompt 12 — Add multilingual reliability audit
+
+```txt
+Implement Phase G5. Add a reliability audit comparing the full source registry against generated placement data. Flag source-only languages, sparse placement records, risky auto-published records, and manual verification queues. Standardize user-facing enum labels while keeping JSON enum values unchanged. Run typecheck, lint, tests, and build.
+```
+
+## Prompt 13 — Add lead-time intelligence
+
+```txt
+Implement Phase G6. Add lead-time evidence and summary schemas, multilingual explicit lead-time parsing, historical observed lead-time evidence generation, lead-time summary files, frontend labels for explicit vs estimated lead time, and review-needed warnings. Do not enable user-submitted lead-time reports or scheduled crawling.
+```
+
+## Prompt 14 — Add CI and scheduled crawl PR workflow
+
+```txt
+Implement Phase H1 and H2. Add CI and a scheduled crawl workflow, but configure scheduled crawl to open a PR or upload artifacts rather than pushing directly. Include manual workflow_dispatch. Keep crawl frequency conservative. The workflow must generate source coverage, lead-time files, review-needed, reliability audit, and static site artifacts. Pause before enabling any scheduled trigger.
+```
+
+## Prompt 15 — Add deployment
 
 ```txt
 Implement Phase H3. Add static deployment configuration and docs for GitHub Pages or Cloudflare Pages. Include rollback instructions and a way to disable scheduled crawling quickly.
 ```
 
-## Prompt 13 — Add feedback templates
+## Prompt 16 — Add feedback templates
 
 ```txt
 Implement Phase I1–I3. Add GitHub issue templates, feedback schema, and docs for converting accepted feedback into parser regression tests. Do not add backend or user accounts yet.
 ```
 
-## Prompt 14 — Prepare partnership docs
+## Prompt 17 — Prepare partnership docs
 
 ```txt
 Implement Phase L1 and L2. Add public disclaimer, data policy, governance notes, and partnership packet. Keep language careful: this is an open index of public and community-confirmed information, not an official placement guarantee.
 ```
 
-## Prompt 15 — Backend planning only
+## Prompt 18 — Backend planning only
 
 ```txt
 Create a backend-upgrade design document based on Phase J and K. Do not implement backend. Include database schema draft, API routes, auth roles, and hospital official feed import workflow.
@@ -2196,6 +2696,10 @@ Use this checklist before any public release.
 - [ ] Contact-only pages are not displayed as available placements.
 - [ ] Old/outdated pages are marked.
 - [ ] University-specific priority notes are preserved.
+- [ ] Non-German extracted records have native/fluent language review or remain needs-review.
+- [ ] Source-only languages are clearly labeled and not implied to have parsed coverage.
+- [ ] Lead-time estimates are labeled as explicit, historical observed, hospital-confirmed, student-reported, or estimated.
+- [ ] Estimated lead-time recommendations based on fewer than 3 observations are not displayed as medium/high confidence.
 
 ## Legal/privacy
 
@@ -2213,6 +2717,9 @@ Use this checklist before any public release.
 - [ ] CI passes.
 - [ ] Crawl frequency conservative.
 - [ ] Parser health report acceptable.
+- [ ] Source coverage report acceptable.
+- [ ] Reliability audit acceptable.
+- [ ] Lead-time evidence and summary files validate.
 - [ ] Generated data validates.
 - [ ] Deployment rollback documented.
 
@@ -2221,6 +2728,8 @@ Use this checklist before any public release.
 - [ ] Swiss medical student can use the table without explanation.
 - [ ] Search/filter works on mobile.
 - [ ] Confidence and review status are understandable.
+- [ ] Language/region filters are understandable.
+- [ ] `Not specified` and other enum labels are displayed consistently.
 - [ ] Feedback path is obvious.
 - [ ] CSV export works.
 
@@ -2239,6 +2748,9 @@ source registry
 → snapshots
 → static data
 → static frontend
+→ multilingual source expansion
+→ source coverage and reliability audit
+→ lead-time intelligence
 → CI
 → cautious scheduled crawl
 → feedback

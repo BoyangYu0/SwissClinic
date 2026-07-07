@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  entities: 7.0.1
+
 importers:
 
   .:
@@ -21,11 +24,35 @@ importers:
         specifier: ^3.2.4
         version: 3.2.6(@types/node@24.13.2)(yaml@2.9.0)
 
-  apps/web: {}
+  apps/web:
+    dependencies:
+      '@scpi/schema':
+        specifier: workspace:*
+        version: link:../../packages/schema
 
-  apps/worker: {}
+  apps/worker:
+    dependencies:
+      '@scpi/parsers':
+        specifier: workspace:*
+        version: link:../../packages/parsers
+      '@scpi/schema':
+        specifier: workspace:*
+        version: link:../../packages/schema
+      '@scpi/sources':
+        specifier: workspace:*
+        version: link:../../packages/sources
+      '@scpi/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
 
-  packages/parsers: {}
+  packages/parsers:
+    dependencies:
+      '@scpi/schema':
+        specifier: workspace:*
+        version: link:../schema
+      '@scpi/utils':
+        specifier: workspace:*
+        version: link:../utils
 
   packages/schema:
     dependencies:
@@ -44,6 +71,9 @@ importers:
 
   packages/utils:
     dependencies:
+      '@scpi/schema':
+        specifier: workspace:*
+        version: link:../schema
       cheerio:
         specifier: ^1.2.0
         version: 1.2.0
@@ -506,14 +536,6 @@ packages:
 
   encoding-sniffer@0.2.1:
     resolution: {integrity: sha512-5gvq20T6vfpekVtqrYQsSCFZ1wEg5+wW0/QaZMWkFr6BqD3NfKs0rLCx4rrVlSWJeZb5NBJgVLswK/w2MWU+Gw==}
-
-  entities@4.5.0:
-    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
-    engines: {node: '>=0.12'}
-
-  entities@6.0.1:
-    resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
-    engines: {node: '>=0.12'}
 
   entities@7.0.1:
     resolution: {integrity: sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==}
@@ -1061,7 +1083,7 @@ snapshots:
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
-      entities: 4.5.0
+      entities: 7.0.1
 
   domelementtype@2.3.0: {}
 
@@ -1079,10 +1101,6 @@ snapshots:
     dependencies:
       iconv-lite: 0.6.3
       whatwg-encoding: 3.1.1
-
-  entities@4.5.0: {}
-
-  entities@6.0.1: {}
 
   entities@7.0.1: {}
 
@@ -1168,7 +1186,7 @@ snapshots:
 
   parse5@7.3.0:
     dependencies:
-      entities: 6.0.1
+      entities: 7.0.1
 
   pathe@2.0.3: {}
 

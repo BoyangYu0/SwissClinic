@@ -1,32 +1,54 @@
-- id: ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr
-  institutionName: "Kantonsspital Winterthur"
+- id: inselspital-bern-medical-students
+  institutionName: "Inselspital Bern"
   institutionType: "hospital"
-  canton: "ZH"
-  city: "Winterthur"
+  canton: "BE"
+  city: "Bern"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSW page explicitly covering Unterassistenz, Famulatur, and Wahlstudienjahr; availability and departments need manual review."
-  priority: 1
-  status: "candidate"
-
-- id: luks-luzern-universitaere-lehre
-  institutionName: "Luzerner Kantonsspital"
-  institutionType: "hospital"
-  canton: "LU"
-  city: "Luzern"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre"
+    - url: "https://www.insel.ch/de/lehre-und-forschung/medizinische-lehre"
       pageType: "hospital-medical-student-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official LUKS university teaching page mentions human medicine students; include as a candidate until a direct Unterassistenz page is found."
+  notes: "Official Inselspital medical teaching page; candidate until direct Unterassistenz/Wahlstudienjahr details and public crawlability are manually confirmed."
+  priority: 1
+  status: "needs-review"
+
+- id: inselgruppe-bern-career-education
+  institutionName: "Insel Gruppe"
+  institutionType: "clinic-group"
+  canton: "BE"
+  city: "Bern"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.inselgruppe.ch/de/jobs-karriere/ausbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Insel Gruppe education/career entry point; include to discover medical-student placement subpages, but verify relevance before publication."
+  priority: 2
+  status: "needs-review"
+
+- id: unibe-medizin-studium
+  institutionName: "Universitaet Bern Medizinische Fakultaet"
+  institutionType: "university"
+  canton: "BE"
+  city: "Bern"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.medizin.unibe.ch/studium/index_ger.html"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official University of Bern medicine study page; useful for Wahlstudienjahr context and official links, but placement-specific content needs manual verification."
   priority: 2
   status: "candidate"
 
@@ -36,13 +58,15 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/"
       pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ medical studies overview from the education section; useful parent page for placement-related department pages."
+  notes: "Official USZ medical studies overview; parent page for multiple clinical placement department pages."
   priority: 1
   status: "candidate"
 
@@ -52,13 +76,15 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/unterassistenzen-famulatur-der-klinik-fuer-neuroradiologie/"
       pageType: "hospital-placement-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ page explicitly names Unterassistenzen and Famulatur for neuroradiology; extract details after manual review."
+  notes: "Official USZ page explicitly naming Unterassistenzen and Famulatur; keep candidate until current availability and application details are reviewed."
   priority: 1
   status: "candidate"
 
@@ -68,13 +94,15 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/"
       pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ department page in the medical studies section; candidate for internal medicine placement/application information."
+  notes: "Official USZ medicine department page in the medical studies section; candidate for department-specific placement details."
   priority: 2
   status: "candidate"
 
@@ -84,13 +112,15 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/"
       pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ surgery page in the medical studies section; include to check for clinical placement details."
+  notes: "Official USZ surgery page in the medical studies section; placement relevance should be manually checked."
   priority: 2
   status: "candidate"
 
@@ -100,13 +130,15 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/"
       pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ anaesthesiology page in the medical studies section; candidate for placement and application data."
+  notes: "Official USZ anaesthesiology page in the medical studies section; candidate until current student placement content is reviewed."
   priority: 2
   status: "candidate"
 
@@ -116,30 +148,16 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/"
       pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
+      expectedParser: "usz"
       fetchMode: "html"
-  notes: "Official USZ gynaecology page in the medical studies section; candidate for placement and application data."
+  notes: "Official USZ gynaecology page in the medical studies section; include conservatively for placement review."
   priority: 2
-  status: "candidate"
-
-- id: usz-zuerich-neurologie-medizinstudium
-  institutionName: "Universitaetsspital Zuerich"
-  institutionType: "hospital"
-  canton: "ZH"
-  city: "Zuerich"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/neurologie/"
-      pageType: "hospital-medical-student-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official USZ neurology page in the medical studies section; candidate for clinical placement information."
-  priority: 3
   status: "candidate"
 
 - id: usz-zuerich-radiologie-medizinstudium
@@ -148,14 +166,124 @@
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/"
       pageType: "hospital-medical-student-page"
+      expectedParser: "usz"
+      fetchMode: "html"
+  notes: "Official USZ radiology page in the medical studies section; student-placement fields need manual review."
+  priority: 3
+  status: "candidate"
+
+- id: stadtspital-zuerich-karriere-ausbildung
+  institutionName: "Stadtspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.stadt-zuerich.ch/stadtspital/de/index/jobs-karriere/ausbildung.html"
+      pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official USZ radiology page in the medical studies section; candidate for clinical placement information."
-  priority: 3
+  notes: "Official Stadtspital Zurich education page; include as candidate until Unterassistenz/PJ relevance is confirmed on public subpages."
+  priority: 2
+  status: "needs-review"
+
+- id: ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr
+  institutionName: "Kantonsspital Winterthur"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Winterthur"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/"
+      pageType: "hospital-placement-page"
+      expectedParser: "ksw"
+      fetchMode: "html"
+  notes: "Official KSW page explicitly covering Unterassistenz, Famulatur, and Wahlstudienjahr; availability and departments need manual review."
+  priority: 1
+  status: "candidate"
+
+- id: uzh-medizin-studium
+  institutionName: "Universitaet Zuerich Medizinische Fakultaet"
+  institutionType: "university"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.med.uzh.ch/de/Medizinstudium.html"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official UZH medical studies page; use for official curriculum/placement links, but do not publish placement facts without manual confirmation."
+  priority: 2
+  status: "candidate"
+
+- id: usb-basel-career-education
+  institutionName: "Universitaetsspital Basel"
+  institutionType: "hospital"
+  canton: "BS"
+  city: "Basel"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.unispital-basel.ch/jobs-karriere/ausbildung-studium"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USB education/study page; likely relevant entry point, but direct Unterassistenz details need manual verification."
+  priority: 2
+  status: "needs-review"
+
+- id: unibas-medizin-studium
+  institutionName: "Universitaet Basel Medizinische Fakultaet"
+  institutionType: "university"
+  canton: "BS"
+  city: "Basel"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://medizin.unibas.ch/de/studium/"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official University of Basel medicine study page; include for possible Wahlstudienjahr and clinical curriculum source links."
+  priority: 2
+  status: "candidate"
+
+- id: luks-luzern-universitaere-lehre
+  institutionName: "Luzerner Kantonsspital"
+  institutionType: "hospital"
+  canton: "LU"
+  city: "Luzern"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official LUKS university teaching page mentioning human medicine students; direct Unterassistenz availability needs manual review."
+  priority: 2
   status: "candidate"
 
 - id: ksa-aarau-unterassistenz-stellen
@@ -164,13 +292,15 @@
   canton: "AG"
   city: "Aarau"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen"
       pageType: "hospital-placement-index"
-      expectedParser: "generic"
+      expectedParser: "ksa"
       fetchMode: "html"
-  notes: "Official KSA Unterassistenz Stellen index; likely entry point for department-specific placement pages."
+  notes: "Official KSA Unterassistenz Stellen index; likely parent for department-specific pages, with details to review manually."
   priority: 1
   status: "candidate"
 
@@ -180,78 +310,16 @@
   canton: "AG"
   city: "Aarau"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua"
       pageType: "hospital-placement-page"
-      expectedParser: "generic"
+      expectedParser: "ksa"
       fetchMode: "html"
-  notes: "Official KSA general information page for Unterassistenz; include for application rules and contributor-friendly context."
+  notes: "Official KSA general information page for Unterassistenz; include for rules, duration, salary, and application context after review."
   priority: 1
-  status: "candidate"
-
-- id: ksa-aarau-unterassistenz-3534
-  institutionName: "Kantonsspital Aarau"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Aarau"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-3534"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
-  priority: 2
-  status: "candidate"
-
-- id: ksa-aarau-unterassistenz-4260
-  institutionName: "Kantonsspital Aarau"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Aarau"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4260"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
-  priority: 2
-  status: "candidate"
-
-- id: ksa-aarau-unterassistenz-4273
-  institutionName: "Kantonsspital Aarau"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Aarau"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4273"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
-  priority: 2
-  status: "candidate"
-
-- id: ksa-aarau-unterassistenz-4282
-  institutionName: "Kantonsspital Aarau"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Aarau"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.ksa.ch/de/gruppe/angebot/unterassistenz-stellen-4282"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSA offer URL containing Unterassistenz Stellen; department and availability details need manual review."
-  priority: 2
   status: "candidate"
 
 - id: ksb-baden-unterassistenzen-overview
@@ -260,13 +328,15 @@
   canton: "AG"
   city: "Baden"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.kantonsspitalbaden.ch/jobs-karriere/aus-und-weiterbildung/aerztinnen-aerzte/unterassistenzen"
       pageType: "hospital-placement-index"
-      expectedParser: "generic"
+      expectedParser: "ksb"
       fetchMode: "html"
-  notes: "Official KSB Unterassistenzen overview page; include as parent for department-specific postings."
+  notes: "Official KSB Unterassistenzen overview page; include as parent for department-specific postings and verify current availability manually."
   priority: 1
   status: "candidate"
 
@@ -276,13 +346,15 @@
   canton: "AG"
   city: "Baden"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100"
       pageType: "hospital-placement-page"
-      expectedParser: "generic"
+      expectedParser: "ksb"
       fetchMode: "html"
-  notes: "Official KSB job page for Unterassistentin Innere Medizin; availability may reflect a live posting and needs review."
+  notes: "Official KSB job page for Unterassistentin Innere Medizin; posting availability may change and requires review before publication."
   priority: 1
   status: "candidate"
 
@@ -292,77 +364,51 @@
   canton: "AG"
   city: "Baden"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100"
       pageType: "hospital-placement-page"
-      expectedParser: "generic"
+      expectedParser: "ksb"
       fetchMode: "html"
-  notes: "Official KSB job page for Unterassistentin Chirurgie; availability may reflect a live posting and needs review."
+  notes: "Official KSB job page for Unterassistentin Chirurgie; crawl results should be treated as live-posting data and manually checked."
   priority: 1
   status: "candidate"
 
-- id: ksb-baden-unterassistentin-anaesthesie
-  institutionName: "Kantonsspital Baden"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Baden"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-anaesthesie-100"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSB job page for Unterassistentin Anaesthesie; availability may reflect a live posting and needs review."
-  priority: 2
-  status: "candidate"
-
-- id: ksb-baden-unterassistentin-notfallzentrum
-  institutionName: "Kantonsspital Baden"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Baden"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-interdisziplinaeres-notfallzentrum-100"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSB job page for Unterassistentin in the interdisciplinary emergency centre; availability needs review."
-  priority: 2
-  status: "candidate"
-
-- id: ksb-baden-unterassistentin-paediatrie
-  institutionName: "Kantonsspital Baden"
-  institutionType: "hospital"
-  canton: "AG"
-  city: "Baden"
-  language: "de"
-  country: "CH"
-  sourceUrls:
-    - url: "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-paediatrie-100"
-      pageType: "hospital-placement-page"
-      expectedParser: "generic"
-      fetchMode: "html"
-  notes: "Official KSB job page for Unterassistentin Paediatrie; availability may reflect a live posting and needs review."
-  priority: 2
-  status: "candidate"
-
-- id: kssg-stgallen-h-och-orthopaedie-unterassistenzstellen
+- id: kssg-stgallen-aerztliche-ausbildung
   institutionName: "Kantonsspital St. Gallen"
   institutionType: "hospital"
   canton: "SG"
   city: "St. Gallen"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.kssg.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSSG physician education page; include as candidate for Unterassistenz links, but verify direct medical student placement details."
+  priority: 2
+  status: "needs-review"
+
+- id: kssg-stgallen-h-och-orthopaedie-unterassistenzstellen
+  institutionName: "Kantonsspital St. Gallen / H-OCH"
+  institutionType: "hospital"
+  canton: "SG"
+  city: "St. Gallen"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.h-och.ch/orthopaedie-traumatologie/karriere/unterassistenzstellen/"
       pageType: "hospital-placement-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official H-OCH/KSSG-related orthopaedics and traumatology page explicitly listing Unterassistenzstellen; affiliation and details need review."
+  notes: "Official H-OCH orthopaedics/traumatology page explicitly listing Unterassistenzstellen; institutional affiliation and availability need review."
   priority: 2
   status: "candidate"
 
@@ -372,15 +418,143 @@
   canton: "GR"
   city: "Chur"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten"
       pageType: "hospital-placement-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official KSGR page explicitly names Blockstudenten and Unterassistenten; include for placement rules and application details."
+  notes: "Official KSGR page explicitly names Blockstudenten and Unterassistenten; good candidate for rules and application details."
   priority: 1
   status: "candidate"
+
+- id: solothurner-spitaeler-aerztliche-ausbildung
+  institutionName: "Solothurner Spitaeler"
+  institutionType: "clinic-group"
+  canton: "SO"
+  city: "Solothurn"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.solothurnerspitaeler.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Solothurner Spitaeler physician education page; include as candidate and verify whether Unterassistenz placement information is public."
+  priority: 2
+  status: "needs-review"
+
+- id: spital-thurgau-aerztliche-ausbildung
+  institutionName: "Spital Thurgau"
+  institutionType: "clinic-group"
+  canton: "TG"
+  city: "Frauenfeld"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.stgag.ch/karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Spital Thurgau education page candidate; check manually for medical student placement relevance and public access."
+  priority: 2
+  status: "needs-review"
+
+- id: zuger-kantonsspital-ausbildung
+  institutionName: "Zuger Kantonsspital"
+  institutionType: "hospital"
+  canton: "ZG"
+  city: "Baar"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.zgks.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Zuger Kantonsspital education page; include as weak candidate until Unterassistenz/PJ relevance is verified."
+  priority: 3
+  status: "needs-review"
+
+- id: spital-schwyz-ausbildung
+  institutionName: "Spital Schwyz"
+  institutionType: "hospital"
+  canton: "SZ"
+  city: "Schwyz"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.spital-schwyz.ch/karriere/ausbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Spital Schwyz education/career page; candidate only, because direct clinical placement content needs manual confirmation."
+  priority: 3
+  status: "needs-review"
+
+- id: kantonsspital-uri-ausbildung
+  institutionName: "Kantonsspital Uri"
+  institutionType: "hospital"
+  canton: "UR"
+  city: "Altdorf"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksuri.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Kantonsspital Uri education page candidate; verify public medical student placement relevance before using extracted records."
+  priority: 3
+  status: "needs-review"
+
+- id: kantonsspital-obwalden-ausbildung
+  institutionName: "Kantonsspital Obwalden"
+  institutionType: "hospital"
+  canton: "OW"
+  city: "Sarnen"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksow.ch/karriere/ausbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Kantonsspital Obwalden career/education candidate; needs manual check for Unterassistenz or Famulatur content."
+  priority: 3
+  status: "needs-review"
+
+- id: kantonsspital-nidwalden-ausbildung
+  institutionName: "Kantonsspital Nidwalden"
+  institutionType: "hospital"
+  canton: "NW"
+  city: "Stans"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksnw.ch/karriere/ausbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Kantonsspital Nidwalden education/career candidate; include only for manual verification of placement relevance."
+  priority: 3
+  status: "needs-review"
 
 - id: spital-uster-chirurgie-unterassistenten-pdf
   institutionName: "Spital Uster"
@@ -388,6 +562,8 @@
   canton: "ZH"
   city: "Uster"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf"
@@ -395,5 +571,311 @@
       expectedParser: "generic"
       fetchMode: "pdf"
   notes: "Official Spital Uster PDF programme for surgical-clinic Unterassistenten; PDF extraction and currentness need manual review."
+  priority: 3
+  status: "candidate"
+
+- id: chuv-lausanne-formation-medecine
+  institutionName: "Centre hospitalier universitaire vaudois"
+  institutionType: "hospital"
+  canton: "VD"
+  city: "Lausanne"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.chuv.ch/fr/chuv-home/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official CHUV formation entry point; include for stage/sous-assistanat discovery, but verify public medical student placement details manually."
+  priority: 1
+  status: "needs-review"
+
+- id: chuv-lausanne-medecins-formation
+  institutionName: "Centre hospitalier universitaire vaudois"
+  institutionType: "hospital"
+  canton: "VD"
+  city: "Lausanne"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.chuv.ch/fr/chuv-home/formation/formation-medicale"
+      pageType: "hospital-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official CHUV medical training page candidate; verify whether sous-assistanat/stage availability is public and current."
+  priority: 1
+  status: "needs-review"
+
+- id: unil-ecole-medecine-stages
+  institutionName: "Universite de Lausanne Ecole de medecine"
+  institutionType: "university"
+  canton: "VD"
+  city: "Lausanne"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html"
+      pageType: "university-clinical-stage-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official UNIL medical school stages page candidate; public scope and relation to hospital placements need manual review."
+  priority: 1
+  status: "needs-review"
+
+- id: hug-geneve-enseignement-formation
+  institutionName: "Hopitaux universitaires de Geneve"
+  institutionType: "hospital"
+  canton: "GE"
+  city: "Geneve"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.hug.ch/enseignement-formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official HUG teaching/training entry point; include as candidate for stage/sous-assistanat pages after manual verification."
+  priority: 1
+  status: "needs-review"
+
+- id: hug-geneve-stages
+  institutionName: "Hopitaux universitaires de Geneve"
+  institutionType: "hospital"
+  canton: "GE"
+  city: "Geneve"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.hug.ch/enseignement-formation/stages"
+      pageType: "hospital-clinical-stage-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official HUG stages page candidate; verify it specifically covers medical students and public application details before publication."
+  priority: 1
+  status: "needs-review"
+
+- id: unige-medecine-enseignement
+  institutionName: "Universite de Geneve Faculte de medecine"
+  institutionType: "university"
+  canton: "GE"
+  city: "Geneve"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.unige.ch/medecine/fr/enseignement/"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official UNIGE medical faculty teaching page; include for official clinical stage context, not as verified placement data."
+  priority: 2
+  status: "candidate"
+
+- id: hopital-valais-formation
+  institutionName: "Hopital du Valais"
+  institutionType: "clinic-group"
+  canton: "VS"
+  city: "Sion"
+  language: "fr"
+  sourceLanguage: "mixed"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.hopitalduvalais.ch/fr/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Hôpital du Valais formation page; bilingual/mixed region candidate requiring manual confirmation for medical-student stage content."
+  priority: 2
+  status: "needs-review"
+
+- id: hopital-riviera-chablais-formation
+  institutionName: "Hopital Riviera-Chablais"
+  institutionType: "hospital"
+  canton: "VD"
+  city: "Rennaz"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.hopitalrivierachablais.ch/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official HRC formation page candidate; verify public clinical stage or medical student placement details before crawling broadly."
+  priority: 2
+  status: "needs-review"
+
+- id: hfr-fribourg-formation
+  institutionName: "Hopital fribourgeois"
+  institutionType: "clinic-group"
+  canton: "FR"
+  city: "Fribourg"
+  language: "fr"
+  sourceLanguage: "mixed"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.h-fr.ch/fr/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official HFR formation page in a bilingual canton; candidate only until stage clinique/sous-assistanat relevance is verified."
+  priority: 2
+  status: "needs-review"
+
+- id: rhne-neuchatel-formation
+  institutionName: "Reseau hospitalier neuchatelois"
+  institutionType: "clinic-group"
+  canton: "NE"
+  city: "Neuchatel"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.rhne.ch/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official RHNe formation page candidate; verify whether public medical student stage information is present."
+  priority: 2
+  status: "needs-review"
+
+- id: hopital-jura-formation
+  institutionName: "Hopital du Jura"
+  institutionType: "clinic-group"
+  canton: "JU"
+  city: "Delemont"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.h-ju.ch/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Hôpital du Jura formation page candidate; medical student stage relevance needs manual verification."
+  priority: 3
+  status: "needs-review"
+
+- id: ehnv-nord-vaudois-formation
+  institutionName: "Etablissements hospitaliers du Nord vaudois"
+  institutionType: "clinic-group"
+  canton: "VD"
+  city: "Yverdon-les-Bains"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ehnv.ch/formation"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official eHnv formation page candidate; include conservatively pending manual check for medical student stages."
+  priority: 3
+  status: "needs-review"
+
+- id: eoc-ticino-formazione
+  institutionName: "Ente Ospedaliero Cantonale"
+  institutionType: "clinic-group"
+  canton: "TI"
+  city: "Bellinzona"
+  language: "it"
+  sourceLanguage: "it"
+  region: "it-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.eoc.ch/Formazione.html"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official EOC formation entry point; candidate for Ticino clinical placement information, with manual verification required."
+  priority: 1
+  status: "needs-review"
+
+- id: eoc-ticino-lavoro-formazione
+  institutionName: "Ente Ospedaliero Cantonale"
+  institutionType: "clinic-group"
+  canton: "TI"
+  city: "Bellinzona"
+  language: "it"
+  sourceLanguage: "it"
+  region: "it-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.eoc.ch/Lavoro-e-formazione.html"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official EOC work and training page; include for discovery of public stage/medical student pages, not as verified availability."
+  priority: 2
+  status: "needs-review"
+
+- id: usi-biomed-master-medicine
+  institutionName: "Universita della Svizzera italiana Faculty of Biomedical Sciences"
+  institutionType: "university"
+  canton: "TI"
+  city: "Lugano"
+  language: "en"
+  sourceLanguage: "en"
+  region: "it-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usi.ch/en/education/master/medicine"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USI medicine master page; English-language official source for Ticino medical education context, with placement details to verify manually."
+  priority: 2
+  status: "candidate"
+
+- id: usi-biomed-faculty
+  institutionName: "Universita della Svizzera italiana Faculty of Biomedical Sciences"
+  institutionType: "university"
+  canton: "TI"
+  city: "Lugano"
+  language: "it"
+  sourceLanguage: "it"
+  region: "it-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.biomed.usi.ch/it"
+      pageType: "university-medical-student-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official USI biomedical faculty site; include as candidate for medical education links, not as a verified placement source."
+  priority: 3
+  status: "candidate"
+
+- id: swimsa-exchanges
+  institutionName: "swimsa"
+  institutionType: "student-association"
+  canton: "BE"
+  city: "Bern"
+  language: "en"
+  sourceLanguage: "mixed"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://swimsa.ch/exchanges/"
+      pageType: "student-association-placement-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Swiss medical student association exchange page; include for cross-regional context, not as hospital-confirmed availability."
   priority: 3
   status: "candidate"

@@ -11,6 +11,8 @@ const validYaml = `
   canton: "LU"
   city: "Luzern"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://example.org/unterassistenz"
@@ -27,8 +29,7 @@ describe("loadSources", () => {
     const sources = await loadSources();
     const urlCount = sources.reduce((count, source) => count + source.sourceUrls.length, 0);
 
-    expect(urlCount).toBeGreaterThanOrEqual(20);
-    expect(urlCount).toBeLessThanOrEqual(30);
+    expect(urlCount).toBeGreaterThanOrEqual(45);
   });
 
   it("requires candidate entries in the checked-in registry to explain why they are included", async () => {
@@ -38,6 +39,26 @@ describe("loadSources", () => {
     );
 
     expect(candidatesWithoutUsefulNotes).toEqual([]);
+  });
+
+  it("requires non-German checked-in sources to include concrete language and region metadata", async () => {
+    const sources = await loadSources();
+    const nonGermanWithoutMetadata = sources.filter(
+      (source) =>
+        source.language !== "de" &&
+        (source.sourceLanguage === "unknown" || source.region === "unknown"),
+    );
+
+    expect(nonGermanWithoutMetadata).toEqual([]);
+  });
+
+  it("fails with readable messages for invalid language and region metadata", async () => {
+    const invalidYaml = validYaml
+      .replace('language: "de"', 'language: "es"')
+      .replace('region: "de-CH"', 'region: "es-CH"');
+    const filePath = await writeFixture("invalid-language-region.yaml", invalidYaml);
+
+    await expect(loadSources(filePath)).rejects.toThrow(/language|region/);
   });
 
   it("loads a valid source registry fixture", async () => {
@@ -60,6 +81,8 @@ describe("loadSources", () => {
   canton: "LU"
   city: "Luzern"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://example.org/unterassistenz"
@@ -75,6 +98,8 @@ describe("loadSources", () => {
   canton: "ZH"
   city: "Zuerich"
   language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
   country: "CH"
   sourceUrls:
     - url: "https://example.org/unterassistenz"

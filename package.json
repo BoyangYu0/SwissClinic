@@ -13,7 +13,12 @@
     "lint": "pnpm -r --if-present lint",
     "format": "biome format --write .",
     "crawl": "pnpm --filter @scpi/worker crawl",
-    "build:data": "pnpm --filter @scpi/worker build:data"
+    "build:data": "pnpm --filter @scpi/worker build:data",
+    "diff:snapshots": "pnpm --filter @scpi/worker diff:snapshots",
+    "review:report": "pnpm --filter @scpi/worker review:report",
+    "source:coverage": "pnpm --filter @scpi/worker source:coverage",
+    "lead-time:build": "pnpm --filter @scpi/worker lead-time:build",
+    "reliability:audit": "pnpm --filter @scpi/worker reliability:audit"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.5",

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+    "institutionName": "Kantonsspital Winterthur",
+    "institutionType": "hospital",
+    "canton": "ZH",
+    "city": "Winterthur",
+    "language": "de",
+    "country": "CH",
+    "sourceUrls": [
+      {
+        "url": "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/",
+        "pageType": "hospital-placement-page",
+        "expectedParser": "ksw",
+        "fetchMode": "html"
+      }
+    ],
+    "notes": "F1 smoke source.",
+    "priority": 1,
+    "status": "candidate",
+    "sourceLanguage": "de",
+    "region": "de-CH"
+  },
+  {
+    "id": "usz-zuerich-neuroradiologie-unterassistenzen-famulatur",
+    "institutionName": "Universitaetsspital Zuerich",
+    "institutionType": "hospital",
+    "canton": "ZH",
+    "city": "Zuerich",
+    "language": "de",
+    "country": "CH",
+    "sourceUrls": [
+      {
+        "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/unterassistenzen-famulatur-der-klinik-fuer-neuroradiologie/",
+        "pageType": "hospital-placement-page",
+        "expectedParser": "usz",
+        "fetchMode": "html"
+      }
+    ],
+    "notes": "F1 smoke source.",
+    "priority": 1,
+    "status": "candidate",
+    "sourceLanguage": "de",
+    "region": "de-CH"
+  },
+  {
+    "id": "ksa-aarau-unterassistenz-informationen",
+    "institutionName": "Kantonsspital Aarau",
+    "institutionType": "hospital",
+    "canton": "AG",
+    "city": "Aarau",
+    "language": "de",
+    "country": "CH",
+    "sourceUrls": [
+      {
+        "url": "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua",
+        "pageType": "hospital-placement-page",
+        "expectedParser": "ksa",
+        "fetchMode": "html"
+      }
+    ],
+    "notes": "F1 smoke source.",
+    "priority": 1,
+    "status": "candidate",
+    "sourceLanguage": "de",
+    "region": "de-CH"
+  }
+]

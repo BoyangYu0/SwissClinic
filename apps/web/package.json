@@ -4,9 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node dist/build-site.js",
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "biome check src tests"
+  },
+  "dependencies": {
+    "@scpi/schema": "workspace:*"
   }
 }

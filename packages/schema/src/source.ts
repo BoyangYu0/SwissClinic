@@ -47,6 +47,8 @@ export const SourceStatusSchema = z.enum([
 ]);
 
 export const SourceFetchModeSchema = z.enum(["html", "playwright", "pdf", "manual"]);
+export const SourceLanguageSchema = z.enum(["de", "fr", "it", "en", "mixed", "unknown"]);
+export const SourceRegionSchema = z.enum(["de-CH", "fr-CH", "it-CH", "mixed", "unknown"]);
 
 export const SourceUrlSchema = z.object({
   url: z.url(),
@@ -65,6 +67,8 @@ export const SourceRegistryEntrySchema = z.object({
   canton: z.enum(swissCantonCodes),
   city: z.string().min(1, "city is required"),
   language: z.enum(["de", "fr", "it", "en"]),
+  sourceLanguage: SourceLanguageSchema.default("unknown"),
+  region: SourceRegionSchema.default("unknown"),
   country: z.literal("CH"),
   sourceUrls: z.array(SourceUrlSchema).min(1, "sourceUrls must contain at least one URL"),
   notes: z.string().min(1, "notes are required"),

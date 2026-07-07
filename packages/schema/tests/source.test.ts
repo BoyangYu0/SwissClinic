@@ -24,7 +24,23 @@ const validSource = {
 
 describe("SourceRegistryEntrySchema", () => {
   it("accepts a valid source registry entry", () => {
-    expect(SourceRegistryEntrySchema.parse(validSource).id).toBe("luks-luzern-medizin");
+    const parsed = SourceRegistryEntrySchema.parse(validSource);
+
+    expect(parsed.id).toBe("luks-luzern-medizin");
+    expect(parsed.sourceLanguage).toBe("unknown");
+    expect(parsed.region).toBe("unknown");
+  });
+
+  it("accepts explicit multilingual metadata", () => {
+    const parsed = SourceRegistryEntrySchema.parse({
+      ...validSource,
+      language: "fr",
+      sourceLanguage: "mixed",
+      region: "mixed",
+    });
+
+    expect(parsed.sourceLanguage).toBe("mixed");
+    expect(parsed.region).toBe("mixed");
   });
 
   it("rejects invalid URLs", () => {

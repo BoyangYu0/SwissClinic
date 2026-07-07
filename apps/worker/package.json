@@ -8,7 +8,18 @@
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "biome check src tests",
-    "crawl": "echo \"Crawler command is not implemented yet.\"",
-    "build:data": "echo \"Static data builder is not implemented yet.\""
+    "crawl": "tsc -p tsconfig.json && node dist/crawl.js",
+    "build:data": "tsc -p tsconfig.json && node dist/build-static-data.js",
+    "diff:snapshots": "tsc -p tsconfig.json && node dist/diff-snapshots.js",
+    "review:report": "tsc -p tsconfig.json && node dist/review-report.js",
+    "source:coverage": "tsc -p tsconfig.json && node dist/source-coverage.js",
+    "lead-time:build": "tsc -p tsconfig.json && node dist/lead-time.js",
+    "reliability:audit": "tsc -p tsconfig.json && node dist/reliability-audit.js"
+  },
+  "dependencies": {
+    "@scpi/parsers": "workspace:*",
+    "@scpi/schema": "workspace:*",
+    "@scpi/sources": "workspace:*",
+    "@scpi/utils": "workspace:*"
   }
 }

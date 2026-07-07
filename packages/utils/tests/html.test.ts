@@ -106,6 +106,14 @@ describe("html utilities", () => {
     ).toEqual(["ua.koordination@example-spital.ch"]);
   });
 
+  it("does not treat responsive image asset names as email addresses", () => {
+    expect(
+      extractEmails(
+        "src=/assets/gespraech-interdisziplinaer@2x.55558371.jpg Kontakt ua@example-spital.ch",
+      ),
+    ).toEqual(["ua@example-spital.ch"]);
+  });
+
   it("extracts simple table captions, headers, and rows", () => {
     expect(extractTables(fixtureHtml)).toEqual([
       {

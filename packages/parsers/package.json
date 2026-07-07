@@ -14,5 +14,9 @@
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "biome check src tests"
+  },
+  "dependencies": {
+    "@scpi/schema": "workspace:*",
+    "@scpi/utils": "workspace:*"
   }
 }

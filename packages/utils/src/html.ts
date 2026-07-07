@@ -53,7 +53,13 @@ export function extractEmails(text: string): string[] {
   const emails = new Set<string>();
 
   for (const match of matches) {
-    emails.add(match.replace(/[),.;:]+$/g, "").toLowerCase());
+    const email = match.replace(/[),.;:]+$/g, "").toLowerCase();
+
+    if (isLikelyAssetPath(email)) {
+      continue;
+    }
+
+    emails.add(email);
   }
 
   return [...emails].sort();
@@ -193,4 +199,8 @@ function resolveHttpUrl(rawHref: string, baseUrl: string): string | null {
 function nullableText(text: string): string | null {
   const normalized = normalizeWhitespace(text);
   return normalized.length > 0 ? normalized : null;
+}
+
+function isLikelyAssetPath(value: string): boolean {
+  return /\.(?:avif|gif|jpe?g|png|svg|webp)$/i.test(value);
 }

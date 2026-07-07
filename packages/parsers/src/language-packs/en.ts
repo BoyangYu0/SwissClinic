@@ -1,0 +1,38 @@
+import type { LanguagePack } from "./types.js";
+
+export const enPack: LanguagePack = {
+  language: "en",
+  roleKeywords: ["clinical placement", "medical student", "elective", "internship"],
+  applicationKeywords: ["application", "apply", "contact", "form"],
+  availabilityKeywords: ["available", "available from", "immediately"],
+  unavailableKeywords: ["fully booked", "no places available"],
+  monthNames: {
+    january: "01",
+    february: "02",
+    march: "03",
+    april: "04",
+    may: "05",
+    june: "06",
+    july: "07",
+    august: "08",
+    september: "09",
+    october: "10",
+    november: "11",
+    december: "12",
+  },
+  durationPatterns: [/\b\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\s*(?:weeks|months)\b/i],
+  leadTimePatterns: [/\b(?:applications?\s+)?\d{1,2}\s+months?\s+in\s+advance\b/i],
+  departmentAliases: [
+    { normalized: "internal-medicine", names: ["Internal medicine"] },
+    { normalized: "surgery", names: ["Surgery"] },
+    { normalized: "pediatrics", names: ["Pediatrics", "Paediatrics"] },
+    { normalized: "gynecology", names: ["Gynecology", "Gynaecology"] },
+    { normalized: "psychiatry", names: ["Psychiatry"] },
+    { normalized: "anesthesiology", names: ["Anesthesia", "Anaesthesia", "Anesthesiology"] },
+    { normalized: "emergency-medicine", names: ["Emergency medicine", "Emergency department"] },
+    { normalized: "radiology", names: ["Radiology"] },
+    { normalized: "neuroradiology", names: ["Neuroradiology"] },
+    { normalized: "ophthalmology", names: ["Ophthalmology"] },
+    { normalized: "orthopedics", names: ["Orthopedics", "Orthopaedics", "Trauma"] },
+  ],
+};

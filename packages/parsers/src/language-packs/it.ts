@@ -1,0 +1,38 @@
+import type { LanguagePack } from "./types.js";
+
+export const itPack: LanguagePack = {
+  language: "it",
+  roleKeywords: ["tirocinio", "stage", "studente di medicina", "studenti di medicina"],
+  applicationKeywords: ["candidatura", "contatto", "formulario"],
+  availabilityKeywords: ["da subito", "disponibile", "posti disponibili", "posto disponibile"],
+  unavailableKeywords: ["occupato", "nessun posto disponibile", "posti esauriti"],
+  monthNames: {
+    gennaio: "01",
+    febbraio: "02",
+    marzo: "03",
+    aprile: "04",
+    maggio: "05",
+    giugno: "06",
+    luglio: "07",
+    agosto: "08",
+    settembre: "09",
+    ottobre: "10",
+    novembre: "11",
+    dicembre: "12",
+  },
+  durationPatterns: [/\b\d{1,2}\s*(?:a|-|–)\s*\d{1,2}\s*(?:settimane|mesi)\b/i],
+  leadTimePatterns: [/\bcandidatura\s+(?:con\s+)?\d{1,2}\s+mesi\s+di\s+anticipo\b/i],
+  departmentAliases: [
+    { normalized: "internal-medicine", names: ["Medicina interna"] },
+    { normalized: "surgery", names: ["Chirurgia"] },
+    { normalized: "pediatrics", names: ["Pediatria"] },
+    { normalized: "gynecology", names: ["Ginecologia"] },
+    { normalized: "psychiatry", names: ["Psichiatria"] },
+    { normalized: "anesthesiology", names: ["Anestesia", "Anestesiologia"] },
+    { normalized: "emergency-medicine", names: ["Pronto soccorso", "Medicina d'urgenza"] },
+    { normalized: "radiology", names: ["Radiologia"] },
+    { normalized: "neuroradiology", names: ["Neuroradiologia"] },
+    { normalized: "ophthalmology", names: ["Oftalmologia"] },
+    { normalized: "orthopedics", names: ["Ortopedia", "Traumatologia"] },
+  ],
+};

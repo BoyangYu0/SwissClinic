@@ -22,6 +22,8 @@ export const PlacementRoleTypeSchema = z.enum([
 ]);
 
 export const PlacementLanguageSchema = z.enum(["de", "fr", "it", "en", "unknown"]);
+export const PlacementSourceLanguageSchema = z.enum(["de", "fr", "it", "en", "mixed", "unknown"]);
+export const PlacementRegionSchema = z.enum(["de-CH", "fr-CH", "it-CH", "mixed", "unknown"]);
 
 export const PlacementAvailabilityStatusSchema = z.enum([
   "available",
@@ -75,6 +77,8 @@ export const PlacementRecordSchema = z
     canton: z.string().length(2).nullable(),
     city: NullableTextSchema,
     language: PlacementLanguageSchema,
+    sourceLanguage: PlacementSourceLanguageSchema.default("unknown"),
+    region: PlacementRegionSchema.default("unknown"),
 
     availabilityStatus: PlacementAvailabilityStatusSchema,
     availableFrom: NullableIsoMonthOrDateSchema,
@@ -82,12 +86,17 @@ export const PlacementRecordSchema = z
     durationMinWeeks: z.number().int().positive().nullable(),
     durationMaxWeeks: z.number().int().positive().nullable(),
     applicationLeadTimeMonths: z.number().int().nonnegative().nullable(),
+    explicitApplicationLeadTimeMonths: z.number().int().nonnegative().nullable().default(null),
+    observedMonthsAhead: z.number().int().nullable().default(null),
+    leadTimeSummaryId: NullableTextSchema.default(null),
 
     applicationMethod: PlacementApplicationMethodSchema,
     applicationUrl: NullableUrlSchema,
     contactEmail: NullableEmailSchema,
     contactName: NullableTextSchema,
 
+    originalDepartmentName: NullableTextSchema.default(null),
+    roleTypeOriginal: NullableTextSchema.default(null),
     eligibilityNotes: NullableTextSchema,
     languageRequirement: NullableTextSchema,
     compensation: NullableTextSchema,
@@ -100,6 +109,7 @@ export const PlacementRecordSchema = z
     lastChecked: z.string().datetime(),
 
     extractionMethod: PlacementExtractionMethodSchema,
+    extractionLanguage: PlacementLanguageSchema.default("unknown"),
     confidence: PlacementConfidenceSchema,
     reviewStatus: PlacementReviewStatusSchema,
     warnings: z.array(z.string().min(1)),

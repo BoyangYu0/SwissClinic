@@ -44,6 +44,14 @@ describe("PlacementRecordSchema", () => {
     const parsed = PlacementRecordSchema.parse(validMinimumRecord);
 
     expect(parsed.institutionName).toBe("Kantonsspital Winterthur");
+    expect(parsed.sourceLanguage).toBe("unknown");
+    expect(parsed.region).toBe("unknown");
+    expect(parsed.originalDepartmentName).toBeNull();
+    expect(parsed.roleTypeOriginal).toBeNull();
+    expect(parsed.extractionLanguage).toBe("unknown");
+    expect(parsed.explicitApplicationLeadTimeMonths).toBeNull();
+    expect(parsed.observedMonthsAhead).toBeNull();
+    expect(parsed.leadTimeSummaryId).toBeNull();
   });
 
   it("rejects invalid availableFrom values", () => {

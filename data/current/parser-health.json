@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-07-07T10:29:47.258Z",
+  "snapshotsDir": "C:\\Users\\Karl_\\AppData\\Local\\Temp\\scpi-f1-smoke\\snapshots",
+  "pagesCrawled": 3,
+  "pagesFailed": 0,
+  "recordsExtracted": 10,
+  "confidenceCounts": {
+    "high": 1,
+    "medium": 8,
+    "low": 1
+  },
+  "recordsNeedingReview": 9,
+  "parserCounts": {
+    "ksa": 1,
+    "ksw": 1,
+    "usz": 1
+  },
+  "failedPages": [],
+  "warnings": [
+    {
+      "sourceId": "ksa-aarau-unterassistenz-informationen",
+      "url": "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua",
+      "parserName": "ksa",
+      "warning": "ksa parser output for https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua needs human review."
+    },
+    {
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "url": "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/",
+      "parserName": "ksw",
+      "warning": "ksw parser output for https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/ needs human review."
+    }
+  ],
+  "sourceLanguageCounts": {
+    "de": 10
+  },
+  "regionCounts": {
+    "de-CH": 10
+  },
+  "reviewStatusCounts": {
+    "auto-published": 1,
+    "needs-human-review": 9
+  }
+}
