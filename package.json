@@ -9,7 +9,7 @@
   "scripts": {
     "build": "pnpm -r --if-present build",
     "test": "pnpm -r --if-present test",
-    "typecheck": "pnpm -r --if-present typecheck",
+    "typecheck": "pnpm -r --if-present build && pnpm -r --if-present typecheck",
     "lint": "pnpm -r --if-present lint",
     "format": "biome format --write .",
     "crawl": "pnpm --filter @scpi/worker crawl",
