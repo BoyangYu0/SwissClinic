@@ -1,0 +1,15 @@
+{
+  "sourceId": "stadtspital-zuerich-karriere-ausbildung",
+  "url": "https://www.stadt-zuerich.ch/stadtspital/de/index/jobs-karriere/ausbildung.html",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "b3967001437fa78624c3bb673d3476105c0862c7cc8920f2bc3a829c3d1e1cb6",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

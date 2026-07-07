@@ -1,0 +1,60 @@
+# Tiny local testing registry.
+#
+# This file is intentionally small so `pnpm crawl:local` does not crawl the
+# full national registry. Only include public, official hospital/university
+# pages. Do not add login-only pages, private documents, private emails, or
+# screenshots here.
+
+- id: local-ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr
+  institutionName: "Kantonsspital Winterthur"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Winterthur"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/"
+      pageType: "hospital-placement-page"
+      expectedParser: "ksw"
+      fetchMode: "html"
+  notes: "Official public KSW page used as a tiny local crawl example; verify current content manually before publishing generated records."
+  priority: 1
+  status: "candidate"
+
+- id: local-usz-zuerich-neuroradiologie-unterassistenzen-famulatur
+  institutionName: "Universitaetsspital Zuerich"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.usz.ch/bildung/aerzte/medizinstudium/unterassistenzen-famulatur-der-klinik-fuer-neuroradiologie/"
+      pageType: "hospital-placement-page"
+      expectedParser: "usz"
+      fetchMode: "html"
+  notes: "Official public USZ page used for local parser/pipeline smoke testing; keep candidate until manually reviewed."
+  priority: 1
+  status: "candidate"
+
+- id: local-unil-ecole-medecine-stages
+  institutionName: "Universite de Lausanne Ecole de medecine"
+  institutionType: "university"
+  canton: "VD"
+  city: "Lausanne"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "fr-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html"
+      pageType: "university-catalogue"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official public UNIL stages page included to exercise French metadata in local tests; do not treat extracted records as verified without native-language review."
+  priority: 2
+  status: "needs-review"

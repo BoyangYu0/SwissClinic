@@ -1,0 +1,66 @@
+{
+  "sourceId": "ksbl-baselland-karriere",
+  "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "c7c94144c68402a78ef5dc0791102e9c29dca1f3fc82ea131259217e2d9fed98",
+  "textHash": "1a18262f972afa73b01db385270d6b02408fc430caeb2a96b940155764736dcc",
+  "title": "Arbeiten im KSBL - Jobs",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Apotheke Ertragsmanagement Frauenklinik Gastronomie Grossbauprojekte Hauswirtschaft HNO Klinik IMC Informatik & Digitalisierung Innere Medizin Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Onkologie & Hämatologie OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 82 offene Stellen HNO Klinik Neurologin/Neurologe (FMH) Zentrum für Schlafmedizin (a) 20-40% Klinik Gastroenterologie und Hepatologie Assistenzärztin/ Assistenzarzt Gastroenterologie und Hepatologie (a) 80-100% Klinik Gastroenterologie und Hepatologie Oberärztin/Oberarzt Gastroenterologie und Hepatologie (a) 80-100% Medizin Diagnostik Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Innere Medizin Co-Stationsleiterin/Co-Stationsleiter (a) 100% PAHoA Dipl. Pflegefachfrau/Pflegefachmann HF (a) 50-60% Altersmedizin & Rehabilitation Dipl. Pflegefachfrau/Pflegefachmann (a) 80-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Frauenklinik / Urologie (a) 60-80% Innere Medizin Dipl. Pflegefachfrau/Pflegefachmann Innere Medizin (a) 60% Pflege Dipl. Pflegefachfrau/Pflegefachmann Walk-in Praxis Notfall (a) 100% Apotheke Apothekerin/Apotheker (a) 80% 1 2 3 4 5 … 8",
+  "extractedLinks": [
+    {
+      "text": "20-40%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/neurologin-neurologe-fmh-zentrum-fuer-schlafmedizin-a/40e73324-0d42-4f8f-bfb7-4641850cb280"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/assistenzaerztin-assistenzarzt-gastroenterologie-und-hepatologie-a/41861216-41f5-4b30-acae-a84d6772ee7f"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-gastroenterologie-und-hepatologie-a/d290530b-098f-4813-a170-632e85c0b648"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-endoskopie-a/59f5b0f3-8f47-49da-b9b7-578a856f639f"
+    },
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/co-stationsleiterin-co-stationsleiter-a/949df63b-9bb5-4714-9def-3145528a85d4"
+    },
+    {
+      "text": "50-60%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-hf-a/755ff4c2-d559-4f84-bdd2-fefcabd67828"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-a/9055f57d-b3c9-4a2b-91d6-fec02f9fa0e6"
+    },
+    {
+      "text": "60-80%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-frauenklinik-urologie-a/3b6338fe-97b7-435d-a813-c120b20933e9"
+    },
+    {
+      "text": "60%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-innere-medizin-a/0d65db3f-a647-4ae7-ba8b-950d93c0d43b"
+    },
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-walk-in-praxis-notfall-a/7dc2fde3-fb64-4cc0-9e35-c14e9fd2536c"
+    },
+    {
+      "text": "80%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/apothekerin-apotheker-a/48e4437e-d006-404a-a31b-7db23e800fa4"
+    },
+    {
+      "text": "2",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/"
+    }
+  ],
+  "extractedEmails": [
+    "info@cs2.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

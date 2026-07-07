@@ -14,11 +14,18 @@
     "format": "biome format --write .",
     "crawl": "pnpm --filter @scpi/worker crawl",
     "build:data": "pnpm --filter @scpi/worker build:data",
+    "coverage:report": "pnpm --filter @scpi/worker coverage:report",
+    "data:validate": "pnpm --filter @scpi/worker data:validate",
     "diff:snapshots": "pnpm --filter @scpi/worker diff:snapshots",
     "review:report": "pnpm --filter @scpi/worker review:report",
     "source:coverage": "pnpm --filter @scpi/worker source:coverage",
     "lead-time:build": "pnpm --filter @scpi/worker lead-time:build",
-    "reliability:audit": "pnpm --filter @scpi/worker reliability:audit"
+    "reliability:audit": "pnpm --filter @scpi/worker reliability:audit",
+    "check:local": "pnpm lint && pnpm test && pnpm crawl -- --sources packages/sources/sources.local.example.yaml --out data/local/dry-run --dry-run --limit 3",
+    "crawl:local": "pnpm crawl -- --sources packages/sources/sources.local.example.yaml --out data/local/snapshots --limit 3 --respect-delay-ms 1000 --timeout-ms 15000 --max-retries 1",
+    "build:data:local": "pnpm build:data -- --snapshots data/local/snapshots --out data/local/current --sources packages/sources/sources.local.example.yaml --exports data/local/exports",
+    "validate:data:local": "pnpm data:validate -- --data data/local/current",
+    "pipeline:local": "pnpm crawl:local && pnpm build:data:local && pnpm lead-time:build -- --data data/local/current && pnpm review:report -- --data data/local/current --out data/local/current/review-needed.md && pnpm coverage:report -- --sources packages/sources/sources.local.example.yaml --data data/local/current --out data/local/current && pnpm reliability:audit -- --data data/local/current --sources packages/sources/sources.local.example.yaml --out data/local/current && pnpm validate:data:local && pnpm --filter @scpi/web build -- --data data/local/current --exports data/local/exports --out data/local/site"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.5",

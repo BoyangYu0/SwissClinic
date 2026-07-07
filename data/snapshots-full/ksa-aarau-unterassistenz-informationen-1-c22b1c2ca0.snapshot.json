@@ -1,0 +1,32 @@
+{
+  "sourceId": "ksa-aarau-unterassistenz-informationen",
+  "url": "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "81f49e1588651eb01054c78888ca56b36c16ea404a5c85818cf6cf606ef69200",
+  "textHash": "ae3b28873ec06a35a053490a953ce8fc67510c70d8d9a515373b6fa6416dc936",
+  "title": "Allgemeine Informationen – Unterassistenzstellen",
+  "visibleText": "Zurück KSA Kantonsspital Aarau KSA Kantonsspital Aarau KSA Kinderspital Aarau KSA Bahnhof Aarau KSA Lenzburg Unterassistenz-Stellen Allgemeine Informationen Mindestzeitraum und Voraussetzung für eine Anstellung Individuell zwischen einem und vier Monaten, je nach Klinik und deren Programm. Frühestens ab dem 4. Jahr des Medizin-Studiums, in bestimmten Kliniken auch höhere Semesterzahl erforderlich. Arbeitszeiten, Dienste, Ferien Arbeitszeit: Die Arbeitszeit richtet sich nach dem Wochenprogramm der Klinik. Von ca. 07.30 bis ca. 17.00 Uhr je nach Wochentag, Mittagspause inklusive. Dienste: Wochenenddienst und Pikettdienst je nach Klinik möglich, nach Absprache mit der zuständigen Dienstärztin oder dem zuständigen Dienstarzt. Ferien: Mitarbeitende im Alter von 21 bis 29 Jahren erhalten 25 Tage Ferien pro Kalenderjahr (wird pro Rata auf Anstellungsdauer berechnet). Massgebend ist das Kalenderjahr, in dem das jeweilige Altersjahr vollendet wird. Alle Abwesenheiten müssen im Vorfeld abgesprochen und genehmigt werden. Versicherungsschutz Berufs- und Nichtberufsunfall-Versicherung via Arbeitgeberin (KSA Kantonsspital Aarau AG). Die Prämien für die Nicht-Betriebsunfall-Versicherung werden von den Arbeitnehmenden übernommen. Verpflegung Alle Mitarbeitenden des KSA Kantonsspital Aarau können sich zu vergünstigten Preisen im Restaurant «time out» oder in der Mitarbeiterkantine «my time» verpflegen. Unterkunft Es stehen diverse Personalzimmer in unmittelbarer Nähe des Spitalareals zur Verfügung. Die Preise variieren zwischen CHF 520.– bis CHF 980.–, wobei für die Unterassistentinnen und Unterassistenten die günstigeren Zimmer freigehalten werden. Ein Zimmerreservationswunsch kann auf dem Personalbogen angegeben werden. Gehalt Das Gehalt beträgt im 1. bis 3. Praktikumsmonat CHF 1’500.–, ab dem 4. Praktikumsmonat in derselben Klinik CHF 1’800.–. Berufskleider Arbeitskleidung (Hose, Shirt, Kittel) wird vom KSA Kantonsspital Aarau bereitgestellt und gereinigt. Schuhe bringen die Unterassistentinnen und Unterassistenten selbst mit. Benötigte Bewerbungsunterlagen Motivationsschreiben, Lebenslauf, Kopie Studienbescheinigung / Immatrikulation und evtl. Diplome / Zeugnisse Mitarbeiterangebote Für unsere Mitarbeitenden bieten wir diverse zusätzliche Leistungen, wie z. B. Yoga im KSA Park, Spital-Taxis, KSA Massage etc. an. Die aktuellen Angebote finden Sie bei einer Anstellung in unserem Intranet. Nach Abschluss Ihres Studiums Das KSA Kantonsspital Aarau bietet Ihnen viele interessante Assistenzärztinnen- und Assistenzarztstellen in diversen Kliniken an.",
+  "extractedLinks": [
+    {
+      "text": "KSA Kantonsspital Aarau",
+      "href": "https://www.ksa.ch/de/kantonsspital-aarau"
+    },
+    {
+      "text": "KSA Kinderspital Aarau",
+      "href": "https://www.ksa.ch/de/kinderspital-aarau/aufenthalt-und-besuch-kinderspital"
+    },
+    {
+      "text": "KSA Bahnhof Aarau",
+      "href": "https://www.ksa.ch/de/ksa-bahnhof-aarau"
+    },
+    {
+      "text": "KSA Lenzburg",
+      "href": "https://www.ksa.ch/de/ksa-lenzburg/startseite"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

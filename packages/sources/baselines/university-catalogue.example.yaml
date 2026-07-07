@@ -1,0 +1,33 @@
+# Example baseline only. This is not a complete university catalogue until manually verified.
+- id: university-bern-medicine
+  name: "Universitaet Bern Medizinische Fakultaet"
+  canton: "BE"
+  city: "Bern"
+  type: "university-catalogue"
+  sourceUrl: "https://www.medizin.unibe.ch/"
+  baselineSource: "manual-example-university-catalogue"
+  notes: "Example official university catalogue baseline; not a complete list of all clinical-stage catalogues."
+- id: university-zurich-medicine
+  name: "Universitaet Zuerich Medizinische Fakultaet"
+  canton: "ZH"
+  city: "Zuerich"
+  type: "university-catalogue"
+  sourceUrl: "https://www.med.uzh.ch/"
+  baselineSource: "manual-example-university-catalogue"
+  notes: "Example official university catalogue baseline; not a complete list of all clinical-stage catalogues."
+- id: university-lausanne-medicine
+  name: "Universite de Lausanne Ecole de medecine"
+  canton: "VD"
+  city: "Lausanne"
+  type: "university-catalogue"
+  sourceUrl: "https://www.unil.ch/ecoledemedecine/"
+  baselineSource: "manual-example-university-catalogue"
+  notes: "Example official university catalogue baseline; not a complete list of all clinical-stage catalogues."
+- id: university-usi-biomed
+  name: "Universita della Svizzera italiana Faculty of Biomedical Sciences"
+  canton: "TI"
+  city: "Lugano"
+  type: "university-catalogue"
+  sourceUrl: "https://www.biomed.usi.ch/"
+  baselineSource: "manual-example-university-catalogue"
+  notes: "Example official university catalogue baseline; not a complete list of all clinical-stage catalogues."

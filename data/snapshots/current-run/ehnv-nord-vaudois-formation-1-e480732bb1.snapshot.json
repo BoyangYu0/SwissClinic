@@ -1,0 +1,55 @@
+{
+  "sourceId": "ehnv-nord-vaudois-formation",
+  "url": "https://www.ehnv.ch/emplois",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "e8ad9960400e4b41844953e26f98c9513ba06c9fb8f25a507a61b1d52c898402",
+  "textHash": "1d957cadbdb071f28b543ac490474396d6dfa278aec8deb24e0e6c3b53972e79",
+  "title": "Rejoignez-nous | Établissements hospitaliers du Nord vaudois",
+  "visibleText": "Aller au contenu principal Nous avons à cœur de proposer d'excellentes conditions de travail ainsi qu'une culture d'entreprise axée sur les relations humaines, la gestion participative et l'engagement de chacun-e. Les eHnv offrent de nombreuses places d'apprentissages et de stages. Offres d'emploi Candidature spontanée Si aucun poste ouvert ne correspond à votre profil, n’hésitez pas à nous envoyer une offre spontanée, comprenant votre CV, une lettre de motivation et l’ensemble de vos diplômes et certificats de travail. Postulation spontanée Qualité de vie Les eHnv bénéficient d’une localisation idéale, dans une région située au cœur de la Suisse romande. Très bien desservi par un réseau autoroutier et ferroviaire, le Nord vaudois se trouve à 45 minutes au maximum de Genève, Lausanne, Neuchâtel, Fribourg et Berne. Ce bassin géographique délimité par le Jura, la Vallée de Joux et le lac de Neuchâtel offre une qualité de vie que beaucoup nous envient, spécialement les adeptes de la nature, de loisirs et de sports aquatiques et de montagne. Politique de ressources humaines Excellence, harmonie, esprit novateur et volonté; les eHnv s'engagent, vis-à-vis de leurs collaborateurs, à respecter ces valeurs fondamentales décrites dans leur charte. La politique interne favorise le développement des compétences et le professionnalisme. Elle privilégie le développement personnel et professionnel de chacun par la formation continue, l’esprit de service, d’accueil et de communication. Nous encourageons nos collaborateurs à devenir des acteurs de notre institution. Diplômes étrangers Personnel des domaines des soins, médico-technique et thérapeutique Les eHnv demandent à tous les candidats de ces domaines qui possèdent un diplôme étranger d’avoir une reconnaissance Croix-Rouge avant l’engagement. Cette reconnaissance est également nécessaire pour pouvoir suivre une formation de spécialisation (CAS, DAS ou MAS). Plus de renseignements sur le site de la Croix-Rouge suisse. Médecins assistant-e-s et chef-fe-s de clinique Tous les médecins assistants et les chefs de clinique possédant un diplôme étranger doivent être en possession d’une reconnaissance fédérale de leur titre. Plus d'informations sur le site de l'Office fédéral de la santé publique. Postulations des médecins assistant-e-s et chef-fe-s de clinique Vous recherchez un poste de médecin assistant-e en médecine ? Merci d’adresser votre dossier de candidature complet à l'adresse postulations.medecineurgences@ehnv.ch. Nos avantages Une rémunération basée sur la grille de la Convention collective de travail dans le secteur sanitaire parapublic vaudois d’excellentes prestations sociales des possibilités de formation et d’évolution des rabais sur des offres sportives des avantages en matière d’assurances et prestations bancaires Besoin d’un logement? Futur-e collaborateur-trice ou stagiaire aux eHnv? Si vous avez besoin de trouver un logement, nous pouvons peut-être vous proposer quelque chose. Consultez notre page consacrée au logement. Contact Ressources humaines Y-Parc, Rue Galilée 2B CP 554 - 1401 Yverdon-les-Bains 024 424 53 51 inforh@ehnv.ch",
+  "extractedLinks": [
+    {
+      "text": "Aller au contenu principal",
+      "href": "https://www.ehnv.ch/emplois"
+    },
+    {
+      "text": "d'apprentissages et de stages",
+      "href": "https://www.ehnv.ch/formation-et-stages"
+    },
+    {
+      "text": "Postulation spontanée",
+      "href": "https://ats.johdisuite.ch/recruitments/904/spontaneous-postulation?signature=f914b2c5f6a4247383757724750005578ebc83df7484c07464828ed3c552d062"
+    },
+    {
+      "text": "charte",
+      "href": "https://www.ehnv.ch/sites/default/files/page-files/charte_des_ehnv.pdf"
+    },
+    {
+      "text": "Plus de renseignements sur le site de la Croix-Rouge suisse.",
+      "href": "http://www.redcross.ch/fr/prestations-crs/reconnaissance-des-titres-professionnels-etrangers/la-crs-est-chargee-de-reconnaitre"
+    },
+    {
+      "text": "Plus d'informations sur le site de l'Office fédéral de la santé publique.",
+      "href": "https://www.bag.admin.ch/bag/fr/home.html"
+    },
+    {
+      "text": "Convention collective de travail dans le secteur sanitaire parapublic vaudois",
+      "href": "http://www.cctsan-vaud.ch/index.htm"
+    },
+    {
+      "text": "prestations sociales",
+      "href": "http://www.fisp.ch/"
+    },
+    {
+      "text": "page consacrée au logement",
+      "href": "https://www.ehnv.ch/logements"
+    }
+  ],
+  "extractedEmails": [
+    "inforh@ehnv.ch",
+    "postulations.medecineurgences@ehnv.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

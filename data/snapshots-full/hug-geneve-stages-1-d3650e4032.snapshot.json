@@ -1,0 +1,15 @@
+{
+  "sourceId": "hug-geneve-stages",
+  "url": "https://www.hug.ch/enseignement-formation/stages",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "753e6ccfa59644a972f466abccfc315e673c3c5035991355cb7804a214f665fe",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "leadtime-summary-030b837540ed",
+    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-chirurgie-medizinstudium",
+    "recommendedApplyAheadMinMonths": null,
+    "recommendedApplyAheadMaxMonths": null,
+    "medianObservedMonthsAhead": 2,
+    "observedRangeMinMonths": 2,
+    "observedRangeMaxMonths": 2,
+    "evidenceCount": 1,
+    "observationCount": 1,
+    "basis": "historical-observed",
+    "confidence": "low",
+    "label": "Estimated lead time is low confidence and should not be treated as fact.",
+    "warnings": [
+      "Estimated recommendation is based on fewer than 3 observations."
+    ]
+  },
+  {
+    "id": "leadtime-summary-bd086c8ea6ae",
+    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+    "recommendedApplyAheadMinMonths": 12,
+    "recommendedApplyAheadMaxMonths": 12,
+    "medianObservedMonthsAhead": null,
+    "observedRangeMinMonths": null,
+    "observedRangeMaxMonths": null,
+    "evidenceCount": 1,
+    "observationCount": 0,
+    "basis": "explicit-source",
+    "confidence": "medium",
+    "label": "Explicitly stated by source: apply 12 months ahead.",
+    "warnings": []
+  },
+  {
+    "id": "leadtime-summary-c22dde359761",
+    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-medizin-medizinstudium",
+    "recommendedApplyAheadMinMonths": null,
+    "recommendedApplyAheadMaxMonths": null,
+    "medianObservedMonthsAhead": 1,
+    "observedRangeMinMonths": 1,
+    "observedRangeMaxMonths": 1,
+    "evidenceCount": 1,
+    "observationCount": 1,
+    "basis": "historical-observed",
+    "confidence": "low",
+    "label": "Estimated lead time is low confidence and should not be treated as fact.",
+    "warnings": [
+      "Estimated recommendation is based on fewer than 3 observations."
+    ]
+  },
+  {
+    "id": "leadtime-summary-f3e21e151a65",
+    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
+    "recommendedApplyAheadMinMonths": null,
+    "recommendedApplyAheadMaxMonths": null,
+    "medianObservedMonthsAhead": 29,
+    "observedRangeMinMonths": 29,
+    "observedRangeMaxMonths": 29,
+    "evidenceCount": 1,
+    "observationCount": 1,
+    "basis": "historical-observed",
+    "confidence": "low",
+    "label": "Estimated lead time is low confidence and should not be treated as fact.",
+    "warnings": [
+      "Estimated recommendation is based on fewer than 3 observations."
+    ]
+  }
+]

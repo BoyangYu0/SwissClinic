@@ -1,0 +1,74 @@
+{
+  "sourceId": "unibe-medizin-studium",
+  "url": "https://www.medizin.unibe.ch/studium/index_ger.html",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "5183b9e81accb16992fa1e4ef91fb7e3650b126c1b263b898f04b3eef31a648c",
+  "textHash": "b569f7c42178504f60d52115b8039aa5570462cfd0838a1d273ffaf30cecc7b8",
+  "title": "Studium - Medizinische Fakultät",
+  "visibleText": "Medizinische Fakultät Studium Hier finden Sie Informationen rund um das Studium an unserer Fakultät. In den Factsheets unter \"Studienprogramme\" finden Sie alle relevanten Informationen zur Zulassung, Inhalt und Aufbau der Studiengänge und -programme. Anschrift Studiendekanat Universität Bern Medizinische Fakultät Studiendekanat Murtenstrasse 11 CH-3008 Bern studium.meddek@unibe.ch Mehr zum Thema Medizinstudium Infos zum Studium (für immatrikulierte Studierende HM/ZM) Infos zum Studium (für Studienanwärter) Masterarbeiten-Börse Evaluation Lehre Fachschaft Medizin Ausschuss für Lehre Studienanfang Anmeldung Medizinstudium Eignungstest (EMS) Situationsplan für Studierende Informationstage für Studieninteressierte Formulare Bestellung Dean's Letter (PDF, 183KB) Weiterempfehlen Facebook E-Mail LinkedIn Drucken Oben",
+  "extractedLinks": [
+    {
+      "text": "Infos zum Studium (für immatrikulierte Studierende HM/ZM)",
+      "href": "https://ilias.unibe.ch/goto_ilias3_unibe_crs_1380514.html"
+    },
+    {
+      "text": "Infos zum Studium (für Studienanwärter)",
+      "href": "https://ilias.unibe.ch/goto_ilias3_unibe_cat_1385789.html"
+    },
+    {
+      "text": "Masterarbeiten-Börse",
+      "href": "https://ilias.unibe.ch/goto_ilias3_unibe_fold_1362200.html"
+    },
+    {
+      "text": "Evaluation Lehre",
+      "href": "https://intern.unibe.ch/oe_intranets/medizinische_fakultaet/medizinsche_fakultaet_intern/evaluationen/evaluation_der_lehre/index_ger.html"
+    },
+    {
+      "text": "Fachschaft Medizin",
+      "href": "http://www.fsmb.ch/"
+    },
+    {
+      "text": "Ausschuss für Lehre",
+      "href": "https://www.medizin.unibe.ch/ueber_uns/ausschuesse/ausschuss_fuer_lehre/index_ger.html"
+    },
+    {
+      "text": "Anmeldung Medizinstudium",
+      "href": "http://www.unibe.ch/universitaet/organisation/leitung_und_zentralbereich/vizerektorat_lehre/zulassung_immatrikulation_und_beratung/index_ger.html"
+    },
+    {
+      "text": "Eignungstest (EMS)",
+      "href": "http://www.unifr.ch/ztd/ems/welcome.html"
+    },
+    {
+      "text": "Situationsplan für Studierende",
+      "href": "https://ilias.unibe.ch/goto_ilias3_unibe_wiki_wpage_7448_1360403.html"
+    },
+    {
+      "text": "Informationstage für Studieninteressierte",
+      "href": "http://www.infostelle.unibe.ch/content/studieninteressierte/infotage/masterstudium/index_ger.html"
+    },
+    {
+      "text": "Bestellung Dean's Letter (PDF, 183KB)",
+      "href": "https://www.medizin.unibe.ch/unibe/portal/fak_medizin/content/e17182/e102132/section102144/files102145/BestellformularDeansLetter_ger.pdf"
+    },
+    {
+      "text": "Weiterempfehlen",
+      "href": "https://www.medizin.unibe.ch/studium/index_ger.html"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https://www.medizin.unibe.ch/studium"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.medizin.unibe.ch/studium"
+    }
+  ],
+  "extractedEmails": [
+    "studium.meddek@unibe.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

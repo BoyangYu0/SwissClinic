@@ -1,0 +1,15 @@
+{
+  "sourceId": "rhne-neuchatel-formation",
+  "url": "https://www.rhne.ch/formation",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "c3c1922270d28c5502f02d24bd010a711407d8fb9410fdc429a850a2928fc027",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404"
+}

@@ -1,0 +1,100 @@
+{
+  "sourceId": "usz-zuerich-medizinstudium-overview",
+  "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "41231389848870a63253318c6c29921d6055fa790e31cbf86a021ed7a48bab09",
+  "textHash": "949294d653bcece1de41452eeb1c9458fe5cc6a89763f525d15743ab5e8dd1dc",
+  "title": "Unterassistenzen am USZ – USZ",
+  "visibleText": "Unterassistenzen am USZ Viele Medizinstudierende aus der Schweiz und dem Ausland verbringen als Unterassistierende einen Teil ihres Wahlstudienjahrs oder Praktischen Jahrs am USZ. Dabei vertiefen sie die klinisch-praktischen Fertigkeiten und erlernen das selbstständige Erarbeiten von evidenzbasiertem Wissen. Es besteht eine enge Zusammenarbeit mit dem Studiendekanat der Medizinischen Fakultät. Die starke Position von Zürich in der internationalen Forschung unterstützt unsere Studierenden, bereits während ihrer Ausbildung wissenschaftlich tätig zu sein und erste Kontakte zu knüpfen. Pflegepraktika für Medizinstudierende in den ersten Semestern («Häfelipraktika») können wir nicht anbieten. Famulaturen können praktisch keine angeboten werden. Allgemeine Informationen Allgemeines Merkblatt zu den Unterassistenzen Übersicht und Kontaktpersonen der jeweiligen Fachbereiche Unterassistenzen von A-Z Allgemeine Innere Medizin Anästhesiologie Augenheilkunde Chirurgie Dermatologie Frauenheilkunde Immunologie Intensivmedizin Mund-, Kiefer- und Gesichtschirurgie Neonatologie Neurochirurgie Neurologie Neuropathologie Neuroradiologie Nuklearmedizin Ohren-, Nasen-, Hals- und Gesichtschirurgie Psychiatrie Radiologie Rheumatologie",
+  "extractedLinks": [
+    {
+      "text": "Allgemeines Merkblatt zu den Unterassistenzen",
+      "href": "https://www.usz.ch/app/uploads/2026/06/allgemeines-merkblatt-unterassistenz_hrm.pdf"
+    },
+    {
+      "text": "Übersicht und Kontaktpersonen der jeweiligen Fachbereiche",
+      "href": "https://www.fortbildung.usz.ch/lehre/Kontaktpersonen_UA_Themen.pdf"
+    },
+    {
+      "text": "Allgemeine Innere Medizin",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/"
+    },
+    {
+      "text": "Anästhesiologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/"
+    },
+    {
+      "text": "Augenheilkunde",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/augenheilkunde/"
+    },
+    {
+      "text": "Chirurgie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/"
+    },
+    {
+      "text": "Dermatologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/dermatologie/"
+    },
+    {
+      "text": "Frauenheilkunde",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/"
+    },
+    {
+      "text": "Immunologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/immunologie/"
+    },
+    {
+      "text": "Intensivmedizin",
+      "href": "https://www.usz.ch/fachbereich/intensivmedizin/karriere/unterassistenz/"
+    },
+    {
+      "text": "Mund-, Kiefer- und Gesichtschirurgie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/mund-kiefer-gesichtschirurgie/"
+    },
+    {
+      "text": "Neonatologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/neonatologie/"
+    },
+    {
+      "text": "Neurochirurgie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/neurochirurgie/"
+    },
+    {
+      "text": "Neurologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/neurologie/"
+    },
+    {
+      "text": "Neuropathologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/neuropathologie/"
+    },
+    {
+      "text": "Neuroradiologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/unterassistenzen-famulatur-der-klinik-fuer-neuroradiologie/"
+    },
+    {
+      "text": "Nuklearmedizin",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/nuklearmedizin/"
+    },
+    {
+      "text": "Ohren-, Nasen-, Hals- und Gesichtschirurgie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/ohren-nasen-hals-gesichtschirurgie/"
+    },
+    {
+      "text": "Psychiatrie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/psychiatrie/"
+    },
+    {
+      "text": "Radiologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/"
+    },
+    {
+      "text": "Rheumatologie",
+      "href": "https://www.usz.ch/bildung/aerzte/medizinstudium/rheumatologie/"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

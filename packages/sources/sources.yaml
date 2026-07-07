@@ -8,7 +8,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.insel.ch/de/lehre-und-forschung/medizinische-lehre"
+    - url: "https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe"
       pageType: "hospital-medical-student-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -26,7 +26,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.inselgruppe.ch/de/jobs-karriere/ausbildung"
+    - url: "https://inselgruppe.ch/de/bildung"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -188,11 +188,11 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.stadt-zuerich.ch/stadtspital/de/index/jobs-karriere/ausbildung.html"
+    - url: "https://www.stadt-zuerich.ch/stadtspital"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official Stadtspital Zurich education page; include as candidate until Unterassistenz/PJ relevance is confirmed on public subpages."
+  notes: "Official Stadtspital Zurich hospital landing page after old education URL returned 404; include as candidate until current Unterassistenz/PJ subpage is found and verified."
   priority: 2
   status: "needs-review"
 
@@ -242,7 +242,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.unispital-basel.ch/jobs-karriere/ausbildung-studium"
+    - url: "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -260,7 +260,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://medizin.unibas.ch/de/studium/"
+    - url: "https://medizin.unibas.ch/de/"
       pageType: "university-medical-student-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -386,11 +386,11 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.kssg.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+    - url: "https://www.h-och.ch/karriere"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
-  notes: "Official KSSG physician education page; include as candidate for Unterassistenz links, but verify direct medical student placement details."
+  notes: "Official HOCH/KSSG career page after old KSSG physician education URL returned 404; include as candidate for Unterassistenz links, but verify direct medical student placement details."
   priority: 2
   status: "needs-review"
 
@@ -440,7 +440,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.solothurnerspitaeler.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+    - url: "https://www.solothurnerspitaeler.ch/jobs-karriere"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -458,7 +458,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.stgag.ch/karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung"
+    - url: "https://www.stgag.ch/karriere"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -476,7 +476,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.zgks.ch/karriere/aus-und-weiterbildung"
+    - url: "https://www.zgks.ch/karriere"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -494,7 +494,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.spital-schwyz.ch/karriere/ausbildung"
+    - url: "https://www.spital-schwyz.ch/de/arbeiten-bei-uns/aus-und-weiterbildung.html"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -530,7 +530,7 @@
   region: "de-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.ksow.ch/karriere/ausbildung"
+    - url: "https://www.ksow.ch/jobs-karriere/ausbildung"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -638,7 +638,7 @@
   region: "fr-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.hug.ch/enseignement-formation"
+    - url: "https://www.hug.ch/formation-de-base"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -656,7 +656,7 @@
   region: "fr-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.hug.ch/enseignement-formation/stages"
+    - url: "https://www.hug.ch/emploi/offres-stage"
       pageType: "hospital-clinical-stage-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -728,7 +728,7 @@
   region: "mixed"
   country: "CH"
   sourceUrls:
-    - url: "https://www.h-fr.ch/fr/formation"
+    - url: "https://www.h-fr.ch/formations"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -746,7 +746,7 @@
   region: "fr-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.rhne.ch/formation"
+    - url: "https://www.rhne.ch/espace-emploi/formation/formations-medicales"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -782,7 +782,7 @@
   region: "fr-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.ehnv.ch/formation"
+    - url: "https://www.ehnv.ch/emplois"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -800,7 +800,7 @@
   region: "it-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.eoc.ch/Formazione.html"
+    - url: "https://www.eoc.ch/lavoro/formazione"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -818,7 +818,7 @@
   region: "it-CH"
   country: "CH"
   sourceUrls:
-    - url: "https://www.eoc.ch/Lavoro-e-formazione.html"
+    - url: "https://www.eoc.ch/lavoro"
       pageType: "hospital-education-page"
       expectedParser: "generic"
       fetchMode: "html"
@@ -861,6 +861,222 @@
   notes: "Official USI biomedical faculty site; include as candidate for medical education links, not as a verified placement source."
   priority: 3
   status: "candidate"
+
+- id: ksbl-baselland-karriere
+  institutionName: "Kantonsspital Baselland"
+  institutionType: "hospital"
+  canton: "BL"
+  city: "Liestal"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.ksbl.ch/karriere"
+      pageType: "hospital-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official KSBL career page found during German-language coverage expansion; needs manual check for medical student Unterassistenz/Wahlstudienjahr content."
+  priority: 3
+  status: "needs-review"
+
+- id: spitaeler-schaffhausen-aus-und-weiterbildung
+  institutionName: "Spitaeler Schaffhausen"
+  institutionType: "clinic-group"
+  canton: "SH"
+  city: "Schaffhausen"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Spitäler Schaffhausen education page found during German-language coverage expansion; verify medical student placement relevance before publication."
+  priority: 3
+  status: "needs-review"
+
+- id: svar-appenzell-aus-und-weiterbildung
+  institutionName: "Spitalverbund Appenzell Ausserrhoden"
+  institutionType: "clinic-group"
+  canton: "AR"
+  city: "Herisau"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.svar.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official SVAR education page found during German-language coverage expansion; candidate until Unterassistenz/Famulatur relevance is manually verified."
+  priority: 3
+  status: "needs-review"
+
+- id: spital-maennedorf-aus-und-weiterbildung
+  institutionName: "Spital Maennedorf"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Maennedorf"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.spitalmaennedorf.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Spital Männedorf education page found during German-language coverage expansion; verify whether medical student placements are public."
+  priority: 3
+  status: "needs-review"
+
+- id: spital-limmattal-aus-und-weiterbildung
+  institutionName: "Spital Limmattal"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Schlieren"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.spital-limmattal.ch/karriere/aus-und-weiterbildung"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Spital Limmattal education page found during German-language coverage expansion; candidate pending manual placement relevance check."
+  priority: 3
+  status: "needs-review"
+
+- id: gzo-wetzikon-karriere
+  institutionName: "GZO Spital Wetzikon"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Wetzikon"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.gzo.ch/karriere"
+      pageType: "hospital-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official GZO career page found during German-language coverage expansion; no placement availability is assumed until manually checked."
+  priority: 4
+  status: "needs-review"
+
+- id: see-spital-karriere
+  institutionName: "See-Spital"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Horgen"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.see-spital.ch/karriere"
+      pageType: "hospital-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official See-Spital career page found during German-language coverage expansion; candidate until medical student placement relevance is verified."
+  priority: 4
+  status: "needs-review"
+
+- id: balgrist-zuerich-karriere
+  institutionName: "Universitaetsklinik Balgrist"
+  institutionType: "hospital"
+  canton: "ZH"
+  city: "Zuerich"
+  language: "de"
+  sourceLanguage: "de"
+  region: "de-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.balgrist.ch/karriere"
+      pageType: "hospital-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Balgrist career page found during German-language coverage expansion; candidate until Unterassistenz/medical student details are verified."
+  priority: 4
+  status: "needs-review"
+
+- id: swiss-medical-network-de-karriere
+  institutionName: "Swiss Medical Network"
+  institutionType: "clinic-group"
+  canton: "VD"
+  city: "Genolier"
+  language: "de"
+  sourceLanguage: "de"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.swissmedical.net/de/karriere"
+      pageType: "clinic-group-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Swiss Medical Network German career page found during multilingual coverage expansion; candidate only, because specific medical student placements are not verified."
+  priority: 4
+  status: "needs-review"
+
+- id: swiss-medical-network-fr-carriere
+  institutionName: "Swiss Medical Network"
+  institutionType: "clinic-group"
+  canton: "VD"
+  city: "Genolier"
+  language: "fr"
+  sourceLanguage: "fr"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.swissmedical.net/fr/carriere"
+      pageType: "clinic-group-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Swiss Medical Network French career page found during French-language coverage expansion; candidate only pending manual stage/sous-assistanat verification."
+  priority: 4
+  status: "needs-review"
+
+- id: swiss-medical-network-it-carriera
+  institutionName: "Swiss Medical Network"
+  institutionType: "clinic-group"
+  canton: "TI"
+  city: "Lugano"
+  language: "it"
+  sourceLanguage: "it"
+  region: "mixed"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.swissmedical.net/it/carriera"
+      pageType: "clinic-group-career-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Swiss Medical Network Italian career page found during Italian-language coverage expansion; candidate only pending manual stage clinico verification."
+  priority: 4
+  status: "needs-review"
+
+- id: clinica-moncucco-lavoro-formazione
+  institutionName: "Clinica Moncucco"
+  institutionType: "hospital"
+  canton: "TI"
+  city: "Lugano"
+  language: "it"
+  sourceLanguage: "it"
+  region: "it-CH"
+  country: "CH"
+  sourceUrls:
+    - url: "https://www.moncucco.ch/lavoro-e-formazione"
+      pageType: "hospital-education-page"
+      expectedParser: "generic"
+      fetchMode: "html"
+  notes: "Official Clinica Moncucco work and training page found during Italian-language coverage expansion; verify medical student placement relevance manually."
+  priority: 4
+  status: "needs-review"
 
 - id: swimsa-exchanges
   institutionName: "swimsa"

@@ -1,0 +1,36 @@
+{
+  "sourceId": "usb-basel-career-education",
+  "url": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "d4ddeb14080a79d65979ab174fc655d585ff07965aa4eb2fd05c0eac816c71b7",
+  "textHash": "1f79a0281e4372487f7cd0d62577187fdfb35a03bb907bbf35c0d13a78d01701",
+  "title": "Medizinstudierende",
+  "visibleText": "Informationen für Medizin- studierende Wo wären Medizinstudis besser aufgehoben als in einem Spital? Eben. Detaillierte Informationen über die Möglichkeiten von Medizinstudentinnen und -studenten am USB findest du hier. Das USB bildet gemeinsam mit der Medizinischen Fakultät der Universität Basel eine integrierte Forschungs- und Lehrumgebung – und garantiert dir so eine exzellente Ausbildung, Sofort ab in den OP? Als zukünftige*r Medizinstudent*in fängst du ganz piano an und absolvierst zuerst einmal das Pflegepraktikum für Medizinstudierende – dann sehen wir weiter. Als Unterassistent*in am USB arbeitest du mehrere Monate in einer Klinik deiner Wahl mit – und lernst, was den Alltag eines Arztes oder einer Ärztin ausmacht. Pflegepraktikum für Medizinstudierende Für Studierende der Humanmedizin ist das vierwöchige Pflegepraktikum obligatorischer Teil des Studiums. Du kannst dich gerne bei uns für dieses unentgeltliche Krankenpflege-Praktikum bewerben. Mehr Informationen Unterassistenz Du interessierst dich für eine Unterassistenzstelle oder eine Famulatur am USB? Wir freuen uns immer über motiverte Studis! Am besten bewirbst du dich möglichst frühzeitig, da das Stellenkontingent begrenzt ist. Mehr Informationen Arbeiten neben dem Medizinstudium Wir bieten Medizinstudent*innen die Möglichkeit, bei uns als Sitzwachen oder Pflegehilfspersonen tätig zu sein. Gerade für den Einstieg in die Berufspraxis und zum Kennenlernen der vielfältigen Pflegetätigkeit in den verschiedenen Abteilungen des USB bietet unser zentraler temporärer Personalpool (ZTP) eine gute Gelegenheit. Aktuelle Angebote findest du auf der Seite Jobs unter dem Stichwort «Überwachungsstudent*in». Weiterbildung zur Fachärztin bzw. zum Facharzt Mit der Strukturierung deiner Weiterbildung legst du bereits wichtige Grundsteine für dein zukünftiges Tätigkeitsfeld als Ärztin oder Arzt. Strebst du eine akademische Karriere an? Mehr Informationen Darum zum USB Wer am USB eine Ausbildung macht, hat eine gute Wahl getroffen. Denn bei uns profitieren Auszubildende von vielen Möglichkeiten. Hier findest du eine Auswahl deiner zukünftigen Vorteile und Goodies... Deine Benefits am USB",
+  "extractedLinks": [
+    {
+      "text": "Mehr Informationen",
+      "href": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende/pflegepraktikum-medizinstudierende"
+    },
+    {
+      "text": "Mehr Informationen",
+      "href": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende/unterassistenz"
+    },
+    {
+      "text": "Jobs",
+      "href": "https://www.unispital-basel.ch/jobs-und-karriere/Jobs"
+    },
+    {
+      "text": "Mehr Informationen",
+      "href": "https://www.unispital-basel.ch/jobs-und-karriere/Berufsbilder/Aerztinnen-Aerzte/Fachaerztinnen-und-Facharztweiterbildung"
+    },
+    {
+      "text": "Deine Benefits am USB",
+      "href": "https://www.unispital-basel.ch/lernen-studieren/darum-zum-usb"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

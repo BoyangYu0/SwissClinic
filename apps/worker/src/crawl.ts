@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, rm, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { SnapshotRecordSchema, type SourceRegistryEntry } from "@scpi/schema";
@@ -20,17 +20,33 @@ export interface CrawlOptions {
   sourcesPath: string;
   outDir: string;
   saveRawHtml?: boolean;
+  dryRun?: boolean;
+  limit?: number;
+  respectDelayMs?: number;
   fetchedAt?: string;
   fetchImpl?: FetchPageOptions["fetchImpl"];
   timeoutMs?: number;
   maxRetries?: number;
+  delayImpl?: (milliseconds: number) => Promise<void>;
+}
+
+export interface CrawlSkippedUrl {
+  sourceId: string;
+  url: string;
+  reason: string;
+}
+
+export interface CrawlParserWarning {
+  sourceId: string;
+  url: string;
+  warning: string;
 }
 
 export interface CrawlReportEntry {
   sourceId: string;
   url: string;
   fetchMode: FetchMode;
-  status: "success" | "failed" | "skipped-duplicate";
+  status: "success" | "failed" | "skipped-duplicate" | "skipped-limit";
   statusCode: number | null;
   snapshotPath: string | null;
   rawHtmlPath: string | null;
@@ -45,7 +61,11 @@ export interface CrawlReport {
   urlCount: number;
   successCount: number;
   failureCount: number;
+  skippedCount: number;
   duplicateUrlCount: number;
+  fetchedUrls: string[];
+  skippedUrls: CrawlSkippedUrl[];
+  parserWarnings: CrawlParserWarning[];
   entries: CrawlReportEntry[];
 }
 
@@ -62,10 +82,13 @@ export async function crawlFromRegistry(options: CrawlOptions): Promise<CrawlRep
 export async function crawlSources(options: CrawlSourcesOptions): Promise<CrawlReport> {
   const generatedAt = options.fetchedAt ?? new Date().toISOString();
   const entries: CrawlReportEntry[] = [];
+  const parserWarnings: CrawlParserWarning[] = [];
   const seenUrls = new Set<string>();
   let urlCount = 0;
+  let attemptedUrlCount = 0;
 
   await mkdir(options.outDir, { recursive: true });
+  await cleanGeneratedCrawlFiles(options.outDir);
 
   for (const source of options.sources) {
     for (const [urlIndex, sourceUrl] of source.sourceUrls.entries()) {
@@ -89,7 +112,40 @@ export async function crawlSources(options: CrawlSourcesOptions): Promise<CrawlR
         continue;
       }
 
+      if (options.limit !== undefined && attemptedUrlCount >= options.limit) {
+        entries.push({
+          sourceId: source.id,
+          url: sourceUrl.url,
+          fetchMode: sourceUrl.fetchMode,
+          status: "skipped-limit",
+          statusCode: null,
+          snapshotPath: null,
+          rawHtmlPath: null,
+          error: `Skipped because --limit=${options.limit} was reached.`,
+        });
+        continue;
+      }
+
       seenUrls.add(sourceUrl.url);
+      attemptedUrlCount += 1;
+
+      if (options.dryRun) {
+        entries.push({
+          sourceId: source.id,
+          url: sourceUrl.url,
+          fetchMode: sourceUrl.fetchMode,
+          status: "success",
+          statusCode: null,
+          snapshotPath: null,
+          rawHtmlPath: null,
+          error: null,
+        });
+        continue;
+      }
+
+      if (attemptedUrlCount > 1 && options.respectDelayMs && options.respectDelayMs > 0) {
+        await (options.delayImpl ?? delay)(options.respectDelayMs);
+      }
 
       const fetched = await fetchPage(sourceUrl.url, {
         fetchMode: sourceUrl.fetchMode,
@@ -145,7 +201,21 @@ export async function crawlSources(options: CrawlSourcesOptions): Promise<CrawlR
     urlCount,
     successCount: entries.filter((entry) => entry.status === "success").length,
     failureCount: entries.filter((entry) => entry.status === "failed").length,
+    skippedCount: entries.filter((entry) => entry.status.startsWith("skipped-")).length,
     duplicateUrlCount: entries.filter((entry) => entry.status === "skipped-duplicate").length,
+    fetchedUrls: options.dryRun
+      ? []
+      : entries
+          .filter((entry) => entry.status === "success" || entry.status === "failed")
+          .map((entry) => entry.url),
+    skippedUrls: entries
+      .filter((entry) => entry.status.startsWith("skipped-"))
+      .map((entry) => ({
+        sourceId: entry.sourceId,
+        url: entry.url,
+        reason: entry.error ?? entry.status,
+      })),
+    parserWarnings,
     entries,
   };
 
@@ -155,6 +225,7 @@ export async function crawlSources(options: CrawlSourcesOptions): Promise<CrawlR
 
 export function parseCrawlArgs(argv: string[]): CrawlOptions {
   const args = new Map<string, string | true>();
+  const baseDir = process.env.INIT_CWD ?? process.cwd();
 
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
@@ -180,14 +251,17 @@ export function parseCrawlArgs(argv: string[]): CrawlOptions {
 
   if (typeof sourcesPath !== "string" || typeof outDir !== "string") {
     throw new Error(
-      "Usage: pnpm crawl -- --sources packages/sources/sources.yaml --out data/snapshots [--save-raw-html]",
+      "Usage: pnpm crawl -- --sources packages/sources/sources.yaml --out data/snapshots [--limit 3] [--dry-run] [--respect-delay-ms 1000] [--save-raw-html]",
     );
   }
 
   return {
-    sourcesPath,
-    outDir,
+    sourcesPath: resolve(baseDir, sourcesPath),
+    outDir: resolve(baseDir, outDir),
     saveRawHtml: args.has("save-raw-html"),
+    dryRun: args.has("dry-run"),
+    limit: nonnegativeNumberArg(args.get("limit")),
+    respectDelayMs: nonnegativeNumberArg(args.get("respect-delay-ms")),
     timeoutMs: numberArg(args.get("timeout-ms")),
     maxRetries: numberArg(args.get("max-retries")),
   };
@@ -222,6 +296,18 @@ async function writeJson(path: string, value: unknown): Promise<void> {
   await writeFile(path, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
+async function cleanGeneratedCrawlFiles(outDir: string): Promise<void> {
+  const files = await readdir(outDir);
+  const generatedFiles = files.filter(
+    (file) =>
+      file === "crawler-report.json" ||
+      file.endsWith(".snapshot.json") ||
+      file.endsWith(".raw.html"),
+  );
+
+  await Promise.all(generatedFiles.map((file) => rm(join(outDir, file), { force: true })));
+}
+
 function numberArg(value: string | true | undefined): number | undefined {
   if (typeof value !== "string") {
     return undefined;
@@ -229,6 +315,22 @@ function numberArg(value: string | true | undefined): number | undefined {
 
   const parsed = Number.parseInt(value, 10);
   return Number.isFinite(parsed) ? parsed : undefined;
+}
+
+function nonnegativeNumberArg(value: string | true | undefined): number | undefined {
+  const parsed = numberArg(value);
+
+  if (parsed === undefined) {
+    return undefined;
+  }
+
+  return parsed >= 0 ? parsed : undefined;
+}
+
+function delay(milliseconds: number): Promise<void> {
+  return new Promise((resolveDelay) => {
+    setTimeout(resolveDelay, milliseconds);
+  });
 }
 
 function isCliEntrypoint(): boolean {

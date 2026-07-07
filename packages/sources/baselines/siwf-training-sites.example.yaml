@@ -1,0 +1,33 @@
+# Example baseline only. This is not a complete SIWF training-site export until manually verified.
+- id: siwf-inselspital-bern
+  name: "Inselspital Bern"
+  canton: "BE"
+  city: "Bern"
+  type: "siwf-training-site"
+  sourceUrl: "https://www.siwf-register.ch/"
+  baselineSource: "manual-example-siwf-training-sites"
+  notes: "Example training-site baseline entry; SIWF specialty details must be verified manually."
+- id: siwf-kantonsspital-aarau
+  name: "Kantonsspital Aarau"
+  canton: "AG"
+  city: "Aarau"
+  type: "siwf-training-site"
+  sourceUrl: "https://www.siwf-register.ch/"
+  baselineSource: "manual-example-siwf-training-sites"
+  notes: "Example training-site baseline entry; SIWF specialty details must be verified manually."
+- id: siwf-kantonsspital-baden
+  name: "Kantonsspital Baden"
+  canton: "AG"
+  city: "Baden"
+  type: "siwf-training-site"
+  sourceUrl: "https://www.siwf-register.ch/"
+  baselineSource: "manual-example-siwf-training-sites"
+  notes: "Example training-site baseline entry; SIWF specialty details must be verified manually."
+- id: siwf-kantonsspital-baselland
+  name: "Kantonsspital Baselland"
+  canton: "BL"
+  city: "Liestal"
+  type: "siwf-training-site"
+  sourceUrl: "https://www.siwf-register.ch/"
+  baselineSource: "manual-example-siwf-training-sites"
+  notes: "Example training-site baseline entry; source registry currently treats this as candidate coverage only."

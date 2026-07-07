@@ -91,6 +91,12 @@ describe("placement index frontend", () => {
     expect(html).toContain("explicitly stated by source");
     expect(html).toContain("estimated from public page history");
     expect(html).toContain("Warning: low confidence estimate.");
+    expect(html).toContain("Record count is not national clinic coverage.");
+    expect(html).toContain("Coverage is measured against selected baselines.");
+    expect(html).toContain("Candidate sources may not yet be verified.");
+    expect(html).toContain("Some hospitals may not publish placement availability online.");
+    expect(html).toContain("data/current/coverage-by-baseline.md");
+    expect(html).toContain("data/current/missing-sources.md");
   });
 
   it("filters records by search and structured fields", () => {

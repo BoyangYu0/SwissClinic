@@ -1,0 +1,17 @@
+{
+  "sourceId": "spital-schwyz-ausbildung",
+  "url": "https://www.spital-schwyz.ch/de/arbeiten-bei-uns/aus-und-weiterbildung.html",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "76ee2767f32dd5ded55dd3bdcf3e61eefd5b1487e1601063e4760b59421b12d6",
+  "textHash": "16dc84be2fee44c64801c6f548a0034cbf8858633bbc65a96ee39ab70856db66",
+  "title": "Aus- und Weiterbildung - Arbeiten bei uns - Spital Schwyz",
+  "visibleText": "Aus- und WeiterbildungDas Spital Schwyz ist sowohl eine moderne Ausbildungsstätte für Lernende und Studierende als auch eine vom Schweizerischen Institut für ärztliche Weiter- und Fortbildung (SIWF) zertifizierte Weiterbildungsstätte.Ihre KarrieremöglichkeitenMit Freude und hohem Engagement setzen wir uns in all unseren Fachbereichen für die Ausbildung von motivierten und engagierten Menschen ein. Ebenso am Herzen liegen uns die verschiedenen attraktiven Weiterbildungsmöglichkeiten. Hierzu zählt im Besonderen die weiterführende ärztliche Bildung. Wir freuen uns, Sie auf Ihrem Weg in die für Sie erstrebenswerte berufliche Zukunft fachkundig und kompetent zu begleiten.Unsere Angebote im ÜberblickEinblicke Nachdiplomstudiengänge",
+  "extractedLinks": [],
+  "extractedEmails": [
+    "information@spital-schwyz.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

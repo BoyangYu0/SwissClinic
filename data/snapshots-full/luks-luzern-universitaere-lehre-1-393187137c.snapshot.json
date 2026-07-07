@@ -1,0 +1,30 @@
+{
+  "sourceId": "luks-luzern-universitaere-lehre",
+  "url": "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre/",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "46935efa5bde380abc899b74deea1e221b17b2c97d9ddb38721783d495c59c9f",
+  "textHash": "b8f066b28d80c7c6585534d1a426bb9df78be52c874b077a4dcf3a514225de83",
+  "title": "Universitäre Lehre | Luzerner Kantonsspital",
+  "visibleText": "Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Luzerner KantonsspitalNotfallSuchenNotfallUniversitäre Lehre Das LUKS, als universitäres Lehr- und Forschungsspital, nimmt mit der Aus-, Weiter- und Fortbildung eine einzigartige und anspruchsvolle Schnittstelle zwischen der akademischen Welt und der Praxis wahr. In der Ausbildung bildet es Studierende der Humanmedizin sowie der Gesundheitswissenschaften aus. Die enge Verbindung der klinischen Lehrer zur Universität Luzern gewährleistet eine didaktisch hochwertige und praxisorientierte Ausbildung. Die Studierenden werden von erfahrenen Fachleuten verschiedenster Fachbereichen umfassend auf ihre Abschlüsse vorbereitet. Die Lehre erfolgt auf der Basis eines kompetenzbasierten Curriculums und ist eng mit der Universität Luzern und Zürich abgestimmt.Bitte aktivieren Sie die Cookies, um Videos abzuspielen. Cookie-Einstellungen In der Aus- und Weiter- und Fortbildung trägt das LUKS wesentlich zur Entwicklung und Kompetenzerweiterung von Fachkräften im Schweizerischen Gesundheitswesen bei.Die Lehre am LUKS beinhaltet auch die Auseinandersetzung mit neuen Erkenntnissen und Methoden, weshalb die Lernenden im Rahmen ihres Studiums oder ihrer Weiter- und Fortbildung eigene Forschungsfragen unter Supervision erarbeiten und damit zu neuen Erkenntnissen und Innovationen beitragen können. Das Erlernen und Anwenden wissenschaftlicher Methoden ist dabei eine wesentliche Grundvoraussetzung, die wichtiger Bestandteil der Lehre darstellt. Die enge Verbindung zwischen Lehre und Forschung ermöglicht es, gewonnene und aktuelle Erkenntnisse direkt in die Praxis zu integrieren und trägt zur ständigen Weiterentwicklung der medizinischen Versorgung bei.So können Sie uns kontaktieren:041 205 48 32jmm@luks.chWar diese Seite hilfreich?JaNein",
+  "extractedLinks": [
+    {
+      "text": "Direkt zum Inhalt",
+      "href": "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre/"
+    },
+    {
+      "text": "Startseite des Luzerner Kantonsspital",
+      "href": "https://www.luks.ch/"
+    },
+    {
+      "text": "Notfall",
+      "href": "https://www.luks.ch/notfall"
+    }
+  ],
+  "extractedEmails": [
+    "jmm@luks.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

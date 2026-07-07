@@ -1,0 +1,92 @@
+{
+  "sourceId": "hug-geneve-stages",
+  "url": "https://www.hug.ch/emploi/offres-stage",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "ed39cd09eacee1d6b1e525dba054616278ed1b5bf03e99229e06e841753038e3",
+  "textHash": "70d98e3aca7e38d765aba46ec176bb78c60568e834b86031667d884ea7e99dc9",
+  "title": "Les offres de stage aux HUG - HUG",
+  "visibleText": "Aller au contenu principal Vous avez activé la version contrastée du site. Pour plus d'infos à ce sujet veuillez consulter cette page. Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les candidatures aux offres de stage se font en ligne, aucun dossier papier ne sera accepté. Vous souhaitez afficher le détail d'une offre ou postuler en ligne : allez sur le titre du stage qui vous intéresse pour en afficher le détail cliquez sur «Postuler en ligne» en bas de l'offre pour saisir votre candidature Accéder aux offres de stage Les postulations se font uniquement en ligne et les candidatures sont étudiées en plusieurs étapes. Effectuer un stage: des opportunités variées Plus de 1'700 stages dans divers domaines d’activité (soins, administratif, médico-technique…) sont proposés chaque année. Un stage s’effectue toujours dans un cadre fixé par un cursus d’étude, un règlement d’admission ou dans le cadre d’une mesure d’ordre professionnelle de l’AI, chômage. Ce contenu vous a-t-il été utile ? Oui Non Comment pourrions-nous l'améliorer ? Ce formulaire est destiné à améliorer les contenus de notre site Internet. Vos soumissions sont anonymes, de ce fait aucune réponse ne pourra être apportée. Pour toute question, vous pouvez utiliser notre chatbot ou appeler la centrale téléphonique au +41 22 372 33 11. CAPTCHA Plus d'informations ActualitésMagazine PulsationsEmission Pulsations TV Actualités PresseCommuniqués de presseDossiers de presse Documents institutionnelsRapport d’activitéRapport qualitéRapport de durabilitéChiffres-clésEtats financiersStratégie 26-30 Les HUG entrent dans le top 20 mondial du classement 2026 de NewsweekEn savoir plus Dernière mise à jour : 13/01/2026",
+  "extractedLinks": [
+    {
+      "text": "Aller au contenu principal",
+      "href": "https://www.hug.ch/emploi/offres-stage"
+    },
+    {
+      "text": "cette page",
+      "href": "https://www.hug.ch/accessibilite"
+    },
+    {
+      "text": "Rechercher",
+      "href": "https://www.hug.ch/search"
+    },
+    {
+      "text": "Consultations",
+      "href": "https://www.hug.ch/liste-consultations"
+    },
+    {
+      "text": "Contacter les HUG",
+      "href": "https://www.hug.ch/contact"
+    },
+    {
+      "text": "Accéder aux offres de stage",
+      "href": "https://careers.smartrecruiters.com/HUG/apprentissage-stage"
+    },
+    {
+      "text": "en plusieurs étapes",
+      "href": "https://www.hug.ch/emploi/comment-postuler"
+    },
+    {
+      "text": "Magazine Pulsations",
+      "href": "https://www.hug.ch/pulsations-magazine"
+    },
+    {
+      "text": "Emission Pulsations TV",
+      "href": "https://www.hug.ch/pulsations-tv"
+    },
+    {
+      "text": "Actualités",
+      "href": "https://www.hug.ch/actualites"
+    },
+    {
+      "text": "Communiqués de presse",
+      "href": "https://www.hug.ch/medias/communiques-presse"
+    },
+    {
+      "text": "Dossiers de presse",
+      "href": "https://www.hug.ch/medias/dossiers-presse"
+    },
+    {
+      "text": "Rapport d’activité",
+      "href": "https://panorama.hug.ch/2025/rapport-dactivite-2025"
+    },
+    {
+      "text": "Rapport qualité",
+      "href": "https://panorama.hug.ch/sites/default/files/2026-03/hug-rapport-qualite-2025.pdf"
+    },
+    {
+      "text": "Rapport de durabilité",
+      "href": "https://www.hug.ch/durabilite"
+    },
+    {
+      "text": "Chiffres-clés",
+      "href": "https://panorama.hug.ch/sites/default/files/2026-05/factsheet-hug_2025_v-6-mai-26_fr_0.pdf"
+    },
+    {
+      "text": "Etats financiers",
+      "href": "https://panorama.hug.ch/sites/default/files/2026-03/hug-etats-financiers-2025_0.pdf"
+    },
+    {
+      "text": "Stratégie 26-30",
+      "href": "https://www.hug.ch/strategie-institutionnelle-2026-2030"
+    },
+    {
+      "text": "En savoir plus",
+      "href": "https://www.hug.ch/actualite/hug-entrent-dans-top-20-mondial-classement-2026-newsweek"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

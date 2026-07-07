@@ -1,0 +1,15 @@
+{
+  "sourceId": "inselgruppe-bern-career-education",
+  "url": "https://inselgruppe.ch/de/jobs-karriere/ausbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html",
+  "rawHash": "58e20aa7252fd657527cd603a00036cb32cec3df3e0e7a77bdd2b35f3acf5dbd",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

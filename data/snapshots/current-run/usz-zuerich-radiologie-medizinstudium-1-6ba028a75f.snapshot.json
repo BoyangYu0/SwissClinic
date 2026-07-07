@@ -1,0 +1,34 @@
+{
+  "sourceId": "usz-zuerich-radiologie-medizinstudium",
+  "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "2a93ca5b2cb29432b5e92e69f576f61fd0f23a51b6df29a00cb7a726137d7a4b",
+  "textHash": "b0bec31eae76d048541d5f3bd91c8c886bff11df20c1f3f266e11f16dd59bc9c",
+  "title": "Unterassistenzen Radiologie – USZ",
+  "visibleText": "Unterassistenzen Radiologie Wir bieten Unterassistenten und Unterassistentinnen die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Diagnostische und Interventionelle Radiologie USZ zu arbeiten. Voraussetzung ist die Herkunft aus einem EU-/EFTA Staat. Dauer Sie können sich für 1 oder 3 Monate bewerben (Dauer ist jeweils vom Ersten bis Letzten des Monats); die Plätze sind begrenzt. Wir bieten keine 4-monatige Famulaturen an. Fachgebiete Ultraschall Befund Computertomographie Magnetresonanztomographie Interventionelle Radiologie Freie Ausbildungsplätze Bitte kontaktieren Sie andrea.bisculm@usz.ch wegen eines Ausbildungsplatzes. Curriculum Merkblatt Unterassistenz Radiologie Download 78 KB Kontakt Universitätsspital Zürich Andrea Bisculm Institut für Diagnostische und Interventionelle Radiologie AUFN C 20 Rämistrasse 100 8091 Zürich Tel. +41 44 255 32 69 Mail andrea.bisculm@usz.ch Bewerbung Senden Sie uns Ihre vollständige Bewerbung ausschliesslich im PDF Format (bitte nicht grösser als 5MB) per E-Mail mit folgenden Unterlagen: Bewerbungsschreiben mit Angabe des gewünschten Zeitraums Lebenslauf mit Foto Kopien der Immatrikulations-/Studienbescheinigungen und der allfälligen bereits erhalteten Zeugnisse Schweizerische Studierende: Kopie AHV-Ausweis Fremdsprachige Studierende: nachgewiesene Deutschkenntnisse ECL-Level C1 Ausländische Studierende: Gültige Pass-/Personalausweis-Kopie Mail andrea.bisculm@usz.ch Team Ressort Lehre​ Lorenz Käser, Dr. med. Leiter Ressort Lehre Tel. +41 44 255 30 35 Mail lorenzo.kaeser@usz.ch Alida Julia Danko-Steiner Verwaltungssekretärin Tel. +41 43 253 56 13 Mail alida.danko@usz.ch Spezialgebiete: Planung Lehrveranstaltungen und Prüfungen, USZ-Fortbildungen Gabriela Stettler Verwaltungssekretärin Tel. +41 44 255 20 45 Mail gabriela.stettler@usz.ch Spezialgebiete: Unterassistenzen",
+  "extractedLinks": [
+    {
+      "text": "Merkblatt Unterassistenz Radiologie Download 78 KB",
+      "href": "https://www.usz.ch/app/uploads/2021/10/Infoblatt-fuer-UA-Radiologie.pdf"
+    },
+    {
+      "text": "Lorenz Käser, Dr. med.",
+      "href": "https://www.usz.ch/team/lorenzo-kaeser/"
+    },
+    {
+      "text": "Alida Julia Danko-Steiner",
+      "href": "https://www.usz.ch/team/alida-julia-danko-steiner/"
+    },
+    {
+      "text": "Gabriela Stettler",
+      "href": "https://www.usz.ch/team/gabriela-stettler/"
+    }
+  ],
+  "extractedEmails": [
+    "andrea.bisculm@usz.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

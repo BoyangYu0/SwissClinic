@@ -1,0 +1,96 @@
+{
+  "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+  "url": "https://www.solothurnerspitaeler.ch/jobs-karriere",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "8d6e3d817b81d9d91099bd4ae5baf764a001bffbfb5408bf721d304a4f89f5a6",
+  "textHash": "042f08bedb0737f016a7b1fbabec0ec48912518f6dc2d6f334ee86b91f90ab59",
+  "title": "soH | Jobs, Karriere & Ausbildung",
+  "visibleText": "KARRIEREMÖGLICHKEITEN IN DER SOH Die Solothurner Spitäler AG (soH) bietet spannende Jobs und Entwicklungschancen an vier Standorten mit rund 4500 Mitarbeitenden. Ob Pflege, Medizin, Verwaltung oder ein anderer Bereich – wir suchen motivierte Fachkräfte, die mit uns die Zukunft der Gesundheitsversorgung gestalten möchten. Wir bieten attraktive Arbeitsbedingungen, Entwicklungsmöglichkeiten und ein breites Spektrum an Einsatzgebieten. Ihre beruflichen Ziele unterstützen wir aktiv und bieten Ihnen ein Umfeld, in dem Sie sich persönlich und fachlich weiterentwickeln können. Egal, ob Sie Erfahrung im Gesundheitswesen haben oder am Anfang Ihrer beruflichen Laufbahn stehen – bei uns finden Sie vielfältige Möglichkeiten, Ihre Fähigkeiten einzubringen und sich weiterzuentwickeln. Wir heissen jeden willkommen – unabhängig von Alter, Herkunft, Geschlecht, Nationalität, Religion, Beeinträchtigung, sexueller Identität oder sonstigen Merkmalen. Unser Bestreben ist es, die bestmögliche Versorgung für unsere Patientinnen und Patienten sicherzustellen und gleichzeitig ein attraktiver Arbeitgeber für unsere Mitarbeitenden zu sein. Wir freuen uns, wenn Sie uns mit Ihren Kompetenzen dabei unterstützen. Offene Stellen finden Zum neuen Job Offene Stellen Offene Weiterbildungsplätze Offene Lehrstellen Blitzbewerbung Mehr über die soH Ansprechpersonen Benefits und Lohn Fort- und Weiterbildung Karrierebereiche Leitbild und Werte Schnuppern und Praktikum Social Media Kanäle Solothurn und Umgebung Unsere Standorte #teamsoh: Ein Team, viele Talente Unser Bewerbungsprozess Hier finden Sie alle Informationen zum Ablauf unseres Bewerbungsprozess in der soH. Karriere in der Pflege Infos zum Laufbahnmodell Pflege in der soH finden Sie hier. Ärztliche Aus- und Weiterbildung Fortbildungsprogramme der soH, für ärztliche Aus- und Weiterbildungen, finden Sie hier. Bewerben aus dem Ausland Hier finden Sie Infos zum Thema \"Leben und Arbeiten in der Schweiz\". Messen und Events Hier finden Sie alle Termine, bei denen wir auf Messen und Events anzutreffen sind - reinschauen lohnt sich. Freiwilligenarbeit Sie möchten unsere Patienten mit einer freiwilligen Tätigkeit unterstützen? Hier finden Sie alle Infos.",
+  "extractedLinks": [
+    {
+      "text": "Offene Stellen finden",
+      "href": "https://www.solothurnerspitaeler.ch/jobs-karriere/jobangebote"
+    },
+    {
+      "text": "Offene Weiterbildungsplätze",
+      "href": "https://www.solothurnerspitaeler.ch/karriere-jobs/ausbildungen/offene-aus-und-weiterbildungsplaetze"
+    },
+    {
+      "text": "Offene Lehrstellen",
+      "href": "https://www.solothurnerspitaeler.ch/karriere-jobs/ausbildungen/offene-lehrstellen"
+    },
+    {
+      "text": "Blitzbewerbung",
+      "href": "https://www.solothurnerspitaeler.ch/jobs-karriere/whatsapp-bewerbung"
+    },
+    {
+      "text": "Ansprechpersonen",
+      "href": "https://www.solothurnerspitaeler.ch/ansprechpersonen"
+    },
+    {
+      "text": "Benefits und Lohn",
+      "href": "https://www.solothurnerspitaeler.ch/benefits-lohn"
+    },
+    {
+      "text": "Fort- und Weiterbildung",
+      "href": "https://www.solothurnerspitaeler.ch/fort-weiterbildung"
+    },
+    {
+      "text": "Karrierebereiche",
+      "href": "https://www.solothurnerspitaeler.ch/karriere-im-spital"
+    },
+    {
+      "text": "Leitbild und Werte",
+      "href": "https://www.solothurnerspitaeler.ch/leitbild-werte"
+    },
+    {
+      "text": "Schnuppern und Praktikum",
+      "href": "https://www.solothurnerspitaeler.ch/schnuppern-praktikum"
+    },
+    {
+      "text": "Social Media Kanäle",
+      "href": "https://www.solothurnerspitaeler.ch/soh-social-media"
+    },
+    {
+      "text": "Solothurn und Umgebung",
+      "href": "https://www.solothurnerspitaeler.ch/solothurn-umgebung"
+    },
+    {
+      "text": "Unsere Standorte",
+      "href": "https://www.solothurnerspitaeler.ch/unsere-standorte"
+    },
+    {
+      "text": "#teamsoh: Ein Team, viele Talente",
+      "href": "https://www.solothurnerspitaeler.ch/teamsoh"
+    },
+    {
+      "text": "Unser Bewerbungsprozess Hier finden Sie alle Informationen zum Ablauf unseres Bewerbungsprozess in der soH.",
+      "href": "https://www.solothurnerspitaeler.ch/bewerberprozess"
+    },
+    {
+      "text": "Karriere in der Pflege Infos zum Laufbahnmodell Pflege in der soH finden Sie hier.",
+      "href": "https://www.solothurnerspitaeler.ch/karriere-in-der-pflege"
+    },
+    {
+      "text": "Ärztliche Aus- und Weiterbildung Fortbildungsprogramme der soH, für ärztliche Aus- und Weiterbildungen, finden Sie hier.",
+      "href": "https://www.solothurnerspitaeler.ch/aerztliche-aus-weiterbildung"
+    },
+    {
+      "text": "Bewerben aus dem Ausland Hier finden Sie Infos zum Thema \"Leben und Arbeiten in der Schweiz\".",
+      "href": "https://www.solothurnerspitaeler.ch/bewerben-aus-dem-ausland"
+    },
+    {
+      "text": "Messen und Events Hier finden Sie alle Termine, bei denen wir auf Messen und Events anzutreffen sind - reinschauen lohnt sich.",
+      "href": "https://www.solothurnerspitaeler.ch/messen-events"
+    },
+    {
+      "text": "Freiwilligenarbeit Sie möchten unsere Patienten mit einer freiwilligen Tätigkeit unterstützen? Hier finden Sie alle Infos.",
+      "href": "https://www.solothurnerspitaeler.ch/freiwilligenarbeit"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

@@ -1,0 +1,15 @@
+{
+  "sourceId": "kantonsspital-obwalden-ausbildung",
+  "url": "https://www.ksow.ch/karriere/ausbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "5c510c5c9f10b6fee3520f086243388911a7fe29b74ea7078c5300901f0142f6",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

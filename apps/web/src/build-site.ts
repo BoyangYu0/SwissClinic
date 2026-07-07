@@ -53,6 +53,30 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
     join(currentDataOut, "source-coverage.md"),
   );
   await copyIfExists(
+    join(options.dataDir, "institution-coverage.json"),
+    join(currentDataOut, "institution-coverage.json"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "institution-coverage.md"),
+    join(currentDataOut, "institution-coverage.md"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "record-coverage.json"),
+    join(currentDataOut, "record-coverage.json"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "record-coverage.md"),
+    join(currentDataOut, "record-coverage.md"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "missing-sources.md"),
+    join(currentDataOut, "missing-sources.md"),
+  );
+  await copyIfExists(
+    join(options.dataDir, "coverage-by-baseline.md"),
+    join(currentDataOut, "coverage-by-baseline.md"),
+  );
+  await copyIfExists(
     join(options.dataDir, "reliability-audit.json"),
     join(currentDataOut, "reliability-audit.json"),
   );

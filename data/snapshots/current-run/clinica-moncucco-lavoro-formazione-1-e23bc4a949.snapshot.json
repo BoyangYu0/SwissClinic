@@ -1,0 +1,64 @@
+{
+  "sourceId": "clinica-moncucco-lavoro-formazione",
+  "url": "https://www.moncucco.ch/404.php",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "138386d3b6cffedb8c7b82dd7d750aad0367f907aa86d8be31e85629a71fb430",
+  "textHash": "0f3fa7ae7b4a85d17143a3f49e0dbdf2e3aaf57155e8952b3b8cc45e7ce6f6ef",
+  "title": "404 - Organica",
+  "visibleText": "404 La pagina che stavi cercando non è stata trovata. Per tornare alla homepage clicca qui. Accesso diretto Clinica Moncucco Clinica Santa Chiara Orari di visita Informazioni sui ricoveri Specializzazioni I medici Il Gruppo Lavora con noi Contatta il Gruppo Ospedaliero Moncucco Clinica Moncucco T +41 91 960 81 11 Clinica Santa Chiara T +41 91 756 41 11 Pronto Soccorso Clinica MoncuccoT +41 91 960 85 64 Clinica Santa ChiaraT +41 91 756 48 44 Copyright © 2026 Website by Organica.agency - Modifica preferenze Cookie Orari visite Info degenza Urgenze",
+  "extractedLinks": [
+    {
+      "text": "clicca qui",
+      "href": "https://www.moncucco.ch/"
+    },
+    {
+      "text": "Clinica Moncucco",
+      "href": "https://www.moncucco.ch/clinica-moncucco.php"
+    },
+    {
+      "text": "Clinica Santa Chiara",
+      "href": "https://www.moncucco.ch/clinica-santa-chiara.php"
+    },
+    {
+      "text": "Orari di visita",
+      "href": "https://www.moncucco.ch/orari-di-visita.php"
+    },
+    {
+      "text": "Informazioni sui ricoveri",
+      "href": "https://www.moncucco.ch/informazioni_per_degenza.htm"
+    },
+    {
+      "text": "Specializzazioni",
+      "href": "https://www.moncucco.ch/specializzazioni.php"
+    },
+    {
+      "text": "I medici",
+      "href": "https://www.moncucco.ch/medici.php"
+    },
+    {
+      "text": "Il Gruppo",
+      "href": "https://www.moncucco.ch/gruppo-ospedaliero-moncucco.php"
+    },
+    {
+      "text": "Lavora con noi",
+      "href": "https://www.moncucco.ch/lavora-con-noi.php"
+    },
+    {
+      "text": "Organica.agency",
+      "href": "http://www.organica.agency/"
+    },
+    {
+      "text": "Modifica preferenze Cookie",
+      "href": "https://www.moncucco.ch/cookies.php"
+    },
+    {
+      "text": "Urgenze",
+      "href": "https://www.moncucco.ch/pronto_soccorso.asp"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

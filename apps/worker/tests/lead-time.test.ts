@@ -75,6 +75,20 @@ describe("lead-time data", () => {
     );
   });
 
+  it("does not generate historical lead-time evidence for past availability dates", () => {
+    const record = placement({
+      availableFrom: "2026-01",
+      lastChecked: "2026-07-07T08:00:00.000Z",
+    });
+    const result = buildLeadTimeData([record]);
+
+    expect(result.placements[0]).toMatchObject({
+      observedMonthsAhead: null,
+      leadTimeSummaryId: null,
+    });
+    expect(result.evidence).toHaveLength(0);
+  });
+
   it("lets hospital-confirmed evidence override explicit and historical evidence", () => {
     const record = placement();
     const placementKey = makeLeadTimePlacementKey(record);

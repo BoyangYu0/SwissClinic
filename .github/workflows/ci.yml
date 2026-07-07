@@ -44,3 +44,18 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Validate crawl inputs
+        run: pnpm crawl -- --sources packages/sources/sources.yaml --out data/snapshots/ci-dry-run --dry-run
+
+      - name: Validate coverage reports
+        run: pnpm coverage:report -- --sources packages/sources/sources.yaml --data data/current --out data/current
+
+      - name: Validate reliability audit
+        run: pnpm reliability:audit -- --data data/current --sources packages/sources/sources.yaml --out data/current
+
+      - name: Validate lead-time reports
+        run: pnpm lead-time:build -- --data data/current
+
+      - name: Validate static data
+        run: pnpm data:validate -- --data data/current

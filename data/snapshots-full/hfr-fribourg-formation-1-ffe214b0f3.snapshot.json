@@ -1,0 +1,15 @@
+{
+  "sourceId": "hfr-fribourg-formation",
+  "url": "https://www.h-fr.ch/fr/formation",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "2949bebaa9b11a3703f96928d403798e9e0a47b8a7b43ec3f865ad9b58e68b99",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

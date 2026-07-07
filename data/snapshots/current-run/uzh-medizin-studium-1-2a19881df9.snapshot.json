@@ -1,0 +1,145 @@
+{
+  "sourceId": "uzh-medizin-studium",
+  "url": "https://www.med.uzh.ch/de/studium.html",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "f3f18cadc5d461140a7c1b777c35ce718d82677a2c3b4af88672326355f65311",
+  "textHash": "9dbf5cff33df11068b5f49023abfe9c9ebb65811ac876341412a199b0173775b",
+  "title": "Studium | Medizinische Fakultät | UZH",
+  "visibleText": "Zum Inhalt springen Studium Weiterführende Informationen Studieninformationstage Die Informationstage geben einen Überblick über die Studienmöglichkeiten der Universität Zürich und helfen, die persönlich richtige Studienwahl zu treffen. Informieren Sie sich auf dieser Seite: www.studieninformationstage.uzh.ch Präsentation zu den Studieninformationstagen: Präsentation Studieninformationstage Humanmedizin 2024 Flyer Studieninformationstage Humanmedizin - Das sagen unsere Studierende Curriculumsrevision ZH Med4 Informationen zur Curriculumsrevision ZH Med4 finden Sie hier. Humanmedizinstudium Zahnmedizinstudium Chiropraktikstudium Doktoratsprogramme Infobroschüren Lehre Lehren an der Medizinischen Fakultät Digital Skills in der Lehre Übersicht Bachelor- und (gemeinsame) Masterstudiengänge Humanmedizin Bildungsnetzwerk Medizin Studienfachberatung Zulassung zum Studium Studienabschluss anmelden Rechtsgrundlagen VAM Prüfungen Masterarbeit Militärdienst Mutterschaft Mobilität / International Exchange Partner- und Lehrspitäler Klinik-Katalog für das Wahlstudienjahr Äquivalenzbescheinigung Evaluation Lernzentrum medskills4u Kostenkalkulation Studium",
+  "extractedLinks": [
+    {
+      "text": "Zum Inhalt springen",
+      "href": "https://www.med.uzh.ch/de/studium.html"
+    },
+    {
+      "text": "www.studieninformationstage.uzh.ch",
+      "href": "http://www.studieninformationstage.uzh.ch/index.html"
+    },
+    {
+      "text": "Präsentation Studieninformationstage Humanmedizin 2024",
+      "href": "https://www.med.uzh.ch/dam/jcr:1b8f782c-4a0c-4e44-863f-dfeb701446cc/Pr%C3%A4sentation%20SIT%202024_finale_neue%20Vorlage.pdf"
+    },
+    {
+      "text": "Flyer Studieninformationstage",
+      "href": "https://www.med.uzh.ch/dam/jcr:3e3d649c-8487-4369-baee-39d9dc3ba056/2022_UZH_SIT_Flyer_Humanmedizin_750Ex_300dpi_GzD_VERSION_1_AKTUELL.TH.pdf"
+    },
+    {
+      "text": "hier",
+      "href": "https://www.med.uzh.ch/de/Medizinstudium/Curriculumsrevision.html"
+    },
+    {
+      "text": "Humanmedizinstudium",
+      "href": "https://www.med.uzh.ch/de/studium/humanmedizinstudium.html"
+    },
+    {
+      "text": "Zahnmedizinstudium",
+      "href": "https://www.med.uzh.ch/de/studium/zahnmedizinstudium.html"
+    },
+    {
+      "text": "Chiropraktikstudium",
+      "href": "https://www.med.uzh.ch/de/studium/chiropraktikstudium.html"
+    },
+    {
+      "text": "Doktoratsprogramme",
+      "href": "https://www.med.uzh.ch/de/studium/doktoratsprogramme.html"
+    },
+    {
+      "text": "Infobroschüren",
+      "href": "https://www.med.uzh.ch/de/studium/infobroschueren.html"
+    },
+    {
+      "text": "Lehre",
+      "href": "https://www.med.uzh.ch/de/studium/Lehre.html"
+    },
+    {
+      "text": "Lehren an der Medizinischen Fakultät",
+      "href": "https://www.med.uzh.ch/de/studium/Lehren-an-der-Medizinischen-Fakult%C3%A4t.html"
+    },
+    {
+      "text": "Digital Skills in der Lehre",
+      "href": "https://www.med.uzh.ch/de/studium/Digital-Skills-in-der-Lehre.html"
+    },
+    {
+      "text": "Übersicht Bachelor- und (gemeinsame) Masterstudiengänge Humanmedizin",
+      "href": "https://www.med.uzh.ch/de/studium/gemeinsamemasterstudiengaenge.html"
+    },
+    {
+      "text": "Bildungsnetzwerk Medizin",
+      "href": "https://www.med.uzh.ch/de/studium/Bildungsnetzwerk-Medizin.html"
+    },
+    {
+      "text": "Studienfachberatung",
+      "href": "https://www.med.uzh.ch/de/studium/studienfachberatung.html"
+    },
+    {
+      "text": "Zulassung zum Studium",
+      "href": "https://www.med.uzh.ch/de/studium/Zulassung.html"
+    },
+    {
+      "text": "Studienabschluss anmelden",
+      "href": "https://www.med.uzh.ch/de/studium/Studienabschluss-anmelden.html"
+    },
+    {
+      "text": "Rechtsgrundlagen",
+      "href": "https://www.med.uzh.ch/de/studium/Rechtsgrundlagen.html"
+    },
+    {
+      "text": "VAM",
+      "href": "https://www.med.uzh.ch/de/studium/VAM.html"
+    },
+    {
+      "text": "Prüfungen",
+      "href": "https://www.med.uzh.ch/de/studium/Pruefungen.html"
+    },
+    {
+      "text": "Masterarbeit",
+      "href": "https://www.med.uzh.ch/de/studium/masterarbeit.html"
+    },
+    {
+      "text": "Militärdienst",
+      "href": "https://www.med.uzh.ch/de/studium/Militaerdienst.html"
+    },
+    {
+      "text": "Mutterschaft",
+      "href": "https://www.med.uzh.ch/de/studium/mutterschaft.html"
+    },
+    {
+      "text": "Mobilität / International Exchange",
+      "href": "https://www.med.uzh.ch/de/studium/Mobilitaet2.html"
+    },
+    {
+      "text": "Partner- und Lehrspitäler",
+      "href": "https://www.med.uzh.ch/de/studium/Partner--und-Lehrspit%C3%A4ler.html"
+    },
+    {
+      "text": "Klinik-Katalog für das Wahlstudienjahr",
+      "href": "https://www.med.uzh.ch/de/studium/klinikkatalog.html"
+    },
+    {
+      "text": "Äquivalenzbescheinigung",
+      "href": "https://www.med.uzh.ch/de/studium/aequivalenz.html"
+    },
+    {
+      "text": "Evaluation",
+      "href": "https://www.med.uzh.ch/de/studium/Evaluation.html"
+    },
+    {
+      "text": "Lernzentrum medskills4u",
+      "href": "https://www.med.uzh.ch/de/studium/Lernzentrum-medskills4u.html"
+    },
+    {
+      "text": "Kostenkalkulation Studium",
+      "href": "https://www.med.uzh.ch/de/studium/kosten-studium.html"
+    }
+  ],
+  "extractedEmails": [
+    "dissertationen@dekmed.uzh.ch",
+    "kommunikation@dekmed.uzh.ch",
+    "sekretariat@dekmed.uzh.ch",
+    "studienberatung@dekmed.uzh.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

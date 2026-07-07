@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "leadtime-evidence-ce185cbd6d95",
+    "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
+    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-chirurgie-medizinstudium",
+    "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/",
+    "evidenceType": "historical-observed",
+    "monthsAhead": 2,
+    "targetStartMonth": "2026-09",
+    "observedAt": "2026-07-07T15:51:40.165Z",
+    "confidence": "low",
+    "label": "Estimated from public page history: observed 2 months ahead.",
+    "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
+  },
+  {
+    "id": "leadtime-evidence-856df80ccc6a",
+    "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
+    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
+    "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/",
+    "evidenceType": "historical-observed",
+    "monthsAhead": 29,
+    "targetStartMonth": "2028-12",
+    "observedAt": "2026-07-07T15:51:40.165Z",
+    "confidence": "low",
+    "label": "Estimated from public page history: observed 29 months ahead.",
+    "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
+  },
+  {
+    "id": "leadtime-evidence-6afd8394cc7d",
+    "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
+    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+    "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/",
+    "evidenceType": "explicit-source",
+    "monthsAhead": 12,
+    "targetStartMonth": null,
+    "observedAt": "2026-07-07T15:51:40.165Z",
+    "confidence": "medium",
+    "label": "Explicitly stated by source: apply 12 months ahead.",
+    "notes": "Unterassistenzen Frauenheilkunde – USZ. Unterassistenzen Frauenheilkunde Die Frauenheilkunde am Universitätsspital Zürich bietet Ihnen einen umfassenden Einblick in das gesamte Spektrum der Gynäkologie und Geburtshilfe. Im Medizinbereich Frau–Kind arbeiten wir interdisziplinär, praxisnah und wissenschaftlich fundiert – ein ideales Umfeld für Ihre klinische Ausbildung im Wahlstudienjahr bzw. Praktischen Jahr. Ihre Einblicksbereiche Während Ihrer Unterassistenz gewinnen Sie tiefgehende Einblicke in drei zentrale Bereiche der Frauenheilkunde: Klinik für Gynäkologie Mitbetreuung von Patientinnen auf der Bettenstation Assistenz im Operationssaal bei gynäkologischen Eingriffen Teilnahme an Sprechs"
+  },
+  {
+    "id": "leadtime-evidence-b595ba7490a6",
+    "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
+    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-medizin-medizinstudium",
+    "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/",
+    "evidenceType": "historical-observed",
+    "monthsAhead": 1,
+    "targetStartMonth": "2026-08",
+    "observedAt": "2026-07-07T15:51:40.165Z",
+    "confidence": "low",
+    "label": "Estimated from public page history: observed 1 months ahead.",
+    "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "sourceId": "zuger-kantonsspital-ausbildung",
+  "url": "https://www.zgks.ch/karriere/aus-und-weiterbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "2bea2167deae83bb7cba83b611ead61d3c44030af479431007279c26bd18f883",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

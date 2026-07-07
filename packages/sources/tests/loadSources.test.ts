@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { loadSources } from "../src/loadSources.js";
 
@@ -30,6 +30,15 @@ describe("loadSources", () => {
     const urlCount = sources.reduce((count, source) => count + source.sourceUrls.length, 0);
 
     expect(urlCount).toBeGreaterThanOrEqual(45);
+  });
+
+  it("loads the tiny local testing source registry", async () => {
+    const sources = await loadSources(resolve(process.cwd(), "sources.local.example.yaml"));
+    const urlCount = sources.reduce((count, source) => count + source.sourceUrls.length, 0);
+
+    expect(sources).toHaveLength(3);
+    expect(urlCount).toBe(3);
+    expect(new Set(sources.map((source) => source.sourceLanguage))).toEqual(new Set(["de", "fr"]));
   });
 
   it("requires candidate entries in the checked-in registry to explain why they are included", async () => {

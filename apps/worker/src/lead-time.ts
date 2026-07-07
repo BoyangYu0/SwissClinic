@@ -250,7 +250,8 @@ function evidenceRecord(input: {
 
 function observedMonthsAheadForRecord(record: PlacementRecord): number | null {
   const target = targetStartMonth(record);
-  return target ? monthsBetweenObservedAndTarget(record.lastChecked, target) : null;
+  const monthsAhead = target ? monthsBetweenObservedAndTarget(record.lastChecked, target) : null;
+  return monthsAhead !== null && monthsAhead >= 0 ? monthsAhead : null;
 }
 
 function targetStartMonth(record: PlacementRecord): string | null {

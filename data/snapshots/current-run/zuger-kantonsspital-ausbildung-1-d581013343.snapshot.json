@@ -1,0 +1,44 @@
+{
+  "sourceId": "zuger-kantonsspital-ausbildung",
+  "url": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "adbe29825a24633aee53730fed9f696b3628c6383f665094b518c5b29999069c",
+  "textHash": "aa464100438423ad10ccdff5875e28571a6d4737f6488e2c0f409a0d50df4493",
+  "title": "Ihr Arbeitgeber - Zuger Kantonsspital AG",
+  "visibleText": "Unsere Werte Arbeitgeberleistungen Für Interessenten aus dem Ausland Seite drucken Das Zuger Kantonsspital zählt zu den grössten Arbeitgebern und Ausbildungsbetrieben der Region. Wir setzen auf ein gutes Arbeitsklima, attraktive Anstellungsbedingungen, vielseitige Weiterentwicklungsmöglichkeiten und eine erstklassige Arbeitsinfrastruktur. Vielseitige und interessante Aus- undWeiterbildungsmöglichkeiten Unterstützen Sie unser Pflegefachteam als freiwillige Mitarbeiterin oder freiwilliger Mitarbeiter. Wir freuen uns auf Ihre Kontaktnahme.. Serge Wilhelm Leiter Personal T+41 41 399 44 72 nach oben",
+  "extractedLinks": [
+    {
+      "text": "Unsere Werte",
+      "href": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber/unsere-werte"
+    },
+    {
+      "text": "Arbeitgeberleistungen",
+      "href": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber/arbeitgeberleistungen"
+    },
+    {
+      "text": "Für Interessenten aus dem Ausland",
+      "href": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber/fuer-interessenten-aus-dem-ausland"
+    },
+    {
+      "text": "Vielseitige und interessante Aus- undWeiterbildungsmöglichkeiten",
+      "href": "https://www.zgks.ch/jobs-karriere/karriere"
+    },
+    {
+      "text": "Unterstützen Sie unser Pflegefachteam als freiwillige Mitarbeiterin oder freiwilliger Mitarbeiter. Wir freuen uns auf Ihre Kontaktnahme..",
+      "href": "https://www.zgks.ch/kliniken-bereiche/pflege/freiwilligenarbeit"
+    },
+    {
+      "text": "Serge Wilhelm",
+      "href": "https://www.zgks.ch/personen/details/wilhelm"
+    },
+    {
+      "text": "nach oben",
+      "href": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

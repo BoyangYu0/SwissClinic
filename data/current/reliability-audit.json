@@ -1,86 +1,93 @@
 {
-  "generatedAt": "2026-07-07T12:30:57.216Z",
-  "sourceCount": 49,
-  "placementCount": 10,
+  "generatedAt": "2026-07-07T15:55:54.287Z",
+  "sourceCount": 61,
+  "placementCount": 55,
   "countsBySourceLanguage": {
-    "de": 32,
+    "de": 41,
     "en": 1,
-    "fr": 10,
-    "it": 3,
+    "fr": 11,
+    "it": 5,
     "mixed": 3
   },
   "placementCountsBySourceLanguage": {
-    "de": 10
-  },
-  "countsByRegion": {
-    "de-CH": 32,
-    "fr-CH": 10,
-    "it-CH": 4,
+    "de": 39,
+    "en": 1,
+    "fr": 10,
+    "it": 2,
     "mixed": 3
   },
-  "placementCountsByRegion": {
-    "de-CH": 10
+  "countsByRegion": {
+    "de-CH": 40,
+    "fr-CH": 10,
+    "it-CH": 5,
+    "mixed": 6
   },
-  "manualVerificationSourceCount": 49,
-  "sparsePlacementCount": 9,
-  "riskyPublishedPlacementCount": 0,
+  "placementCountsByRegion": {
+    "de-CH": 38,
+    "fr-CH": 9,
+    "it-CH": 2,
+    "mixed": 6
+  },
+  "manualVerificationSourceCount": 61,
+  "sparsePlacementCount": 54,
+  "riskyPublishedPlacementCount": 3,
   "languageSummaries": [
     {
       "sourceLanguage": "de",
-      "sources": 32,
-      "placements": 10,
-      "recordsNeedingReview": 9,
-      "sparseRecords": 9,
-      "manualVerificationSources": 32,
+      "sources": 41,
+      "placements": 39,
+      "recordsNeedingReview": 34,
+      "sparseRecords": 38,
+      "manualVerificationSources": 41,
       "status": "needs-review"
     },
     {
       "sourceLanguage": "en",
       "sources": 1,
-      "placements": 0,
-      "recordsNeedingReview": 0,
-      "sparseRecords": 0,
+      "placements": 1,
+      "recordsNeedingReview": 1,
+      "sparseRecords": 1,
       "manualVerificationSources": 1,
-      "status": "source-only"
+      "status": "needs-review"
     },
     {
       "sourceLanguage": "fr",
-      "sources": 10,
-      "placements": 0,
-      "recordsNeedingReview": 0,
-      "sparseRecords": 0,
-      "manualVerificationSources": 10,
-      "status": "source-only"
+      "sources": 11,
+      "placements": 10,
+      "recordsNeedingReview": 10,
+      "sparseRecords": 10,
+      "manualVerificationSources": 11,
+      "status": "needs-review"
     },
     {
       "sourceLanguage": "it",
-      "sources": 3,
-      "placements": 0,
-      "recordsNeedingReview": 0,
-      "sparseRecords": 0,
-      "manualVerificationSources": 3,
-      "status": "source-only"
+      "sources": 5,
+      "placements": 2,
+      "recordsNeedingReview": 2,
+      "sparseRecords": 2,
+      "manualVerificationSources": 5,
+      "status": "needs-review"
     },
     {
       "sourceLanguage": "mixed",
       "sources": 3,
-      "placements": 0,
-      "recordsNeedingReview": 0,
-      "sparseRecords": 0,
+      "placements": 3,
+      "recordsNeedingReview": 3,
+      "sparseRecords": 3,
       "manualVerificationSources": 3,
-      "status": "source-only"
+      "status": "needs-review"
     }
   ],
   "phaseChecks": [
     {
       "phase": "A",
       "status": "pass",
-      "summary": "49 sources loaded; 49 remain in candidate/needs-review status."
+      "summary": "61 sources loaded; 61 remain in candidate/needs-review status."
     },
     {
       "phase": "B",
       "status": "pass",
-      "summary": "10 placement records validate with multilingual source metadata."
+      "summary": "55 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -94,13 +101,13 @@
     },
     {
       "phase": "E",
-      "status": "warning",
+      "status": "pass",
       "summary": "Parser framework is multilingual, but non-German real sources are still source-only until crawled fixtures exist."
     },
     {
       "phase": "F",
-      "status": "pass",
-      "summary": "9 sparse placement records and 0 risky auto-published records found."
+      "status": "warning",
+      "summary": "54 sparse placement records and 3 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -552,6 +559,114 @@
     },
     {
       "severity": "info",
+      "id": "ksbl-baselland-karriere",
+      "sourceId": "ksbl-baselland-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "spitaeler-schaffhausen-aus-und-weiterbildung",
+      "sourceId": "spitaeler-schaffhausen-aus-und-weiterbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "svar-appenzell-aus-und-weiterbildung",
+      "sourceId": "svar-appenzell-aus-und-weiterbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "spital-maennedorf-aus-und-weiterbildung",
+      "sourceId": "spital-maennedorf-aus-und-weiterbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "spital-limmattal-aus-und-weiterbildung",
+      "sourceId": "spital-limmattal-aus-und-weiterbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "gzo-wetzikon-karriere",
+      "sourceId": "gzo-wetzikon-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "see-spital-karriere",
+      "sourceId": "see-spital-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "balgrist-zuerich-karriere",
+      "sourceId": "balgrist-zuerich-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-de-karriere",
+      "sourceId": "swiss-medical-network-de-karriere",
+      "sourceLanguage": "de",
+      "region": "mixed",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-fr-carriere",
+      "sourceId": "swiss-medical-network-fr-carriere",
+      "sourceLanguage": "fr",
+      "region": "mixed",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-it-carriera",
+      "sourceId": "swiss-medical-network-it-carriera",
+      "sourceLanguage": "it",
+      "region": "mixed",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
+      "id": "clinica-moncucco-lavoro-formazione",
+      "sourceId": "clinica-moncucco-lavoro-formazione",
+      "sourceLanguage": "it",
+      "region": "it-CH",
+      "reason": "source requires manual verification",
+      "action": "Confirm official page relevance, public crawlability, and whether it contains placement facts."
+    },
+    {
+      "severity": "info",
       "id": "swimsa-exchanges",
       "sourceId": "swimsa-exchanges",
       "sourceLanguage": "mixed",
@@ -561,6 +676,231 @@
     }
   ],
   "placementIssues": [
+    {
+      "severity": "info",
+      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
+      "sourceId": "usi-biomed-faculty",
+      "sourceLanguage": "it",
+      "region": "it-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
+      "sourceId": "usi-biomed-faculty",
+      "sourceLanguage": "it",
+      "region": "it-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "chuv-unknown-clinicalplacement-4ed0132f6cd3",
+      "sourceId": "chuv-lausanne-formation-medecine",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "chuv-unknown-clinicalplacement-4ed0132f6cd3",
+      "sourceId": "chuv-lausanne-formation-medecine",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "chuv-unknown-clinicalplacement-773eb2386e98",
+      "sourceId": "chuv-lausanne-medecins-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "chuv-unknown-clinicalplacement-773eb2386e98",
+      "sourceId": "chuv-lausanne-medecins-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "etablissements-hospitaliers-du-nord-vaudois-unknown-unknown-b403800a8c63",
+      "sourceId": "ehnv-nord-vaudois-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "etablissements-hospitaliers-du-nord-vaudois-unknown-unknown-b403800a8c63",
+      "sourceId": "ehnv-nord-vaudois-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9",
+      "sourceId": "unil-ecole-medecine-stages",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-fribourgeois-unknown-unknown-33e35c2287ba",
+      "sourceId": "hfr-fribourg-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-fribourgeois-unknown-unknown-33e35c2287ba",
+      "sourceId": "hfr-fribourg-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hug-unknown-clinicalplacement-edf016518bcc",
+      "sourceId": "hug-geneve-stages",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hug-unknown-clinicalplacement-edf016518bcc",
+      "sourceId": "hug-geneve-stages",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hug-unknown-unknown-95d8d27f0273",
+      "sourceId": "hug-geneve-enseignement-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hug-unknown-unknown-95d8d27f0273",
+      "sourceId": "hug-geneve-enseignement-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c",
+      "sourceId": "inselspital-bern-medical-students",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c",
+      "sourceId": "inselspital-bern-medical-students",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
+      "sourceId": "rhne-neuchatel-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
+      "sourceId": "rhne-neuchatel-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
     {
       "severity": "info",
       "id": "kantonsspital-aarau-unknown-unterassistenz-0fc24c13fd19",
@@ -576,8 +916,233 @@
       "sourceId": "ksa-aarau-unterassistenz-informationen",
       "sourceLanguage": "de",
       "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-aarau-unknown-unterassistenz-0fc24c13fd19",
+      "sourceId": "ksa-aarau-unterassistenz-informationen",
+      "sourceLanguage": "de",
+      "region": "de-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-aarau-unknown-unterassistenz-ff9c8853e34d",
+      "sourceId": "ksa-aarau-unterassistenz-stellen",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-aarau-unknown-unterassistenz-ff9c8853e34d",
+      "sourceId": "ksa-aarau-unterassistenz-stellen",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-aarau-unknown-unterassistenz-ff9c8853e34d",
+      "sourceId": "ksa-aarau-unterassistenz-stellen",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-unknown-unterassistenz-32f569a1e560",
+      "sourceId": "ksb-baden-unterassistenzen-overview",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-unknown-unterassistenz-32f569a1e560",
+      "sourceId": "ksb-baden-unterassistenzen-overview",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-unknown-unterassistenz-32f569a1e560",
+      "sourceId": "ksb-baden-unterassistenzen-overview",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23",
+      "sourceId": "ksb-baden-unterassistentin-chirurgie",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23",
+      "sourceId": "ksb-baden-unterassistentin-chirurgie",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7",
+      "sourceId": "ksb-baden-unterassistentin-innere-medizin",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7",
+      "sourceId": "ksb-baden-unterassistentin-innere-medizin",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b",
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-st-gallen-orthopadie-unterassistenz-8a9d68966cc9",
+      "sourceId": "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
     },
     {
       "severity": "info",
@@ -594,8 +1159,26 @@
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
       "reason": "sparse availability: application-only",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
     },
     {
       "severity": "info",
@@ -612,8 +1195,26 @@
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
       "reason": "sparse availability: application-only",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
     },
     {
       "severity": "info",
@@ -630,8 +1231,26 @@
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
     },
     {
       "severity": "info",
@@ -646,6 +1265,375 @@
       "severity": "info",
       "id": "kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f",
+      "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43",
+      "sourceId": "gzo-wetzikon-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "luzerner-kantonsspital-unknown-unknown-aea647ec446c",
+      "sourceId": "luks-luzern-universitaere-lehre",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "luzerner-kantonsspital-unknown-unknown-aea647ec446c",
+      "sourceId": "luks-luzern-universitaere-lehre",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
+      "sourceId": "usb-basel-career-education",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
+      "sourceId": "usb-basel-career-education",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
+      "sourceId": "hopital-jura-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
+      "sourceId": "hopital-jura-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "spital-uster-chirurgie-unterassistenten-pdf-unknown-unknown-2819d96665c8",
+      "sourceId": "spital-uster-chirurgie-unterassistenten-pdf",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "spital-uster-chirurgie-unterassistenten-pdf-unknown-unknown-2819d96665c8",
+      "sourceId": "spital-uster-chirurgie-unterassistenten-pdf",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61",
+      "sourceId": "swiss-medical-network-it-carriera",
+      "sourceLanguage": "it",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61",
+      "sourceId": "swiss-medical-network-it-carriera",
+      "sourceLanguage": "it",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-clinicalplacement-fa8bc9541f34",
+      "sourceId": "swiss-medical-network-fr-carriere",
+      "sourceLanguage": "fr",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-clinicalplacement-fa8bc9541f34",
+      "sourceId": "swiss-medical-network-fr-carriere",
+      "sourceLanguage": "fr",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-unknown-110e8f7e7c80",
+      "sourceId": "swiss-medical-network-de-karriere",
+      "sourceLanguage": "de",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "swiss-medical-network-unknown-unknown-110e8f7e7c80",
+      "sourceId": "swiss-medical-network-de-karriere",
+      "sourceLanguage": "de",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "unige-unknown-unknown-dcc038c510a5",
+      "sourceId": "unige-medecine-enseignement",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "unige-unknown-unknown-dcc038c510a5",
+      "sourceId": "unige-medecine-enseignement",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitat-basel-unknown-unknown-620d5e127d50",
+      "sourceId": "unibas-medizin-studium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "universitat-basel-unknown-unknown-620d5e127d50",
+      "sourceId": "unibas-medizin-studium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsklinik-balgrist-karriere-anesthesiology-unknown-f8d0011080ad",
+      "sourceId": "balgrist-zuerich-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsklinik-balgrist-karriere-radiology-unknown-48776a5f531d",
+      "sourceId": "balgrist-zuerich-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
+      "sourceId": "usz-zuerich-chirurgie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "warning",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
+      "sourceId": "usz-zuerich-chirurgie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "fully booked wording may be over-interpreted",
+      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-7d3e538377da",
+      "sourceId": "usz-zuerich-neuroradiologie-unterassistenzen-famulatur",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217",
+      "sourceId": "usz-zuerich-medizinstudium-overview",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217",
+      "sourceId": "usz-zuerich-medizinstudium-overview",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: unclear",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
+      "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "warning",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
+      "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "fully booked wording may be over-interpreted",
+      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
+      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
+      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: unclear",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92",
+      "sourceId": "usz-zuerich-radiologie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92",
+      "sourceId": "usz-zuerich-radiologie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
+      "sourceId": "usz-zuerich-medizin-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "warning",
+      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
+      "sourceId": "usz-zuerich-medizin-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "fully booked wording may be over-interpreted",
+      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
+    },
+    {
+      "severity": "info",
+      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
+      "sourceId": "usi-biomed-master-medicine",
+      "sourceLanguage": "en",
+      "region": "it-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
+      "sourceId": "usi-biomed-master-medicine",
+      "sourceLanguage": "en",
+      "region": "it-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
+      "sourceId": "uzh-medizin-studium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
+      "sourceId": "uzh-medizin-studium",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",

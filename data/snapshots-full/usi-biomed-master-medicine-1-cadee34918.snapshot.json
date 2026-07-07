@@ -1,0 +1,596 @@
+{
+  "sourceId": "usi-biomed-master-medicine",
+  "url": "https://www.usi.ch/en/education/master/medicine",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "4bdef965584e40a93bc8f4e42aa99633cfd67c8516680398c58a016cf88eb6d8",
+  "textHash": "4dff9991b4fef682b53cd22cf0bb04763c8ed4098b1484b531f788a6fad69e3a",
+  "title": "Master's programmes (graduate degrees) | USI.ch",
+  "visibleText": "Skip to main content University Study at USI Research Innovation News & Events Who we are What we do Faculties and Institutes Organisation Partnerships Where to find us Practical information Work with us Contact us At a glance Key figures History Mission Dies academicus Accolades Images and logotype Publications Overview Rankings Students Graduates Education Academic mobility Research Staff Honorary Doctorate Honorary Member Medal Education Research Innovation Cultural activities In the region Sustainability Annual report Organisational structure Administration and services Official documents Libraries and archives Student Corporation Organisational chart University Council Rectorate Academic Senate Faculties and Institutes structure Commissions Why USI Bachelor Master Doctoral studies Continuing education Summer / Winter Schools Overview Programmes Admission Application Tuition and scholarships Practical information Open days and study advisory Contact us Architecture Italian language, literature and culture Theology Philosophy Communication Economics Informatics Data Science Medicine Overview Programmes Admission Application Tuition and scholarships Practical information Open days and study advisory Contact us Academy of Architecture Faculty of Biomedical Sciences Faculty of Communication, Culture and Society Faculty of Economics Faculty of Informatics Facoltà di Teologia di Lugano Architecture History and Theory of Art and Architecture Cognitive Psychology in Health Communication Master in Health, Major in Digital Public Health Medicine Corporate Communication Digital Fashion Communication European Studies in Investor Relations and Financial Communication Master in Health, Major in Health Communication International Tourism Lingua, letteratura e civiltà italiana Marketing and Transformative Economy Media Management Economia e politiche internazionali Economics Finance Management Public Management and Policy Artificial Intelligence Data Science Informatics Financial Technology and Computing Management and Informatics Software Engineering with AI Philosophy Interreligious Dialogue Scienza, filosofia e teologia delle religioni Diritto canonico ed ecclesiastico comparato Theology Vergleichendes Kanonisches Recht Overview Facts and figures Institutes Areas and competences Projects and researchers Collaborations Doing research Overview Initiatives Innovate with us News Events Press releases Social media For the media Master Master's programmes (graduate degrees) at USI provide high-quality interdisciplinary education, leading to international careers: Academy of Architecture Master in Architecture Master in Storia e teoria dell’arte e dell’architettura Faculty of Biomedical Sciences Master in Cognitive Psychology in Health Communication Master in Health, Major in Digital Public Health Master of Medicine Faculty of Communication, Culture and Society Master in Corporate Communication* Master in Digital Fashion Communication Master in European Studies in Investor Relations and Financial Communication Master in Health, Major in Health Communication Master in International Tourism* Master in Lingua, letteratura e civiltà italiana Master in Marketing and Transformative Economy* Master in Media Management *jointly offered with the Faculty of Economics Faculty of Economics Master in Economia e politiche internazionali Master in Economics Master in Finance Master in Management Master in Public Management and Policy** **jointly offered with the Faculty of Communication, Culture and Society Faculty of Informatics Master in Artificial Intelligence Master in Data Science Master in Informatics Master in Financial Technology and Computing*** Master in Management and Informatics*** Master in Software Engineering with AI ***jointly offered with the Faculty of Economics Facoltà di Teologia di Lugano (affiliated to USI) Master in Philosophy Master in Interreligious Dialogue: Science, Philosophy and Theology of Religions Master in Scienza, filosofia e teologia delle religioni Master in Diritto canonico ed ecclesiastico comparato Master of Theology Master Vergleichendes Kanonisches Recht Contact Study Advisory Service +41 58 666 4795 [email protected] Quicklinks Why USI Share Facebook X LinkedIn Whatsapp Email Copy url to clipboard Print Events 07 July 2026 07. 07. 2026 Greedy Optimal Sampling via Variably Scaled Kernels for Solar Inverse Problems Faculty of Informatics 08 July 2026 08. 07. 2026 AI-Driven Personalization to Support Human-AI Collaboration Faculty of Informatics MSCA Postdoctoral Fellowships Applicants Training 2026 - Zürich NCCR Call 6+ (SSH): Online Information Event 11 July 2026 11. 07. 2026 Siamo fatti della materia delle stelle 13 July 2026 13. 07. 2026 MSCA Postdoctoral Fellowships Applicants Training 2026 - Lausanne Roma: città-museo, città dei musei tra tradizione e innovazione Academy of Architecture 16 July 2026 16. 07. 2026 IRB Special Seminar-Integrative Brain-Brown Fat-Microbiota Crosstalk in Metabolic Disease: Effects on Metabolism and Cognition Faculty of Biomedical Sciences All events Course schedules Academic calendar Faculties Institutes Bodies Legal regulations Libraries and archives Practicalities Services Job offers Contact",
+  "extractedLinks": [
+    {
+      "text": "Skip to main content",
+      "href": "https://www.usi.ch/en/education/master/medicine"
+    },
+    {
+      "text": "Faculties and Institutes",
+      "href": "https://www.usi.ch/en/university/faculties-and-institutes"
+    },
+    {
+      "text": "Partnerships",
+      "href": "https://www.usi.ch/en/university/partnerships"
+    },
+    {
+      "text": "Where to find us",
+      "href": "https://www.usi.ch/en/university/where-to-find-us"
+    },
+    {
+      "text": "Practical information",
+      "href": "https://www.usi.ch/en/university/info"
+    },
+    {
+      "text": "Work with us",
+      "href": "https://www.usi.ch/en/university/work-with-us"
+    },
+    {
+      "text": "Contact us",
+      "href": "https://www.usi.ch/en/university/contact"
+    },
+    {
+      "text": "At a glance",
+      "href": "https://www.usi.ch/en/university/who-we-are/at-a-glance"
+    },
+    {
+      "text": "History",
+      "href": "https://www.usi.ch/en/university/who-we-are/history"
+    },
+    {
+      "text": "Mission",
+      "href": "https://www.usi.ch/en/university/who-we-are/mission"
+    },
+    {
+      "text": "Dies academicus",
+      "href": "https://www.usi.ch/en/university/who-we-are/dies-academicus"
+    },
+    {
+      "text": "Images and logotype",
+      "href": "https://www.usi.ch/en/university/who-we-are/images-and-logo"
+    },
+    {
+      "text": "Publications",
+      "href": "https://www.usi.ch/en/originalnode/127"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/overview"
+    },
+    {
+      "text": "Rankings",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/rankings"
+    },
+    {
+      "text": "Students",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/students"
+    },
+    {
+      "text": "Graduates",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/graduates-diplomas"
+    },
+    {
+      "text": "Education",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/education"
+    },
+    {
+      "text": "Academic mobility",
+      "href": "https://www.usi.ch/en/originalnode/539"
+    },
+    {
+      "text": "Research",
+      "href": "https://www.usi.ch/en/originalnode/8526"
+    },
+    {
+      "text": "Staff",
+      "href": "https://www.usi.ch/en/university/who-we-are/facts-and-figures/staff"
+    },
+    {
+      "text": "Honorary Doctorate",
+      "href": "https://www.usi.ch/en/university/who-we-are/accolades/honorary-doctorate"
+    },
+    {
+      "text": "Honorary Member",
+      "href": "https://www.usi.ch/en/university/who-we-are/accolades/honorary-member"
+    },
+    {
+      "text": "Medal",
+      "href": "https://www.usi.ch/en/university/who-we-are/accolades/medal"
+    },
+    {
+      "text": "Education",
+      "href": "https://www.usi.ch/en/university/what-we-do/education"
+    },
+    {
+      "text": "Research",
+      "href": "https://www.usi.ch/en/originalnode/94"
+    },
+    {
+      "text": "Innovation",
+      "href": "https://www.usi.ch/en/originalnode/23892"
+    },
+    {
+      "text": "Cultural activities",
+      "href": "https://www.usi.ch/en/university/what-we-do/cultural-activities"
+    },
+    {
+      "text": "In the region",
+      "href": "https://www.usi.ch/en/university/what-we-do/region"
+    },
+    {
+      "text": "Sustainability",
+      "href": "https://www.usi.ch/en/university/what-we-do/sustainability"
+    },
+    {
+      "text": "Annual report",
+      "href": "https://www.usi.ch/en/university/what-we-do/annual-report"
+    },
+    {
+      "text": "Administration and services",
+      "href": "https://www.usi.ch/en/university/organisation/administration-and-services"
+    },
+    {
+      "text": "Official documents",
+      "href": "https://www.usi.ch/en/university/organisation/official-documents"
+    },
+    {
+      "text": "Libraries and archives",
+      "href": "https://www.usi.ch/en/university/organisation/libraries-and-archives"
+    },
+    {
+      "text": "Student Corporation",
+      "href": "https://www.usi.ch/en/originalnode/16808"
+    },
+    {
+      "text": "Organisational chart",
+      "href": "https://www.usi.ch/en/university/organisation/structure/organisational-chart"
+    },
+    {
+      "text": "University Council",
+      "href": "https://www.usi.ch/en/university/organisation/structure/university-council"
+    },
+    {
+      "text": "Rectorate",
+      "href": "https://www.usi.ch/en/university/organisation/structure/rectorate"
+    },
+    {
+      "text": "Academic Senate",
+      "href": "https://www.usi.ch/en/university/organisation/structure/academic-senate"
+    },
+    {
+      "text": "Faculties and Institutes structure",
+      "href": "https://www.usi.ch/en/university/organisation/structure/structure-faculties-and-institutes"
+    },
+    {
+      "text": "Commissions",
+      "href": "https://www.usi.ch/en/university/organisation/structure/commissions"
+    },
+    {
+      "text": "Why USI",
+      "href": "https://www.usi.ch/en/education/why-usi"
+    },
+    {
+      "text": "Doctoral studies",
+      "href": "https://www.usi.ch/en/education/doctoral-studies"
+    },
+    {
+      "text": "Continuing education",
+      "href": "https://www.usi.ch/en/education/continuing-education"
+    },
+    {
+      "text": "Summer / Winter Schools",
+      "href": "https://www.usi.ch/en/education/summer-winter-school"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.usi.ch/en/education/bachelor/bachelor-degrees-at-a-glance"
+    },
+    {
+      "text": "Admission",
+      "href": "https://www.usi.ch/en/education/bachelor/admission"
+    },
+    {
+      "text": "Application",
+      "href": "https://www.usi.ch/en/education/bachelor/application"
+    },
+    {
+      "text": "Tuition and scholarships",
+      "href": "https://www.usi.ch/en/education/tuition-and-scholarships"
+    },
+    {
+      "text": "Practical information",
+      "href": "https://www.usi.ch/en/education/bachelor/organising-your-studies"
+    },
+    {
+      "text": "Open days and study advisory",
+      "href": "https://www.usi.ch/en/education/bachelor/open-days"
+    },
+    {
+      "text": "Contact us",
+      "href": "https://www.usi.ch/en/education/bachelor/contacts"
+    },
+    {
+      "text": "Architecture",
+      "href": "https://www.usi.ch/en/education/bachelor/architecture"
+    },
+    {
+      "text": "Italian language, literature and culture",
+      "href": "https://www.usi.ch/it/originalnode/334"
+    },
+    {
+      "text": "Theology",
+      "href": "https://www.usi.ch/it/originalnode/31018"
+    },
+    {
+      "text": "Philosophy",
+      "href": "https://www.usi.ch/it/originalnode/31034"
+    },
+    {
+      "text": "Communication",
+      "href": "https://www.usi.ch/en/education/bachelor/communication"
+    },
+    {
+      "text": "Economics",
+      "href": "https://www.usi.ch/en/education/bachelor/economics"
+    },
+    {
+      "text": "Informatics",
+      "href": "https://www.usi.ch/en/education/bachelor/informatics"
+    },
+    {
+      "text": "Data Science",
+      "href": "https://www.usi.ch/en/education/bachelor/data-science"
+    },
+    {
+      "text": "Medicine",
+      "href": "https://www.biomed.usi.ch/en/originalnode/11287"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.usi.ch/en/education/master/masters-at-a-glance"
+    },
+    {
+      "text": "Admission",
+      "href": "https://www.usi.ch/en/education/master/admission"
+    },
+    {
+      "text": "Application",
+      "href": "https://www.usi.ch/en/education/master/application-master"
+    },
+    {
+      "text": "Practical information",
+      "href": "https://www.usi.ch/en/education/master/organising-your-studies"
+    },
+    {
+      "text": "Open days and study advisory",
+      "href": "https://www.usi.ch/en/education/master/open-days-study-advisory"
+    },
+    {
+      "text": "Contact us",
+      "href": "https://www.usi.ch/en/education/master/contacts"
+    },
+    {
+      "text": "Architecture",
+      "href": "https://www.usi.ch/en/originalnode/338"
+    },
+    {
+      "text": "History and Theory of Art and Architecture",
+      "href": "https://www.usi.ch/en/education/master/history-and-theory-of-art-and-architecture"
+    },
+    {
+      "text": "Cognitive Psychology in Health Communication",
+      "href": "https://www.usi.ch/en/originalnode/351"
+    },
+    {
+      "text": "Master in Health, Major in Digital Public Health",
+      "href": "https://www.usi.ch/en/originalnode/43251"
+    },
+    {
+      "text": "Medicine",
+      "href": "https://www.biomed.usi.ch/en/originalnode/11288"
+    },
+    {
+      "text": "Corporate Communication",
+      "href": "https://www.usi.ch/en/originalnode/349"
+    },
+    {
+      "text": "Digital Fashion Communication",
+      "href": "https://www.usi.ch/en/originalnode/8996"
+    },
+    {
+      "text": "European Studies in Investor Relations and Financial Communication",
+      "href": "https://www.usi.ch/en/originalnode/342"
+    },
+    {
+      "text": "Master in Health, Major in Health Communication",
+      "href": "https://www.usi.ch/en/originalnode/350"
+    },
+    {
+      "text": "International Tourism",
+      "href": "https://www.usi.ch/en/originalnode/343"
+    },
+    {
+      "text": "Lingua, letteratura e civiltà italiana",
+      "href": "https://www.usi.ch/it/originalnode/339"
+    },
+    {
+      "text": "Marketing and Transformative Economy",
+      "href": "https://www.usi.ch/en/originalnode/348"
+    },
+    {
+      "text": "Media Management",
+      "href": "https://www.usi.ch/en/originalnode/352"
+    },
+    {
+      "text": "Economia e politiche internazionali",
+      "href": "https://www.usi.ch/it/originalnode/344"
+    },
+    {
+      "text": "Economics",
+      "href": "https://www.usi.ch/en/originalnode/345"
+    },
+    {
+      "text": "Finance",
+      "href": "https://www.usi.ch/en/originalnode/340"
+    },
+    {
+      "text": "Management",
+      "href": "https://www.usi.ch/en/originalnode/347"
+    },
+    {
+      "text": "Public Management and Policy",
+      "href": "https://www.usi.ch/en/education/master/public-management-and-policy"
+    },
+    {
+      "text": "Artificial Intelligence",
+      "href": "https://www.usi.ch/en/originalnode/354"
+    },
+    {
+      "text": "Data Science",
+      "href": "https://www.usi.ch/en/originalnode/355"
+    },
+    {
+      "text": "Informatics",
+      "href": "https://www.usi.ch/en/originalnode/353"
+    },
+    {
+      "text": "Financial Technology and Computing",
+      "href": "https://www.usi.ch/en/originalnode/358"
+    },
+    {
+      "text": "Management and Informatics",
+      "href": "https://www.usi.ch/en/originalnode/357"
+    },
+    {
+      "text": "Software Engineering with AI",
+      "href": "https://www.usi.ch/en/originalnode/8014"
+    },
+    {
+      "text": "Philosophy",
+      "href": "https://www.usi.ch/en/originalnode/7710"
+    },
+    {
+      "text": "Interreligious Dialogue",
+      "href": "https://www.usi.ch/en/education/master/interreligious-dialogue"
+    },
+    {
+      "text": "Scienza, filosofia e teologia delle religioni",
+      "href": "https://www.usi.ch/en/formazione/master/scienza-filosofia-teologia"
+    },
+    {
+      "text": "Diritto canonico ed ecclesiastico comparato",
+      "href": "https://www.usi.ch/it/originalnode/31037"
+    },
+    {
+      "text": "Theology",
+      "href": "https://www.usi.ch/it/originalnode/31036"
+    },
+    {
+      "text": "Vergleichendes Kanonisches Recht",
+      "href": "https://www.usi.ch/it/originalnode/43286"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.usi.ch/en/research/at-a-glance"
+    },
+    {
+      "text": "Facts and figures",
+      "href": "https://www.usi.ch/en/research/figures"
+    },
+    {
+      "text": "Institutes",
+      "href": "https://www.usi.ch/en/research/institutes"
+    },
+    {
+      "text": "Areas and competences",
+      "href": "https://www.usi.ch/en/research/areas-and-competences"
+    },
+    {
+      "text": "Projects and researchers",
+      "href": "https://www.usi.ch/en/research/projects-and-researchers"
+    },
+    {
+      "text": "Collaborations",
+      "href": "https://www.usi.ch/en/research/partnerships"
+    },
+    {
+      "text": "Doing research",
+      "href": "https://www.usi.ch/en/research/doing-research"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.usi.ch/en/innovation/at-a-glance"
+    },
+    {
+      "text": "Initiatives",
+      "href": "https://www.usi.ch/en/innovation/initiatives"
+    },
+    {
+      "text": "Innovate with us",
+      "href": "https://www.usi.ch/en/innovation/innovate"
+    },
+    {
+      "text": "News",
+      "href": "https://www.usi.ch/en/news-events/news"
+    },
+    {
+      "text": "Events",
+      "href": "https://www.usi.ch/en/news-events/events"
+    },
+    {
+      "text": "Press releases",
+      "href": "https://www.usi.ch/en/university/info/press/press-releases"
+    },
+    {
+      "text": "Social media",
+      "href": "https://www.usi.ch/en/originalnode/718"
+    },
+    {
+      "text": "For the media",
+      "href": "https://www.usi.ch/en/originalnode/713"
+    },
+    {
+      "text": "Master in Storia e teoria dell’arte e dell’architettura",
+      "href": "https://www.usi.ch/en/originalnode/16123"
+    },
+    {
+      "text": "Master of Medicine",
+      "href": "https://www.biomed.usi.ch/en/study/study-medicine/master-of-medicine"
+    },
+    {
+      "text": "Master in Lingua, letteratura e civiltà italiana",
+      "href": "https://www.usi.ch/en/originalnode/339"
+    },
+    {
+      "text": "Master in Economia e politiche internazionali",
+      "href": "https://www.usi.ch/en/originalnode/344"
+    },
+    {
+      "text": "Master in Economics",
+      "href": "https://www.usi.ch/en/originalnode/12174"
+    },
+    {
+      "text": "Master in Public Management and Policy",
+      "href": "https://www.usi.ch/en/originalnode/346"
+    },
+    {
+      "text": "Master in Interreligious Dialogue: Science, Philosophy and Theology of Religions",
+      "href": "https://www.usi.ch/en/originalnode/33423"
+    },
+    {
+      "text": "Master in Scienza, filosofia e teologia delle religioni",
+      "href": "https://www.usi.ch/en/originalnode/31038"
+    },
+    {
+      "text": "Master in Diritto canonico ed ecclesiastico comparato",
+      "href": "https://www.usi.ch/en/originalnode/31037"
+    },
+    {
+      "text": "Master of Theology",
+      "href": "https://www.usi.ch/en/originalnode/31036"
+    },
+    {
+      "text": "Study Advisory Service",
+      "href": "https://search.usi.ch/en/organisational-units/156/study-advisory-and-promotion-service"
+    },
+    {
+      "text": "[email protected]",
+      "href": "https://www.usi.ch/cdn-cgi/l/email-protection"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer.php?u=https://www.usi.ch/en/education/master"
+    },
+    {
+      "text": "X",
+      "href": "https://x.com/share?url=https://www.usi.ch/en/education/master&text=%20%20Master"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.usi.ch/en/education/master&title=%20%20Master"
+    },
+    {
+      "text": "Greedy Optimal Sampling via Variably Scaled Kernels for Solar Inverse Problems",
+      "href": "https://www.usi.ch/en/feeds/35464"
+    },
+    {
+      "text": "AI-Driven Personalization to Support Human-AI Collaboration",
+      "href": "https://www.usi.ch/en/feeds/35562"
+    },
+    {
+      "text": "MSCA Postdoctoral Fellowships Applicants Training 2026 - Zürich",
+      "href": "https://www.usi.ch/en/feeds/34943"
+    },
+    {
+      "text": "NCCR Call 6+ (SSH): Online Information Event",
+      "href": "https://www.usi.ch/en/feeds/35222"
+    },
+    {
+      "text": "Siamo fatti della materia delle stelle",
+      "href": "https://www.usi.ch/en/feeds/34579"
+    },
+    {
+      "text": "MSCA Postdoctoral Fellowships Applicants Training 2026 - Lausanne",
+      "href": "https://www.usi.ch/en/feeds/34938"
+    },
+    {
+      "text": "Roma: città-museo, città dei musei tra tradizione e innovazione",
+      "href": "https://www.usi.ch/en/feeds/35471"
+    },
+    {
+      "text": "IRB Special Seminar-Integrative Brain-Brown Fat-Microbiota Crosstalk in Metabolic Disease: Effects on Metabolism and Cognition",
+      "href": "https://www.usi.ch/en/feeds/35566"
+    },
+    {
+      "text": "Course schedules",
+      "href": "https://www.desk.usi.ch/en/featured/tags/schedules-1048/tags/courses-1033"
+    },
+    {
+      "text": "Academic calendar",
+      "href": "https://www.desk.usi.ch/en/usi-academic-calendar"
+    },
+    {
+      "text": "Faculties",
+      "href": "https://www.usi.ch/en/originalnode/18"
+    },
+    {
+      "text": "Bodies",
+      "href": "https://www.usi.ch/en/originalnode/59"
+    },
+    {
+      "text": "Legal regulations",
+      "href": "https://www.usi.ch/en/originalnode/120"
+    },
+    {
+      "text": "Libraries and archives",
+      "href": "https://www.usi.ch/en/originalnode/864"
+    },
+    {
+      "text": "Practicalities",
+      "href": "https://www.usi.ch/en/originalnode/14049"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.usi.ch/en/originalnode/119"
+    },
+    {
+      "text": "Job offers",
+      "href": "https://www.usi.ch/en/originalnode/7641"
+    },
+    {
+      "text": "Contact",
+      "href": "https://www.usi.ch/en/originalnode/162"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

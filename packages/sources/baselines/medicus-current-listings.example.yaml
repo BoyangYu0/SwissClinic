@@ -1,0 +1,33 @@
+# Example baseline only. This is not a complete Medicus or current-listings export until manually verified.
+- id: medicus-ksa-aarau-unterassistenz
+  name: "Kantonsspital Aarau"
+  canton: "AG"
+  city: "Aarau"
+  type: "current-listing"
+  sourceUrl: "https://www.ksa.ch/"
+  baselineSource: "manual-example-medicus-current-listings"
+  notes: "Example current-listing baseline based on known source registry coverage; not a complete Medicus scrape."
+- id: medicus-ksb-baden-unterassistenz
+  name: "Kantonsspital Baden"
+  canton: "AG"
+  city: "Baden"
+  type: "current-listing"
+  sourceUrl: "https://www.kantonsspitalbaden.ch/"
+  baselineSource: "manual-example-medicus-current-listings"
+  notes: "Example current-listing baseline based on known source registry coverage; not a complete Medicus scrape."
+- id: medicus-hoch-orthopaedie
+  name: "Kantonsspital St. Gallen"
+  canton: "SG"
+  city: "St. Gallen"
+  type: "current-listing"
+  sourceUrl: "https://www.h-och.ch/"
+  baselineSource: "manual-example-medicus-current-listings"
+  notes: "Example current-listing baseline based on known source registry coverage; not a complete Medicus scrape."
+- id: medicus-spital-uster-pdf
+  name: "Spital Uster"
+  canton: "ZH"
+  city: "Uster"
+  type: "current-listing"
+  sourceUrl: "https://www.spitaluster.ch/"
+  baselineSource: "manual-example-medicus-current-listings"
+  notes: "Example current-listing baseline based on known source registry PDF coverage; not a complete Medicus scrape."

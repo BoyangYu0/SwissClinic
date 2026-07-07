@@ -1,0 +1,15 @@
+{
+  "sourceId": "usb-basel-career-education",
+  "url": "https://www.unispital-basel.ch/jobs-karriere/ausbildung-studium",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "a8172457b78f568c0652a5760d2e328cd5fd46ad4c8f51d3e30564f82170c679",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404"
+}

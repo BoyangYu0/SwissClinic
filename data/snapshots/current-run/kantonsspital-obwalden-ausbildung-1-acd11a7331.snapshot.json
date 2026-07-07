@@ -1,0 +1,39 @@
+{
+  "sourceId": "kantonsspital-obwalden-ausbildung",
+  "url": "https://www.ksow.ch/jobs-karriere/ausbildung",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "4155699458bc58374403f8d3fe47b762c0b975ec5e1f9756e28600748fec2dcb",
+  "textHash": "b2fd258a79226cf048d03eb7474c6646ae2f6112a33ad38742aae5129cacec4f",
+  "title": "Ausbildung und Lehre",
+  "visibleText": "Ausbildung und Lehre Pflegerische Berufe Medizintechnische und therapeutische Berufe Kaufmännische und gewerbliche Berufe Ausbildung im Kantonsspital ObwaldenIn verschiedenen Bereichen bieten wir Ausbildungsplätze und Praktika an. Als Ausbildungsspital fördern wir die Kompetenz der Mitarbeitenden in der täglichen Arbeit und bieten individuelle Fort- und Weiterbildungen sowie fachbezogene Kurse an.Unser Ausbildungsangebot umfasst insbesondere:Fachfrau/Fachmann Gesundheit EFZFachfrau/Fachmann Hauswirtschaft EFZHauswirtschaftspraktikerin/Hauswirtschaftspraktiker EBAHebamme FHKauffrau/KaufmannKöchin/Koch EFZPhysiotherapeutin/Physiotherapeut FHPflegefachfrau/Pflegefachmann HFRettungssanitäterin / Rettungssanitäter HFSozialarbeiterin/Sozialarbeiter FHOperationstechnik HFNDS HF AnästhesiepflegeNDS HF NotfallpflegeWeitere Informationen finden Sie unter gesundheitsberufe.chWir unterstützen die verbundpartnerschaftliche Abmachung und lassen den Jugendlichen genug Zeit für ihre Berufswahl. Unsere offiziellen Lehrstellen 2025 werden erst ab 1. August 2024 ausgeschrieben und die Lehrverträge frühestens ein Jahr vor Lehrbeginn abgeschlossen.Offene LehrstellenHaben wir Ihr Interesse geweckt? Dann bewerben Sie sich jetzt! Offene Lehrstellen Hier berichten die «FaGes» aus dem Kantonsspital Obwalden, von der Spitex Obwalden und von der Residenz «Am Schärme» über ihre Ausbildungs-Erfahrungen: Residenz am SchärmeSchnupperlehren im Kantonsspital ObwaldenEine Schnupperlehre dauert mindestens einen vollen Tag. Der Tag wird abwechslungsreich und spannend gestaltet, um einen realistischen Einblick zu vermitteln. Der Berufswunsch kann auf diese Weise gefestigt werden.Unser Schnupperangebot richtet sich an Interessierte, die sich im Vorfeld über die Ausbildung informiert haben und nun in unserer Spitalumgebung schnuppern möchten.Folgende Schnupperlehren sind möglich:Kauffrau/Kaufmann EFZFachfrau/Fachmann Gesundheit EFZKöchin/Koch EFZFachfrau/Fachmann Hauswirtschaft EFZFür eine Bewerbung sind folgende Unterlagen wichtig:MotivationsschreibenGewünschte Termine sowie Dauer für die SchnupperlehreTabellarischer LebenslaufSchulzeugnisse der letzten beiden SchuljahreDie Anforderungen sind:Mindestalter von 14 JahrenInteresse am GesundheitswesenGute DeutschkenntnisseFür weitere Fragen und Informationen zum Bewerbungsprozess kontaktieren Sie bitte unsere Personalabteilung. Kontakt Personalabteilung Anna SuterLeiterin Personalabteilung 041 666 40 01 anna.suter@ksow.ch",
+  "extractedLinks": [
+    {
+      "text": "Pflegerische Berufe",
+      "href": "https://www.ksow.ch/jobs-karriere/ausbildung/pflegerische-berufe"
+    },
+    {
+      "text": "Medizintechnische und therapeutische Berufe",
+      "href": "https://www.ksow.ch/jobs-karriere/ausbildung/medizintechnische-und-therapeutische-berufe"
+    },
+    {
+      "text": "Kaufmännische und gewerbliche Berufe",
+      "href": "https://www.ksow.ch/jobs-karriere/ausbildung/kaufmaennische-und-gewerbliche-berufe"
+    },
+    {
+      "text": "gesundheitsberufe.ch",
+      "href": "https://www.odasante.ch/gesundheitsberufe/"
+    },
+    {
+      "text": "Offene Lehrstellen",
+      "href": "https://www.ksow.ch/jobs-karriere/offene-stellen?page=1&category=23036"
+    }
+  ],
+  "extractedEmails": [
+    "anna.suter@ksow.ch",
+    "info@ksow.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

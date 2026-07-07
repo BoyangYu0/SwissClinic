@@ -1,0 +1,82 @@
+{
+  "sourceId": "kantonsspital-nidwalden-ausbildung",
+  "url": "https://www.spital-nidwalden.ch/",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "eb8377f51e3ddcb672b7a0ca68c45ac57c5fde25101ce02564aca333416cbd1f",
+  "textHash": "38ab2547f7026fd0a26b0eae814e82f93f65c14e10b48640dc737c4769d1c354",
+  "title": "Spital Nidwalden",
+  "visibleText": "Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Spital NidwaldenNotfallSuchenNotfallWillkommen am Spital NidwaldenSucheSuche startenPatientinnen und PatientenKliniken und FachbereicheDie Kliniken und Fachbereiche am Spital NidwaldenWas wir behandelnHier finden Sie das Behandlungsangebot am Spital NidwaldenSymptomcheckerKontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den ParkplätzenVorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen BlickInformationen für Besuchende und AngehörigePatientenbesucheAllgemeine und besondere Besuchszeiten BabygalerieDie Neugeborenen am Spital NidwaldenRestaurant hip und ShopKarriere und JobsOffene StellenJob gesucht mit Sinn und Herz? Wir sind mit Leidenschaft für Menschen da. Arbeiten am Spital NidwaldenAlles rund ums Arbeiten am Spital NidwaldenAus- und WeiterbildungWer bei uns lernt, lernt fürs Leben.ZuweisendeInformationen für ZuweisendeEine partnerschaftliche Zusammenarbeit zwischen Ihnen und dem Spital Nidwalden ist uns ein grosses Anliegen.Fachpersonal findenHier finden Sie unsere Ärztinnen, Ärzte und FachkräfteÄrztliche FortbildungenDie Veranstaltungen am Spital Nidwalden auf einen BlickWar diese Seite hilfreich?JaNein",
+  "extractedLinks": [
+    {
+      "text": "Direkt zum Inhalt",
+      "href": "https://www.spital-nidwalden.ch/"
+    },
+    {
+      "text": "Notfall",
+      "href": "https://www.spital-nidwalden.ch/notfall-spital-nidwalden"
+    },
+    {
+      "text": "Kliniken und FachbereicheDie Kliniken und Fachbereiche am Spital Nidwalden",
+      "href": "https://www.spital-nidwalden.ch/kliniken-und-fachbereiche-am-spital-nidwalden"
+    },
+    {
+      "text": "Was wir behandelnHier finden Sie das Behandlungsangebot am Spital Nidwalden",
+      "href": "https://www.spital-nidwalden.ch/was-wir-behandeln-1"
+    },
+    {
+      "text": "Symptomchecker",
+      "href": "https://www.spital-nidwalden.ch/symptomchecker"
+    },
+    {
+      "text": "Kontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den Parkplätzen",
+      "href": "https://www.spital-nidwalden.ch/standorte/kontakt-und-anreise-spital-nidwalden"
+    },
+    {
+      "text": "Vorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen Blick",
+      "href": "https://www.spital-nidwalden.ch/veranstaltungen"
+    },
+    {
+      "text": "PatientenbesucheAllgemeine und besondere Besuchszeiten",
+      "href": "https://www.spital-nidwalden.ch/patientenbesuch"
+    },
+    {
+      "text": "BabygalerieDie Neugeborenen am Spital Nidwalden",
+      "href": "https://www.spital-nidwalden.ch/babygalerie-ksnw"
+    },
+    {
+      "text": "Restaurant hip und Shop",
+      "href": "https://www.spital-nidwalden.ch/restaurant-hip-und-shop"
+    },
+    {
+      "text": "Offene StellenJob gesucht mit Sinn und Herz? Wir sind mit Leidenschaft für Menschen da.",
+      "href": "https://www.spital-nidwalden.ch/offene-stellen"
+    },
+    {
+      "text": "Arbeiten am Spital NidwaldenAlles rund ums Arbeiten am Spital Nidwalden",
+      "href": "https://www.spital-nidwalden.ch/ausbildung-ksnw"
+    },
+    {
+      "text": "Aus- und WeiterbildungWer bei uns lernt, lernt fürs Leben.",
+      "href": "https://www.spital-nidwalden.ch/aus-und-weiterbildung-am-spital-nidwalden"
+    },
+    {
+      "text": "Informationen für ZuweisendeEine partnerschaftliche Zusammenarbeit zwischen Ihnen und dem Spital Nidwalden ist uns ein grosses Anliegen.",
+      "href": "https://www.spital-nidwalden.ch/informationen-fuer-zuweiser"
+    },
+    {
+      "text": "Fachpersonal findenHier finden Sie unsere Ärztinnen, Ärzte und Fachkräfte",
+      "href": "https://www.spital-nidwalden.ch/spezialisten-finden"
+    },
+    {
+      "text": "Ärztliche FortbildungenDie Veranstaltungen am Spital Nidwalden auf einen Blick",
+      "href": "https://www.spital-nidwalden.ch/veranstaltungen?type=187"
+    }
+  ],
+  "extractedEmails": [
+    "info@spital-nidwalden.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

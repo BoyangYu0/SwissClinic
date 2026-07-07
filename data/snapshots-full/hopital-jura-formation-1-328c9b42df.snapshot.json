@@ -1,0 +1,96 @@
+{
+  "sourceId": "hopital-jura-formation",
+  "url": "https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "8215dcb9e8df855807b5fbd1bd7bf739f0f3752f4eebbf089cccac3fbdac7d8d",
+  "textHash": "2c7e173e8f6322c684870851ef9da187a066f0557cc8bdd10b60cd9137765b1f",
+  "title": "Programme de formation",
+  "visibleText": "L’Hôpital du Jura à votre écoute ! Urgences Patients et proches Admission/séjour Visites/accès/parkings Sortie Soutien des patients Nos médecins Ordre alphabétique Par spécialité Nos prestations Ordre alphabétique Thématiques Par site Carrières Offres d'emplois Apprentissage et stage Valeurs Formations ← Retour Professionnels Médecins traitants Evénements Programme de formation Documents utiles / en savoir + Personnel H-JU Programme de formation Le programme de formation 2026 est en ligne. Il s’articule autour de plusieurs axes forts : Collaboration Des formations transversales renforcent l’interprofessionnalité et le partage d’expériences : réanimation avancée, Pack qualité des soins et sécurité des patients, formations en rééducation, etc. Curiosité et expertise La recherche demeure le socle de l’évolution de nos pratiques. Les formations reposent sur les recommandations les plus récentes et sont animées par des spécialistes de l’H-JU. Numérisation et innovation Avec le soutien de la Confédération et du Canton, l’H-JU développe les compétences numériques de ses équipes et fait de la transformation digitale un axe stratégique majeur. Management et relations respectueuses Un management participatif et centré sur le respect de chaque collaborateur est au cœur de notre approche. L’EED devient un véritable moment d’échange et de développement, et la gestion de l’absentéisme est harmonisée et optimisée. Plaisir et sens du travail Nous veillons à préserver le sens et le plaisir de notre métier : prendre soin de l’humain dans sa globalité. Découvrez dès à présent le programme complet et construisez votre parcours 2026 via l’espace de formation interne. L’équipe RH - Formation et Développement Liste des cours Colloques médicaux du jeudi à Porrentruy Groupes d'entraide CENTRE DE REEDUCATION Un nouveau site aigu ? MEDIQO Accueil handicap Donnez votre avis Egalité salariale Restez informé des actualités de l’H-JU en vous inscrivant à notre newsletter",
+  "extractedLinks": [
+    {
+      "text": "Urgences",
+      "href": "https://www.h-ju.ch/fr/Urgences.html"
+    },
+    {
+      "text": "Patients et proches",
+      "href": "https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html"
+    },
+    {
+      "text": "Admission/séjour",
+      "href": "https://www.h-ju.ch/fr/Patients/Votre-accueil.html"
+    },
+    {
+      "text": "Visites/accès/parkings",
+      "href": "https://www.h-ju.ch/fr/Visites/Horaires.html"
+    },
+    {
+      "text": "Sortie",
+      "href": "https://www.h-ju.ch/fr/Patients/Votre-sortie.html"
+    },
+    {
+      "text": "Soutien des patients",
+      "href": "https://www.h-ju.ch/fr/Patients/Votre-sejour/Soutien-des-patients.html"
+    },
+    {
+      "text": "Ordre alphabétique",
+      "href": "https://www.h-ju.ch/fr/Nos-medecins/Ordre-alphabetique.html"
+    },
+    {
+      "text": "Par spécialité",
+      "href": "https://www.h-ju.ch/fr/Nos-medecins/Par-specialite.html"
+    },
+    {
+      "text": "Ordre alphabétique",
+      "href": "https://www.h-ju.ch/fr/Nos-prestations.html"
+    },
+    {
+      "text": "Thématiques",
+      "href": "https://www.h-ju.ch/Scripts/Index.aspx?idn=11134"
+    },
+    {
+      "text": "Offres d'emplois",
+      "href": "https://www.h-ju.ch/fr/Carrieres/Emploi/Emploi.html"
+    },
+    {
+      "text": "Apprentissage et stage",
+      "href": "https://www.h-ju.ch/fr/Carrieres/Apprentissage-et-stage.html"
+    },
+    {
+      "text": "Valeurs",
+      "href": "https://www.h-ju.ch/fr/Emplois/Valeurs.html"
+    },
+    {
+      "text": "Formations",
+      "href": "https://www.h-ju.ch/fr/Emplois/Formations.html"
+    },
+    {
+      "text": "Médecins traitants",
+      "href": "https://www.h-ju.ch/fr/Professionnels/Medecins-traitants/Pour-les-medecins-traitants-et-les-partenaires-de-l-H-JU.html"
+    },
+    {
+      "text": "Evénements",
+      "href": "https://www.h-ju.ch/fr/Professionnels/Evenements.html"
+    },
+    {
+      "text": "Documents utiles / en savoir +",
+      "href": "https://www.h-ju.ch/fr/Professionnels/Documents-utiles-en-savoir/Documents-utiles-En-savoir.html"
+    },
+    {
+      "text": "Personnel H-JU",
+      "href": "https://www.h-ju.ch/fr/Professionnels/Personnel-H-JU/Personnel-H-JU.html"
+    },
+    {
+      "text": "Liste des cours",
+      "href": "https://www.h-ju.ch/fr/Emplois/Formations/Liste-des-cours.html"
+    },
+    {
+      "text": "Colloques médicaux du jeudi à Porrentruy",
+      "href": "https://www.h-ju.ch/Htdocs/Files/v/c964a8af06fa25f47436c59f5b821c3f39d77b122da05c4d7003572050c5680a.pdf/Programme-Jeudi-de-lAjoie-de-janvier-fevrier-2026.pdf"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

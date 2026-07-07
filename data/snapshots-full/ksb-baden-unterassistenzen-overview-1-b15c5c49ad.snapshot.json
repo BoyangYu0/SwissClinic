@@ -1,0 +1,58 @@
+{
+  "sourceId": "ksb-baden-unterassistenzen-overview",
+  "url": "https://www.kantonsspitalbaden.ch/jobs-karriere/aus-und-weiterbildung/aerztinnen-aerzte/unterassistenzen",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "72089a635ad03aeabd3bcc2201eb8a24e2499a872e7f5023936697324e416705",
+  "textHash": "df1d08f85a6bceb3f8378007e929819d6d9d1eb9aa328052fb4f10d1cc29fb95",
+  "title": "Unterassistenzen | Kantonsspital Baden",
+  "visibleText": "Erfahrung sammelnDas Wahlstudienjahr bietet eine Menge. Vielleicht hältst du im OP-Saal Haken und nähst Wunden oder behandelst eine Mittelohrentzündungen. Sicher ist: Du sammelst in deiner Unterassistenz-Stelle eine Menge Praxiserfahrung.Noch an der Uni?Das Pflegepraktikum kannst du sogar schon vor dem Studium bei uns absolvieren.Unterassistenz-StellenAnästhesieChirurgieGynäkologie & GeburtshilfeInnere MedizinInterdisziplinäres Notfallzentrum INZPädiatrieUrologieDas könnte dich auch interessierenPersonalwohnungenDeine Vorteile am KSBÄrzteschaftWar diese Seite hilfreich?",
+  "extractedLinks": [
+    {
+      "text": "Anästhesie",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-anaesthesie-100"
+    },
+    {
+      "text": "Chirurgie",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100"
+    },
+    {
+      "text": "Gynäkologie & Geburtshilfe",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-gynaekologie-und-geburtshilfe-100"
+    },
+    {
+      "text": "Innere Medizin",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100"
+    },
+    {
+      "text": "Interdisziplinäres Notfallzentrum INZ",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-interdisziplinaeres-notfallzentrum-100"
+    },
+    {
+      "text": "Pädiatrie",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-paediatrie-100"
+    },
+    {
+      "text": "Urologie",
+      "href": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-urologie-100"
+    },
+    {
+      "text": "Personalwohnungen",
+      "href": "https://www.kantonsspitalbaden.ch/jobs-karriere/arbeiten-am-ksb/personalwohnungen"
+    },
+    {
+      "text": "Deine Vorteile am KSB",
+      "href": "https://www.kantonsspitalbaden.ch/jobs-karriere/arbeiten-am-ksb/benefits"
+    },
+    {
+      "text": "Ärzteschaft",
+      "href": "https://www.kantonsspitalbaden.ch/jobs-karriere/berufsvielfalt/aerzteschaft-am-ksb"
+    }
+  ],
+  "extractedEmails": [
+    "recruiting@ksb.ch"
+  ],
+  "fetchModeUsed": "html",
+  "error": null
+}

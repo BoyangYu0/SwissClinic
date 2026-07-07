@@ -1,0 +1,76 @@
+{
+  "sourceId": "hfr-fribourg-formation",
+  "url": "https://www.h-fr.ch/formations",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "721b26b619d1960e63b65c0acb4d9b5eb228ff3f0e8c919dd862d7f0ca339bf6",
+  "textHash": "e6ed4688951f0acfb601b369c4a1f6d90414946f43904639dfdead576c7328bc",
+  "title": "Formations | hôpital fribourgeois",
+  "visibleText": "Aller au contenu principal Formations Établissement de formation postgrade, certifié par l’IFSM dans la plupart des disciplines médicales, nous formons les professionnel-le-s de la santé du futur. Nous participons activement à la formation continue de notre personnel médical, mais également des médecins de premiers recours du canton et d’ailleurs. Le Centre de formation des soins est l’un des trois prestataires de formation de référence en suisse romande. Certifiés comme prestataire de formation par le SEFRI et l’OdASanté, nous sommes aussi labelisés Eduqua. Nous formons plus de 1000 stagiaires et proposons un large éventail de formations continues internes et externes ainsi que l’entier de la palette des spécialisations en soins aigus pour de nombreux hôpitaux. Professions médicales Les informations sur les formations sont directement intégrées aux pages des spécialités médicales. Retrouvez tous les détails en consultant la liste des spécialités ci-dessous. Master en médecine L’hôpital fribourgeois est le centre de formation de l’Université de Fribourg. Depuis 2019, l’HFR s’engage dans le master en médecine humaine orienté vers la médecine de famille. Une filière sur mesure qui prend différentes formes, dont une durée totale des stages dans des cabinets de médecins de famille d’environ 60 jours, et de nombreux enseignements dispensés par des médecins de premier recours exerçant parallèlement en cabinet. En plus de cette exposition à la médecine de famille, les étudiants ont une exposition clinique hospitalière – au sein de l’HFR et du RFSM – parmi les plus importantes de Suisse. Parmi les autres axes forts du cursus fribourgeois figure l’interprofessionnalité, afin de mutualiser les compétences dans les professions de la santé. Ceci implique, entre autres, la collaboration avec la Haute école de santé Fribourg (HEdS-FR) et l’immersion, pour les étudiants, dans le quotidien d’autres professionnels de la santé. Université de Fribourg Centre de formation des soins En tant qu'hôpital public, l'HFR encourage la formation. C'est pourquoi d'importantes ressources humaines et financières sont investies dans le développement des compétences des collaboratrices et collaborateurs actifs dans le domaine des soins. Instruction de travail L'HFR met à disposition de ses partenaires médico-soignants les instructions de travail élaborées spécifiquement pour l'hôpital et en vigueur dans l'institution. Hygiène & Sécurité sur chantier Les travaux et chantiers en milieu hospitalier sont soumis à des contraintes très strictes en raison des critères d'hygiène et de sécurité spécifiques à cet environnement. Articles qui pourraient vous intéresser Deux années de formation intensive, une soutenance et une conviction intacte : soigner avec sens et humanité Urgences Un premier docteur – en gestion et management – à la Direction des soins Simulation haute fidélité : former les médecins de demain Projets de formation postgraduée à l’HFR récompensés Médecine interne, Urgences Une nouvelle volée de spécialistes formé-e-s au Centre de formation des soins Offre de soins Séjours & visites Annuaire Lieux de soin HFR Fribourg – Hôpital cantonal HFR Meyriez-Murten HFR Riaz HFR Tafers Centre de santé du Sud fribourgeois, site de Riaz Lieux de soin Offre de soins Séjours & visites Annuaire Aide et contact © hôpital fribourgeois (HFR) Public Professionnel de la santé Grand public Type Atelier Café-patient Colloque Comptoir gruérien Concert Conférence publique Conférences publiques \"focus santé\" Cours Événement interprofessionnel Filtrer par type d'événement Formation continue Journée mondiale Journée portes ouvertes Journée Romande Roadtrip Seislermäss Stand d'information Symposium Table ronde Year Toutes les années 2018 2019 2020 2021 2022 2023 2024 2025 2026 Spécialité Oncologie",
+  "extractedLinks": [
+    {
+      "text": "Aller au contenu principal",
+      "href": "https://www.h-fr.ch/formations"
+    },
+    {
+      "text": "Le Centre de formation des soins",
+      "href": "https://www.h-fr.ch/formations/centre-de-formation-des-soins"
+    },
+    {
+      "text": "Université de Fribourg",
+      "href": "https://www.unifr.ch/"
+    },
+    {
+      "text": "Instruction de travail L'HFR met à disposition de ses partenaires médico-soignants les instructions de travail élaborées spécifiquement pour l'hôpital et en vigueur dans l'institution.",
+      "href": "https://www.h-fr.ch/formations/instruction-de-travail"
+    },
+    {
+      "text": "Hygiène & Sécurité sur chantier Les travaux et chantiers en milieu hospitalier sont soumis à des contraintes très strictes en raison des critères d'hygiène et de sécurité spécifiques à cet environnement.",
+      "href": "https://www.h-fr.ch/formations/hygiene-securite-sur-chantier"
+    },
+    {
+      "text": "Offre de soins",
+      "href": "https://www.h-fr.ch/offre-de-soins"
+    },
+    {
+      "text": "Séjours & visites",
+      "href": "https://www.h-fr.ch/sejours-visites"
+    },
+    {
+      "text": "Annuaire",
+      "href": "https://www.h-fr.ch/annuaire"
+    },
+    {
+      "text": "HFR Fribourg – Hôpital cantonal",
+      "href": "https://www.h-fr.ch/nos-sites-hospitaliers/hfr-fribourg-hopital-cantonal"
+    },
+    {
+      "text": "HFR Meyriez-Murten",
+      "href": "https://www.h-fr.ch/nos-sites-hospitaliers/hfr-meyriez-murten"
+    },
+    {
+      "text": "HFR Riaz",
+      "href": "https://www.h-fr.ch/nos-sites-hospitaliers/hfr-riaz"
+    },
+    {
+      "text": "HFR Tafers",
+      "href": "https://www.h-fr.ch/nos-sites-hospitaliers/hfr-tafers"
+    },
+    {
+      "text": "Centre de santé du Sud fribourgeois, site de Riaz",
+      "href": "https://www.h-fr.ch/nos-sites-hospitaliers/centre-de-sante-du-sud-fribourgeois-site-de-riaz"
+    },
+    {
+      "text": "Lieux de soin",
+      "href": "https://www.h-fr.ch/sejours-visites/lieux-de-soin"
+    },
+    {
+      "text": "Aide et contact",
+      "href": "https://www.h-fr.ch/aide-contact"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

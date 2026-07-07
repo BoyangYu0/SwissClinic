@@ -1,6 +1,8 @@
 export const workerName = "scpi-worker";
 export * from "./build-static-data.js";
+export * from "./coverage-report.js";
 export * from "./crawl.js";
+export * from "./data-validate.js";
 export * from "./diff-snapshots.js";
 export * from "./lead-time.js";
 export * from "./reliability-audit.js";

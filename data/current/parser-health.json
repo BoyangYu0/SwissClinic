@@ -1,22 +1,223 @@
 {
-  "generatedAt": "2026-07-07T10:29:47.258Z",
-  "snapshotsDir": "C:\\Users\\Karl_\\AppData\\Local\\Temp\\scpi-f1-smoke\\snapshots",
-  "pagesCrawled": 3,
+  "generatedAt": "2026-07-07T15:54:43.442Z",
+  "snapshotsDir": "F:\\SwissClinic\\data\\snapshots\\current-run",
+  "pagesCrawled": 61,
   "pagesFailed": 0,
-  "recordsExtracted": 10,
+  "recordsExtracted": 55,
   "confidenceCounts": {
-    "high": 1,
-    "medium": 8,
-    "low": 1
+    "high": 5,
+    "medium": 22,
+    "low": 28
   },
-  "recordsNeedingReview": 9,
+  "sourceLanguageCounts": {
+    "de": 39,
+    "en": 1,
+    "fr": 10,
+    "it": 2,
+    "mixed": 3
+  },
+  "regionCounts": {
+    "de-CH": 38,
+    "fr-CH": 9,
+    "it-CH": 2,
+    "mixed": 6
+  },
+  "reviewStatusCounts": {
+    "auto-published": 5,
+    "needs-human-review": 50
+  },
+  "recordsNeedingReview": 50,
   "parserCounts": {
-    "ksa": 1,
+    "generic": 46,
+    "ksa": 2,
+    "ksb": 3,
+    "ksgr": 1,
+    "kssg": 1,
     "ksw": 1,
-    "usz": 1
+    "usz": 7
   },
   "failedPages": [],
   "warnings": [
+    {
+      "sourceId": "balgrist-zuerich-karriere",
+      "url": "https://www.balgrist.ch/karriere",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.balgrist.ch/karriere needs human review."
+    },
+    {
+      "sourceId": "chuv-lausanne-formation-medecine",
+      "url": "https://www.chuv.ch/fr/formation/formations-au-chuv",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.chuv.ch/fr/formation/formations-au-chuv needs human review."
+    },
+    {
+      "sourceId": "chuv-lausanne-formation-medecine",
+      "url": "https://www.chuv.ch/fr/formation/formations-au-chuv",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "chuv-lausanne-medecins-formation",
+      "url": "https://www.chuv.ch/fr/formation/formations-au-chuv",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.chuv.ch/fr/formation/formations-au-chuv needs human review."
+    },
+    {
+      "sourceId": "chuv-lausanne-medecins-formation",
+      "url": "https://www.chuv.ch/fr/formation/formations-au-chuv",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "clinica-moncucco-lavoro-formazione",
+      "url": "https://www.moncucco.ch/404.php",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.moncucco.ch/404.php."
+    },
+    {
+      "sourceId": "ehnv-nord-vaudois-formation",
+      "url": "https://www.ehnv.ch/emplois",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.ehnv.ch/emplois needs human review."
+    },
+    {
+      "sourceId": "ehnv-nord-vaudois-formation",
+      "url": "https://www.ehnv.ch/emplois",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "eoc-ticino-formazione",
+      "url": "https://www.eoc.ch/lavorare-in-eoc.html",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html."
+    },
+    {
+      "sourceId": "eoc-ticino-lavoro-formazione",
+      "url": "https://www.eoc.ch/lavorare-in-eoc.html",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html."
+    },
+    {
+      "sourceId": "gzo-wetzikon-karriere",
+      "url": "https://www.gzo.ch/karriere",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.gzo.ch/karriere needs human review."
+    },
+    {
+      "sourceId": "gzo-wetzikon-karriere",
+      "url": "https://www.gzo.ch/karriere",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hfr-fribourg-formation",
+      "url": "https://www.h-fr.ch/formations",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.h-fr.ch/formations needs human review."
+    },
+    {
+      "sourceId": "hfr-fribourg-formation",
+      "url": "https://www.h-fr.ch/formations",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hopital-jura-formation",
+      "url": "https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html needs human review."
+    },
+    {
+      "sourceId": "hopital-jura-formation",
+      "url": "https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hopital-riviera-chablais-formation",
+      "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found."
+    },
+    {
+      "sourceId": "hopital-valais-formation",
+      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review."
+    },
+    {
+      "sourceId": "hopital-valais-formation",
+      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hug-geneve-enseignement-formation",
+      "url": "https://www.hug.ch/formation-de-base",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.hug.ch/formation-de-base needs human review."
+    },
+    {
+      "sourceId": "hug-geneve-enseignement-formation",
+      "url": "https://www.hug.ch/formation-de-base",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hug-geneve-stages",
+      "url": "https://www.hug.ch/emploi/offres-stage",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review."
+    },
+    {
+      "sourceId": "hug-geneve-stages",
+      "url": "https://www.hug.ch/emploi/offres-stage",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "inselgruppe-bern-career-education",
+      "url": "https://inselgruppe.ch/de/bildung",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://inselgruppe.ch/de/bildung."
+    },
+    {
+      "sourceId": "inselspital-bern-medical-students",
+      "url": "https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe needs human review."
+    },
+    {
+      "sourceId": "inselspital-bern-medical-students",
+      "url": "https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "url": "https://www.spital-nidwalden.ch/",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.spital-nidwalden.ch/ needs human review."
+    },
+    {
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "url": "https://www.spital-nidwalden.ch/",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "kantonsspital-obwalden-ausbildung",
+      "url": "https://www.ksow.ch/jobs-karriere/ausbildung",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://www.ksow.ch/jobs-karriere/ausbildung."
+    },
+    {
+      "sourceId": "kantonsspital-uri-ausbildung",
+      "url": "https://www.ksuri.ch/404-nicht-gefunden",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.ksuri.ch/404-nicht-gefunden."
+    },
     {
       "sourceId": "ksa-aarau-unterassistenz-informationen",
       "url": "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua",
@@ -24,20 +225,298 @@
       "warning": "ksa parser output for https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen/allgemeine-informationen-ua needs human review."
     },
     {
+      "sourceId": "ksa-aarau-unterassistenz-stellen",
+      "url": "https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen",
+      "parserName": "ksa",
+      "warning": "ksa parser output for https://www.ksa.ch/de/kantonsspital-aarau/karriere-bildung/bildung/aerztliche-aus-und-weiterbildung/unterassistenz-stellen needs human review."
+    },
+    {
+      "sourceId": "ksb-baden-unterassistentin-chirurgie",
+      "url": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100",
+      "parserName": "ksb",
+      "warning": "KSB parser output for https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100 needs human review."
+    },
+    {
+      "sourceId": "ksb-baden-unterassistentin-innere-medizin",
+      "url": "https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100",
+      "parserName": "ksb",
+      "warning": "KSB parser output for https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100 needs human review."
+    },
+    {
+      "sourceId": "ksb-baden-unterassistenzen-overview",
+      "url": "https://www.kantonsspitalbaden.ch/jobs-karriere/aus-und-weiterbildung/aerztinnen-aerzte/unterassistenzen",
+      "parserName": "ksb",
+      "warning": "KSB parser output for https://www.kantonsspitalbaden.ch/jobs-karriere/aus-und-weiterbildung/aerztinnen-aerzte/unterassistenzen needs human review."
+    },
+    {
+      "sourceId": "ksbl-baselland-karriere",
+      "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://karriere.ksbl.ch/de/offene-stellen/jobs/."
+    },
+    {
+      "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "url": "https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten",
+      "parserName": "ksgr",
+      "warning": "ksgr parser output for https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten needs human review."
+    },
+    {
+      "sourceId": "kssg-stgallen-aerztliche-ausbildung",
+      "url": "https://www.h-och.ch/job-karriere/",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.h-och.ch/job-karriere/."
+    },
+    {
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "url": "https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/",
       "parserName": "ksw",
       "warning": "ksw parser output for https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/ needs human review."
+    },
+    {
+      "sourceId": "luks-luzern-universitaere-lehre",
+      "url": "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre/",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre/ needs human review."
+    },
+    {
+      "sourceId": "luks-luzern-universitaere-lehre",
+      "url": "https://www.luks.ch/stellen-und-karriere/universitaere-lehre-und-forschung/universitaere-lehre/",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "rhne-neuchatel-formation",
+      "url": "https://www.rhne.ch/espace-emploi/formation/formations-medicales",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.rhne.ch/espace-emploi/formation/formations-medicales needs human review."
+    },
+    {
+      "sourceId": "rhne-neuchatel-formation",
+      "url": "https://www.rhne.ch/espace-emploi/formation/formations-medicales",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "see-spital-karriere",
+      "url": "https://see-spital.ch/ueber-das-see-spital/karriere/",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://see-spital.ch/ueber-das-see-spital/karriere/."
+    },
+    {
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+      "url": "https://www.solothurnerspitaeler.ch/jobs-karriere",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.solothurnerspitaeler.ch/jobs-karriere needs human review."
+    },
+    {
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+      "url": "https://www.solothurnerspitaeler.ch/jobs-karriere",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "spitaeler-schaffhausen-aus-und-weiterbildung",
+      "url": "https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung."
+    },
+    {
+      "sourceId": "spital-limmattal-aus-und-weiterbildung",
+      "url": "https://www.spital-limmattal.ch/jobs-karriere/aus-und-weiterbildung/",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.spital-limmattal.ch/jobs-karriere/aus-und-weiterbildung/."
+    },
+    {
+      "sourceId": "spital-maennedorf-aus-und-weiterbildung",
+      "url": "https://karriere.spitalmaennedorf.ch/",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://karriere.spitalmaennedorf.ch/."
+    },
+    {
+      "sourceId": "spital-schwyz-ausbildung",
+      "url": "https://www.spital-schwyz.ch/de/arbeiten-bei-uns/aus-und-weiterbildung.html",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.spital-schwyz.ch/de/arbeiten-bei-uns/aus-und-weiterbildung.html."
+    },
+    {
+      "sourceId": "spital-thurgau-aerztliche-ausbildung",
+      "url": "https://www.stgag.ch/karriere/bildung-karriere/",
+      "parserName": "generic",
+      "warning": "Generic parser skipped likely irrelevant job page https://www.stgag.ch/karriere/bildung-karriere/."
+    },
+    {
+      "sourceId": "spital-uster-chirurgie-unterassistenten-pdf",
+      "url": "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf needs human review."
+    },
+    {
+      "sourceId": "spital-uster-chirurgie-unterassistenten-pdf",
+      "url": "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "stadtspital-zuerich-karriere-ausbildung",
+      "url": "https://www.stadt-zuerich.ch/stadtspital",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.stadt-zuerich.ch/stadtspital."
+    },
+    {
+      "sourceId": "svar-appenzell-aus-und-weiterbildung",
+      "url": "https://spitalverbund.ch/",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://spitalverbund.ch/."
+    },
+    {
+      "sourceId": "swimsa-exchanges",
+      "url": "https://swimsa.ch/exchanges/",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://swimsa.ch/exchanges/."
+    },
+    {
+      "sourceId": "swiss-medical-network-de-karriere",
+      "url": "https://www.swissmedical.net/de/karriere",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.swissmedical.net/de/karriere needs human review."
+    },
+    {
+      "sourceId": "swiss-medical-network-de-karriere",
+      "url": "https://www.swissmedical.net/de/karriere",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "swiss-medical-network-fr-carriere",
+      "url": "https://www.swissmedical.net/fr/carriere",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.swissmedical.net/fr/carriere needs human review."
+    },
+    {
+      "sourceId": "swiss-medical-network-fr-carriere",
+      "url": "https://www.swissmedical.net/fr/carriere",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "swiss-medical-network-it-carriera",
+      "url": "https://www.swissmedical.net/it/carriera",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.swissmedical.net/it/carriera needs human review."
+    },
+    {
+      "sourceId": "swiss-medical-network-it-carriera",
+      "url": "https://www.swissmedical.net/it/carriera",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "unibas-medizin-studium",
+      "url": "https://medizin.unibas.ch/de/",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://medizin.unibas.ch/de/ needs human review."
+    },
+    {
+      "sourceId": "unibas-medizin-studium",
+      "url": "https://medizin.unibas.ch/de/",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "unibe-medizin-studium",
+      "url": "https://www.medizin.unibe.ch/studium/index_ger.html",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html."
+    },
+    {
+      "sourceId": "unige-medecine-enseignement",
+      "url": "https://www.unige.ch/medecine/enseignement1",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review."
+    },
+    {
+      "sourceId": "unige-medecine-enseignement",
+      "url": "https://www.unige.ch/medecine/enseignement1",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "unil-ecole-medecine-stages",
+      "url": "https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html needs human review."
+    },
+    {
+      "sourceId": "usb-basel-career-education",
+      "url": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende needs human review."
+    },
+    {
+      "sourceId": "usb-basel-career-education",
+      "url": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "usi-biomed-faculty",
+      "url": "https://www.biomed.usi.ch/it",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.biomed.usi.ch/it needs human review."
+    },
+    {
+      "sourceId": "usi-biomed-faculty",
+      "url": "https://www.biomed.usi.ch/it",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "usi-biomed-master-medicine",
+      "url": "https://www.usi.ch/en/education/master/medicine",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.usi.ch/en/education/master/medicine needs human review."
+    },
+    {
+      "sourceId": "usi-biomed-master-medicine",
+      "url": "https://www.usi.ch/en/education/master/medicine",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+      "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/",
+      "parserName": "usz",
+      "warning": "usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/ needs human review."
+    },
+    {
+      "sourceId": "usz-zuerich-medizinstudium-overview",
+      "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/",
+      "parserName": "usz",
+      "warning": "usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/ needs human review."
+    },
+    {
+      "sourceId": "usz-zuerich-radiologie-medizinstudium",
+      "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/",
+      "parserName": "usz",
+      "warning": "usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/ needs human review."
+    },
+    {
+      "sourceId": "uzh-medizin-studium",
+      "url": "https://www.med.uzh.ch/de/studium.html",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.med.uzh.ch/de/studium.html needs human review."
+    },
+    {
+      "sourceId": "uzh-medizin-studium",
+      "url": "https://www.med.uzh.ch/de/studium.html",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "zuger-kantonsspital-ausbildung",
+      "url": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber."
     }
-  ],
-  "sourceLanguageCounts": {
-    "de": 10
-  },
-  "regionCounts": {
-    "de-CH": 10
-  },
-  "reviewStatusCounts": {
-    "auto-published": 1,
-    "needs-human-review": 9
-  }
+  ]
 }

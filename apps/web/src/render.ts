@@ -141,6 +141,23 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         gap: 8px;
       }
 
+      .coverage-note {
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        padding: 10px 12px;
+        color: #dce3eb;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .coverage-note p {
+        margin: 0 0 6px;
+      }
+
+      .coverage-note p:last-child {
+        margin-bottom: 0;
+      }
+
       .button {
         border: 1px solid rgba(255, 255, 255, 0.24);
         border-radius: var(--radius);
@@ -416,6 +433,14 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         <div class="actions">
           <a class="button" href="${escapeHtml(options.csvHref)}" download>CSV</a>
           <a class="button" href="${escapeHtml(options.dataHref)}">JSON</a>
+          <a class="button" href="data/current/coverage-by-baseline.md">Coverage</a>
+          <a class="button" href="data/current/missing-sources.md">Missing</a>
+        </div>
+        <div class="coverage-note">
+          <p>Record count is not national clinic coverage.</p>
+          <p>Coverage is measured against selected baselines.</p>
+          <p>Candidate sources may not yet be verified.</p>
+          <p>Some hospitals may not publish placement availability online.</p>
         </div>
       </aside>
       <main class="main">

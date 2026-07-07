@@ -1,0 +1,15 @@
+{
+  "sourceId": "kssg-stgallen-aerztliche-ausbildung",
+  "url": "https://www.h-och.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "14edd5cde3eedfde8663957e1649aaac2ef17e14940f8c04a50d4c77c4727061",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

@@ -1,0 +1,324 @@
+{
+  "sourceId": "rhne-neuchatel-formation",
+  "url": "https://www.rhne.ch/espace-emploi/formation/formations-medicales",
+  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "de43a934b7dbe25b3133c854a79ef22f65f70dedf83580d12732970f8c755b0c",
+  "textHash": "71288426a855090b3e120754a850c80fd9a7f3faeddd72734be1cd6a39ff1d99",
+  "title": "Formation médicale - Internet RHNe",
+  "visibleText": "ESPACE PATIENT-E Modalités de mon séjour à venir Mon admission Mon séjour en maternité Ma sortie d’hôpital Aspects pratiques Facturation Aumônerie Mon enfant à l’hôpital Mon enfant à l’hôpital Aspects pratiques Gestion de la douleur et Kid’s friendly Sécurité de mes données DROITS ET DEVOIRS Droit à l'information et consentement Directives anticipées et représentation Obtenir mon dossier médical Secret professionnel et traitement de données Réclamations et doléances Mes devoirs Recherches cliniques Recherches cliniques Participer à la recherche Statistiques médicales et registres Mon dossier électronique Horaires visites Au sujet de ma consultation J’ai besoin d’un-e interprète Différents sites du RHNe En cas de décès à l’hôpital Service social Contact ESPACE PRO Nous adresser un-e patient-e Demande d'hospitalisation Prise en charge ambulatoire Examen en imagerie médicale Avis ou extrait de dossier Annuaire des prestations médicales Portail d’imagerie Service achats Service d'ingénierie biomédicale PRESTATIONS ESPACE EMPLOI Emploi Rejoindre le RHNe Postes ouverts au RHNe Offres spontanées Pool de remplacements Contactez-nous Nos métiers en vidéo Je rejoins bientôt le RHNe Avantages collaborateur-rice-s Questions fréquentes Formation Formations médicales Formations soins spécialisés Apprentissages / stages Formation à la réanimation Programme de formation Centre de documentation RHNe Présentation et organisation Conseil d’administration Collège des directions Organigramme Missions des directions de site Missions du centre de services transversaux Valeurs du RHNe Options stratégiques 2026-2030 Réseau bleu Politique qualité Publications Blog Brochures patient-e-s Communiqués de presse H.com Page santé Placebo Podcast Rapport d'activité RHNeMag Evénements Jeudis du RHNe – conférences publiques Portes ouvertes Campagnes de sensibilisation Sites du RHNe Cadre légal et politique Charte pour les réseaux sociaux Partenariats et liens Formation médicale Formations médicales Postes ouverts Postuler La formation médicale est assurée par les médecins cadres durant l'activité, mais aussi via un programme de formation par spécialité lors de colloques. Elle bénéficie du soutien financier de l'État à travers des prestations d'intérêt général. Les ressources documentaires recommandées par l'Institut suisse pour la formation (ISFM) sont mises à disposition par le centre de documentation. Le Réseau hospitalier neuchâtelois (RHNe) est répértorié dans le registre des établissements de formation postgraduée de l'ISFM. Vous y trouverez les disciplines et catégories pour lesquelles le RHNe est reconnu. En phase avec ses valeurs, la formation des médecins est un enjeu majeur pour le RHNe, notamment afin de former la relève, maintenir et développer les compétences nécessaires en vue de délivrer les prestations attendues. Notre institution démontre la volonté de développer la formation des médecins dans une approche transversale. Nous offrons trois types de formations : La formation pré-graduée avec une offre de stage pour les candidat-e-s médecins des universités suisses (25 postes) La formation postgraduée dans le cadre des accréditations délivrées par l’ISFM. Le RNHe est répertorié dans le registre des établissements de formation postgraduée de l’ISFM La formation continue des médecins avec l’accès à une plateforme de E-learning médicale regroupant les différentes formations dispensées au sein du RHNe Le RHNe offre aux médecins et futur-e-s médecins un grand nombre de spécialités pour se former, dans un environnement à la fois stimulant et de proximité. Le RHNe soutient la formation médicale à travers: Des médecins-cadres impliqué-e-s dans la formation La constitution d’une commission de formation médicale pour répondre aux enjeux spécifiques des professions médicales L’apprentissage par simulation Un centre de documentation permettant l’accès à de nombreuses revues spécialisées Des forfaits formation pour les médecins assistant-e-s, chef-fe-s de clinique et médecins hospitalier-ère-s Par ailleurs, le RHNe s'est doté d'un coordinateur de la formation médicale. Cette fonction a pour mission de soutenir la formation prégraduée, postgraduée et continue des médecins du RHNe, dans ses dimensions présentielles et distancielles. Cartographie de la formation médicale",
+  "extractedLinks": [
+    {
+      "text": "Mon admission",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/admission"
+    },
+    {
+      "text": "Mon séjour en maternité",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/sejour-maternite"
+    },
+    {
+      "text": "Ma sortie d’hôpital",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/sortie-hopital"
+    },
+    {
+      "text": "Aspects pratiques",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/aspects-pratiques"
+    },
+    {
+      "text": "Facturation",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/facturation"
+    },
+    {
+      "text": "Aumônerie",
+      "href": "https://www.rhne.ch/espace-patient/modalite-sejour/aumonerie"
+    },
+    {
+      "text": "Mon enfant à l’hôpital",
+      "href": "https://www.rhne.ch/espace-patient/enfant-hopital/mon-enfant"
+    },
+    {
+      "text": "Aspects pratiques",
+      "href": "https://www.rhne.ch/espace-patient/enfant-hopital/aspects-pratiques"
+    },
+    {
+      "text": "Gestion de la douleur et Kid’s friendly",
+      "href": "https://www.rhne.ch/espace-patient/enfant-hopital/gestion-douleur"
+    },
+    {
+      "text": "Sécurité de mes données",
+      "href": "https://www.rhne.ch/espace-patient/securite-donnees"
+    },
+    {
+      "text": "Droit à l'information et consentement",
+      "href": "https://www.rhne.ch/espace-patient/droits/info-consentement"
+    },
+    {
+      "text": "Directives anticipées et représentation",
+      "href": "https://www.rhne.ch/espace-patient/droits/directives-anticipees"
+    },
+    {
+      "text": "Obtenir mon dossier médical",
+      "href": "https://www.rhne.ch/espace-patient/droits/dossier-medical"
+    },
+    {
+      "text": "Secret professionnel et traitement de données",
+      "href": "https://www.rhne.ch/espace-patient/droits/secret-professionnel"
+    },
+    {
+      "text": "Réclamations et doléances",
+      "href": "https://www.rhne.ch/espace-patient/droits/reclamations-doleances"
+    },
+    {
+      "text": "Mes devoirs",
+      "href": "https://www.rhne.ch/espace-patient/droits/devoirs"
+    },
+    {
+      "text": "Recherches cliniques",
+      "href": "https://www.rhne.ch/espace-patient/recherches-cliniques/recherches-cliniques"
+    },
+    {
+      "text": "Participer à la recherche",
+      "href": "https://www.rhne.ch/espace-patient/recherches-cliniques/participer-recherche"
+    },
+    {
+      "text": "Statistiques médicales et registres",
+      "href": "https://www.rhne.ch/espace-patient/recherches-cliniques/statistiques-medicales-registres"
+    },
+    {
+      "text": "Mon dossier électronique",
+      "href": "https://www.rhne.ch/espace-patient/dossier-electronique/dep"
+    },
+    {
+      "text": "Horaires visites",
+      "href": "https://www.rhne.ch/espace-patient/horaires-visites"
+    },
+    {
+      "text": "Au sujet de ma consultation",
+      "href": "https://www.rhne.ch/espace-patient/consultation-prevue"
+    },
+    {
+      "text": "J’ai besoin d’un-e interprète",
+      "href": "https://www.rhne.ch/interprete"
+    },
+    {
+      "text": "Différents sites du RHNe",
+      "href": "https://www.rhne.ch/acces?rhne=1"
+    },
+    {
+      "text": "En cas de décès à l’hôpital",
+      "href": "https://www.rhne.ch/espace-patient/deces"
+    },
+    {
+      "text": "Service social",
+      "href": "https://www.rhne.ch/espace-patient/service-social"
+    },
+    {
+      "text": "Contact",
+      "href": "https://www.rhne.ch/contact"
+    },
+    {
+      "text": "Demande d'hospitalisation",
+      "href": "https://www.rhne.ch/nous-adresser-un-patient"
+    },
+    {
+      "text": "Annuaire des prestations médicales",
+      "href": "https://www.rhne.ch/espace-pro/annuaire-prestations-medicales"
+    },
+    {
+      "text": "Portail d’imagerie",
+      "href": "https://pacs-web.rhne.ch/tmpweb/"
+    },
+    {
+      "text": "Service achats",
+      "href": "https://www.rhne.ch/espace-pro/service-achats"
+    },
+    {
+      "text": "Service d'ingénierie biomédicale",
+      "href": "https://www.rhne.ch/espace-pro/biomedical"
+    },
+    {
+      "text": "PRESTATIONS",
+      "href": "https://www.rhne.ch/prestations"
+    },
+    {
+      "text": "Rejoindre le RHNe",
+      "href": "https://www.rhne.ch/espace-emploi/emploi/rejoindre-rhne"
+    },
+    {
+      "text": "Postes ouverts au RHNe",
+      "href": "https://www.rhne.ch/espace-emploi/emploi/postuler"
+    },
+    {
+      "text": "Offres spontanées",
+      "href": "https://www.rhne.ch/espace-emploi/emploi/offres-spontanees"
+    },
+    {
+      "text": "Pool de remplacements",
+      "href": "https://www.rhne.ch/espace-emploi/emploi/pools-remplacements"
+    },
+    {
+      "text": "Contactez-nous",
+      "href": "https://www.rhne.ch/espace-emploi/emploi/contactez-nous"
+    },
+    {
+      "text": "Nos métiers en vidéo",
+      "href": "https://www.rhne.ch/espace-emploi/metiers-video"
+    },
+    {
+      "text": "Je rejoins bientôt le RHNe",
+      "href": "https://www.rhne.ch/espace-emploi/rejoindre-rhne"
+    },
+    {
+      "text": "Avantages collaborateur-rice-s",
+      "href": "https://www.rhne.ch/espace-emploi/avantages-collaborateurs"
+    },
+    {
+      "text": "Questions fréquentes",
+      "href": "https://www.rhne.ch/espace-emploi/questions-frequentes"
+    },
+    {
+      "text": "Formations médicales",
+      "href": "https://www.rhne.ch/espace-emploi/formation/formations-medicales"
+    },
+    {
+      "text": "Formations soins spécialisés",
+      "href": "https://www.rhne.ch/espace-emploi/formation/formations-soins-specialises"
+    },
+    {
+      "text": "Apprentissages / stages",
+      "href": "https://www.rhne.ch/espace-emploi/formation/apprentissages-stages"
+    },
+    {
+      "text": "Formation à la réanimation",
+      "href": "https://www.rhne.ch/espace-emploi/formation/formation-reanimation"
+    },
+    {
+      "text": "Programme de formation",
+      "href": "https://www.rhne.ch/espace-emploi/formation/programme-formation"
+    },
+    {
+      "text": "Centre de documentation",
+      "href": "https://www.rhne.ch/espace-emploi/formation/centre-documentation"
+    },
+    {
+      "text": "Conseil d’administration",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/conseil-administration"
+    },
+    {
+      "text": "Collège des directions",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/college-directions"
+    },
+    {
+      "text": "Organigramme",
+      "href": "https://www.rhne.ch/documents/d/guest/organigramme-rhne"
+    },
+    {
+      "text": "Missions des directions de site",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/missions-directions-site"
+    },
+    {
+      "text": "Missions du centre de services transversaux",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/missions-cst"
+    },
+    {
+      "text": "Valeurs du RHNe",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/valeurs-rhne"
+    },
+    {
+      "text": "Options stratégiques 2026-2030",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/options-strategiques"
+    },
+    {
+      "text": "Réseau bleu",
+      "href": "https://reseaubleu.ch/"
+    },
+    {
+      "text": "Politique qualité",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/politique-qualite"
+    },
+    {
+      "text": "Blog",
+      "href": "https://rhneinfo.ch/"
+    },
+    {
+      "text": "Brochures patient-e-s",
+      "href": "https://www.rhne.ch/rhne/publications/brochures-patients"
+    },
+    {
+      "text": "Communiqués de presse",
+      "href": "https://www.rhne.ch/rhne/publications/communiques-presse"
+    },
+    {
+      "text": "H.com",
+      "href": "https://www.rhne.ch/rhne/publications/hcom"
+    },
+    {
+      "text": "Page santé",
+      "href": "https://www.rhne.ch/rhne/publications/page-sante"
+    },
+    {
+      "text": "Placebo",
+      "href": "https://www.canalalpha.ch/play/placebo"
+    },
+    {
+      "text": "Podcast",
+      "href": "https://www.rhne.ch/rhne/publications/podcast"
+    },
+    {
+      "text": "Rapport d'activité",
+      "href": "https://www.rhne.ch/rhne/publications/ra2025"
+    },
+    {
+      "text": "RHNeMag",
+      "href": "https://www.rhne.ch/rhne/publications/rhnemag"
+    },
+    {
+      "text": "Jeudis du RHNe – conférences publiques",
+      "href": "https://www.rhne.ch/rhne/jeudis-rhne"
+    },
+    {
+      "text": "Portes ouvertes",
+      "href": "https://www.rhne.ch/event/portes-ouvertes/passees"
+    },
+    {
+      "text": "Campagnes de sensibilisation",
+      "href": "https://www.rhne.ch/event/octobre-rose-2025"
+    },
+    {
+      "text": "Sites du RHNe",
+      "href": "https://www.rhne.ch/acces"
+    },
+    {
+      "text": "Cadre légal et politique",
+      "href": "https://www.rhne.ch/rhne/cadre-legal-politique"
+    },
+    {
+      "text": "Charte pour les réseaux sociaux",
+      "href": "https://www.rhne.ch/documents/d/guest/charte_reseaux_sociaux_rhne"
+    },
+    {
+      "text": "Partenariats et liens",
+      "href": "https://www.rhne.ch/rhne/partenariats-liens"
+    },
+    {
+      "text": "Postuler",
+      "href": "https://www.rhne.ch/emploi/postuler/medical?cat=medical"
+    },
+    {
+      "text": "valeurs",
+      "href": "https://www.rhne.ch/rhne/presentation-organisation/valeurs_rhne"
+    },
+    {
+      "text": "le registre des établissements de formation postgraduée",
+      "href": "https://www.registre-isfm.ch/default.aspx"
+    },
+    {
+      "text": "Cartographie de la formation médicale",
+      "href": "https://www.rhne.ch/documents/d/guest/carto-formation-medicale"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

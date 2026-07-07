@@ -1,0 +1,20 @@
+{
+  "sourceId": "hopital-riviera-chablais-formation",
+  "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "7a0a9102e759943e024aabccb36fd97942ec5af449ea57f85752b1e2a508b61e",
+  "textHash": "a57f5ea43ddd6f48114cf86fc83202279df465c1b533e6861ee1ee883cf1061b",
+  "title": "Hôpital Riviera Chablais (HRC) - 404 Page Not Found",
+  "visibleText": "404 La page demandée n'existe pas ! Avez-vous essayé de faire une recherche ? Revenir à l'accueil",
+  "extractedLinks": [
+    {
+      "text": "Revenir à l'accueil",
+      "href": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/index.jsp"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}

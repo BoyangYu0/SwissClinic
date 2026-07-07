@@ -1,0 +1,15 @@
+{
+  "sourceId": "spital-thurgau-aerztliche-ausbildung",
+  "url": "https://www.stgag.ch/karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html;charset=utf-8",
+  "rawHash": "cc15fd3378a562e374ded88000967cabcb4ca5f83b32fdb6f3c319608e74666e",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

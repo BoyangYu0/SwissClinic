@@ -1,0 +1,15 @@
+{
+  "sourceId": "eoc-ticino-formazione",
+  "url": "https://www.eoc.ch/Formazione.html",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "cbbef09d499fbb18326e65c985751ae28d116ce0299d17b8f60946609c6d21c6",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

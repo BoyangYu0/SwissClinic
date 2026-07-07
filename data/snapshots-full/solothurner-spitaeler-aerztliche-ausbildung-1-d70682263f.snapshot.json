@@ -1,0 +1,15 @@
+{
+  "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
+  "url": "https://www.solothurnerspitaeler.ch/jobs-karriere/aus-und-weiterbildung/aerztliche-aus-und-weiterbildung",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 404,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "5f1eb481936384218973a94e5e602ee0abf6165aef1b16fb3862d620a4e42c09",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": "HTTP 404 Not Found"
+}

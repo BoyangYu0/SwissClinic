@@ -1,0 +1,48 @@
+{
+  "sourceId": "unige-medecine-enseignement",
+  "url": "https://www.unige.ch/medecine/enseignement1",
+  "fetchedAt": "2026-07-07T14:36:06.459Z",
+  "statusCode": 200,
+  "contentType": "text/html; charset=UTF-8",
+  "rawHash": "09f859155f0532df8d80e68c7ee01916ce1b3d2d47407bcc05ae9f4ca4643313",
+  "textHash": "83f34b69ee022517a145fa597bc85f72eabbce169ad35f34585d8b8f99bb95e2",
+  "title": "ENSEIGNEMENT - Faculté de médecine - UNIGE",
+  "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2025-2026 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées",
+  "extractedLinks": [
+    {
+      "text": "Rentrée académique 2025-2026",
+      "href": "https://www.unige.ch/medecine/enseignement/Rentree2025-2026"
+    },
+    {
+      "text": "Contacts et liens",
+      "href": "https://www.unige.ch/medecine/fr/contacts-acces/enseignement"
+    },
+    {
+      "text": "Bachelor et Master en médecine humaine",
+      "href": "https://www.unige.ch/medecine/enseignement1/bachelor-et-master-en-medecine-humaine"
+    },
+    {
+      "text": "Bachelor et Master en médecine dentaire",
+      "href": "https://www.unige.ch/medecine/dentaire/fr/en/formation-de-base"
+    },
+    {
+      "text": "Bachelor en sciences biomédicales",
+      "href": "https://www.unige.ch/medecine/enseignement1/bachelorscienessbiomedicales"
+    },
+    {
+      "text": "Master en neurosciences",
+      "href": "https://www.unige.ch/medecine/enseignement1/master-en-neurosciences"
+    },
+    {
+      "text": "Master en santé globale",
+      "href": "https://unige.ch/medecine/isg/en/teaching/master-of-science-in-global-health-mscgh"
+    },
+    {
+      "text": "Formations post-graduées",
+      "href": "https://www.unige.ch/medecine/enseignement1/formationpostgrade"
+    }
+  ],
+  "extractedEmails": [],
+  "fetchModeUsed": "html",
+  "error": null
+}
