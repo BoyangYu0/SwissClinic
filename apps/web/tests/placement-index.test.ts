@@ -91,7 +91,9 @@ describe("placement index frontend", () => {
     expect(html).toContain('name="region"');
     expect(html).toContain("Example Hospital");
     expect(html).toContain("Example Review Hospital");
-    expect(html).toContain("internal-medicine");
+    expect(html).toContain("Internal medicine");
+    expect(html).toContain("Clinical elective");
+    expect(html).toContain("department-highlight");
     expect(html).toContain("Extraction language");
     expect(html).toContain("needs-human-review");
     expect(html).toContain("Needs human review");
@@ -115,7 +117,8 @@ describe("placement index frontend", () => {
     expect(html).toContain("https://github.com/BoyangYu0/SwissClinic");
     expect(html).toContain("mailto:karl_ychen@outlook.com");
     expect(html).toContain("karl_ychen@outlook.com");
-    expect(html).toContain("Enable review mode");
+    expect(html).not.toContain("Enable review mode");
+    expect(html).toContain("Add reviews");
     expect(html).toContain("Report error");
     expect(html).toContain("Community verification");
     expect(html).toContain("community lead-time reports");
@@ -131,6 +134,7 @@ describe("placement index frontend", () => {
 
     expect(html).toContain('new URLSearchParams(window.location.search).get("review") === "1"');
     expect(html).toContain('if (!reviewModeEnabled) return ""');
+    expect(html).toContain("add-reviews-button");
     expect(html).toContain("Verify this record");
     expect(html).toContain("Report application lead time");
   });
@@ -243,11 +247,35 @@ describe("placement index frontend", () => {
         region: "de-CH",
         extractionLanguage: "de",
       }),
+      placement({
+        sourceId: "unclear-source",
+        sourceUrl: "https://example.ch/unclear",
+        institutionName: "Unclear Hospital",
+        department: "Frauenheilkunde",
+        originalDepartmentName: "Frauenheilkunde",
+        departmentNormalized: "Frauenheilkunde",
+        roleType: "Wahlstudienjahr",
+        roleTypeOriginal: "Wahlstudienjahr",
+        availabilityStatus: "unclear",
+        canton: "VD",
+        city: "Lausanne",
+        language: "fr",
+        sourceLanguage: "fr",
+        region: "fr-CH",
+        extractionLanguage: "fr",
+      }),
     ];
 
     expect(filterPlacements(placements, { query: "bern" })).toHaveLength(1);
     expect(filterPlacements(placements, { canton: "ZH" })).toHaveLength(1);
     expect(filterPlacements(placements, { department: "surgery", roleType: "PJ" })).toHaveLength(1);
+    expect(
+      filterPlacements(placements, {
+        department: "gynecology",
+        roleType: "clinical-elective",
+        availabilityStatus: "not-specified",
+      }),
+    ).toHaveLength(1);
     expect(filterPlacements(placements, { language: "de", region: "de-CH" })).toHaveLength(2);
     expect(filterPlacements(placements, { availabilityStatus: "available" })).toHaveLength(1);
     expect(filterPlacements(placements, { confidence: "low" })).toHaveLength(0);
@@ -271,7 +299,7 @@ describe("placement index frontend", () => {
     expect(html).toContain("Last checked");
     expect(html).toContain("site-parser");
     expect(html).toContain("needs-human-review");
-    expect(html).toContain("Innere Medizin");
+    expect(html).toContain("Internal medicine");
     expect(html).toContain("Availability changed for Example Hospital.");
     expect(html).toContain("Parser could not infer exact month.");
     expect(html).toContain("Report error");

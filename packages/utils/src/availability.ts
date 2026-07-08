@@ -47,7 +47,7 @@ export function parseAvailabilityStatus(text: string): AvailabilityParseResult {
     const fullyBookedUntil = parseMonthExpression(text);
     return {
       ...base,
-      availabilityStatus: fullyBookedUntil ? "fully-booked-until" : "unclear",
+      availabilityStatus: fullyBookedUntil ? "fully-booked-until" : "not-specified",
       fullyBookedUntil,
       warnings: fullyBookedUntil
         ? []
@@ -62,7 +62,7 @@ export function parseAvailabilityStatus(text: string): AvailabilityParseResult {
   if (hasArrangementPhrase(normalized)) {
     return {
       ...base,
-      availabilityStatus: "unclear",
+      availabilityStatus: "not-specified",
       warnings: ["Availability is described as by arrangement rather than as a date."],
     };
   }

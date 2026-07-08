@@ -158,7 +158,7 @@ describe("availability parsing utilities", () => {
     [
       "nach Vereinbarung",
       {
-        availabilityStatus: "unclear",
+        availabilityStatus: "not-specified",
         availableFrom: null,
         fullyBookedUntil: null,
       },
@@ -190,7 +190,7 @@ describe("availability parsing utilities", () => {
     [
       "Famulaturen können praktisch keine angeboten werden.",
       {
-        availabilityStatus: "unclear",
+        availabilityStatus: "not-specified",
         availableFrom: null,
         fullyBookedUntil: null,
       },
@@ -198,7 +198,7 @@ describe("availability parsing utilities", () => {
     [
       "Die Klinik für Neurologie bietet keine Famulaturen an.",
       {
-        availabilityStatus: "unclear",
+        availabilityStatus: "not-specified",
         availableFrom: null,
         fullyBookedUntil: null,
       },
@@ -206,7 +206,7 @@ describe("availability parsing utilities", () => {
     [
       "Voraussetzungen Deutschkenntnisse B2Keine Famulaturen möglich Freie Unterassistenzstellen",
       {
-        availabilityStatus: "unclear",
+        availabilityStatus: "not-specified",
         availableFrom: null,
         fullyBookedUntil: null,
       },

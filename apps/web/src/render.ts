@@ -6,8 +6,12 @@ import type {
   SourceRegistryEntry,
 } from "@scpi/schema";
 import {
+  canonicalAvailabilityStatus,
+  canonicalDepartment,
+  canonicalRoleType,
   createPlacementIndexViewModel,
   createReviewQueue,
+  displayLabel as displayPlacementLabel,
   type ReviewQueueItem,
 } from "./placement-index.js";
 import {
@@ -359,6 +363,32 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         font-size: 13px;
       }
 
+      .placement-meta {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 6px;
+      }
+
+      .department-highlight {
+        background: #eaf2ff;
+        border: 1px solid #bfd5f2;
+        border-radius: 4px;
+        color: #123c69;
+        display: inline-flex;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.2;
+        padding: 3px 6px;
+      }
+
+      .role-label {
+        color: #4c5664;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
       .badge {
         display: inline-flex;
         align-items: center;
@@ -533,7 +563,6 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           <a class="button" href="review-queue.html">Review queue</a>
           <a class="button" href="https://github.com/BoyangYu0/SwissClinic">GitHub</a>
           <a class="button" href="mailto:karl_ychen@outlook.com">Email</a>
-          <button class="button" type="button" id="review-mode-toggle">Enable review mode</button>
         </div>
         <div class="coverage-note">
           <p>Record count is not national clinic coverage.</p>
@@ -611,7 +640,6 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
       const detailSubtitle = document.getElementById("detail-subtitle");
       const detailBody = document.getElementById("detail-body");
       const closeButton = document.getElementById("detail-close");
-      const reviewModeToggle = document.getElementById("review-mode-toggle");
       let activeRecord = null;
       let reviewModeEnabled = new URLSearchParams(window.location.search).get("review") === "1";
 
@@ -624,6 +652,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           "application-only": "Application only",
           "auto-published": "Auto published",
           "available-from": "Available from",
+          "clinical-elective": "Clinical elective",
           "fully-booked-until": "Fully booked until",
           "generic-parser": "Generic parser",
           "hospital-confirmed": "Hospital confirmed",
@@ -636,6 +665,92 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           "site-parser": "Site parser"
         };
         return labels[value] || text(value);
+      }
+
+      const departmentLabels = {
+        "anesthesie": ["anesthesiology", "Anesthesiology"],
+        "anaesthesie": ["anesthesiology", "Anesthesiology"],
+        "anesthesiologie": ["anesthesiology", "Anesthesiology"],
+        "anästhesiologie": ["anesthesiology", "Anesthesiology"],
+        "anesthesiology": ["anesthesiology", "Anesthesiology"],
+        "augenheilkunde": ["ophthalmology", "Ophthalmology"],
+        "chirurgie": ["surgery", "Surgery"],
+        "chirurgia": ["surgery", "Surgery"],
+        "emergency-medicine": ["emergency-medicine", "Emergency medicine"],
+        "frauenheilkunde": ["gynecology", "Gynecology"],
+        "gynecology": ["gynecology", "Gynecology"],
+        "gynakologie": ["gynecology", "Gynecology"],
+        "gynaekologie": ["gynecology", "Gynecology"],
+        "gynäkologie": ["gynecology", "Gynecology"],
+        "gynécologie": ["gynecology", "Gynecology"],
+        "ginecologia": ["gynecology", "Gynecology"],
+        "innere-medizin": ["internal-medicine", "Internal medicine"],
+        "internal-medicine": ["internal-medicine", "Internal medicine"],
+        "medecine-interne": ["internal-medicine", "Internal medicine"],
+        "médecine-interne": ["internal-medicine", "Internal medicine"],
+        "medicina-interna": ["internal-medicine", "Internal medicine"],
+        "neuroradiologie": ["neuroradiology", "Neuroradiology"],
+        "neuroradiology": ["neuroradiology", "Neuroradiology"],
+        "notfallmedizin": ["emergency-medicine", "Emergency medicine"],
+        "pronto-soccorso": ["emergency-medicine", "Emergency medicine"],
+        "urgences": ["emergency-medicine", "Emergency medicine"],
+        "ophthalmology": ["ophthalmology", "Ophthalmology"],
+        "orthopadie": ["orthopedics", "Orthopedics"],
+        "orthopaedie": ["orthopedics", "Orthopedics"],
+        "orthopädie": ["orthopedics", "Orthopedics"],
+        "orthopedics": ["orthopedics", "Orthopedics"],
+        "padiatrie": ["pediatrics", "Pediatrics"],
+        "paediatrie": ["pediatrics", "Pediatrics"],
+        "pediatrics": ["pediatrics", "Pediatrics"],
+        "pediatria": ["pediatrics", "Pediatrics"],
+        "pediatrie": ["pediatrics", "Pediatrics"],
+        "pédiatrie": ["pediatrics", "Pediatrics"],
+        "pädiatrie": ["pediatrics", "Pediatrics"],
+        "psychiatrie": ["psychiatry", "Psychiatry"],
+        "psychiatry": ["psychiatry", "Psychiatry"],
+        "psichiatria": ["psychiatry", "Psychiatry"],
+        "radiologie": ["radiology", "Radiology"],
+        "radiologia": ["radiology", "Radiology"],
+        "radiology": ["radiology", "Radiology"],
+        "surgery": ["surgery", "Surgery"],
+        "traumatologie": ["orthopedics", "Orthopedics"]
+      };
+
+      function departmentKey(value) {
+        return text(value)
+          .normalize("NFKD")
+          .replace(/[\\u0300-\\u036f]/g, "")
+          .toLowerCase()
+          .replace(/&/g, " and ")
+          .replace(/[^a-z0-9äöüéèàùç]+/gi, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function titleCase(value) {
+        return text(value).replaceAll("-", " ").replace(/\\w\\S*/g, (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+      }
+
+      function departmentDisplay(record) {
+        const raw = record.departmentNormalized || record.department || record.originalDepartmentName || "not-specified";
+        const mapped = departmentLabels[departmentKey(raw)];
+        if (mapped) return { value: mapped[0], label: mapped[1] };
+        if (raw === "not-specified") return { value: "not-specified", label: "Not specified" };
+        return { value: departmentKey(raw) || "not-specified", label: raw.includes("-") ? titleCase(raw) : raw };
+      }
+
+      function roleDisplay(record) {
+        if (record.roleType === "Unterassistenz" || record.roleType === "Wahlstudienjahr" || record.roleType === "ClinicalPlacement" || /\\b(stage|sous-assistant|tirocinio)\\b/i.test(record.roleTypeOriginal || "")) {
+          return { value: "clinical-elective", label: "Clinical elective" };
+        }
+        if (record.roleType === "Unknown") return { value: "not-specified", label: "Not specified" };
+        return { value: record.roleType, label: displayLabel(record.roleType) };
+      }
+
+      function availabilityDisplay(record) {
+        if (record.availabilityStatus === "unclear" || record.availabilityStatus === "not-specified") {
+          return { value: "not-specified", label: "Not specified" };
+        }
+        return { value: record.availabilityStatus, label: displayLabel(record.availabilityStatus) };
       }
 
       function escapeHtml(value) {
@@ -669,10 +784,13 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           record.institutionName,
           record.department,
           record.departmentNormalized,
+          departmentDisplay(record).label,
           record.roleType,
+          roleDisplay(record).label,
           record.canton,
           record.city,
           record.availabilityStatus,
+          availabilityDisplay(record).label,
           record.availableFrom,
           record.contactEmail,
           record.contactName,
@@ -689,9 +807,9 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           return matches(record.canton, filters.canton)
             && matches(record.city, filters.city)
             && matches(record.institutionName, filters.institutionName)
-            && matches(record.departmentNormalized || record.department, filters.department)
-            && matches(record.roleType, filters.roleType)
-            && matches(record.availabilityStatus, filters.availabilityStatus)
+            && matches(departmentDisplay(record).value, filters.department)
+            && matches(roleDisplay(record).value, filters.roleType)
+            && matches(availabilityDisplay(record).value, filters.availabilityStatus)
             && matches(record.availableFrom, filters.availableFrom)
             && matches(record.confidence, filters.confidence)
             && matches(record.language, filters.language)
@@ -709,10 +827,13 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
             ? '<a href="' + escapeHtml(record.applicationUrl) + '">' + escapeHtml(record.applicationMethod) + '</a>'
             : escapeHtml(record.applicationMethod);
           const reliability = reliabilitySummaryFor(record)?.reliabilityLabel || "unverified";
+          const department = departmentDisplay(record);
+          const role = roleDisplay(record);
+          const availability = availabilityDisplay(record);
           return '<tr tabindex="0" data-record-id="' + escapeHtml(record.id) + '">'
-            + '<td class="primary-cell"><span class="cell-title">' + escapeHtml(record.institutionName) + '</span><span class="cell-subtitle">' + escapeHtml(record.originalDepartmentName || record.department) + " / " + escapeHtml(record.departmentNormalized) + " / " + escapeHtml(record.roleTypeOriginal || record.roleType) + '</span></td>'
+            + '<td class="primary-cell"><span class="cell-title">' + escapeHtml(record.institutionName) + '</span><span class="placement-meta"><strong class="department-highlight">' + escapeHtml(department.label) + '</strong><span class="role-label">' + escapeHtml(role.label) + '</span></span></td>'
             + '<td>' + escapeHtml([record.canton, record.city].filter(Boolean).join(" / ")) + '</td>'
-            + '<td>' + badge(record.availabilityStatus) + '<br><span class="cell-subtitle">' + escapeHtml(record.availableFrom || record.fullyBookedUntil) + '</span></td>'
+            + '<td>' + badge(availability.value) + '<br><span class="cell-subtitle">' + escapeHtml(record.availableFrom || record.fullyBookedUntil) + '</span></td>'
             + '<td>' + escapeHtml(duration) + '</td>'
             + '<td>' + badge(record.extractionLanguage || record.language) + '<br><span class="cell-subtitle">' + escapeHtml(record.region) + '</span></td>'
             + '<td>' + apply + '</td>'
@@ -911,6 +1032,15 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           + '<p class="cell-subtitle">Official source pages remain authoritative.</p>'
           + '<input type="hidden" name="sourceId" value="' + escapeHtml(record.sourceId) + '">'
           + '<input type="hidden" name="currentParserType" value="' + escapeHtml(source ? source.sourceUrls.map((url) => url.expectedParser).join(", ") : record.extractionMethod) + '">'
+          + '</section>';
+      }
+
+      function reviewEntryHtml() {
+        if (reviewModeEnabled) return "";
+        return '<section class="review-panel review-entry-panel">'
+          + '<h3>Add reviews</h3>'
+          + '<p class="cell-subtitle">Open the structured review forms for this placement. The site has no backend, so submissions are sent through pre-filled GitHub issues or copied as JSON.</p>'
+          + '<div class="review-actions"><button type="button" class="add-reviews-button">Add reviews</button></div>'
           + '</section>';
       }
 
@@ -1123,15 +1253,19 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
 
       function openDetail(record) {
         activeRecord = record;
+        const department = departmentDisplay(record);
+        const role = roleDisplay(record);
+        const availability = availabilityDisplay(record);
         detailTitle.textContent = record.institutionName;
-        detailSubtitle.textContent = [record.department || record.departmentNormalized, record.roleType].filter(Boolean).join(" / ");
+        detailSubtitle.textContent = [department.label, role.label].filter(Boolean).join(" / ");
         detailBody.innerHTML = '<div class="detail-grid">'
-          + detailField("Availability", record.availabilityStatus)
+          + detailField("Availability", availability.value)
           + detailField("Available from", record.availableFrom)
           + detailField("Fully booked until", record.fullyBookedUntil)
           + detailField("Application", record.applicationMethod)
+          + detailField("Department", department.label)
           + detailField("Original department", record.originalDepartmentName || record.department)
-          + detailField("Normalized department", record.departmentNormalized)
+          + detailField("Role", role.label)
           + detailField("Extraction language", record.extractionLanguage || record.language)
           + detailField("Region", record.region)
           + detailField("Contact", record.contactEmail || record.contactName)
@@ -1142,6 +1276,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           + '<div><strong>Source</strong><p><a href="' + escapeHtml(record.sourceUrl) + '">' + escapeHtml(record.sourceUrl) + '</a></p></div>'
           + '<div><strong>Warnings</strong>' + (record.warnings.length ? '<ul class="warning-list">' + record.warnings.map((warning) => '<li>' + escapeHtml(warning) + '</li>').join("") + '</ul>' : '<p>No parser warnings.</p>') + '</div>'
           + '<div><strong>Source snippet</strong><p class="snippet">' + escapeHtml(record.extractedSnippet) + '</p></div>'
+          + reviewEntryHtml()
           + feedbackLinksHtml(record)
           + reviewPanelHtml(record)
           + leadTimeReportPanelHtml(record);
@@ -1151,18 +1286,13 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         bindLeadTimeReportPanel(record);
       }
 
-      function updateReviewModeToggle() {
-        reviewModeToggle.textContent = reviewModeEnabled ? "Review mode enabled" : "Enable review mode";
-      }
-
-      reviewModeToggle.addEventListener("click", () => {
+      function enableReviewMode() {
         reviewModeEnabled = true;
         const url = new URL(window.location.href);
         url.searchParams.set("review", "1");
         window.history.replaceState({}, "", url);
-        updateReviewModeToggle();
         if (activeRecord) openDetail(activeRecord);
-      });
+      }
 
       rows.addEventListener("click", (event) => {
         if (event.target.closest("a, button, input, select, textarea")) return;
@@ -1186,8 +1316,12 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         drawer.setAttribute("aria-hidden", "true");
       });
 
+      detailBody.addEventListener("click", (event) => {
+        if (!event.target.closest(".add-reviews-button")) return;
+        enableReviewMode();
+      });
+
       form.addEventListener("input", renderRows);
-      updateReviewModeToggle();
       renderRows();
     </script>
   </body>
@@ -1273,6 +1407,37 @@ export function renderReviewQueuePage(options: RenderPlacementIndexOptions): str
         return !filterValue || value === filterValue;
       }
 
+      const queueDepartmentLabels = ${escapeScriptJson(
+        Object.fromEntries(
+          Object.entries({
+            "internal-medicine": "Internal medicine",
+            surgery: "Surgery",
+            pediatrics: "Pediatrics",
+            gynecology: "Gynecology",
+            psychiatry: "Psychiatry",
+            anesthesiology: "Anesthesiology",
+            "emergency-medicine": "Emergency medicine",
+            radiology: "Radiology",
+            neuroradiology: "Neuroradiology",
+            ophthalmology: "Ophthalmology",
+            orthopedics: "Orthopedics",
+          }),
+        ),
+      )};
+
+      function queueRole(record) {
+        if (record.roleType === "Unterassistenz" || record.roleType === "Wahlstudienjahr" || record.roleType === "ClinicalPlacement" || /\\b(stage|sous-assistant|tirocinio)\\b/i.test(record.roleTypeOriginal || "")) {
+          return { value: "clinical-elective", label: "Clinical elective" };
+        }
+        if (record.roleType === "Unknown") return { value: "not-specified", label: "Not specified" };
+        return { value: record.roleType, label: record.roleType };
+      }
+
+      function queueDepartment(record) {
+        const key = record.departmentNormalized || record.department || "not-specified";
+        return { value: key, label: queueDepartmentLabels[key] || key };
+      }
+
       function renderQueueRows() {
         const filters = Object.fromEntries(new FormData(queueFilters).entries());
         const visible = queueItems.filter((item) =>
@@ -1286,7 +1451,7 @@ export function renderReviewQueuePage(options: RenderPlacementIndexOptions): str
           const record = item.record;
           return '<tr>'
             + '<td>' + queueEscape(item.priorityScore) + '<br><span class="muted">' + queueEscape(item.priorityReasons.join(", ")) + '</span></td>'
-            + '<td><strong>' + queueEscape(record.institutionName) + '</strong><br><span class="muted">' + queueEscape(record.departmentNormalized || record.department) + '</span></td>'
+            + '<td><strong>' + queueEscape(record.institutionName) + '</strong><br><span class="muted">' + queueEscape(queueDepartment(record).label) + " / " + queueEscape(queueRole(record).label) + '</span></td>'
             + '<td>' + queueEscape(record.language) + '<br><span class="muted">' + queueEscape(record.region) + '</span></td>'
             + '<td>' + queueEscape(record.confidence) + '</td>'
             + '<td>' + queueEscape(item.parserType) + '</td>'
@@ -1430,9 +1595,9 @@ function renderSourcePlacementTable(placements: PlacementRecord[]): string {
         ${placements
           .map(
             (record) => `<tr>
-              <td>${escapeHtml(record.department ?? record.departmentNormalized ?? "Not specified")}</td>
-              <td>${escapeHtml(record.roleType)}</td>
-              <td>${badge(record.availabilityStatus)} ${escapeHtml(
+              <td>${escapeHtml(canonicalDepartment(record).label)}</td>
+              <td>${escapeHtml(canonicalRoleType(record).label)}</td>
+              <td>${badge(canonicalAvailabilityStatus(record).value)} ${escapeHtml(
                 record.availableFrom ?? record.fullyBookedUntil ?? "",
               )}</td>
               <td>${badge(record.confidence)} ${badge(record.reviewStatus)}</td>
@@ -1824,6 +1989,7 @@ function displayLabel(value: string | null | undefined): string {
     "application-only": "Application only",
     "auto-published": "Auto published",
     "available-from": "Available from",
+    "clinical-elective": "Clinical elective",
     "fully-booked-until": "Fully booked until",
     "generic-parser": "Generic parser",
     "hospital-confirmed": "Hospital confirmed",
@@ -1836,7 +2002,7 @@ function displayLabel(value: string | null | undefined): string {
     "site-parser": "Site parser",
   };
 
-  return value ? (labels[value] ?? value) : "Not specified";
+  return value ? (labels[value] ?? displayPlacementLabel(value)) : "Not specified";
 }
 
 function escapeScriptJson(value: unknown): string {
