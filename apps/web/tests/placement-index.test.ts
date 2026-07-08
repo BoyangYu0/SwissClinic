@@ -8,8 +8,14 @@ import {
   type SourceRegistryEntry,
 } from "@scpi/schema";
 import { describe, expect, it } from "vitest";
-import { createReviewQueue, filterPlacements } from "../src/placement-index.js";
 import {
+  canonicalDepartment,
+  createReviewQueue,
+  filterPlacements,
+} from "../src/placement-index.js";
+import {
+  renderCoverageReportsPage,
+  renderMarkdownReportPage,
   renderPlacementIndexPage,
   renderReviewQueuePage,
   renderSourceDetailPage,
@@ -111,8 +117,8 @@ describe("placement index frontend", () => {
     expect(html).toContain("Coverage is measured against selected baselines.");
     expect(html).toContain("Candidate sources may not yet be verified.");
     expect(html).toContain("Some hospitals may not publish placement availability online.");
-    expect(html).toContain("data/current/coverage-by-baseline.md");
-    expect(html).toContain("data/current/missing-sources.md");
+    expect(html).toContain("coverage.html");
+    expect(html).toContain("missing.html");
     expect(html).toContain("review-queue.html");
     expect(html).toContain("https://github.com/BoyangYu0/SwissClinic");
     expect(html).toContain("mailto:karl_ychen@outlook.com");
@@ -135,8 +141,53 @@ describe("placement index frontend", () => {
     expect(html).toContain('new URLSearchParams(window.location.search).get("review") === "1"');
     expect(html).toContain('if (!reviewModeEnabled) return ""');
     expect(html).toContain("add-reviews-button");
+    expect(html).toContain("close-review-button");
     expect(html).toContain("Verify this record");
     expect(html).toContain("Report application lead time");
+  });
+
+  it("canonicalizes accented anesthesiology department names", () => {
+    expect(
+      canonicalDepartment(
+        placement({
+          department: "Anästhesiologie",
+          departmentNormalized: "Anästhesiologie",
+          originalDepartmentName: "Anästhesiologie",
+        }),
+      ),
+    ).toEqual({ value: "anesthesiology", label: "Anesthesiology" });
+  });
+
+  it("renders generated coverage and missing-source reports as HTML pages", () => {
+    const coverageHtml = renderCoverageReportsPage({
+      indexHref: "index.html",
+      reports: [
+        {
+          title: "Record coverage",
+          sourceHref: "data/current/record-coverage.md",
+          markdown: [
+            "# Record Coverage",
+            "",
+            "| Metric | Value |",
+            "| --- | --- |",
+            "| Total records | 49 |",
+          ].join("\n"),
+        },
+      ],
+    });
+    const missingHtml = renderMarkdownReportPage({
+      indexHref: "index.html",
+      title: "Missing Sources",
+      subtitle: "Candidate gaps that need manual verification.",
+      sourceHref: "data/current/missing-sources.md",
+      markdown: "- Example missing hospital",
+    });
+
+    expect(coverageHtml).toContain("Coverage Reports");
+    expect(coverageHtml).toContain("<table>");
+    expect(coverageHtml).toContain("Total records");
+    expect(missingHtml).toContain("Missing Sources");
+    expect(missingHtml).toContain("Example missing hospital");
   });
 
   it("builds a GitHub issue URL containing record ID and selected review answers", () => {

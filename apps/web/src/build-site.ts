@@ -16,6 +16,8 @@ import {
 } from "@scpi/schema";
 import { buildReliabilitySummaries } from "./community-evidence.js";
 import {
+  renderCoverageReportsPage,
+  renderMarkdownReportPage,
   renderPlacementIndexPage,
   renderReviewQueuePage,
   renderSourceDetailPage,
@@ -35,8 +37,11 @@ export interface BuildSiteResult {
 }
 
 export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteResult> {
-  const placements = await readPlacements(join(options.dataDir, "placements.json"));
   const sources = await readSources(join(options.dataDir, "sources.json"));
+  const placements = fillPlacementLocationsFromSources(
+    await readPlacements(join(options.dataDir, "placements.json")),
+    sources,
+  );
   const changes = await readChanges(join(options.dataDir, "changes.json"));
   const leadTimeSummaries = await readLeadTimeSummaries(
     join(options.dataDir, "lead-time-summary.json"),
@@ -57,7 +62,7 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
   await mkdir(currentDataOut, { recursive: true });
   await mkdir(exportsOut, { recursive: true });
 
-  await copyFile(join(options.dataDir, "placements.json"), join(currentDataOut, "placements.json"));
+  await writeJson(join(currentDataOut, "placements.json"), placements);
   await copyFile(join(options.dataDir, "sources.json"), join(currentDataOut, "sources.json"));
   await writeJson(join(currentDataOut, "changes.json"), changes);
   await copyIfExists(
@@ -142,6 +147,47 @@ export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteRes
       reliabilitySummaries,
       csvHref: "data/exports/placements.csv",
       dataHref: "data/current/placements.json",
+    }),
+    "utf8",
+  );
+  await writeFile(
+    join(options.outDir, "coverage.html"),
+    renderCoverageReportsPage({
+      indexHref: "index.html",
+      reports: [
+        {
+          title: "Source coverage",
+          sourceHref: "data/current/source-coverage.md",
+          markdown: await readOptionalText(join(options.dataDir, "source-coverage.md")),
+        },
+        {
+          title: "Institution coverage",
+          sourceHref: "data/current/institution-coverage.md",
+          markdown: await readOptionalText(join(options.dataDir, "institution-coverage.md")),
+        },
+        {
+          title: "Record coverage",
+          sourceHref: "data/current/record-coverage.md",
+          markdown: await readOptionalText(join(options.dataDir, "record-coverage.md")),
+        },
+        {
+          title: "Coverage by baseline",
+          sourceHref: "data/current/coverage-by-baseline.md",
+          markdown: await readOptionalText(join(options.dataDir, "coverage-by-baseline.md")),
+        },
+      ],
+    }),
+    "utf8",
+  );
+  await writeFile(
+    join(options.outDir, "missing.html"),
+    renderMarkdownReportPage({
+      indexHref: "index.html",
+      title: "Missing Sources",
+      subtitle:
+        "Candidate source gaps from the generated baseline comparison. Items here need manual verification before they are treated as real coverage gaps.",
+      sourceHref: "data/current/missing-sources.md",
+      markdown: await readOptionalText(join(options.dataDir, "missing-sources.md")),
     }),
     "utf8",
   );
@@ -239,6 +285,38 @@ async function readLeadTimeReports(path: string): Promise<LeadTimeReport[]> {
 
     throw error;
   }
+}
+
+async function readOptionalText(path: string): Promise<string> {
+  try {
+    return await readFile(path, "utf8");
+  } catch (error) {
+    if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+      return "";
+    }
+
+    throw error;
+  }
+}
+
+function fillPlacementLocationsFromSources(
+  placements: PlacementRecord[],
+  sources: SourceRegistryEntry[],
+): PlacementRecord[] {
+  const sourcesById = new Map(sources.map((source) => [source.id, source]));
+  return placements.map((placement) => {
+    const source = sourcesById.get(placement.sourceId);
+
+    if (source?.institutionType !== "hospital" || (placement.canton && placement.city)) {
+      return placement;
+    }
+
+    return {
+      ...placement,
+      canton: placement.canton ?? source.canton,
+      city: placement.city ?? source.city,
+    };
+  });
 }
 
 async function writeSourcePages(

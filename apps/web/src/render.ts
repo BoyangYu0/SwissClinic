@@ -39,6 +39,25 @@ export interface RenderSourceDetailOptions {
   indexHref: string;
 }
 
+export interface MarkdownReport {
+  title: string;
+  markdown: string;
+  sourceHref: string;
+}
+
+export interface RenderCoverageReportsOptions {
+  indexHref: string;
+  reports: MarkdownReport[];
+}
+
+export interface RenderMarkdownReportPageOptions {
+  indexHref: string;
+  title: string;
+  subtitle: string;
+  markdown: string;
+  sourceHref: string;
+}
+
 export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): string {
   const viewModel = createPlacementIndexViewModel(options.placements, options.sources);
   const sourceDetailBaseHref = options.sourceDetailBaseHref ?? "sources";
@@ -558,11 +577,9 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         <div class="actions">
           <a class="button" href="${escapeHtml(options.csvHref)}" download>CSV</a>
           <a class="button" href="${escapeHtml(options.dataHref)}">JSON</a>
-          <a class="button" href="data/current/coverage-by-baseline.md">Coverage</a>
-          <a class="button" href="data/current/missing-sources.md">Missing</a>
+          <a class="button" href="coverage.html">Coverage</a>
+          <a class="button" href="missing.html">Missing</a>
           <a class="button" href="review-queue.html">Review queue</a>
-          <a class="button" href="https://github.com/BoyangYu0/SwissClinic">GitHub</a>
-          <a class="button" href="mailto:karl_ychen@outlook.com">Email</a>
         </div>
         <div class="coverage-note">
           <p>Record count is not national clinic coverage.</p>
@@ -671,6 +688,8 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         "anesthesie": ["anesthesiology", "Anesthesiology"],
         "anaesthesie": ["anesthesiology", "Anesthesiology"],
         "anesthesiologie": ["anesthesiology", "Anesthesiology"],
+        "anasthesiologie": ["anesthesiology", "Anesthesiology"],
+        "anaesthesiologie": ["anesthesiology", "Anesthesiology"],
         "anästhesiologie": ["anesthesiology", "Anesthesiology"],
         "anesthesiology": ["anesthesiology", "Anesthesiology"],
         "augenheilkunde": ["ophthalmology", "Ophthalmology"],
@@ -1035,8 +1054,15 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           + '</section>';
       }
 
-      function reviewEntryHtml() {
-        if (reviewModeEnabled) return "";
+      function reviewModeControlHtml() {
+        if (reviewModeEnabled) {
+          return '<section class="review-panel review-entry-panel">'
+            + '<h3>Review mode</h3>'
+            + '<p class="cell-subtitle">The review forms below are visible. Use Close review to return this detail window to the default view.</p>'
+            + '<div class="review-actions"><button type="button" class="close-review-button">Close review</button></div>'
+            + '</section>';
+        }
+
         return '<section class="review-panel review-entry-panel">'
           + '<h3>Add reviews</h3>'
           + '<p class="cell-subtitle">Open the structured review forms for this placement. The site has no backend, so submissions are sent through pre-filled GitHub issues or copied as JSON.</p>'
@@ -1276,7 +1302,7 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
           + '<div><strong>Source</strong><p><a href="' + escapeHtml(record.sourceUrl) + '">' + escapeHtml(record.sourceUrl) + '</a></p></div>'
           + '<div><strong>Warnings</strong>' + (record.warnings.length ? '<ul class="warning-list">' + record.warnings.map((warning) => '<li>' + escapeHtml(warning) + '</li>').join("") + '</ul>' : '<p>No parser warnings.</p>') + '</div>'
           + '<div><strong>Source snippet</strong><p class="snippet">' + escapeHtml(record.extractedSnippet) + '</p></div>'
-          + reviewEntryHtml()
+          + reviewModeControlHtml()
           + feedbackLinksHtml(record)
           + reviewPanelHtml(record)
           + leadTimeReportPanelHtml(record);
@@ -1290,6 +1316,14 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
         reviewModeEnabled = true;
         const url = new URL(window.location.href);
         url.searchParams.set("review", "1");
+        window.history.replaceState({}, "", url);
+        if (activeRecord) openDetail(activeRecord);
+      }
+
+      function disableReviewMode() {
+        reviewModeEnabled = false;
+        const url = new URL(window.location.href);
+        url.searchParams.delete("review");
         window.history.replaceState({}, "", url);
         if (activeRecord) openDetail(activeRecord);
       }
@@ -1317,8 +1351,14 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
       });
 
       detailBody.addEventListener("click", (event) => {
-        if (!event.target.closest(".add-reviews-button")) return;
-        enableReviewMode();
+        if (event.target.closest(".add-reviews-button")) {
+          enableReviewMode();
+          return;
+        }
+
+        if (event.target.closest(".close-review-button")) {
+          disableReviewMode();
+        }
       });
 
       form.addEventListener("input", renderRows);
@@ -1326,6 +1366,115 @@ export function renderPlacementIndexPage(options: RenderPlacementIndexOptions): 
     </script>
   </body>
 </html>`;
+}
+
+export function renderCoverageReportsPage(options: RenderCoverageReportsOptions): string {
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coverage Reports</title>
+    ${renderDetailStyles()}
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topline"><a href="${escapeHtml(options.indexHref)}">All placements</a></nav>
+      <header class="source-head">
+        <div>
+          <h1>Coverage Reports</h1>
+          <p class="muted">Coverage is shown as generated static reports, not as raw JSON. Record count is not national clinic coverage.</p>
+        </div>
+        <div class="status-stack">${badge("info")}</div>
+      </header>
+      <section class="section">
+        <h2>Read This First</h2>
+        <ul class="warning-list">
+          <li>Coverage is measured against selected baselines.</li>
+          <li>Candidate sources may not yet be verified.</li>
+          <li>Some hospitals may not publish placement availability online.</li>
+        </ul>
+      </section>
+      ${reportFeedbackSection("Coverage reports", "coverage.html", [
+        "missing-hospital-source",
+        "wrong-language-region",
+        "parser-bug",
+        "other",
+      ])}
+      <div class="report-grid">
+        ${options.reports.map(renderReportSection).join("")}
+      </div>
+    </main>
+  </body>
+</html>`;
+}
+
+export function renderMarkdownReportPage(options: RenderMarkdownReportPageOptions): string {
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${escapeHtml(options.title)}</title>
+    ${renderDetailStyles()}
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topline"><a href="${escapeHtml(options.indexHref)}">All placements</a></nav>
+      <header class="source-head">
+        <div>
+          <h1>${escapeHtml(options.title)}</h1>
+          <p class="muted">${escapeHtml(options.subtitle)}</p>
+        </div>
+        <div class="status-stack"><a class="feedback-link" href="${escapeHtml(options.sourceHref)}">Raw Markdown</a></div>
+      </header>
+      <section class="section markdown-body">
+        ${markdownToHtml(options.markdown)}
+      </section>
+      ${reportFeedbackSection(options.title, options.sourceHref, [
+        "missing-hospital-source",
+        "irrelevant-source",
+        "broken-source-url",
+        "other",
+      ])}
+    </main>
+  </body>
+</html>`;
+}
+
+function reportFeedbackSection(
+  reportName: string,
+  reportPath: string,
+  types: FeedbackType[],
+): string {
+  return `<section class="section">
+    <h2>Report error</h2>
+    <div class="feedback-links">
+      ${types
+        .map(
+          (type) =>
+            `<a class="feedback-link" target="_blank" rel="noopener" href="${escapeHtml(
+              buildFeedbackIssueUrl(type, {
+                coverageReport: {
+                  reportName,
+                  reportPath,
+                },
+              }),
+            )}">${escapeHtml(feedbackLabel(type))}</a>`,
+        )
+        .join("")}
+    </div>
+  </section>`;
+}
+
+function renderReportSection(report: MarkdownReport): string {
+  return `<section class="section report-section">
+    <div class="report-head">
+      <h2>${escapeHtml(report.title)}</h2>
+      <a class="feedback-link" href="${escapeHtml(report.sourceHref)}">Raw Markdown</a>
+    </div>
+    <div class="markdown-body">${markdownToHtml(report.markdown)}</div>
+  </section>`;
 }
 
 export function renderReviewQueuePage(options: RenderPlacementIndexOptions): string {
@@ -1629,6 +1778,127 @@ function renderChangeList(changes: ChangeRecord[]): string {
   </ol>`;
 }
 
+function markdownToHtml(markdown: string): string {
+  const lines = markdown.trim().split(/\r?\n/);
+  const html: string[] = [];
+  let index = 0;
+  let inList = false;
+
+  const closeList = (): void => {
+    if (inList) {
+      html.push("</ul>");
+      inList = false;
+    }
+  };
+
+  while (index < lines.length) {
+    const line = lines[index]?.trimEnd() ?? "";
+
+    if (line.trim() === "") {
+      closeList();
+      index += 1;
+      continue;
+    }
+
+    if (isTableStart(lines, index)) {
+      closeList();
+      const { tableHtml, nextIndex } = renderMarkdownTable(lines, index);
+      html.push(tableHtml);
+      index = nextIndex;
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,3})\s+(.+)$/);
+    if (heading) {
+      closeList();
+      const level = heading[1]?.length ?? 1;
+      html.push(`<h${level}>${inlineMarkdown(heading[2] ?? "")}</h${level}>`);
+      index += 1;
+      continue;
+    }
+
+    const bullet = line.match(/^\s*[-*]\s+(.+)$/);
+    if (bullet) {
+      if (!inList) {
+        html.push("<ul>");
+        inList = true;
+      }
+      html.push(`<li>${inlineMarkdown(bullet[1] ?? "")}</li>`);
+      index += 1;
+      continue;
+    }
+
+    closeList();
+    html.push(`<p>${inlineMarkdown(line.trim())}</p>`);
+    index += 1;
+  }
+
+  closeList();
+
+  if (html.length === 0) {
+    return '<p class="muted">No generated report is available yet.</p>';
+  }
+
+  return html.join("\n");
+}
+
+function isTableStart(lines: string[], index: number): boolean {
+  const current = lines[index]?.trim() ?? "";
+  const next = lines[index + 1]?.trim() ?? "";
+  return current.includes("|") && /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(next);
+}
+
+function renderMarkdownTable(
+  lines: string[],
+  startIndex: number,
+): {
+  tableHtml: string;
+  nextIndex: number;
+} {
+  const headers = splitMarkdownTableRow(lines[startIndex] ?? "");
+  const rows: string[][] = [];
+  let index = startIndex + 2;
+
+  while (index < lines.length && (lines[index]?.includes("|") ?? false)) {
+    rows.push(splitMarkdownTableRow(lines[index] ?? ""));
+    index += 1;
+  }
+
+  return {
+    nextIndex: index,
+    tableHtml: `<div class="table-wrap report-table"><table>
+      <thead><tr>${headers.map((header) => `<th>${inlineMarkdown(header)}</th>`).join("")}</tr></thead>
+      <tbody>${rows
+        .map(
+          (row) =>
+            `<tr>${headers
+              .map((_, cellIndex) => `<td>${inlineMarkdown(row[cellIndex] ?? "")}</td>`)
+              .join("")}</tr>`,
+        )
+        .join("")}</tbody>
+    </table></div>`,
+  };
+}
+
+function splitMarkdownTableRow(line: string): string[] {
+  return line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+}
+
+function inlineMarkdown(value: string): string {
+  return escapeHtml(value)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      (_match, label: string, href: string) =>
+        `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`,
+    );
+}
+
 function renderDetailStyles(): string {
   return `<style>
     :root {
@@ -1765,6 +2035,48 @@ function renderDetailStyles(): string {
       text-decoration: none;
       font-size: 13px;
       font-weight: 800;
+    }
+
+    .report-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .report-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .report-head h2 {
+      margin-bottom: 0;
+    }
+
+    .markdown-body {
+      display: grid;
+      gap: 10px;
+      color: #2f3a47;
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body p,
+    .markdown-body ul {
+      margin-bottom: 0;
+    }
+
+    .markdown-body code {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #f8fafc;
+      padding: 1px 5px;
+      color: #364150;
+    }
+
+    .report-table table {
+      min-width: 560px;
     }
 
     .table-wrap {

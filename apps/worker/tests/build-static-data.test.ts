@@ -43,7 +43,10 @@ describe("buildStaticData", () => {
         error: "HTTP 500",
       }),
     );
-    const mediumRecord = placement("medium-source", "https://example.ch/medium", "medium");
+    const mediumRecord = placement("medium-source", "https://example.ch/medium", "medium", {
+      canton: null,
+      city: null,
+    });
     const lowRecord = placement("low-source", "https://example.ch/low", "low", {
       reviewStatus: "auto-published",
       warnings: ["Synthetic low confidence record."],
@@ -69,6 +72,10 @@ describe("buildStaticData", () => {
     expect(result.placements.find((record) => record.id === lowRecord.id)?.reviewStatus).toBe(
       "needs-human-review",
     );
+    expect(result.placements.find((record) => record.id === mediumRecord.id)).toMatchObject({
+      canton: "ZH",
+      city: "Zuerich",
+    });
     expect(result.parserHealth).toMatchObject({
       pagesCrawled: 3,
       pagesFailed: 1,

@@ -300,6 +300,7 @@ const departmentLabels: Record<string, CanonicalField> = {
   anesthesie: { value: "anesthesiology", label: "Anesthesiology" },
   anaesthesie: { value: "anesthesiology", label: "Anesthesiology" },
   anesthesiologie: { value: "anesthesiology", label: "Anesthesiology" },
+  anasthesiologie: { value: "anesthesiology", label: "Anesthesiology" },
   anaesthesiologie: { value: "anesthesiology", label: "Anesthesiology" },
   anesthesiology: { value: "anesthesiology", label: "Anesthesiology" },
   anesthesia: { value: "anesthesiology", label: "Anesthesiology" },

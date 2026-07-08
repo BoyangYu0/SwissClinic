@@ -86,6 +86,27 @@ interface SourceUrlLookup {
   region: SourceRegistryEntry["region"];
 }
 
+function fillPlacementLocationsFromSources(
+  placements: PlacementRecord[],
+  sources: SourceRegistryEntry[],
+): PlacementRecord[] {
+  const sourcesById = new Map(sources.map((source) => [source.id, source]));
+
+  return placements.map((placement) => {
+    const source = sourcesById.get(placement.sourceId);
+
+    if (source?.institutionType !== "hospital" || (placement.canton && placement.city)) {
+      return placement;
+    }
+
+    return PlacementRecordSchema.parse({
+      ...placement,
+      canton: placement.canton ?? source.canton,
+      city: placement.city ?? source.city,
+    });
+  });
+}
+
 export async function buildStaticData(
   options: BuildStaticDataOptions,
 ): Promise<StaticDataBuildResult> {
@@ -161,7 +182,9 @@ export async function buildStaticData(
   }
 
   const parsedPlacements = PlacementRecordArraySchema.parse(
-    [...placementsById.values()].sort(comparePlacements),
+    fillPlacementLocationsFromSources([...placementsById.values()], sources).sort(
+      comparePlacements,
+    ),
   );
   const leadTimeData = buildLeadTimeData(parsedPlacements);
   const placements = leadTimeData.placements;
