@@ -1,12 +1,18 @@
 {
-  "generatedAt": "2026-07-07T21:56:58.854Z",
+  "generatedAt": "2026-07-08T10:29:45.940Z",
   "totalRecords": 55,
   "recordsByCanton": {
     "AG": 5,
+    "BE": 1,
+    "BS": 1,
+    "GE": 2,
     "GR": 6,
+    "LU": 1,
+    "NW": 1,
     "SG": 1,
-    "unknown": 28,
-    "ZH": 15
+    "unknown": 16,
+    "VD": 2,
+    "ZH": 19
   },
   "recordsByLanguage": {
     "de": 39,
@@ -48,8 +54,7 @@
     "available": 2,
     "available-from": 1,
     "fully-booked-until": 3,
-    "not-specified": 36,
-    "unclear": 2
+    "not-specified": 38
   },
   "recordsByConfidence": {
     "high": 5,

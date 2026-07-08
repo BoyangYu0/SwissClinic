@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:55:54.287Z",
+  "generatedAt": "2026-07-08T10:30:15.185Z",
   "sourceCount": 61,
   "placementCount": 55,
   "countsBySourceLanguage": {
@@ -678,24 +678,6 @@
   "placementIssues": [
     {
       "severity": "info",
-      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
-      "sourceId": "usi-biomed-faculty",
-      "sourceLanguage": "it",
-      "region": "it-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
-      "sourceId": "usi-biomed-faculty",
-      "sourceLanguage": "it",
-      "region": "it-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
       "id": "chuv-unknown-clinicalplacement-4ed0132f6cd3",
       "sourceId": "chuv-lausanne-formation-medecine",
       "sourceLanguage": "fr",
@@ -750,8 +732,26 @@
     },
     {
       "severity": "info",
-      "id": "fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9",
-      "sourceId": "unil-ecole-medecine-stages",
+      "id": "karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43",
+      "sourceId": "gzo-wetzikon-karriere",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
+      "sourceId": "hopital-jura-formation",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
+      "sourceId": "hopital-jura-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
       "reason": "sparse availability: not-specified",
@@ -860,42 +860,6 @@
       "severity": "info",
       "id": "insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c",
       "sourceId": "inselspital-bern-medical-students",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
-      "sourceId": "rhne-neuchatel-formation",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
-      "sourceId": "rhne-neuchatel-formation",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
-      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
-      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",
@@ -1121,6 +1085,24 @@
       "severity": "info",
       "id": "kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
+      "sourceId": "kantonsspital-nidwalden-ausbildung",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",
@@ -1281,15 +1263,6 @@
     },
     {
       "severity": "info",
-      "id": "karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43",
-      "sourceId": "gzo-wetzikon-karriere",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
       "id": "luzerner-kantonsspital-unknown-unknown-aea647ec446c",
       "sourceId": "luks-luzern-universitaere-lehre",
       "sourceLanguage": "de",
@@ -1308,26 +1281,8 @@
     },
     {
       "severity": "info",
-      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
-      "sourceId": "usb-basel-career-education",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
-      "sourceId": "usb-basel-career-education",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
-      "sourceId": "hopital-jura-formation",
+      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
+      "sourceId": "rhne-neuchatel-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
       "reason": "low-confidence review queue marker",
@@ -1335,8 +1290,8 @@
     },
     {
       "severity": "info",
-      "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
-      "sourceId": "hopital-jura-formation",
+      "id": "internet-rhne-unknown-clinicalplacement-2c380015d7ac",
+      "sourceId": "rhne-neuchatel-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
       "reason": "sparse availability: not-specified",
@@ -1344,8 +1299,8 @@
     },
     {
       "severity": "info",
-      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
-      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "low-confidence review queue marker",
@@ -1353,8 +1308,8 @@
     },
     {
       "severity": "info",
-      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
-      "sourceId": "kantonsspital-nidwalden-ausbildung",
+      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
+      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",
@@ -1434,19 +1389,37 @@
     },
     {
       "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
+      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
+      "sourceId": "usi-biomed-faculty",
+      "sourceLanguage": "it",
+      "region": "it-CH",
       "reason": "low-confidence review queue marker",
       "action": "Review this placement against the official source page."
     },
     {
       "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
+      "id": "biomedicina-unknown-clinicalplacement-154087f75ba9",
+      "sourceId": "usi-biomed-faculty",
+      "sourceLanguage": "it",
+      "region": "it-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
+      "sourceId": "usi-biomed-master-medicine",
+      "sourceLanguage": "en",
+      "region": "it-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
+      "sourceId": "usi-biomed-master-medicine",
+      "sourceLanguage": "en",
+      "region": "it-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
@@ -1463,6 +1436,24 @@
       "severity": "info",
       "id": "universitat-basel-unknown-unknown-620d5e127d50",
       "sourceId": "unibas-medizin-studium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
+      "sourceId": "uzh-medizin-studium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
+      "sourceId": "uzh-medizin-studium",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",
@@ -1484,6 +1475,24 @@
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: application-only",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
+      "sourceId": "usb-basel-career-education",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
+      "sourceId": "usb-basel-career-education",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {
@@ -1528,7 +1537,7 @@
       "sourceId": "usz-zuerich-medizinstudium-overview",
       "sourceLanguage": "de",
       "region": "de-CH",
-      "reason": "sparse availability: unclear",
+      "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {
@@ -1564,7 +1573,7 @@
       "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
       "sourceLanguage": "de",
       "region": "de-CH",
-      "reason": "sparse availability: unclear",
+      "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {
@@ -1605,37 +1614,28 @@
     },
     {
       "severity": "info",
-      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
-      "sourceId": "usi-biomed-master-medicine",
-      "sourceLanguage": "en",
-      "region": "it-CH",
+      "id": "unige-unknown-unknown-dcc038c510a5",
+      "sourceId": "unige-medecine-enseignement",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
       "reason": "low-confidence review queue marker",
       "action": "Review this placement against the official source page."
     },
     {
       "severity": "info",
-      "id": "usi-ch-unknown-unknown-2e4c85a4286c",
-      "sourceId": "usi-biomed-master-medicine",
-      "sourceLanguage": "en",
-      "region": "it-CH",
+      "id": "unige-unknown-unknown-dcc038c510a5",
+      "sourceId": "unige-medecine-enseignement",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {
       "severity": "info",
-      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
-      "sourceId": "uzh-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
-      "sourceId": "uzh-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
+      "id": "fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9",
+      "sourceId": "unil-ecole-medecine-stages",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     }

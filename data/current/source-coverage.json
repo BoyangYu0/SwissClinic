@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T21:56:58.854Z",
+  "generatedAt": "2026-07-08T10:29:45.940Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -61,7 +61,7 @@
   "sourcesWithNoExtractedRecords": [
     {
       "id": "inselgruppe-bern-career-education",
-      "institutionName": "Insel Gruppe",
+      "institutionName": "Insel Gruppe AG",
       "canton": "BE",
       "city": "Bern",
       "status": "needs-review",
@@ -73,7 +73,7 @@
     },
     {
       "id": "unibe-medizin-studium",
-      "institutionName": "Universitaet Bern Medizinische Fakultaet",
+      "institutionName": "Universität Bern, Medizinische Fakultät",
       "canton": "BE",
       "city": "Bern",
       "status": "candidate",
@@ -85,7 +85,7 @@
     },
     {
       "id": "stadtspital-zuerich-karriere-ausbildung",
-      "institutionName": "Stadtspital Zuerich",
+      "institutionName": "Stadtspital Zürich",
       "canton": "ZH",
       "city": "Zuerich",
       "status": "needs-review",
@@ -97,7 +97,7 @@
     },
     {
       "id": "kssg-stgallen-aerztliche-ausbildung",
-      "institutionName": "Kantonsspital St. Gallen",
+      "institutionName": "Kantonsspital St. Gallen (KSSG)",
       "canton": "SG",
       "city": "St. Gallen",
       "status": "needs-review",
@@ -169,7 +169,7 @@
     },
     {
       "id": "hopital-riviera-chablais-formation",
-      "institutionName": "Hopital Riviera-Chablais",
+      "institutionName": "Hôpital Riviera-Chablais (HRC)",
       "canton": "VD",
       "city": "Rennaz",
       "status": "needs-review",
@@ -217,7 +217,7 @@
     },
     {
       "id": "spitaeler-schaffhausen-aus-und-weiterbildung",
-      "institutionName": "Spitaeler Schaffhausen",
+      "institutionName": "Spitäler Schaffhausen",
       "canton": "SH",
       "city": "Schaffhausen",
       "status": "needs-review",
@@ -229,7 +229,7 @@
     },
     {
       "id": "svar-appenzell-aus-und-weiterbildung",
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden",
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
       "canton": "AR",
       "city": "Herisau",
       "status": "needs-review",
@@ -241,7 +241,7 @@
     },
     {
       "id": "spital-maennedorf-aus-und-weiterbildung",
-      "institutionName": "Spital Maennedorf",
+      "institutionName": "Spital Männedorf",
       "canton": "ZH",
       "city": "Maennedorf",
       "status": "needs-review",
@@ -289,7 +289,7 @@
     },
     {
       "id": "swimsa-exchanges",
-      "institutionName": "swimsa",
+      "institutionName": "Swiss Medical Students' Association (swimsa)",
       "canton": "BE",
       "city": "Bern",
       "status": "candidate",

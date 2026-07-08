@@ -1,6 +1,6 @@
 # Sparse Information Reliability Audit
 
-Generated at: 2026-07-07T15:55:54.287Z
+Generated at: 2026-07-08T10:30:15.185Z
 
 ## Summary
 
@@ -61,10 +61,6 @@ Generated at: 2026-07-07T15:55:54.287Z
 
 ## Placement Issues
 
-- info: `biomedicina-unknown-clinicalplacement-154087f75ba9` (it, it-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `biomedicina-unknown-clinicalplacement-154087f75ba9` (it, it-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `chuv-unknown-clinicalplacement-4ed0132f6cd3` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `chuv-unknown-clinicalplacement-4ed0132f6cd3` (fr, fr-CH) - sparse availability: not-specified
@@ -77,7 +73,11 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Review this placement against the official source page.
 - info: `etablissements-hospitaliers-du-nord-vaudois-unknown-unknown-b403800a8c63` (fr, fr-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9` (fr, fr-CH) - sparse availability: not-specified
+- info: `karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43` (de, de-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde` (mixed, mixed) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -102,14 +102,6 @@ Generated at: 2026-07-07T15:55:54.287Z
 - info: `insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c` (de, de-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `kantonsspital-aarau-unknown-unterassistenz-0fc24c13fd19` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -161,6 +153,10 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Confirm the parser selected the intended language pack.
 - info: `kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
+- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - sparse availability: not-specified
+  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `kantonsspital-st-gallen-orthopadie-unterassistenz-8a9d68966cc9` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
 - info: `kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751` (de, de-CH) - unknown extraction language
@@ -195,23 +191,17 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Confirm the parser selected the intended language pack.
 - info: `kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
 - info: `luzerner-kantonsspital-unknown-unknown-aea647ec446c` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `luzerner-kantonsspital-unknown-unknown-aea647ec446c` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - low-confidence review queue marker
+- info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
-- info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - sparse availability: not-specified
+- info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - low-confidence review queue marker
+- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
-- info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - sparse availability: not-specified
+- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `spital-uster-chirurgie-unterassistenten-pdf-unknown-unknown-2819d96665c8` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -229,17 +219,29 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Review this placement against the official source page.
 - info: `swiss-medical-network-unknown-unknown-110e8f7e7c80` (de, mixed) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - low-confidence review queue marker
+- info: `biomedicina-unknown-clinicalplacement-154087f75ba9` (it, it-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
-- info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - sparse availability: not-specified
+- info: `biomedicina-unknown-clinicalplacement-154087f75ba9` (it, it-CH) - sparse availability: not-specified
+  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
+- info: `usi-ch-unknown-unknown-2e4c85a4286c` (en, it-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `usi-ch-unknown-unknown-2e4c85a4286c` (en, it-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitat-basel-unknown-unknown-620d5e127d50` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `universitat-basel-unknown-unknown-620d5e127d50` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
+- info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - sparse availability: not-specified
+  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsklinik-balgrist-karriere-anesthesiology-unknown-f8d0011080ad` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsklinik-balgrist-karriere-radiology-unknown-48776a5f531d` (de, de-CH) - sparse availability: application-only
+  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
+- info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - low-confidence review queue marker
+  Action: Review this placement against the official source page.
+- info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
@@ -249,7 +251,7 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Confirm the parser selected the intended language pack.
 - info: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217` (de, de-CH) - sparse availability: unclear
+- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
@@ -257,7 +259,7 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Do not convert fully-booked-until into available-from unless the source explicitly says so.
 - info: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28` (de, de-CH) - sparse availability: unclear
+- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
@@ -267,13 +269,11 @@ Generated at: 2026-07-07T15:55:54.287Z
   Action: Confirm the parser selected the intended language pack.
 - warning: `universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b` (de, de-CH) - fully booked wording may be over-interpreted
   Action: Do not convert fully-booked-until into available-from unless the source explicitly says so.
-- info: `usi-ch-unknown-unknown-2e4c85a4286c` (en, it-CH) - low-confidence review queue marker
+- info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
-- info: `usi-ch-unknown-unknown-2e4c85a4286c` (en, it-CH) - sparse availability: not-specified
+- info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - sparse availability: not-specified
+- info: `fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9` (fr, fr-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 
 ## Source Issues

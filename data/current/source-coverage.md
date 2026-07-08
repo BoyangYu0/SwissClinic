@@ -1,8 +1,8 @@
 # Source Coverage
 
-Generated at: 2026-07-07T21:56:58.854Z
+Generated at: 2026-07-08T10:29:45.940Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-07T21%3A56%3A58.854Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-08T10%3A29%3A45.940Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
@@ -91,16 +91,16 @@ Record count is not national clinic coverage. This report counts curated source 
 
 ## Sources With No Extracted Records
 
-- `inselgruppe-bern-career-education` Insel Gruppe (BE, Bern)
+- `inselgruppe-bern-career-education` Insel Gruppe AG (BE, Bern)
   Status: needs-review; language: de; region: de-CH
   URLs: https://inselgruppe.ch/de/bildung
-- `unibe-medizin-studium` Universitaet Bern Medizinische Fakultaet (BE, Bern)
+- `unibe-medizin-studium` Universität Bern, Medizinische Fakultät (BE, Bern)
   Status: candidate; language: de; region: de-CH
   URLs: https://www.medizin.unibe.ch/studium/index_ger.html
-- `stadtspital-zuerich-karriere-ausbildung` Stadtspital Zuerich (ZH, Zuerich)
+- `stadtspital-zuerich-karriere-ausbildung` Stadtspital Zürich (ZH, Zuerich)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.stadt-zuerich.ch/stadtspital
-- `kssg-stgallen-aerztliche-ausbildung` Kantonsspital St. Gallen (SG, St. Gallen)
+- `kssg-stgallen-aerztliche-ausbildung` Kantonsspital St. Gallen (KSSG) (SG, St. Gallen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.h-och.ch/karriere
 - `spital-thurgau-aerztliche-ausbildung` Spital Thurgau (TG, Frauenfeld)
@@ -118,7 +118,7 @@ Record count is not national clinic coverage. This report counts curated source 
 - `kantonsspital-obwalden-ausbildung` Kantonsspital Obwalden (OW, Sarnen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.ksow.ch/jobs-karriere/ausbildung
-- `hopital-riviera-chablais-formation` Hopital Riviera-Chablais (VD, Rennaz)
+- `hopital-riviera-chablais-formation` Hôpital Riviera-Chablais (HRC) (VD, Rennaz)
   Status: needs-review; language: fr; region: fr-CH
   URLs: https://www.hopitalrivierachablais.ch/formation
 - `eoc-ticino-formazione` Ente Ospedaliero Cantonale (TI, Bellinzona)
@@ -130,13 +130,13 @@ Record count is not national clinic coverage. This report counts curated source 
 - `ksbl-baselland-karriere` Kantonsspital Baselland (BL, Liestal)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.ksbl.ch/karriere
-- `spitaeler-schaffhausen-aus-und-weiterbildung` Spitaeler Schaffhausen (SH, Schaffhausen)
+- `spitaeler-schaffhausen-aus-und-weiterbildung` Spitäler Schaffhausen (SH, Schaffhausen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung
-- `svar-appenzell-aus-und-weiterbildung` Spitalverbund Appenzell Ausserrhoden (AR, Herisau)
+- `svar-appenzell-aus-und-weiterbildung` Spitalverbund Appenzell Ausserrhoden (SVAR) (AR, Herisau)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.svar.ch/karriere/aus-und-weiterbildung
-- `spital-maennedorf-aus-und-weiterbildung` Spital Maennedorf (ZH, Maennedorf)
+- `spital-maennedorf-aus-und-weiterbildung` Spital Männedorf (ZH, Maennedorf)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.spitalmaennedorf.ch/karriere/aus-und-weiterbildung
 - `spital-limmattal-aus-und-weiterbildung` Spital Limmattal (ZH, Schlieren)
@@ -148,6 +148,6 @@ Record count is not national clinic coverage. This report counts curated source 
 - `clinica-moncucco-lavoro-formazione` Clinica Moncucco (TI, Lugano)
   Status: needs-review; language: it; region: it-CH
   URLs: https://www.moncucco.ch/lavoro-e-formazione
-- `swimsa-exchanges` swimsa (BE, Bern)
+- `swimsa-exchanges` Swiss Medical Students' Association (swimsa) (BE, Bern)
   Status: candidate; language: mixed; region: mixed
   URLs: https://swimsa.ch/exchanges/

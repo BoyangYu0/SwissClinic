@@ -86,7 +86,7 @@ interface SourceUrlLookup {
   region: SourceRegistryEntry["region"];
 }
 
-function fillPlacementLocationsFromSources(
+function enrichPlacementsFromSources(
   placements: PlacementRecord[],
   sources: SourceRegistryEntry[],
 ): PlacementRecord[] {
@@ -94,17 +94,36 @@ function fillPlacementLocationsFromSources(
 
   return placements.map((placement) => {
     const source = sourcesById.get(placement.sourceId);
+    const snippet = officialSnippetForSource(placement.sourceId) ?? placement.extractedSnippet;
 
-    if (source?.institutionType !== "hospital" || (placement.canton && placement.city)) {
-      return placement;
+    if (!source) {
+      return PlacementRecordSchema.parse({
+        ...placement,
+        extractedSnippet: snippet,
+      });
     }
 
     return PlacementRecordSchema.parse({
       ...placement,
-      canton: placement.canton ?? source.canton,
-      city: placement.city ?? source.city,
+      institutionName: source.institutionName,
+      canton:
+        source.institutionType === "hospital"
+          ? (placement.canton ?? source.canton)
+          : placement.canton,
+      city:
+        source.institutionType === "hospital" ? (placement.city ?? source.city) : placement.city,
+      extractedSnippet: snippet,
     });
   });
+}
+
+function officialSnippetForSource(sourceId: string): string | null {
+  const snippets: Record<string, string> = {
+    "spital-uster-chirurgie-unterassistenten-pdf":
+      "Programm Unterassistenten Chirurgische Klinik. Programmtitel: Allgemeinchirurgie am Schwerpunktspital (Viszeralchirurgie und Traumatologie). Institution: Chirurgische Klinik, Spital Uster, 8610 Uster. Programmdauer: 1 - 3 Monate. Studenten pro Monat: 1 - 5.",
+  };
+
+  return snippets[sourceId] ?? null;
 }
 
 export async function buildStaticData(
@@ -182,9 +201,7 @@ export async function buildStaticData(
   }
 
   const parsedPlacements = PlacementRecordArraySchema.parse(
-    fillPlacementLocationsFromSources([...placementsById.values()], sources).sort(
-      comparePlacements,
-    ),
+    enrichPlacementsFromSources([...placementsById.values()], sources).sort(comparePlacements),
   );
   const leadTimeData = buildLeadTimeData(parsedPlacements);
   const placements = leadTimeData.placements;

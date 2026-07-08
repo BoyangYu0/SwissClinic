@@ -1,8 +1,8 @@
 # Institution Coverage
 
-Generated at: 2026-07-07T21:56:58.854Z
+Generated at: 2026-07-08T10:29:45.940Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+institution-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Institution+Coverage%22%2C%0A++++%22reportPath%22%3A+%22institution-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-07T21%3A56%3A58.854Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+institution-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Institution+Coverage%22%2C%0A++++%22reportPath%22%3A+%22institution-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-08T10%3A29%3A45.940Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured by normalized institution names from the source registry and extracted placement records. Candidate sources may not yet be verified.
 
@@ -11,8 +11,8 @@ Coverage is measured by normalized institution names from the source registry an
 | Metric | Count |
 | --- | ---: |
 | Unique institutions | 46 |
-| Institutions with extracted records | 11 |
-| Institutions without extracted records | 35 |
+| Institutions with extracted records | 27 |
+| Institutions without extracted records | 19 |
 | Institutions with failed crawl | 0 |
 | Institutions needing manual verification | 46 |
 
@@ -57,10 +57,6 @@ Coverage is measured by normalized institution names from the source registry an
 
 ## Institutions Without Extracted Records
 
-- Centre hospitalier universitaire vaudois (VD, Lausanne)
-  Sources: chuv-lausanne-formation-medecine, chuv-lausanne-medecins-formation
-  Records: 0
-  Status: needs-review
 - Clinica Moncucco (TI, Lugano)
   Sources: clinica-moncucco-lavoro-formazione
   Records: 0
@@ -69,71 +65,39 @@ Coverage is measured by normalized institution names from the source registry an
   Sources: eoc-ticino-formazione, eoc-ticino-lavoro-formazione
   Records: 0
   Status: needs-review
-- GZO Spital Wetzikon (ZH, Wetzikon)
-  Sources: gzo-wetzikon-karriere
-  Records: 0
-  Status: needs-review
-- Hopital du Jura (JU, Delemont)
-  Sources: hopital-jura-formation
-  Records: 0
-  Status: needs-review
-- Hopital Riviera-Chablais (VD, Rennaz)
+- Hôpital Riviera-Chablais (HRC) (VD, Rennaz)
   Sources: hopital-riviera-chablais-formation
   Records: 0
   Status: needs-review
-- Hopitaux universitaires de Geneve (GE, Geneve)
-  Sources: hug-geneve-enseignement-formation, hug-geneve-stages
-  Records: 0
-  Status: needs-review
-- Insel Gruppe (BE, Bern)
+- Insel Gruppe AG (BE, Bern)
   Sources: inselgruppe-bern-career-education
-  Records: 0
-  Status: needs-review
-- Inselspital Bern (BE, Bern)
-  Sources: inselspital-bern-medical-students
   Records: 0
   Status: needs-review
 - Kantonsspital Baselland (BL, Liestal)
   Sources: ksbl-baselland-karriere
   Records: 0
   Status: needs-review
-- Kantonsspital Nidwalden (NW, Stans)
-  Sources: kantonsspital-nidwalden-ausbildung
-  Records: 0
-  Status: needs-review
 - Kantonsspital Obwalden (OW, Sarnen)
   Sources: kantonsspital-obwalden-ausbildung
   Records: 0
   Status: needs-review
-- Kantonsspital St. Gallen / H-OCH (SG, St. Gallen)
-  Sources: kssg-stgallen-h-och-orthopaedie-unterassistenzstellen
-  Records: 0
-  Status: candidate
-- Kantonsspital Uri (UR, Altdorf)
-  Sources: kantonsspital-uri-ausbildung
+- Kantonsspital St. Gallen (KSSG) (SG, St. Gallen)
+  Sources: kssg-stgallen-aerztliche-ausbildung
   Records: 0
   Status: needs-review
-- Reseau hospitalier neuchatelois (NE, Neuchatel)
-  Sources: rhne-neuchatel-formation
+- Kantonsspital Uri (UR, Altdorf)
+  Sources: kantonsspital-uri-ausbildung
   Records: 0
   Status: needs-review
 - See-Spital (ZH, Horgen)
   Sources: see-spital-karriere
   Records: 0
   Status: needs-review
-- Solothurner Spitaeler (SO, Solothurn)
-  Sources: solothurner-spitaeler-aerztliche-ausbildung
-  Records: 0
-  Status: needs-review
-- Spitaeler Schaffhausen (SH, Schaffhausen)
-  Sources: spitaeler-schaffhausen-aus-und-weiterbildung
-  Records: 0
-  Status: needs-review
 - Spital Limmattal (ZH, Schlieren)
   Sources: spital-limmattal-aus-und-weiterbildung
   Records: 0
   Status: needs-review
-- Spital Maennedorf (ZH, Maennedorf)
+- Spital Männedorf (ZH, Maennedorf)
   Sources: spital-maennedorf-aus-und-weiterbildung
   Records: 0
   Status: needs-review
@@ -145,54 +109,26 @@ Coverage is measured by normalized institution names from the source registry an
   Sources: spital-thurgau-aerztliche-ausbildung
   Records: 0
   Status: needs-review
-- Spital Uster (ZH, Uster)
-  Sources: spital-uster-chirurgie-unterassistenten-pdf
+- Spitäler Schaffhausen (SH, Schaffhausen)
+  Sources: spitaeler-schaffhausen-aus-und-weiterbildung
   Records: 0
-  Status: candidate
-- Spitalverbund Appenzell Ausserrhoden (AR, Herisau)
+  Status: needs-review
+- Spitalverbund Appenzell Ausserrhoden (SVAR) (AR, Herisau)
   Sources: svar-appenzell-aus-und-weiterbildung
   Records: 0
   Status: needs-review
-- Stadtspital Zuerich (ZH, Zuerich)
+- Stadtspital Zürich (ZH, Zuerich)
   Sources: stadtspital-zuerich-karriere-ausbildung
   Records: 0
   Status: needs-review
-- swimsa (BE, Bern)
+- Swiss Medical Students' Association (swimsa) (BE, Bern)
   Sources: swimsa-exchanges
   Records: 0
   Status: candidate
-- Universita della Svizzera italiana Faculty of Biomedical Sciences (TI, Lugano)
-  Sources: usi-biomed-faculty, usi-biomed-master-medicine
-  Records: 0
-  Status: candidate
-- Universitaet Basel Medizinische Fakultaet (BS, Basel)
-  Sources: unibas-medizin-studium
-  Records: 0
-  Status: candidate
-- Universitaet Bern Medizinische Fakultaet (BE, Bern)
+- Universität Bern, Medizinische Fakultät (BE, Bern)
   Sources: unibe-medizin-studium
   Records: 0
   Status: candidate
-- Universitaet Zuerich Medizinische Fakultaet (ZH, Zuerich)
-  Sources: uzh-medizin-studium
-  Records: 0
-  Status: candidate
-- Universitaetsklinik Balgrist (ZH, Zuerich)
-  Sources: balgrist-zuerich-karriere
-  Records: 0
-  Status: needs-review
-- Universitaetsspital Basel (BS, Basel)
-  Sources: usb-basel-career-education
-  Records: 0
-  Status: needs-review
-- Universite de Geneve Faculte de medecine (GE, Geneve)
-  Sources: unige-medecine-enseignement
-  Records: 0
-  Status: candidate
-- Universite de Lausanne Ecole de medecine (VD, Lausanne)
-  Sources: unil-ecole-medecine-stages
-  Records: 0
-  Status: needs-review
 - Zuger Kantonsspital (ZG, Baar)
   Sources: zuger-kantonsspital-ausbildung
   Records: 0

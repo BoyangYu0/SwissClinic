@@ -1,7 +1,7 @@
 [
   {
     "id": "inselspital-bern-medical-students",
-    "institutionName": "Inselspital Bern",
+    "institutionName": "Inselspital, Universitätsspital Bern",
     "institutionType": "hospital",
     "canton": "BE",
     "city": "Bern",
@@ -23,7 +23,7 @@
   },
   {
     "id": "inselgruppe-bern-career-education",
-    "institutionName": "Insel Gruppe",
+    "institutionName": "Insel Gruppe AG",
     "institutionType": "clinic-group",
     "canton": "BE",
     "city": "Bern",
@@ -45,7 +45,7 @@
   },
   {
     "id": "unibe-medizin-studium",
-    "institutionName": "Universitaet Bern Medizinische Fakultaet",
+    "institutionName": "Universität Bern, Medizinische Fakultät",
     "institutionType": "university",
     "canton": "BE",
     "city": "Bern",
@@ -67,7 +67,7 @@
   },
   {
     "id": "usz-zuerich-medizinstudium-overview",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -89,7 +89,7 @@
   },
   {
     "id": "usz-zuerich-neuroradiologie-unterassistenzen-famulatur",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -111,7 +111,7 @@
   },
   {
     "id": "usz-zuerich-medizin-medizinstudium",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -133,7 +133,7 @@
   },
   {
     "id": "usz-zuerich-chirurgie-medizinstudium",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -155,7 +155,7 @@
   },
   {
     "id": "usz-zuerich-anaesthesiologie-medizinstudium",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -177,7 +177,7 @@
   },
   {
     "id": "usz-zuerich-frauenheilkunde-medizinstudium",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -199,7 +199,7 @@
   },
   {
     "id": "usz-zuerich-radiologie-medizinstudium",
-    "institutionName": "Universitaetsspital Zuerich",
+    "institutionName": "Universitätsspital Zürich (USZ)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -221,7 +221,7 @@
   },
   {
     "id": "stadtspital-zuerich-karriere-ausbildung",
-    "institutionName": "Stadtspital Zuerich",
+    "institutionName": "Stadtspital Zürich",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -243,7 +243,7 @@
   },
   {
     "id": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
-    "institutionName": "Kantonsspital Winterthur",
+    "institutionName": "Kantonsspital Winterthur (KSW)",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Winterthur",
@@ -265,7 +265,7 @@
   },
   {
     "id": "uzh-medizin-studium",
-    "institutionName": "Universitaet Zuerich Medizinische Fakultaet",
+    "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
     "institutionType": "university",
     "canton": "ZH",
     "city": "Zuerich",
@@ -287,7 +287,7 @@
   },
   {
     "id": "usb-basel-career-education",
-    "institutionName": "Universitaetsspital Basel",
+    "institutionName": "Universitätsspital Basel (USB)",
     "institutionType": "hospital",
     "canton": "BS",
     "city": "Basel",
@@ -309,7 +309,7 @@
   },
   {
     "id": "unibas-medizin-studium",
-    "institutionName": "Universitaet Basel Medizinische Fakultaet",
+    "institutionName": "Universität Basel, Medizinische Fakultät",
     "institutionType": "university",
     "canton": "BS",
     "city": "Basel",
@@ -331,7 +331,7 @@
   },
   {
     "id": "luks-luzern-universitaere-lehre",
-    "institutionName": "Luzerner Kantonsspital",
+    "institutionName": "Luzerner Kantonsspital (LUKS)",
     "institutionType": "hospital",
     "canton": "LU",
     "city": "Luzern",
@@ -353,7 +353,7 @@
   },
   {
     "id": "ksa-aarau-unterassistenz-stellen",
-    "institutionName": "Kantonsspital Aarau",
+    "institutionName": "Kantonsspital Aarau (KSA)",
     "institutionType": "hospital",
     "canton": "AG",
     "city": "Aarau",
@@ -375,7 +375,7 @@
   },
   {
     "id": "ksa-aarau-unterassistenz-informationen",
-    "institutionName": "Kantonsspital Aarau",
+    "institutionName": "Kantonsspital Aarau (KSA)",
     "institutionType": "hospital",
     "canton": "AG",
     "city": "Aarau",
@@ -397,7 +397,7 @@
   },
   {
     "id": "ksb-baden-unterassistenzen-overview",
-    "institutionName": "Kantonsspital Baden",
+    "institutionName": "Kantonsspital Baden (KSB)",
     "institutionType": "hospital",
     "canton": "AG",
     "city": "Baden",
@@ -419,7 +419,7 @@
   },
   {
     "id": "ksb-baden-unterassistentin-innere-medizin",
-    "institutionName": "Kantonsspital Baden",
+    "institutionName": "Kantonsspital Baden (KSB)",
     "institutionType": "hospital",
     "canton": "AG",
     "city": "Baden",
@@ -441,7 +441,7 @@
   },
   {
     "id": "ksb-baden-unterassistentin-chirurgie",
-    "institutionName": "Kantonsspital Baden",
+    "institutionName": "Kantonsspital Baden (KSB)",
     "institutionType": "hospital",
     "canton": "AG",
     "city": "Baden",
@@ -463,7 +463,7 @@
   },
   {
     "id": "kssg-stgallen-aerztliche-ausbildung",
-    "institutionName": "Kantonsspital St. Gallen",
+    "institutionName": "Kantonsspital St. Gallen (KSSG)",
     "institutionType": "hospital",
     "canton": "SG",
     "city": "St. Gallen",
@@ -485,7 +485,7 @@
   },
   {
     "id": "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen",
-    "institutionName": "Kantonsspital St. Gallen / H-OCH",
+    "institutionName": "Kantonsspital St. Gallen (KSSG) / H-OCH",
     "institutionType": "hospital",
     "canton": "SG",
     "city": "St. Gallen",
@@ -507,7 +507,7 @@
   },
   {
     "id": "ksgr-chur-blockstudenten-unterassistenten",
-    "institutionName": "Kantonsspital Graubuenden",
+    "institutionName": "Kantonsspital Graubünden (KSGR)",
     "institutionType": "hospital",
     "canton": "GR",
     "city": "Chur",
@@ -529,7 +529,7 @@
   },
   {
     "id": "solothurner-spitaeler-aerztliche-ausbildung",
-    "institutionName": "Solothurner Spitaeler",
+    "institutionName": "Solothurner Spitäler AG (soH)",
     "institutionType": "clinic-group",
     "canton": "SO",
     "city": "Solothurn",
@@ -705,7 +705,7 @@
   },
   {
     "id": "chuv-lausanne-formation-medecine",
-    "institutionName": "Centre hospitalier universitaire vaudois",
+    "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
     "institutionType": "hospital",
     "canton": "VD",
     "city": "Lausanne",
@@ -727,7 +727,7 @@
   },
   {
     "id": "chuv-lausanne-medecins-formation",
-    "institutionName": "Centre hospitalier universitaire vaudois",
+    "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
     "institutionType": "hospital",
     "canton": "VD",
     "city": "Lausanne",
@@ -749,7 +749,7 @@
   },
   {
     "id": "unil-ecole-medecine-stages",
-    "institutionName": "Universite de Lausanne Ecole de medecine",
+    "institutionName": "Université de Lausanne (UNIL), École de médecine",
     "institutionType": "university",
     "canton": "VD",
     "city": "Lausanne",
@@ -771,7 +771,7 @@
   },
   {
     "id": "hug-geneve-enseignement-formation",
-    "institutionName": "Hopitaux universitaires de Geneve",
+    "institutionName": "Hôpitaux universitaires de Genève (HUG)",
     "institutionType": "hospital",
     "canton": "GE",
     "city": "Geneve",
@@ -793,7 +793,7 @@
   },
   {
     "id": "hug-geneve-stages",
-    "institutionName": "Hopitaux universitaires de Geneve",
+    "institutionName": "Hôpitaux universitaires de Genève (HUG)",
     "institutionType": "hospital",
     "canton": "GE",
     "city": "Geneve",
@@ -815,7 +815,7 @@
   },
   {
     "id": "unige-medecine-enseignement",
-    "institutionName": "Universite de Geneve Faculte de medecine",
+    "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
     "institutionType": "university",
     "canton": "GE",
     "city": "Geneve",
@@ -837,7 +837,7 @@
   },
   {
     "id": "hopital-valais-formation",
-    "institutionName": "Hopital du Valais",
+    "institutionName": "Hôpital du Valais (HVS)",
     "institutionType": "clinic-group",
     "canton": "VS",
     "city": "Sion",
@@ -859,7 +859,7 @@
   },
   {
     "id": "hopital-riviera-chablais-formation",
-    "institutionName": "Hopital Riviera-Chablais",
+    "institutionName": "Hôpital Riviera-Chablais (HRC)",
     "institutionType": "hospital",
     "canton": "VD",
     "city": "Rennaz",
@@ -881,7 +881,7 @@
   },
   {
     "id": "hfr-fribourg-formation",
-    "institutionName": "Hopital fribourgeois",
+    "institutionName": "Hôpital fribourgeois (HFR)",
     "institutionType": "clinic-group",
     "canton": "FR",
     "city": "Fribourg",
@@ -903,7 +903,7 @@
   },
   {
     "id": "rhne-neuchatel-formation",
-    "institutionName": "Reseau hospitalier neuchatelois",
+    "institutionName": "Réseau hospitalier neuchâtelois (RHNe)",
     "institutionType": "clinic-group",
     "canton": "NE",
     "city": "Neuchatel",
@@ -925,7 +925,7 @@
   },
   {
     "id": "hopital-jura-formation",
-    "institutionName": "Hopital du Jura",
+    "institutionName": "Hôpital du Jura (H-JU)",
     "institutionType": "clinic-group",
     "canton": "JU",
     "city": "Delemont",
@@ -947,7 +947,7 @@
   },
   {
     "id": "ehnv-nord-vaudois-formation",
-    "institutionName": "Etablissements hospitaliers du Nord vaudois",
+    "institutionName": "Établissements hospitaliers du Nord vaudois (eHnv)",
     "institutionType": "clinic-group",
     "canton": "VD",
     "city": "Yverdon-les-Bains",
@@ -1013,7 +1013,7 @@
   },
   {
     "id": "usi-biomed-master-medicine",
-    "institutionName": "Universita della Svizzera italiana Faculty of Biomedical Sciences",
+    "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
     "institutionType": "university",
     "canton": "TI",
     "city": "Lugano",
@@ -1035,7 +1035,7 @@
   },
   {
     "id": "usi-biomed-faculty",
-    "institutionName": "Universita della Svizzera italiana Faculty of Biomedical Sciences",
+    "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
     "institutionType": "university",
     "canton": "TI",
     "city": "Lugano",
@@ -1079,7 +1079,7 @@
   },
   {
     "id": "spitaeler-schaffhausen-aus-und-weiterbildung",
-    "institutionName": "Spitaeler Schaffhausen",
+    "institutionName": "Spitäler Schaffhausen",
     "institutionType": "clinic-group",
     "canton": "SH",
     "city": "Schaffhausen",
@@ -1101,7 +1101,7 @@
   },
   {
     "id": "svar-appenzell-aus-und-weiterbildung",
-    "institutionName": "Spitalverbund Appenzell Ausserrhoden",
+    "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
     "institutionType": "clinic-group",
     "canton": "AR",
     "city": "Herisau",
@@ -1123,7 +1123,7 @@
   },
   {
     "id": "spital-maennedorf-aus-und-weiterbildung",
-    "institutionName": "Spital Maennedorf",
+    "institutionName": "Spital Männedorf",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Maennedorf",
@@ -1167,7 +1167,7 @@
   },
   {
     "id": "gzo-wetzikon-karriere",
-    "institutionName": "GZO Spital Wetzikon",
+    "institutionName": "GZO AG Spital Wetzikon",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Wetzikon",
@@ -1211,7 +1211,7 @@
   },
   {
     "id": "balgrist-zuerich-karriere",
-    "institutionName": "Universitaetsklinik Balgrist",
+    "institutionName": "Universitätsklinik Balgrist",
     "institutionType": "hospital",
     "canton": "ZH",
     "city": "Zuerich",
@@ -1321,7 +1321,7 @@
   },
   {
     "id": "swimsa-exchanges",
-    "institutionName": "swimsa",
+    "institutionName": "Swiss Medical Students' Association (swimsa)",
     "institutionType": "student-association",
     "canton": "BE",
     "city": "Bern",

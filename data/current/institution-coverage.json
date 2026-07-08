@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T21:56:58.854Z",
+  "generatedAt": "2026-07-08T10:29:45.940Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -35,8 +35,29 @@
   },
   "institutionsWithExtractedRecords": [
     {
-      "institutionName": "Etablissements hospitaliers du Nord vaudois",
-      "normalizedName": "etablissements hospitaliers du nord vaudois",
+      "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
+      "normalizedName": "centre hospitalier universitaire vaudois chuv",
+      "canton": "VD",
+      "city": "Lausanne",
+      "sourceIds": [
+        "chuv-lausanne-formation-medecine",
+        "chuv-lausanne-medecins-formation"
+      ],
+      "sourceCount": 2,
+      "recordCount": 2,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Établissements hospitaliers du Nord vaudois (eHnv)",
+      "normalizedName": "etablissements hospitaliers du nord vaudois ehnv",
       "canton": "VD",
       "city": "Yverdon-les-Bains",
       "sourceIds": [
@@ -55,8 +76,48 @@
       ]
     },
     {
-      "institutionName": "Hopital du Valais",
-      "normalizedName": "hospital du valais",
+      "institutionName": "GZO AG Spital Wetzikon",
+      "normalizedName": "gzo ag hospital wetzikon",
+      "canton": "ZH",
+      "city": "Wetzikon",
+      "sourceIds": [
+        "gzo-wetzikon-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Hôpital du Jura (H-JU)",
+      "normalizedName": "hospital du jura h ju",
+      "canton": "JU",
+      "city": "Delemont",
+      "sourceIds": [
+        "hopital-jura-formation"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Hôpital du Valais (HVS)",
+      "normalizedName": "hospital du valais hvs",
       "canton": "VS",
       "city": "Sion",
       "sourceIds": [
@@ -75,8 +136,8 @@
       ]
     },
     {
-      "institutionName": "Hopital fribourgeois",
-      "normalizedName": "hospital fribourgeois",
+      "institutionName": "Hôpital fribourgeois (HFR)",
+      "normalizedName": "hospital fribourgeois hfr",
       "canton": "FR",
       "city": "Fribourg",
       "sourceIds": [
@@ -95,8 +156,49 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Aarau",
-      "normalizedName": "kantonsspital aarau",
+      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
+      "normalizedName": "hospital universitaires de geneve hug",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "hug-geneve-enseignement-formation",
+        "hug-geneve-stages"
+      ],
+      "sourceCount": 2,
+      "recordCount": 2,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Inselspital, Universitätsspital Bern",
+      "normalizedName": "inselspital universitaetsspital bern",
+      "canton": "BE",
+      "city": "Bern",
+      "sourceIds": [
+        "inselspital-bern-medical-students"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Kantonsspital Aarau (KSA)",
+      "normalizedName": "kantonsspital aarau ksa",
       "canton": "AG",
       "city": "Aarau",
       "sourceIds": [
@@ -116,8 +218,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Baden",
-      "normalizedName": "kantonsspital baden",
+      "institutionName": "Kantonsspital Baden (KSB)",
+      "normalizedName": "kantonsspital baden ksb",
       "canton": "AG",
       "city": "Baden",
       "sourceIds": [
@@ -138,8 +240,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Graubuenden",
-      "normalizedName": "kantonsspital graubuenden",
+      "institutionName": "Kantonsspital Graubünden (KSGR)",
+      "normalizedName": "kantonsspital graubuenden ksgr",
       "canton": "GR",
       "city": "Chur",
       "sourceIds": [
@@ -158,12 +260,12 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital St. Gallen",
-      "normalizedName": "kantonsspital st gallen",
-      "canton": "SG",
-      "city": "St. Gallen",
+      "institutionName": "Kantonsspital Nidwalden",
+      "normalizedName": "kantonsspital nidwalden",
+      "canton": "NW",
+      "city": "Stans",
       "sourceIds": [
-        "kssg-stgallen-aerztliche-ausbildung"
+        "kantonsspital-nidwalden-ausbildung"
       ],
       "sourceCount": 1,
       "recordCount": 1,
@@ -178,8 +280,28 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Winterthur",
-      "normalizedName": "kantonsspital winterthur",
+      "institutionName": "Kantonsspital St. Gallen (KSSG) / H-OCH",
+      "normalizedName": "kantonsspital st gallen kssg h och",
+      "canton": "SG",
+      "city": "St. Gallen",
+      "sourceIds": [
+        "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Kantonsspital Winterthur (KSW)",
+      "normalizedName": "kantonsspital winterthur ksw",
       "canton": "ZH",
       "city": "Winterthur",
       "sourceIds": [
@@ -198,12 +320,72 @@
       ]
     },
     {
-      "institutionName": "Luzerner Kantonsspital",
-      "normalizedName": "luzerner kantonsspital",
+      "institutionName": "Luzerner Kantonsspital (LUKS)",
+      "normalizedName": "luzerner kantonsspital luks",
       "canton": "LU",
       "city": "Luzern",
       "sourceIds": [
         "luks-luzern-universitaere-lehre"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Réseau hospitalier neuchâtelois (RHNe)",
+      "normalizedName": "reseau hospitalier neuchatelois rhne",
+      "canton": "NE",
+      "city": "Neuchatel",
+      "sourceIds": [
+        "rhne-neuchatel-formation"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Solothurner Spitäler AG (soH)",
+      "normalizedName": "solothurner spitaeler ag soh",
+      "canton": "SO",
+      "city": "Solothurn",
+      "sourceIds": [
+        "solothurner-spitaeler-aerztliche-ausbildung"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Spital Uster",
+      "normalizedName": "hospital uster",
+      "canton": "ZH",
+      "city": "Uster",
+      "sourceIds": [
+        "spital-uster-chirurgie-unterassistenten-pdf"
       ],
       "sourceCount": 1,
       "recordCount": 1,
@@ -242,8 +424,110 @@
       ]
     },
     {
-      "institutionName": "Universitaetsspital Zuerich",
-      "normalizedName": "universitaetsspital zuerich",
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "normalizedName": "universitat della svizzera italiana usi facolta di scienze biomediche",
+      "canton": "TI",
+      "city": "Lugano",
+      "sourceIds": [
+        "usi-biomed-faculty",
+        "usi-biomed-master-medicine"
+      ],
+      "sourceCount": 2,
+      "recordCount": 2,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "en",
+        "it"
+      ],
+      "region": [
+        "it-CH"
+      ]
+    },
+    {
+      "institutionName": "Universität Basel, Medizinische Fakultät",
+      "normalizedName": "universitat basel medizinische fakultaet",
+      "canton": "BS",
+      "city": "Basel",
+      "sourceIds": [
+        "unibas-medizin-studium"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
+      "normalizedName": "universitat zuerich uzh medizinische fakultaet",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "sourceIds": [
+        "uzh-medizin-studium"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universitätsklinik Balgrist",
+      "normalizedName": "universitaetsklinik balgrist",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "sourceIds": [
+        "balgrist-zuerich-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 2,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universitätsspital Basel (USB)",
+      "normalizedName": "universitaetsspital basel usb",
+      "canton": "BS",
+      "city": "Basel",
+      "sourceIds": [
+        "usb-basel-career-education"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universitätsspital Zürich (USZ)",
+      "normalizedName": "universitaetsspital zuerich usz",
       "canton": "ZH",
       "city": "Zuerich",
       "sourceIds": [
@@ -266,20 +550,37 @@
       "region": [
         "de-CH"
       ]
-    }
-  ],
-  "institutionsWithoutExtractedRecords": [
+    },
     {
-      "institutionName": "Centre hospitalier universitaire vaudois",
-      "normalizedName": "centre hospitalier universitaire vaudois",
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Université de Lausanne (UNIL), École de médecine",
+      "normalizedName": "universitat de lausanne unil ecole de medecine",
       "canton": "VD",
       "city": "Lausanne",
       "sourceIds": [
-        "chuv-lausanne-formation-medecine",
-        "chuv-lausanne-medecins-formation"
+        "unil-ecole-medecine-stages"
       ],
-      "sourceCount": 2,
-      "recordCount": 0,
+      "sourceCount": 1,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -289,7 +590,9 @@
       "region": [
         "fr-CH"
       ]
-    },
+    }
+  ],
+  "institutionsWithoutExtractedRecords": [
     {
       "institutionName": "Clinica Moncucco",
       "normalizedName": "clinica moncucco",
@@ -332,48 +635,8 @@
       ]
     },
     {
-      "institutionName": "GZO Spital Wetzikon",
-      "normalizedName": "gzo hospital wetzikon",
-      "canton": "ZH",
-      "city": "Wetzikon",
-      "sourceIds": [
-        "gzo-wetzikon-karriere"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Hopital du Jura",
-      "normalizedName": "hospital du jura",
-      "canton": "JU",
-      "city": "Delemont",
-      "sourceIds": [
-        "hopital-jura-formation"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
-      "institutionName": "Hopital Riviera-Chablais",
-      "normalizedName": "hospital riviera chablais",
+      "institutionName": "Hôpital Riviera-Chablais (HRC)",
+      "normalizedName": "hospital riviera chablais hrc",
       "canton": "VD",
       "city": "Rennaz",
       "sourceIds": [
@@ -392,53 +655,12 @@
       ]
     },
     {
-      "institutionName": "Hopitaux universitaires de Geneve",
-      "normalizedName": "hospital universitaires de geneve",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "hug-geneve-enseignement-formation",
-        "hug-geneve-stages"
-      ],
-      "sourceCount": 2,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
-      "institutionName": "Insel Gruppe",
-      "normalizedName": "insel gruppe",
+      "institutionName": "Insel Gruppe AG",
+      "normalizedName": "insel gruppe ag",
       "canton": "BE",
       "city": "Bern",
       "sourceIds": [
         "inselgruppe-bern-career-education"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Inselspital Bern",
-      "normalizedName": "inselspital bern",
-      "canton": "BE",
-      "city": "Bern",
-      "sourceIds": [
-        "inselspital-bern-medical-students"
       ],
       "sourceCount": 1,
       "recordCount": 0,
@@ -473,26 +695,6 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Nidwalden",
-      "normalizedName": "kantonsspital nidwalden",
-      "canton": "NW",
-      "city": "Stans",
-      "sourceIds": [
-        "kantonsspital-nidwalden-ausbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Kantonsspital Obwalden",
       "normalizedName": "kantonsspital obwalden",
       "canton": "OW",
@@ -513,17 +715,17 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital St. Gallen / H-OCH",
-      "normalizedName": "kantonsspital st gallen h och",
+      "institutionName": "Kantonsspital St. Gallen (KSSG)",
+      "normalizedName": "kantonsspital st gallen kssg",
       "canton": "SG",
       "city": "St. Gallen",
       "sourceIds": [
-        "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen"
+        "kssg-stgallen-aerztliche-ausbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
       "status": [
-        "candidate"
+        "needs-review"
       ],
       "sourceLanguage": [
         "de"
@@ -553,72 +755,12 @@
       ]
     },
     {
-      "institutionName": "Reseau hospitalier neuchatelois",
-      "normalizedName": "reseau hospitalier neuchatelois",
-      "canton": "NE",
-      "city": "Neuchatel",
-      "sourceIds": [
-        "rhne-neuchatel-formation"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
       "institutionName": "See-Spital",
       "normalizedName": "see hospital",
       "canton": "ZH",
       "city": "Horgen",
       "sourceIds": [
         "see-spital-karriere"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Solothurner Spitaeler",
-      "normalizedName": "solothurner spitaeler",
-      "canton": "SO",
-      "city": "Solothurn",
-      "sourceIds": [
-        "solothurner-spitaeler-aerztliche-ausbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Spitaeler Schaffhausen",
-      "normalizedName": "spitaeler schaffhausen",
-      "canton": "SH",
-      "city": "Schaffhausen",
-      "sourceIds": [
-        "spitaeler-schaffhausen-aus-und-weiterbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
@@ -653,7 +795,7 @@
       ]
     },
     {
-      "institutionName": "Spital Maennedorf",
+      "institutionName": "Spital Männedorf",
       "normalizedName": "hospital maennedorf",
       "canton": "ZH",
       "city": "Maennedorf",
@@ -713,17 +855,17 @@
       ]
     },
     {
-      "institutionName": "Spital Uster",
-      "normalizedName": "hospital uster",
-      "canton": "ZH",
-      "city": "Uster",
+      "institutionName": "Spitäler Schaffhausen",
+      "normalizedName": "spitaeler schaffhausen",
+      "canton": "SH",
+      "city": "Schaffhausen",
       "sourceIds": [
-        "spital-uster-chirurgie-unterassistenten-pdf"
+        "spitaeler-schaffhausen-aus-und-weiterbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
       "status": [
-        "candidate"
+        "needs-review"
       ],
       "sourceLanguage": [
         "de"
@@ -733,8 +875,8 @@
       ]
     },
     {
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden",
-      "normalizedName": "spitalverbund appenzell ausserrhoden",
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
+      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
       "canton": "AR",
       "city": "Herisau",
       "sourceIds": [
@@ -753,7 +895,7 @@
       ]
     },
     {
-      "institutionName": "Stadtspital Zuerich",
+      "institutionName": "Stadtspital Zürich",
       "normalizedName": "stadtspital zuerich",
       "canton": "ZH",
       "city": "Zuerich",
@@ -773,8 +915,8 @@
       ]
     },
     {
-      "institutionName": "swimsa",
-      "normalizedName": "swimsa",
+      "institutionName": "Swiss Medical Students' Association (swimsa)",
+      "normalizedName": "swiss medical students association swimsa",
       "canton": "BE",
       "city": "Bern",
       "sourceIds": [
@@ -793,49 +935,7 @@
       ]
     },
     {
-      "institutionName": "Universita della Svizzera italiana Faculty of Biomedical Sciences",
-      "normalizedName": "universitat della svizzera italiana faculty of biomedical sciences",
-      "canton": "TI",
-      "city": "Lugano",
-      "sourceIds": [
-        "usi-biomed-faculty",
-        "usi-biomed-master-medicine"
-      ],
-      "sourceCount": 2,
-      "recordCount": 0,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "en",
-        "it"
-      ],
-      "region": [
-        "it-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitaet Basel Medizinische Fakultaet",
-      "normalizedName": "universitat basel medizinische fakultaet",
-      "canton": "BS",
-      "city": "Basel",
-      "sourceIds": [
-        "unibas-medizin-studium"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitaet Bern Medizinische Fakultaet",
+      "institutionName": "Universität Bern, Medizinische Fakultät",
       "normalizedName": "universitat bern medizinische fakultaet",
       "canton": "BE",
       "city": "Bern",
@@ -852,106 +952,6 @@
       ],
       "region": [
         "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitaet Zuerich Medizinische Fakultaet",
-      "normalizedName": "universitat zuerich medizinische fakultaet",
-      "canton": "ZH",
-      "city": "Zuerich",
-      "sourceIds": [
-        "uzh-medizin-studium"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitaetsklinik Balgrist",
-      "normalizedName": "universitaetsklinik balgrist",
-      "canton": "ZH",
-      "city": "Zuerich",
-      "sourceIds": [
-        "balgrist-zuerich-karriere"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitaetsspital Basel",
-      "normalizedName": "universitaetsspital basel",
-      "canton": "BS",
-      "city": "Basel",
-      "sourceIds": [
-        "usb-basel-career-education"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universite de Geneve Faculte de medecine",
-      "normalizedName": "universitat de geneve faculte de medecine",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "unige-medecine-enseignement"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
-      "institutionName": "Universite de Lausanne Ecole de medecine",
-      "normalizedName": "universitat de lausanne ecole de medecine",
-      "canton": "VD",
-      "city": "Lausanne",
-      "sourceIds": [
-        "unil-ecole-medecine-stages"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
       ]
     },
     {
@@ -978,8 +978,8 @@
   "institutionsWithFailedCrawl": [],
   "institutionsNeedingManualVerification": [
     {
-      "institutionName": "Centre hospitalier universitaire vaudois",
-      "normalizedName": "centre hospitalier universitaire vaudois",
+      "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
+      "normalizedName": "centre hospitalier universitaire vaudois chuv",
       "canton": "VD",
       "city": "Lausanne",
       "sourceIds": [
@@ -987,7 +987,7 @@
         "chuv-lausanne-medecins-formation"
       ],
       "sourceCount": 2,
-      "recordCount": 0,
+      "recordCount": 2,
       "status": [
         "needs-review"
       ],
@@ -1040,8 +1040,8 @@
       ]
     },
     {
-      "institutionName": "Etablissements hospitaliers du Nord vaudois",
-      "normalizedName": "etablissements hospitaliers du nord vaudois",
+      "institutionName": "Établissements hospitaliers du Nord vaudois (eHnv)",
+      "normalizedName": "etablissements hospitaliers du nord vaudois ehnv",
       "canton": "VD",
       "city": "Yverdon-les-Bains",
       "sourceIds": [
@@ -1060,15 +1060,15 @@
       ]
     },
     {
-      "institutionName": "GZO Spital Wetzikon",
-      "normalizedName": "gzo hospital wetzikon",
+      "institutionName": "GZO AG Spital Wetzikon",
+      "normalizedName": "gzo ag hospital wetzikon",
       "canton": "ZH",
       "city": "Wetzikon",
       "sourceIds": [
         "gzo-wetzikon-karriere"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1080,15 +1080,15 @@
       ]
     },
     {
-      "institutionName": "Hopital du Jura",
-      "normalizedName": "hospital du jura",
+      "institutionName": "Hôpital du Jura (H-JU)",
+      "normalizedName": "hospital du jura h ju",
       "canton": "JU",
       "city": "Delemont",
       "sourceIds": [
         "hopital-jura-formation"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1100,8 +1100,8 @@
       ]
     },
     {
-      "institutionName": "Hopital du Valais",
-      "normalizedName": "hospital du valais",
+      "institutionName": "Hôpital du Valais (HVS)",
+      "normalizedName": "hospital du valais hvs",
       "canton": "VS",
       "city": "Sion",
       "sourceIds": [
@@ -1120,8 +1120,8 @@
       ]
     },
     {
-      "institutionName": "Hopital fribourgeois",
-      "normalizedName": "hospital fribourgeois",
+      "institutionName": "Hôpital fribourgeois (HFR)",
+      "normalizedName": "hospital fribourgeois hfr",
       "canton": "FR",
       "city": "Fribourg",
       "sourceIds": [
@@ -1140,8 +1140,8 @@
       ]
     },
     {
-      "institutionName": "Hopital Riviera-Chablais",
-      "normalizedName": "hospital riviera chablais",
+      "institutionName": "Hôpital Riviera-Chablais (HRC)",
+      "normalizedName": "hospital riviera chablais hrc",
       "canton": "VD",
       "city": "Rennaz",
       "sourceIds": [
@@ -1160,8 +1160,8 @@
       ]
     },
     {
-      "institutionName": "Hopitaux universitaires de Geneve",
-      "normalizedName": "hospital universitaires de geneve",
+      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
+      "normalizedName": "hospital universitaires de geneve hug",
       "canton": "GE",
       "city": "Geneve",
       "sourceIds": [
@@ -1169,7 +1169,7 @@
         "hug-geneve-stages"
       ],
       "sourceCount": 2,
-      "recordCount": 0,
+      "recordCount": 2,
       "status": [
         "needs-review"
       ],
@@ -1181,8 +1181,8 @@
       ]
     },
     {
-      "institutionName": "Insel Gruppe",
-      "normalizedName": "insel gruppe",
+      "institutionName": "Insel Gruppe AG",
+      "normalizedName": "insel gruppe ag",
       "canton": "BE",
       "city": "Bern",
       "sourceIds": [
@@ -1201,15 +1201,15 @@
       ]
     },
     {
-      "institutionName": "Inselspital Bern",
-      "normalizedName": "inselspital bern",
+      "institutionName": "Inselspital, Universitätsspital Bern",
+      "normalizedName": "inselspital universitaetsspital bern",
       "canton": "BE",
       "city": "Bern",
       "sourceIds": [
         "inselspital-bern-medical-students"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1221,8 +1221,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Aarau",
-      "normalizedName": "kantonsspital aarau",
+      "institutionName": "Kantonsspital Aarau (KSA)",
+      "normalizedName": "kantonsspital aarau ksa",
       "canton": "AG",
       "city": "Aarau",
       "sourceIds": [
@@ -1242,8 +1242,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Baden",
-      "normalizedName": "kantonsspital baden",
+      "institutionName": "Kantonsspital Baden (KSB)",
+      "normalizedName": "kantonsspital baden ksb",
       "canton": "AG",
       "city": "Baden",
       "sourceIds": [
@@ -1284,8 +1284,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Graubuenden",
-      "normalizedName": "kantonsspital graubuenden",
+      "institutionName": "Kantonsspital Graubünden (KSGR)",
+      "normalizedName": "kantonsspital graubuenden ksgr",
       "canton": "GR",
       "city": "Chur",
       "sourceIds": [
@@ -1312,7 +1312,7 @@
         "kantonsspital-nidwalden-ausbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1344,15 +1344,15 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital St. Gallen",
-      "normalizedName": "kantonsspital st gallen",
+      "institutionName": "Kantonsspital St. Gallen (KSSG)",
+      "normalizedName": "kantonsspital st gallen kssg",
       "canton": "SG",
       "city": "St. Gallen",
       "sourceIds": [
         "kssg-stgallen-aerztliche-ausbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1364,15 +1364,15 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital St. Gallen / H-OCH",
-      "normalizedName": "kantonsspital st gallen h och",
+      "institutionName": "Kantonsspital St. Gallen (KSSG) / H-OCH",
+      "normalizedName": "kantonsspital st gallen kssg h och",
       "canton": "SG",
       "city": "St. Gallen",
       "sourceIds": [
         "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "candidate"
       ],
@@ -1404,8 +1404,8 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Winterthur",
-      "normalizedName": "kantonsspital winterthur",
+      "institutionName": "Kantonsspital Winterthur (KSW)",
+      "normalizedName": "kantonsspital winterthur ksw",
       "canton": "ZH",
       "city": "Winterthur",
       "sourceIds": [
@@ -1424,8 +1424,8 @@
       ]
     },
     {
-      "institutionName": "Luzerner Kantonsspital",
-      "normalizedName": "luzerner kantonsspital",
+      "institutionName": "Luzerner Kantonsspital (LUKS)",
+      "normalizedName": "luzerner kantonsspital luks",
       "canton": "LU",
       "city": "Luzern",
       "sourceIds": [
@@ -1444,15 +1444,15 @@
       ]
     },
     {
-      "institutionName": "Reseau hospitalier neuchatelois",
-      "normalizedName": "reseau hospitalier neuchatelois",
+      "institutionName": "Réseau hospitalier neuchâtelois (RHNe)",
+      "normalizedName": "reseau hospitalier neuchatelois rhne",
       "canton": "NE",
       "city": "Neuchatel",
       "sourceIds": [
         "rhne-neuchatel-formation"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1484,35 +1484,15 @@
       ]
     },
     {
-      "institutionName": "Solothurner Spitaeler",
-      "normalizedName": "solothurner spitaeler",
+      "institutionName": "Solothurner Spitäler AG (soH)",
+      "normalizedName": "solothurner spitaeler ag soh",
       "canton": "SO",
       "city": "Solothurn",
       "sourceIds": [
         "solothurner-spitaeler-aerztliche-ausbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Spitaeler Schaffhausen",
-      "normalizedName": "spitaeler schaffhausen",
-      "canton": "SH",
-      "city": "Schaffhausen",
-      "sourceIds": [
-        "spitaeler-schaffhausen-aus-und-weiterbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1544,7 +1524,7 @@
       ]
     },
     {
-      "institutionName": "Spital Maennedorf",
+      "institutionName": "Spital Männedorf",
       "normalizedName": "hospital maennedorf",
       "canton": "ZH",
       "city": "Maennedorf",
@@ -1612,7 +1592,7 @@
         "spital-uster-chirurgie-unterassistenten-pdf"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "candidate"
       ],
@@ -1624,8 +1604,28 @@
       ]
     },
     {
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden",
-      "normalizedName": "spitalverbund appenzell ausserrhoden",
+      "institutionName": "Spitäler Schaffhausen",
+      "normalizedName": "spitaeler schaffhausen",
+      "canton": "SH",
+      "city": "Schaffhausen",
+      "sourceIds": [
+        "spitaeler-schaffhausen-aus-und-weiterbildung"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
+      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
       "canton": "AR",
       "city": "Herisau",
       "sourceIds": [
@@ -1644,7 +1644,7 @@
       ]
     },
     {
-      "institutionName": "Stadtspital Zuerich",
+      "institutionName": "Stadtspital Zürich",
       "normalizedName": "stadtspital zuerich",
       "canton": "ZH",
       "city": "Zuerich",
@@ -1661,26 +1661,6 @@
       ],
       "region": [
         "de-CH"
-      ]
-    },
-    {
-      "institutionName": "swimsa",
-      "normalizedName": "swimsa",
-      "canton": "BE",
-      "city": "Bern",
-      "sourceIds": [
-        "swimsa-exchanges"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "mixed"
-      ],
-      "region": [
-        "mixed"
       ]
     },
     {
@@ -1708,8 +1688,28 @@
       ]
     },
     {
-      "institutionName": "Universita della Svizzera italiana Faculty of Biomedical Sciences",
-      "normalizedName": "universitat della svizzera italiana faculty of biomedical sciences",
+      "institutionName": "Swiss Medical Students' Association (swimsa)",
+      "normalizedName": "swiss medical students association swimsa",
+      "canton": "BE",
+      "city": "Bern",
+      "sourceIds": [
+        "swimsa-exchanges"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "mixed"
+      ],
+      "region": [
+        "mixed"
+      ]
+    },
+    {
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "normalizedName": "universitat della svizzera italiana usi facolta di scienze biomediche",
       "canton": "TI",
       "city": "Lugano",
       "sourceIds": [
@@ -1717,7 +1717,7 @@
         "usi-biomed-master-medicine"
       ],
       "sourceCount": 2,
-      "recordCount": 0,
+      "recordCount": 2,
       "status": [
         "candidate"
       ],
@@ -1730,7 +1730,7 @@
       ]
     },
     {
-      "institutionName": "Universitaet Basel Medizinische Fakultaet",
+      "institutionName": "Universität Basel, Medizinische Fakultät",
       "normalizedName": "universitat basel medizinische fakultaet",
       "canton": "BS",
       "city": "Basel",
@@ -1738,7 +1738,7 @@
         "unibas-medizin-studium"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "candidate"
       ],
@@ -1750,7 +1750,7 @@
       ]
     },
     {
-      "institutionName": "Universitaet Bern Medizinische Fakultaet",
+      "institutionName": "Universität Bern, Medizinische Fakultät",
       "normalizedName": "universitat bern medizinische fakultaet",
       "canton": "BE",
       "city": "Bern",
@@ -1770,15 +1770,15 @@
       ]
     },
     {
-      "institutionName": "Universitaet Zuerich Medizinische Fakultaet",
-      "normalizedName": "universitat zuerich medizinische fakultaet",
+      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
+      "normalizedName": "universitat zuerich uzh medizinische fakultaet",
       "canton": "ZH",
       "city": "Zuerich",
       "sourceIds": [
         "uzh-medizin-studium"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "candidate"
       ],
@@ -1790,7 +1790,7 @@
       ]
     },
     {
-      "institutionName": "Universitaetsklinik Balgrist",
+      "institutionName": "Universitätsklinik Balgrist",
       "normalizedName": "universitaetsklinik balgrist",
       "canton": "ZH",
       "city": "Zuerich",
@@ -1798,7 +1798,7 @@
         "balgrist-zuerich-karriere"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 2,
       "status": [
         "needs-review"
       ],
@@ -1810,15 +1810,15 @@
       ]
     },
     {
-      "institutionName": "Universitaetsspital Basel",
-      "normalizedName": "universitaetsspital basel",
+      "institutionName": "Universitätsspital Basel (USB)",
+      "normalizedName": "universitaetsspital basel usb",
       "canton": "BS",
       "city": "Basel",
       "sourceIds": [
         "usb-basel-career-education"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1830,8 +1830,8 @@
       ]
     },
     {
-      "institutionName": "Universitaetsspital Zuerich",
-      "normalizedName": "universitaetsspital zuerich",
+      "institutionName": "Universitätsspital Zürich (USZ)",
+      "normalizedName": "universitaetsspital zuerich usz",
       "canton": "ZH",
       "city": "Zuerich",
       "sourceIds": [
@@ -1856,15 +1856,15 @@
       ]
     },
     {
-      "institutionName": "Universite de Geneve Faculte de medecine",
-      "normalizedName": "universitat de geneve faculte de medecine",
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
       "canton": "GE",
       "city": "Geneve",
       "sourceIds": [
         "unige-medecine-enseignement"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "candidate"
       ],
@@ -1876,15 +1876,15 @@
       ]
     },
     {
-      "institutionName": "Universite de Lausanne Ecole de medecine",
-      "normalizedName": "universitat de lausanne ecole de medecine",
+      "institutionName": "Université de Lausanne (UNIL), École de médecine",
+      "normalizedName": "universitat de lausanne unil ecole de medecine",
       "canton": "VD",
       "city": "Lausanne",
       "sourceIds": [
         "unil-ecole-medecine-stages"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],

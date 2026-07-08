@@ -1,7 +1,7 @@
 [
   {
-    "id": "leadtime-summary-030b837540ed",
-    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "id": "leadtime-summary-350e4b83091f",
+    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-chirurgie-medizinstudium",
     "recommendedApplyAheadMinMonths": null,
     "recommendedApplyAheadMaxMonths": null,
@@ -18,24 +18,8 @@
     ]
   },
   {
-    "id": "leadtime-summary-bd086c8ea6ae",
-    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
-    "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
-    "recommendedApplyAheadMinMonths": 12,
-    "recommendedApplyAheadMaxMonths": 12,
-    "medianObservedMonthsAhead": null,
-    "observedRangeMinMonths": null,
-    "observedRangeMaxMonths": null,
-    "evidenceCount": 1,
-    "observationCount": 0,
-    "basis": "explicit-source",
-    "confidence": "medium",
-    "label": "Explicitly stated by source: apply 12 months ahead.",
-    "warnings": []
-  },
-  {
-    "id": "leadtime-summary-c22dde359761",
-    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "id": "leadtime-summary-4ca58752b2de",
+    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-medizin-medizinstudium",
     "recommendedApplyAheadMinMonths": null,
     "recommendedApplyAheadMaxMonths": null,
@@ -52,8 +36,24 @@
     ]
   },
   {
-    "id": "leadtime-summary-f3e21e151a65",
-    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "id": "leadtime-summary-cc4999c6d255",
+    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
+    "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+    "recommendedApplyAheadMinMonths": 12,
+    "recommendedApplyAheadMaxMonths": 12,
+    "medianObservedMonthsAhead": null,
+    "observedRangeMinMonths": null,
+    "observedRangeMaxMonths": null,
+    "evidenceCount": 1,
+    "observationCount": 0,
+    "basis": "explicit-source",
+    "confidence": "medium",
+    "label": "Explicitly stated by source: apply 12 months ahead.",
+    "warnings": []
+  },
+  {
+    "id": "leadtime-summary-f061934f73be",
+    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
     "recommendedApplyAheadMinMonths": null,
     "recommendedApplyAheadMaxMonths": null,

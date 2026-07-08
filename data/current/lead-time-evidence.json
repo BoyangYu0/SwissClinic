@@ -2,7 +2,7 @@
   {
     "id": "leadtime-evidence-ce185cbd6d95",
     "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
-    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-chirurgie-medizinstudium",
     "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/",
     "evidenceType": "historical-observed",
@@ -16,7 +16,7 @@
   {
     "id": "leadtime-evidence-856df80ccc6a",
     "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
-    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
     "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/",
     "evidenceType": "historical-observed",
@@ -30,7 +30,7 @@
   {
     "id": "leadtime-evidence-6afd8394cc7d",
     "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
-    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
     "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/",
     "evidenceType": "explicit-source",
@@ -44,7 +44,7 @@
   {
     "id": "leadtime-evidence-b595ba7490a6",
     "placementId": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
-    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich|neuroradiologie|unterassistenz",
+    "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich-usz|neuroradiologie|unterassistenz",
     "sourceId": "usz-zuerich-medizin-medizinstudium",
     "sourceUrl": "https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/",
     "evidenceType": "historical-observed",

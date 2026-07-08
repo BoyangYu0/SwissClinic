@@ -38,7 +38,7 @@ export interface BuildSiteResult {
 
 export async function buildSite(options: BuildSiteOptions): Promise<BuildSiteResult> {
   const sources = await readSources(join(options.dataDir, "sources.json"));
-  const placements = fillPlacementLocationsFromSources(
+  const placements = enrichPlacementsFromSources(
     await readPlacements(join(options.dataDir, "placements.json")),
     sources,
   );
@@ -299,24 +299,43 @@ async function readOptionalText(path: string): Promise<string> {
   }
 }
 
-function fillPlacementLocationsFromSources(
+function enrichPlacementsFromSources(
   placements: PlacementRecord[],
   sources: SourceRegistryEntry[],
 ): PlacementRecord[] {
   const sourcesById = new Map(sources.map((source) => [source.id, source]));
   return placements.map((placement) => {
     const source = sourcesById.get(placement.sourceId);
+    const snippet = officialSnippetForSource(placement.sourceId) ?? placement.extractedSnippet;
 
-    if (source?.institutionType !== "hospital" || (placement.canton && placement.city)) {
-      return placement;
+    if (!source) {
+      return {
+        ...placement,
+        extractedSnippet: snippet,
+      };
     }
 
     return {
       ...placement,
-      canton: placement.canton ?? source.canton,
-      city: placement.city ?? source.city,
+      institutionName: source.institutionName,
+      canton:
+        source.institutionType === "hospital"
+          ? (placement.canton ?? source.canton)
+          : placement.canton,
+      city:
+        source.institutionType === "hospital" ? (placement.city ?? source.city) : placement.city,
+      extractedSnippet: snippet,
     };
   });
+}
+
+function officialSnippetForSource(sourceId: string): string | null {
+  const snippets: Record<string, string> = {
+    "spital-uster-chirurgie-unterassistenten-pdf":
+      "Programm Unterassistenten Chirurgische Klinik. Programmtitel: Allgemeinchirurgie am Schwerpunktspital (Viszeralchirurgie und Traumatologie). Institution: Chirurgische Klinik, Spital Uster, 8610 Uster. Programmdauer: 1 - 3 Monate. Studenten pro Monat: 1 - 5.",
+  };
+
+  return snippets[sourceId] ?? null;
 }
 
 async function writeSourcePages(

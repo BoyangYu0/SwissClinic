@@ -44,6 +44,7 @@ describe("buildStaticData", () => {
       }),
     );
     const mediumRecord = placement("medium-source", "https://example.ch/medium", "medium", {
+      institutionName: "Wrong Page Title",
       canton: null,
       city: null,
     });
@@ -73,6 +74,7 @@ describe("buildStaticData", () => {
       "needs-human-review",
     );
     expect(result.placements.find((record) => record.id === mediumRecord.id)).toMatchObject({
+      institutionName: "Example Hospital",
       canton: "ZH",
       city: "Zuerich",
     });
@@ -151,6 +153,59 @@ describe("buildStaticData", () => {
       "id,sourceId,institutionName,department,roleType,canton,city,availabilityStatus,availableFrom,fullyBookedUntil,durationMinWeeks,durationMaxWeeks,applicationMethod,applicationUrl,contactEmail,confidence,reviewStatus,sourceUrl,lastChecked",
     );
     expect(csv).toContain(`"${mediumRecord.id}"`);
+  });
+
+  it("uses an official readable snippet for the Spital Uster PDF source", async () => {
+    const workspace = await mkdtemp(join(tmpdir(), "scpi-build-data-uster-"));
+    const snapshotsDir = join(workspace, "snapshots");
+    const outDir = join(workspace, "current");
+    const exportsDir = join(workspace, "exports");
+    const sourcesPath = join(workspace, "sources.yaml");
+    await writeSources(sourcesPath, [
+      [
+        "spital-uster-chirurgie-unterassistenten-pdf",
+        "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf",
+        "synthetic",
+      ],
+    ]);
+    await writeSnapshot(
+      snapshotsDir,
+      snapshot(
+        "spital-uster-chirurgie-unterassistenten-pdf",
+        "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf",
+        {
+          contentType: "application/pdf",
+          visibleText: "%PDF-1.5 h�bbd\u0010``b`Z garbled binary stream",
+        },
+      ),
+    );
+    const parser = parserReturning("synthetic", {
+      "spital-uster-chirurgie-unterassistenten-pdf": [
+        placement(
+          "spital-uster-chirurgie-unterassistenten-pdf",
+          "https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf",
+          "low",
+          {
+            extractedSnippet: "%PDF-1.5 h�bbd\u0010``b`Z garbled binary stream",
+          },
+        ),
+      ],
+    });
+
+    const result = await buildStaticData({
+      snapshotsDir,
+      outDir,
+      exportsDir,
+      sourcesPath,
+      generatedAt: "2026-07-07T08:00:00.000Z",
+      parsers: [parser],
+    });
+
+    expect(result.placements[0]?.extractedSnippet).toContain(
+      "Programm Unterassistenten Chirurgische Klinik.",
+    );
+    expect(result.placements[0]?.extractedSnippet).toContain("Spital Uster, 8610 Uster");
+    expect(result.placements[0]?.extractedSnippet).not.toContain("%PDF-1.5");
   });
 
   it("fails when parser output does not validate as a placement record", async () => {
