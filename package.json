@@ -17,6 +17,7 @@
     "coverage:report": "pnpm --filter @scpi/worker coverage:report",
     "data:validate": "pnpm --filter @scpi/worker data:validate",
     "diff:snapshots": "pnpm --filter @scpi/worker diff:snapshots",
+    "feedback:regression": "pnpm --filter @scpi/worker feedback:regression",
     "review:report": "pnpm --filter @scpi/worker review:report",
     "source:coverage": "pnpm --filter @scpi/worker source:coverage",
     "lead-time:build": "pnpm --filter @scpi/worker lead-time:build",

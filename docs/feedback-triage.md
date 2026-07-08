@@ -2,6 +2,8 @@
 
 Structured feedback is collected through pre-filled GitHub issue URLs from the static site. There is no backend, login, or private storage.
 
+Feedback records should validate against `FeedbackRecordSchema` before they are used for fixtures or future imports. The schema intentionally does not include names, email addresses, or other identity fields.
+
 ## Triage Flow
 
 1. Confirm the issue includes the generated JSON metadata block.
@@ -23,10 +25,13 @@ Structured feedback is collected through pre-filled GitHub issue URLs from the s
 
 For parser bugs or extraction corrections:
 
-1. Save a minimal official-source fixture under the relevant parser fixture folder.
-2. Add or update a parser test that reproduces the reported issue.
-3. Fix the parser or language pack.
-4. Run parser tests, then rebuild static data.
+1. Save the accepted feedback JSON from the issue.
+2. Run `pnpm feedback:regression -- --feedback path/to/feedback.json --parser generic`.
+3. Replace the generated `source-snippet.html` with a minimal public official-source fixture.
+4. Replace `expected-placement.json` with concrete expected parser output.
+5. Add or update a parser test that reproduces the reported issue.
+6. Fix the parser or language pack.
+7. Run parser tests, then rebuild static data.
 
 For source registry updates:
 

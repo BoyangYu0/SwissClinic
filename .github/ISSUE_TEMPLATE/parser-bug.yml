@@ -1,0 +1,56 @@
+name: Parser bug
+description: Report extracted data that should become a parser regression test.
+title: "[Parser bug] "
+labels:
+  - feedback
+  - parser-bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Parser bug reports are used to create public fixtures and regression tests.
+        Please include only public source text. Do not paste private emails or screenshots with personal data.
+  - type: input
+    id: source_id
+    attributes:
+      label: Source ID
+      description: Paste the source ID from the site if available.
+    validations:
+      required: false
+  - type: input
+    id: record_id
+    attributes:
+      label: Record ID
+      description: Paste the placement record ID if the bug affects a specific record.
+    validations:
+      required: false
+  - type: input
+    id: source_url
+    attributes:
+      label: Public source URL
+      description: Link the public page or PDF where the parser issue appears.
+    validations:
+      required: true
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Auto-filled metadata from the site
+      description: Paste generated JSON if available.
+      render: json
+    validations:
+      required: false
+  - type: textarea
+    id: public_snippet
+    attributes:
+      label: Public source snippet
+      description: Paste the shortest public snippet needed to reproduce the parsing issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: Expected parser output
+      description: Describe the corrected availability, department, application link, lead time, or confidence.
+    validations:
+      required: true

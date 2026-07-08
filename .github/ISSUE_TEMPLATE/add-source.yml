@@ -1,0 +1,61 @@
+name: Add or fix a source
+description: Suggest a missing hospital/source or report an irrelevant or broken source.
+title: "[Source] "
+labels:
+  - feedback
+  - source-registry
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest public hospital, clinic, university, or student-association pages only.
+        Do not submit private application emails, login-only pages, patient information, or unredacted screenshots.
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Source feedback type
+      options:
+        - Missing hospital/source
+        - Irrelevant source
+        - Broken source URL
+        - Wrong language/region
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: institution_name
+    attributes:
+      label: Institution name
+      description: Use the official institution name if known.
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Public source URL
+      description: Link the public page that should be added or corrected.
+    validations:
+      required: false
+  - type: input
+    id: canton_city
+    attributes:
+      label: Canton and city
+      description: Example: ZH, Uster.
+    validations:
+      required: false
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Auto-filled metadata from the site
+      description: Paste generated JSON from a source, coverage, or missing-source page if available.
+      render: json
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Why should this source be changed?
+      description: Explain whether the page mentions medical student clinical placements, Unterassistenz, PJ, stage, or application information.
+    validations:
+      required: true

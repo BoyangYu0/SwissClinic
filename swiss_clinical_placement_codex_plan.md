@@ -2033,60 +2033,89 @@ Before public deployment:
 
 ---
 
-# Phase I — User Feedback System
+# Phase I — Static User Feedback System
 
-## Step I1. GitHub Issues feedback template
+Phase I now builds on the existing static medical-student review framework. It must not add a database, login, backend storage, or scheduled user-data ingestion. Feedback enters through pre-filled GitHub issue URLs and copyable JSON payloads only.
+
+## Step I1. Static feedback entry points and GitHub issue templates
 
 ### Goal
 
-Start with no backend.
+Make it obvious how students and maintainers can report errors from placement records, source pages, coverage pages, and missing-source reports.
 
 ### Codex tasks
 
-Create issue templates:
+Maintain static frontend entry points:
+
+- `Report error` on every placement row/detail
+- `Report error` on every source detail page
+- `Report error` on coverage and missing-source report pages
+- `Add reviews` in the placement detail drawer, after the source snippet
+- `Close review` in the detail drawer to leave review mode
+
+Support feedback types:
+
+- `wrong-availability`
+- `wrong-department`
+- `wrong-application-link`
+- `missing-hospital-source`
+- `irrelevant-source`
+- `broken-source-url`
+- `wrong-language-region`
+- `parser-bug`
+- `other`
+
+Keep or create issue templates:
 
 ```txt
+.github/ISSUE_TEMPLATE/structured-feedback.yml
 .github/ISSUE_TEMPLATE/report-wrong-data.yml
 .github/ISSUE_TEMPLATE/add-source.yml
 .github/ISSUE_TEMPLATE/parser-bug.yml
 ```
 
-Wrong data fields:
-
-- source record URL or ID
-- institution
-- department
-- current displayed value
-- corrected value
-- evidence type
-- source URL / screenshot description
-- whether contributor is a medical student
-- whether they want public attribution
+The generated issue body must include record/source metadata when available, but must warn users not to paste private emails, patient information, login-only material, or unredacted screenshots.
 
 ### Automated tests
 
-- Not applicable beyond YAML validity.
-- Add a script if useful to validate issue template YAML.
+- feedback issue URLs include record/source/report metadata
+- generated issue URLs include the selected feedback type
+- templates contain all expected feedback categories
+- templates do not ask for personal contact details by default
+- review mode remains hidden by default and appears with `?review=1` or `Add reviews`
 
 ### Manual checks
 
-- Form is easy enough for students.
-- Does not request unnecessary personal data.
-- Warns users not to upload private emails/screenshots with personal data unless redacted.
+- Student can find the feedback path without reading docs.
+- Feedback links do not visually overlap source links.
+- GitHub issue language is understandable for people without GitHub experience.
 
 ---
 
-## Step I2. Feedback data model
+## Step I2. Feedback and community evidence schemas
 
 ### Goal
 
-Prepare for backend without implementing it yet.
+Prepare structured static feedback for later backend import without implementing backend storage.
 
 ### Codex tasks
 
-Create `packages/schema/src/feedback.ts`.
+Maintain review and evidence schemas:
 
-Fields:
+```txt
+packages/schema/src/review.ts
+packages/schema/src/feedback.ts
+```
+
+Schemas:
+
+- `ReviewSubmissionSchema`
+- `VerificationEvidenceSchema`
+- `LeadTimeReportSchema`
+- `ReliabilitySummarySchema`
+- `FeedbackRecordSchema`
+
+`FeedbackRecordSchema` fields:
 
 ```ts
 {
@@ -2094,70 +2123,103 @@ Fields:
   placementId: string | null;
   sourceId: string | null;
   submittedAt: string;
-  submittedByRole: "anonymous" | "student" | "maintainer" | "hospital" | "unknown";
+  submittedByRole: "anonymous" | "medical-student" | "resident" | "doctor" | "administrator" | "other" | "unknown";
   feedbackType:
     | "wrong-availability"
     | "wrong-department"
     | "wrong-application-link"
-    | "missing-source"
-    | "source-updated"
+    | "missing-hospital-source"
+    | "irrelevant-source"
+    | "broken-source-url"
+    | "wrong-language-region"
     | "parser-bug"
     | "other";
+  institutionName: string | null;
+  departmentNormalized: string | null;
   currentValue: string | null;
   suggestedValue: string | null;
+  evidenceType:
+    | "official-source"
+    | "student-review"
+    | "student-lead-time-report"
+    | "hospital-email-redacted"
+    | "maintainer-check"
+    | "other";
   evidenceUrl: string | null;
   evidenceNote: string | null;
+  confidenceSuggested: "high" | "medium" | "low" | "unknown";
   status: "new" | "triaged" | "accepted" | "rejected" | "needs-evidence";
   reviewerNote: string | null;
 }
 ```
 
+Privacy requirements:
+
+- no personal identity fields by default
+- accepted feedback requires maintainer notes
+- ordinary feedback must reference a placement or source
+- missing-hospital/source feedback may omit record IDs
+
 ### Automated tests
 
-- valid feedback
-- invalid personal data fields if added accidentally
+- valid feedback validates
+- accidental identity fields are rejected
 - accepted feedback requires reviewer note
+- missing-hospital/source feedback can omit placement/source IDs
+- lead-time and verification evidence still validate
 
 ### Manual checks
 
-- Confirm privacy implications.
+- Confirm privacy implications before processing real student reports.
+- Confirm community lead-time reports are displayed separately from official scraped data.
 
 ---
 
-## Step I3. Convert accepted feedback into regression tests
+## Step I3. Convert accepted feedback into parser/source regression work
 
 ### Goal
 
-Make user corrections improve parsers.
+Make accepted student and maintainer corrections improve deterministic parsers and source registry quality.
 
 ### Codex tasks
 
-Create docs and helper script:
+Create and maintain:
 
 ```txt
 docs/manual-review-guide.md
+docs/feedback-triage.md
 apps/worker/src/create-regression-from-feedback.ts
+```
+
+Add script:
+
+```txt
+pnpm feedback:regression -- --feedback path/to/feedback.json --parser generic
 ```
 
 Workflow:
 
-1. maintainer reviews issue
-2. saves relevant public HTML snippet as fixture
-3. writes expected parser output
-4. test fails
-5. parser fixed
-6. test passes
-7. record updated
+1. maintainer reviews GitHub issue
+2. maintainer validates correction against a public official source
+3. maintainer saves accepted feedback JSON locally
+4. helper creates fixture skeleton under parser fixtures
+5. maintainer replaces skeleton with minimal public source snippet and expected parser output
+6. parser or source registry is fixed
+7. tests, data build, coverage report, and static site are regenerated
+8. issue is closed with a maintainer note
 
 ### Automated tests
 
-- script creates fixture skeleton
-- generated test fails until expected values are added
-- no private attachments included
+- helper script creates fixture skeleton
+- helper strips private attachment references from fixture metadata
+- issue template validity checks pass
+- generated skeleton clearly requires concrete expected parser output before enabling a regression test
 
 ### Manual checks
 
-- Maintainer can reproduce the process with one real feedback item.
+- Process 3 test feedback items before treating Phase I as release-ready.
+- Confirm no private attachments or identity fields enter fixtures.
+- Confirm unclear official wording keeps records in review-needed status instead of forcing a correction.
 
 ---
 

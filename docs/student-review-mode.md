@@ -4,9 +4,10 @@ Swiss Clinical Placement Index is a static GitHub Pages beta. Review mode helps 
 
 ## Enable Review Mode
 
-- Open the static site and click **Enable review mode**.
+- Open any placement row and click **Add reviews** in the detail drawer.
 - Or open the index with `?review=1`, for example `index.html?review=1`.
-- Open any placement row. The placement detail drawer will include a compact **Medical student review** panel.
+- The placement detail drawer will include compact **Verify this record** and **Report application lead time** panels.
+- Use **Close review** in the detail drawer to return to the default view.
 
 ## How To Verify A Record
 
@@ -20,7 +21,7 @@ Swiss Clinical Placement Index is a static GitHub Pages beta. Review mode helps 
    - `not-relevant`: the page is not a medical-student placement source.
    - `unknown`: you cannot verify it from the available page.
 5. Add an optional comment if it helps maintainers understand the issue.
-6. Use **Open GitHub issue** or **Copy JSON**.
+6. Use **Submit via GitHub issue** or **Copy JSON instead**. The GitHub option opens a pre-filled issue in a new tab; nothing is sent until you review it and submit the issue on GitHub.
 
 ## Review Queue
 
