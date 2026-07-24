@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-07-24T08:41:26.888Z",
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "27 registered sources produced no placement records."
+  ],
+  "metrics": {
+    "sourceCount": 61,
+    "placementCount": 47,
+    "previousPlacementCount": 55,
+    "recordDropRate": 0.14545454545454545,
+    "crawlFailureCount": 0,
+    "crawlFailureRate": 0,
+    "duplicatePlacementIdCount": 0,
+    "orphanSourceReferenceCount": 0,
+    "contradictoryAvailabilityCount": 0,
+    "genericRecordsOutsideReviewCount": 0,
+    "lowConfidenceCount": 23,
+    "recordsNeedingReviewCount": 45,
+    "notSpecifiedAvailabilityCount": 33,
+    "pastAvailabilityDateCount": 0,
+    "sourcesWithNoRecordsCount": 27
+  }
+}

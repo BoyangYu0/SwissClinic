@@ -5,6 +5,7 @@ import {
   PlacementRecordSchema,
 } from "@scpi/schema";
 import { normalizeWhitespace, parseAvailabilityStatus, parseDurationWeeks } from "@scpi/utils";
+import { normalizeDepartmentName } from "./language-packs/index.js";
 import type { ParsedPage, ParserResult, SourceParser } from "./types.js";
 
 interface KsbSection {
@@ -106,7 +107,7 @@ function buildRecord(input: ParsedPage, section: KsbSection): PlacementRecordInp
     sourceId: input.sourceId,
     institutionName: "Kantonsspital Baden",
     department: section.department,
-    departmentNormalized: section.department,
+    departmentNormalized: normalizeDepartmentName(section.department),
     roleType: "Unterassistenz",
     country: "CH",
     canton: "AG",
@@ -124,6 +125,7 @@ function buildRecord(input: ParsedPage, section: KsbSection): PlacementRecordInp
     applicationUrl,
     contactEmail: input.emails[0] ?? null,
     contactName,
+    originalDepartmentName: section.department,
     eligibilityNotes: extractEligibilityNotes(section.text),
     languageRequirement: extractLanguageRequirement(section.text),
     compensation: extractCompensation(section.text),
@@ -135,7 +137,10 @@ function buildRecord(input: ParsedPage, section: KsbSection): PlacementRecordInp
     lastChecked: input.fetchedAt,
     extractionMethod: "site-parser",
     confidence,
-    reviewStatus: confidence === "high" ? "auto-published" : "needs-human-review",
+    reviewStatus:
+      confidence === "high" && availability.availabilityStatus !== "fully-booked-until"
+        ? "auto-published"
+        : "needs-human-review",
     warnings: buildRecordWarnings(
       section.department,
       availability.availabilityStatus,

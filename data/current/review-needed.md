@@ -1,12 +1,12 @@
 # Manual Review Needed
 
-Generated at: 2026-07-08T10:39:02.016Z
+Generated at: 2026-07-24T08:41:25.266Z
 
 ## Summary
 
-- Records needing review: 53
-- Low-confidence records: 28
-- Parser warnings: 80
+- Records needing review: 45
+- Low-confidence records: 23
+- Parser warnings: 75
 - Failed pages: 0
 - Recent changes: 0
 
@@ -56,21 +56,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Reasons: low confidence; parser warnings; availability is application-only
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Offres d'emploi Candidature spontanée Si aucun poste ouvert ne correspond à votre profil, n’hésitez pas à nous envoyer une offre spontanée, comprenant votre CV, une lettre de motivation et l’ensemble de vos diplômes et certificats de travail.
-
-### GZO AG Spital Wetzikon / Not specified / Unknown
-
-- ID: `karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43`
-- Source ID: `gzo-wetzikon-karriere`
-- Source URL: https://www.gzo.ch/karriere
-- Confidence: low
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: available-from (2026-06-26)
-- Reasons: low confidence; parser warnings; availability date is in the past
-- Warnings: Generic parser output requires human review.; No department was detected.
-- Snippet: Mit einem neuen Arbeitszeitmodell erkennen wir die anspruchsvolle Tätigkeit des Pflegepersonals im Schichtdienst an und schlagen damit einen neuen Weg ein.Mehr erfahren News 26.06.2026 GZO Spital Wetzikon steigert Umsatz und PatientenzahlenTrotz Nachlassstundung hat sich der Betrieb der GZO AG Spital Wetzikon im Jahr 2025 erfreulich entwickelt.
 
 ### Hôpital du Jura (H-JU) / Urgences / ClinicalPlacement
 
@@ -147,21 +132,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les candidatures aux offres de stage se font en ligne, aucun dossier papier ne sera accepté.
 
-### Hôpitaux universitaires de Genève (HUG) / Not specified / Unknown
-
-- ID: `hug-unknown-unknown-95d8d27f0273`
-- Source ID: `hug-geneve-enseignement-formation`
-- Source URL: https://www.hug.ch/formation-de-base
-- Confidence: low
-- Review status: needs-human-review
-- Source language: fr
-- Region: fr-CH
-- Extraction language: fr
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Formation de base La formation prégrade constitue la formation de base des médecins.
-
 ### Inselspital, Universitätsspital Bern / Not specified / Wahlstudienjahr
 
 - ID: `insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c`
@@ -190,7 +160,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: ksa parser could not determine a department.; ksa page does not state explicit availability; no date was inferred.; ksa parser found no application URL.
-- Snippet: Allgemeine Informationen – Unterassistenzstellen. Zurück KSA Kantonsspital Aarau KSA Kantonsspital Aarau KSA Kinderspital Aarau KSA Bahnhof Aarau KSA Lenzburg Unterassistenz-Stellen Allgemeine Informationen Mindestzeitraum und Voraussetzung für eine Anstellung Individuell zwischen einem und vier Monaten, je nach Klinik und deren Programm. Frühestens ab dem 4. Jahr des Medizin-Studiums, in bestimmten Kliniken auch höhere Semesterzahl erforderlich. Arbeitszeiten, Dienste, Ferien Arbeitszeit: Die Arbeitszeit richtet sich nach dem Wochenprogramm der Klinik. Von ca. 07.30 bis ca. 17.00 Uhr je nach Wochentag, Mittagspause inklusive. Dienste: Wochenenddienst und Pikettdienst je nach Klinik möglich,
+- Snippet: Allgemeine Informationen – Unterassistenzstellen. Zurück KSA Kantonsspital Aarau Unterassistenz-Stellen Allgemeine Informationen Mindestzeitraum und Voraussetzung für eine Anstellung Individuell zwischen einem und vier Monaten, je nach Klinik und deren Programm. Frühestens ab dem 4. Jahr des Medizin-Studiums, in bestimmten Kliniken auch höhere Semesterzahl erforderlich. Arbeitszeiten, Dienste, Ferien Arbeitszeit: Die Arbeitszeit richtet sich nach dem Wochenprogramm der Klinik. Von ca. 07.30 bis ca. 17.00 Uhr je nach Wochentag, Mittagspause inklusive. Dienste: Wochenenddienst und Pikettdienst je nach Klinik möglich, nach Absprache mit der zuständigen Dienstärztin oder dem zuständigen Dienstar
 
 ### Kantonsspital Aarau (KSA) / Not specified / Unterassistenz
 
@@ -205,7 +175,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: ksa parser could not determine a department.; ksa page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistenz-Stellen. Zurück KSA Kantonsspital Aarau KSA Kantonsspital Aarau KSA Kinderspital Aarau KSA Bahnhof Aarau KSA Lenzburg Unterassistenz-Stellen Ihre wertvolle Vertiefung in die Praxis Wir bieten Medizinstudierenden in verschiedenen Fachbereichen unseres Spitals die Möglichkeit, als Unterassistenzen wertvolle Erfahrungen zu sammeln und während dieser Zeit ihre klinisch-praktischen Fertigkeiten grundlegend zu vertiefen. Nachfolgend finden Sie alle Informationen und die Übersicht unserer Kliniken, Abteilungen oder Fachdisziplinen, in welchen wir Unterassistenz-Stellen anbieten. Informationen zu Ihrem Anstellungsverhältnis Nützliche Informationen für Unterassistenzen Unterassistenzen
+- Snippet: Unterassistenz-Stellen. Zurück KSA Kantonsspital Aarau Unterassistenz-Stellen Ihre wertvolle Vertiefung in die Praxis Wir bieten Medizinstudierenden in verschiedenen Fachbereichen unseres Spitals die Möglichkeit, als Unterassistenzen wertvolle Erfahrungen zu sammeln und während dieser Zeit ihre klinisch-praktischen Fertigkeiten grundlegend zu vertiefen. Nachfolgend finden Sie alle Informationen und die Übersicht unserer Kliniken, Abteilungen oder Fachdisziplinen, in welchen wir Unterassistenz-Stellen anbieten. Informationen zu Ihrem Anstellungsverhältnis Nützliche Informationen für Unterassistenzen Unterassistenzen von A-Z Allgemeine Innere Medizin und Hausarztmedizin Anästhesie Augenklinik
 
 ### Kantonsspital Baden (KSB) / Not specified / Unterassistenz
 
@@ -224,7 +194,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Baden (KSB) / Chirurgie / Unterassistenz
 
-- ID: `kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23`
+- ID: `kantonsspital-baden-surgery-unterassistenz-132570b8adb9`
 - Source ID: `ksb-baden-unterassistentin-chirurgie`
 - Source URL: https://www.kantonsspitalbaden.ch/jobs/unterassistentin-chirurgie-100
 - Confidence: medium
@@ -239,7 +209,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Baden (KSB) / Innere Medizin / Unterassistenz
 
-- ID: `kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7`
+- ID: `kantonsspital-baden-internal-medicine-unterassistenz-d12d2a8e2a47`
 - Source ID: `ksb-baden-unterassistentin-innere-medizin`
 - Source URL: https://www.kantonsspitalbaden.ch/jobs/unterassistentin-innere-medizin-100
 - Confidence: medium
@@ -250,11 +220,11 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: application-only
 - Reasons: parser warnings; availability is application-only
 - Warnings: KSB page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistent_in Innere Medizin 100% | Kantonsspital Baden. In der Klinik für Innere Medizin erwartet dich eine praxisnahe Ausbildung mit abwechslungsreichen Tätigkeiten. Zusammen mit einem interprofessionellen Team arbeitest du in einem strukturierten klinischen Umfeld und erhältst einen Einblick in die Versorgung und Betreuung der Patientinnen und Patienten. Je nach Dauer kannst du am Ende deines Praktikums das Erlernte direkt auf der Notfallstation anwenden. Diese Praktika sind jeweils nur möglich in einem Zeitraum von 2-4 Monaten und jeweils mit Start am 1. eines Monates.AufgabenDu führst selbstständig Untersuchungen sowie elektive Eintritte durch.Du arbeitest auf der Bettenstation mit 
+- Snippet: Unterassistent_in Innere Medizin 100% | Kantonsspital Baden. In der Klinik für Innere Medizin erwartet dich eine praxisnahe Ausbildung mit abwechslungsreichen Tätigkeiten. Zusammen mit einem interprofessionellen Team arbeitest du in einem strukturierten klinischen Umfeld und erhältst einen Einblick in die Versorgung und Betreuung der Patientinnen und Patienten. Je nach Dauer kannst du am Ende deines Praktikums das Erlernte direkt auf der Notfallstation anwenden. Diese Praktika sind jeweils nur möglich in einem Zeitraum von 2-4 Monaten und jeweils mit Start am 1. eines Monates.AufgabenDu führst selbstständig Untersuchungen sowie elektive Eintritte durch.Du arbeitest auf der Bettenstation mit
 
 ### Kantonsspital Graubünden (KSGR) / Anästhesiologie / Unterassistenz
 
-- ID: `kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb`
+- ID: `kantonsspital-graubunden-anesthesiology-unterassistenz-517b534ec8c2`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -269,7 +239,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Graubünden (KSGR) / Chirurgie / Unterassistenz
 
-- ID: `kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade`
+- ID: `kantonsspital-graubunden-surgery-unterassistenz-56f7e75886e0`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -284,7 +254,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Graubünden (KSGR) / Frauenheilkunde / Unterassistenz
 
-- ID: `kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc`
+- ID: `kantonsspital-graubunden-gynecology-unterassistenz-bb7bf677d7df`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -299,7 +269,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Graubünden (KSGR) / Innere Medizin / Unterassistenz
 
-- ID: `kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb`
+- ID: `kantonsspital-graubunden-internal-medicine-unterassistenz-1fcb1f4b8d8b`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -314,7 +284,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Graubünden (KSGR) / Pädiatrie / Unterassistenz
 
-- ID: `kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef`
+- ID: `kantonsspital-graubunden-pediatrics-unterassistenz-334ceae547d9`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -329,7 +299,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Graubünden (KSGR) / Radiologie / Unterassistenz
 
-- ID: `kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b`
+- ID: `kantonsspital-graubunden-radiology-unterassistenz-b9e050bdbeb1`
 - Source ID: `ksgr-chur-blockstudenten-unterassistenten`
 - Source URL: https://www.ksgr.ch/aus-und-weiterbildung/blockstudenten-und-unterassistenten
 - Confidence: medium
@@ -340,26 +310,11 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: not-specified
 - Reasons: parser warnings; availability is not-specified
 - Warnings: ksgr page does not state explicit availability; no date was inferred.; ksgr parser found no application URL.
-- Snippet: Blockstudenten und Unterassistenten | Kantonsspital Graubünden. Die folgenden Departemente bieten Stellen für Unterassistentinnen und Unterassistenten an: Institute Informationen zu den Unterassistent:innen-Stellen erhalten Sie bei den Ansprechpartner:innen der entsprechenden Fachgebiete:Radiologie: Vanessa Hobi, Chefarztsekretärin RadiologieNuklearmedizin: Dr. med. Stefan Kneifel, Chefarzt NuklearmedizinRadio-Onkologie: Tel. +41 81 256 64 95, E-Mail: radioonkologie [at] ksgr.ch (radioonkologie[at]ksgr[dot]ch).Pathologie: Alina Hogg, Stv. Chefarztsekretärin PathologieHumanmedizinstudium an der Universität Zürich Chirurgie Die Ausbildungsplätze für Unterassistentinnen und -assistenten werden 
-
-### Kantonsspital Nidwalden / Not specified / Unknown
-
-- ID: `spital-nidwalden-unknown-unknown-7744e5c43113`
-- Source ID: `kantonsspital-nidwalden-ausbildung`
-- Source URL: https://www.spital-nidwalden.ch/
-- Confidence: low
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Spital NidwaldenNotfallSuchenNotfallWillkommen am Spital NidwaldenSucheSuche startenPatientinnen und PatientenKliniken und FachbereicheDie Kliniken und Fachbereiche am Spital NidwaldenWas wir behandelnHier finden Sie das Behandlungsangebot am Spital NidwaldenSymptomcheckerKontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den ParkplätzenVorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen BlickInformationen für Besuchende und AngehörigePatientenbesucheAllgemeine und besondere Besuchszeiten BabygalerieDie Neugeborenen am Spital NidwaldenRestaurant hip und ShopKarriere und JobsOffene StellenJob g
+- Snippet: Blockstudenten und Unterassistenten | Kantonsspital Graubünden. Die folgenden Departemente bieten Stellen für Unterassistentinnen und Unterassistenten an: Institute Informationen zu den Unterassistent:innen-Stellen erhalten Sie bei den Ansprechpartner:innen der entsprechenden Fachgebiete:Radiologie: Vanessa Hobi, Chefarztsekretärin RadiologieNuklearmedizin: Dr. med. Marc Wermke, Leitender Arzt und Leiter NuklearmedizinRadio-Onkologie: Tel. +41 81 256 64 95, E-Mail: radioonkologie [at] ksgr.ch (radioonkologie[at]ksgr[dot]ch).Pathologie: Alina Hogg, Stv. Chefarztsekretärin PathologieHumanmedizinstudium an der Universität Zürich Chirurgie Die Ausbildungsplätze für Unterassistentinnen und -assis
 
 ### Kantonsspital Winterthur (KSW) / Anästhesiologie / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751`
+- ID: `kantonsspital-winterthur-anesthesiology-wahlstudienjahr-f1fdc40922eb`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -374,7 +329,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Winterthur (KSW) / Augenheilkunde / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969`
+- ID: `kantonsspital-winterthur-ophthalmology-wahlstudienjahr-c58e524d73d1`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -385,11 +340,11 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: application-only
 - Reasons: parser warnings; availability is application-only
 - Warnings: ksw page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag 
+- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag
 
 ### Kantonsspital Winterthur (KSW) / Chirurgie / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075`
+- ID: `kantonsspital-winterthur-surgery-wahlstudienjahr-decaceaaa035`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -404,7 +359,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Winterthur (KSW) / Frauenheilkunde / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e`
+- ID: `kantonsspital-winterthur-gynecology-wahlstudienjahr-711ae570d87c`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -415,11 +370,11 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: application-only
 - Reasons: parser warnings; availability is application-only
 - Warnings: ksw page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag 
+- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag
 
 ### Kantonsspital Winterthur (KSW) / Innere Medizin / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b`
+- ID: `kantonsspital-winterthur-internal-medicine-wahlstudienjahr-f52df3a06724`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -434,7 +389,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Winterthur (KSW) / Orthopädie / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a`
+- ID: `kantonsspital-winterthur-orthopedics-wahlstudienjahr-93c01844ebc6`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -449,7 +404,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ### Kantonsspital Winterthur (KSW) / Pädiatrie / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5`
+- ID: `kantonsspital-winterthur-pediatrics-wahlstudienjahr-33f043fb9f19`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -460,11 +415,11 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: application-only
 - Reasons: parser warnings; availability is application-only
 - Warnings: ksw page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag 
+- Snippet: Unterassistenz / Famulatur / Praktisches Jahr | KSW. Dein Wahlstudienjahr am KSW Als Zentrumsspital liegt es uns am Herzen, dass du als Ärztin oder als Arzt fundiert ausgebildet wirst. Am Kantonsspital Winterthur bieten wir rund 35 Unterassistenzstellen für das Wahlstudienjahr / Praktische Jahr (PJ) / Famulatur in verschiedenen Fachgebieten an. Was zeichnet das Wahlstudienjahr am KSW aus? Wo wird das Wahlstudienjahr angeboten? Ziele Unsere Vorteile Dein Leben in der Region Winterthur Personalzimmer Arbeitsbedingungen und Versicherung Offene Stellen Kontakt Mehr anzeigen Weniger anzeigen Was zeichnet das Wahlstudienjahr am KSW aus?Du kannst das KSW aktiv während 1 – 4 Monaten im Spitalalltag
 
 ### Kantonsspital Winterthur (KSW) / Radiologie / Wahlstudienjahr
 
-- ID: `kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f`
+- ID: `kantonsspital-winterthur-radiology-wahlstudienjahr-f5a73a3aec73`
 - Source ID: `ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr`
 - Source URL: https://www.ksw.ch/jobs-karriere/ausbildung/unterassistenz-famulatur-wahlstudienjahr/
 - Confidence: medium
@@ -506,21 +461,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: ESPACE PATIENT-E Modalités de mon séjour à venir Mon admission Mon séjour en maternité Ma sortie d’hôpital Aspects pratiques Facturation Aumônerie Mon enfant à l’hôpital Mon enfant à l’hôpital Aspects pratiques Gestion de la douleur et Kid’s friendly Sécurité de mes données DROITS ET DEVOIRS Droit à l'information et consentement Directives anticipées et représentation Obtenir mon dossier médical Secret professionnel et traitement de données Réclamations et doléances Mes devoirs Recherches cliniques Recherches cliniques Participer à la recherche Statistiques médicales et registres Mon dossier électronique Horaires visites Au sujet de ma consultation J’ai besoin d’un-e interprète Différents si
-
-### Solothurner Spitäler AG (soH) / Not specified / Unknown
-
-- ID: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824`
-- Source ID: `solothurner-spitaeler-aerztliche-ausbildung`
-- Source URL: https://www.solothurnerspitaeler.ch/jobs-karriere
-- Confidence: low
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Offene Stellen finden Zum neuen Job Offene Stellen Offene Weiterbildungsplätze Offene Lehrstellen Blitzbewerbung Mehr über die soH Ansprechpersonen Benefits und Lohn Fort- und Weiterbildung Karrierebereiche Leitbild und Werte Schnuppern und Praktikum Social Media Kanäle Solothurn und Umgebung Unsere Standorte #teamsoh: Ein Team, viele Talente Unser Bewerbungsprozess Hier finden Sie alle Informationen zum Ablauf unseres Bewerbungsprozess in der soH.
 
 ### Spital Uster / Not specified / Unknown
 
@@ -595,7 +535,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: La Facoltà in uno sguardo Tutte le notizie Notizie La Dr.ssa Serena Petrocchi nominata nel Comitato etico dell'USI Un nuovo studio dell'IRB identifica anticorpi umani protettivi contro il virus del Nilo Occidentale ERC Advanced Grant al Professor Petr Cejka per il progetto MISMATCH Tutti gli eventi Eventi 16 luglio2026 IRB Special Seminar-Integrative Brain-Brown Fat-Microbiota Crosstalk in Metabolic Disease: Effects on Metabolism and Cognition 24 aprile2027 XXXI Dies academicus 15 giugno2027 19th International Conference on Malignant Lymphoma (ICML 2027) Istituti IMF Istituto di medicina di famiglia IRB Istituto di ricerca in biomedicina IOR Istituto oncologico di ricerca IPH Istituto di san
+- Snippet: 2027 19th International Conference on Malignant Lymphoma (ICML 2027) Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
 
 ### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
 
@@ -612,21 +552,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Skip to main content University Study at USI Research Innovation News & Events Who we are What we do Faculties and Institutes Organisation Partnerships Where to find us Practical information Work with us Contact us At a glance Key figures History Mission Dies academicus Accolades Images and logotype Publications Overview Rankings Students Graduates Education Academic mobility Research Staff Honorary Doctorate Honorary Member Medal Education Research Innovation Cultural activities In the region Sustainability Annual report Organisational structure Administration and services Official documents Libraries and archives Student Corporation Organisational chart University Council Rectorate Academi
 
-### Universität Basel, Medizinische Fakultät / Not specified / Unknown
-
-- ID: `universitat-basel-unknown-unknown-620d5e127d50`
-- Source ID: `unibas-medizin-studium`
-- Source URL: https://medizin.unibas.ch/de/
-- Confidence: low
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: English Dokumente Mitarbeitende Dekanat Suche Suche Suche Medizinische Fakultät Suche Suche Suche Aktuelles Studieren Forschen Karriere Über uns Kontakt Zukunft im Blick seit 1460Fünf forschungsnahe und praxisorientierte Studiengänge......anwendungsorientierte Spitzenforschung......und ein breites Angebot an Weiterbildungen.
-
 ### Universität Zürich (UZH), Medizinische Fakultät / Not specified / Wahlstudienjahr
 
 - ID: `uzh-unknown-wahlstudienjahr-4a72385481cd`
@@ -641,36 +566,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Zum Inhalt springen Studium Weiterführende Informationen Studieninformationstage Die Informationstage geben einen Überblick über die Studienmöglichkeiten der Universität Zürich und helfen, die persönlich richtige Studienwahl zu treffen.
-
-### Universitätsklinik Balgrist / Anästhesie / Unknown
-
-- ID: `universitatsklinik-balgrist-karriere-anesthesiology-unknown-f8d0011080ad`
-- Source ID: `balgrist-zuerich-karriere`
-- Source URL: https://www.balgrist.ch/karriere
-- Confidence: medium
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: application-only
-- Reasons: parser warnings; availability is application-only
-- Warnings: Generic parser output requires human review.; No explicit availability status was detected.
-- Snippet: Egal ob in der Radiologie, der Anästhesie, der Operationstechnik oder in einem der vielen anderen Bereiche: An der Universitätsklinik Balgrist finden Sie ein dynamisches Team, abwechslungsreiche Tätigkeiten und tolle Benefits.Mehr Informationen zu offenen Stellen finden Sie hier!Möchten Sie mehr wissen?Haben Sie Fragen oder Anregungen rund um die Karriereseite oder Ihre Bewerbung? Dann melden Sie sich bei der Abteilung Human Resources, wir stehen Ihnen gerne zur Verfügung.Folgen Sie unsSie finden uns bei Facebook, YouTube, LinkedIn, Twitter und Instagram. Via Social Media berichten wir über spannende Ereignisse im Balgrist und halten Sie mit Job-Updates auf dem Laufenden.
-
-### Universitätsklinik Balgrist / Radiologie / Unknown
-
-- ID: `universitatsklinik-balgrist-karriere-radiology-unknown-48776a5f531d`
-- Source ID: `balgrist-zuerich-karriere`
-- Source URL: https://www.balgrist.ch/karriere
-- Confidence: medium
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: application-only
-- Reasons: parser warnings; availability is application-only
-- Warnings: Generic parser output requires human review.; No explicit availability status was detected.
-- Snippet: Egal ob in der Radiologie, der Anästhesie, der Operationstechnik oder in einem der vielen anderen Bereiche: An der Universitätsklinik Balgrist finden Sie ein dynamisches Team, abwechslungsreiche Tätigkeiten und tolle Benefits.Mehr Informationen zu offenen Stellen finden Sie hier!Möchten Sie mehr wissen?Haben Sie Fragen oder Anregungen rund um die Karriereseite oder Ihre Bewerbung? Dann melden Sie sich bei der Abteilung Human Resources, wir stehen Ihnen gerne zur Verfügung.Folgen Sie unsSie finden uns bei Facebook, YouTube, LinkedIn, Twitter und Instagram. Via Social Media berichten wir über spannende Ereignisse im Balgrist und halten Sie mit Job-Updates auf dem Laufenden.
 
 ### Universitätsspital Basel (USB) / Not specified / Unterassistenz
 
@@ -687,43 +582,13 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Informationen für Medizin- studierende Wo wären Medizinstudis besser aufgehoben als in einem Spital?
 
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
+### Universitätsspital Zürich (USZ) / Anästhesiologie / Unterassistenz
 
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3`
-- Source ID: `usz-zuerich-chirurgie-medizinstudium`
-- Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/
-- Confidence: high
-- Review status: auto-published
-- Source language: de
-- Region: de-CH
-- Extraction language: unknown
-- Availability: fully-booked-until (2026-09-01)
-- Reasons: parser warnings
-- Warnings: usz parser found no application URL.
-- Snippet: Unterassistenzen Chirurgie – USZ. Unterassistenzen Chirurgie Wir bieten Unterassistentinnen und Unterassistenten die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs in den aufgeführten chirurgischen Kliniken USZ und der Urologie USZ zu arbeiten. Fachgebiete Unser chirurgisches Unterassistenz-Curriculum für das Wahlstudienjahr bzw. Praktische Jahr ermöglicht Rotationen in diese Fachgebiete bzw. Kliniken: Unfallchirurgie Viszeralchirurgie Notfallmedizin Herz-Gefäss-Chirurgie Thoraxchirurgie Plastische Chirurgie und Handchirurgie Chirurgische Intensivmedizin Curriculum Allgemeinen Merkblatt zu Unterassistenzen Download 499 KB Curriculum Unterassistenz Chirurgie Download 61 KB C
-
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
-
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217`
-- Source ID: `usz-zuerich-medizinstudium-overview`
-- Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/
-- Confidence: medium
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: unknown
-- Availability: not-specified
-- Reasons: parser warnings; availability is not-specified
-- Warnings: usz page does not state explicit availability; no date was inferred.; usz parser found no application URL.
-- Snippet: Unterassistenzen am USZ – USZ. Unterassistenzen am USZ Viele Medizinstudierende aus der Schweiz und dem Ausland verbringen als Unterassistierende einen Teil ihres Wahlstudienjahrs oder Praktischen Jahrs am USZ. Dabei vertiefen sie die klinisch-praktischen Fertigkeiten und erlernen das selbstständige Erarbeiten von evidenzbasiertem Wissen. Es besteht eine enge Zusammenarbeit mit dem Studiendekanat der Medizinischen Fakultät. Die starke Position von Zürich in der internationalen Forschung unterstützt unsere Studierenden, bereits während ihrer Ausbildung wissenschaftlich tätig zu sein und erste Kontakte zu knüpfen. Pflegepraktika für Medizinstudierende in den ersten Semestern («Häfelipraktika»)
-
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
-
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b`
+- ID: `universitatsspital-zurich-anesthesiology-unterassistenz-bbc088793b1a`
 - Source ID: `usz-zuerich-anaesthesiologie-medizinstudium`
 - Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/anaesthesiologie/
 - Confidence: high
-- Review status: auto-published
+- Review status: needs-human-review
 - Source language: de
 - Region: de-CH
 - Extraction language: unknown
@@ -732,9 +597,24 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Warnings: usz parser found no application URL.
 - Snippet: Unterassistenzen Anästhesiologie – USZ. Unterassistenzen Anästhesiologie Wir bieten Unterassistentinnen und Unterassistenten die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Anästhesiologie zu arbeiten. Fachgebiete Unterassistentinnen und Unterassistenten werden bei uns in folgenden anästhesiologischen Fachbereichen eingesetzt: Unfall-, Wiederherstellungs-, Plastische- und Handchirurgie Gynäkologie Urologie Augen-, ORL und Kieferchirurgie Dauer Ausländische Studierende: ausschliesslich 16 Wochen Schweizer Studierende: 2 Monate Famulaturen Die Klinik für Anästhesiologie bietet keine Famulaturen an. Freie Ausbildungsplätze Zur Zeit können wir nur die
 
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
+### Universitätsspital Zürich (USZ) / Chirurgie / Unterassistenz
 
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28`
+- ID: `universitatsspital-zurich-surgery-unterassistenz-a85f4377c788`
+- Source ID: `usz-zuerich-chirurgie-medizinstudium`
+- Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/chirurgie/
+- Confidence: high
+- Review status: needs-human-review
+- Source language: de
+- Region: de-CH
+- Extraction language: unknown
+- Availability: fully-booked-until (2026-09-01)
+- Reasons: parser warnings
+- Warnings: usz parser found no application URL.
+- Snippet: Unterassistenzen Chirurgie – USZ. Unterassistenzen Chirurgie Wir bieten Unterassistentinnen und Unterassistenten die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs in den aufgeführten chirurgischen Kliniken USZ und der Urologie USZ zu arbeiten. Fachgebiete Unser chirurgisches Unterassistenz-Curriculum für das Wahlstudienjahr bzw. Praktische Jahr ermöglicht Rotationen in diese Fachgebiete bzw. Kliniken: Unfallchirurgie Viszeralchirurgie Notfallmedizin Herz-Gefäss-Chirurgie Thoraxchirurgie Plastische Chirurgie und Handchirurgie Chirurgische Intensivmedizin Curriculum Allgemeinen Merkblatt zu Unterassistenzen Download 499 KB Curriculum Unterassistenz Chirurgie Download 61 KB C
+
+### Universitätsspital Zürich (USZ) / Frauenheilkunde / Unterassistenz
+
+- ID: `universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf`
 - Source ID: `usz-zuerich-frauenheilkunde-medizinstudium`
 - Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/
 - Confidence: medium
@@ -747,9 +627,24 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Warnings: usz page does not state explicit availability; no date was inferred.; usz parser found no application URL.
 - Snippet: Unterassistenzen Frauenheilkunde – USZ. Unterassistenzen Frauenheilkunde Die Frauenheilkunde am Universitätsspital Zürich bietet Ihnen einen umfassenden Einblick in das gesamte Spektrum der Gynäkologie und Geburtshilfe. Im Medizinbereich Frau–Kind arbeiten wir interdisziplinär, praxisnah und wissenschaftlich fundiert – ein ideales Umfeld für Ihre klinische Ausbildung im Wahlstudienjahr bzw. Praktischen Jahr. Ihre Einblicksbereiche Während Ihrer Unterassistenz gewinnen Sie tiefgehende Einblicke in drei zentrale Bereiche der Frauenheilkunde: Klinik für Gynäkologie Mitbetreuung von Patientinnen auf der Bettenstation Assistenz im Operationssaal bei gynäkologischen Eingriffen Teilnahme an Sprechs
 
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
+### Universitätsspital Zürich (USZ) / Innere Medizin / Unterassistenz
 
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92`
+- ID: `universitatsspital-zurich-internal-medicine-unterassistenz-30be2762a054`
+- Source ID: `usz-zuerich-medizin-medizinstudium`
+- Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/
+- Confidence: high
+- Review status: needs-human-review
+- Source language: de
+- Region: de-CH
+- Extraction language: unknown
+- Availability: fully-booked-until (2026-08-24)
+- Reasons: parser warnings
+- Warnings: usz parser found no application URL.
+- Snippet: Unterassistenzen Medizin – USZ. Unterassistenzen Medizin Die Klinik und Poliklinik für Innere Medizin bietet zusammen mit den weiteren internistischen Kliniken am USZ ein strukturiertes internistisches Unterassistenz-Curriculum für das Wahlstudienjahr bzw. Praktische Jahr an. Sie rotieren 3 bis 4 Monate lang durch die ambulante und stationäre Innere Medizin, die Notfall-Station und weitere internistische Spezialkliniken. Voraussetzung für unsere Praktika ist mindestens das 9. Semester sowie die Herkunft aus einem EU-/EFTA Staat. Fachgebiete Innere Medizin Angiologie Endokrinologie Gastroenterologie und Hepatologie Hämatologie / Medizinische Onkologie und Hämatologie Infektiologie Kardiologie
+
+### Universitätsspital Zürich (USZ) / Radiologie / Unterassistenz
+
+- ID: `universitatsspital-zurich-radiology-unterassistenz-30ee75461a48`
 - Source ID: `usz-zuerich-radiologie-medizinstudium`
 - Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/
 - Confidence: medium
@@ -761,21 +656,6 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Reasons: parser warnings; availability is application-only
 - Warnings: usz page does not state explicit availability; no date was inferred.; usz parser found no application URL.
 - Snippet: Unterassistenzen Radiologie – USZ. Unterassistenzen Radiologie Wir bieten Unterassistenten und Unterassistentinnen die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Diagnostische und Interventionelle Radiologie USZ zu arbeiten. Voraussetzung ist die Herkunft aus einem EU-/EFTA Staat. Dauer Sie können sich für 1 oder 3 Monate bewerben (Dauer ist jeweils vom Ersten bis Letzten des Monats); die Plätze sind begrenzt. Wir bieten keine 4-monatige Famulaturen an. Fachgebiete Ultraschall Befund Computertomographie Magnetresonanztomographie Interventionelle Radiologie Freie Ausbildungsplätze Bitte kontaktieren Sie andrea.bisculm@usz.ch wegen eines Ausbildung
-
-### Universitätsspital Zürich (USZ) / Neuroradiologie / Unterassistenz
-
-- ID: `universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b`
-- Source ID: `usz-zuerich-medizin-medizinstudium`
-- Source URL: https://www.usz.ch/bildung/aerzte/medizinstudium/medizin/
-- Confidence: high
-- Review status: auto-published
-- Source language: de
-- Region: de-CH
-- Extraction language: unknown
-- Availability: fully-booked-until (2026-08-24)
-- Reasons: parser warnings
-- Warnings: usz parser found no application URL.
-- Snippet: Unterassistenzen Medizin – USZ. Unterassistenzen Medizin Die Klinik und Poliklinik für Innere Medizin bietet zusammen mit den weiteren internistischen Kliniken am USZ ein strukturiertes internistisches Unterassistenz-Curriculum für das Wahlstudienjahr bzw. Praktische Jahr an. Sie rotieren 3 bis 4 Monate lang durch die ambulante und stationäre Innere Medizin, die Notfall-Station und weitere internistische Spezialkliniken. Voraussetzung für unsere Praktika ist mindestens das 9. Semester sowie die Herkunft aus einem EU-/EFTA Staat. Fachgebiete Innere Medizin Angiologie Endokrinologie Gastroenterologie und Hepatologie Hämatologie / Medizinische Onkologie und Hämatologie Infektiologie Kardiologie
 
 ### Université de Genève (UNIGE), Faculté de médecine / Not specified / Unknown
 
@@ -790,7 +670,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2025-2026 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées
+- Snippet: ENSEIGNEMENT ENSEIGNEMENT Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées Forum "Médecine et après?" Quelle spécialisation choisir?
 
 ### Université de Lausanne (UNIL), École de médecine / Urgences / ClinicalPlacement
 
@@ -809,7 +689,7 @@ Generated at: 2026-07-08T10:39:02.016Z
 
 ## Parser Warnings
 
-- `balgrist-zuerich-karriere` (generic): Generic parser output for https://www.balgrist.ch/karriere needs human review.
+- `balgrist-zuerich-karriere` (generic): Generic parser found no medical placement signal on https://www.balgrist.ch/karriere.
   Source: https://www.balgrist.ch/karriere
 - `chuv-lausanne-formation-medecine` (generic): Generic parser output for https://www.chuv.ch/fr/formation/formations-au-chuv needs human review.
   Source: https://www.chuv.ch/fr/formation/formations-au-chuv
@@ -829,9 +709,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.eoc.ch/lavorare-in-eoc.html
 - `eoc-ticino-lavoro-formazione` (generic): Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html.
   Source: https://www.eoc.ch/lavorare-in-eoc.html
-- `gzo-wetzikon-karriere` (generic): Generic parser output for https://www.gzo.ch/karriere needs human review.
-  Source: https://www.gzo.ch/karriere
-- `gzo-wetzikon-karriere` (generic): No medium-confidence record was extracted.
+- `gzo-wetzikon-karriere` (generic): Generic parser found no medical placement signal on https://www.gzo.ch/karriere.
   Source: https://www.gzo.ch/karriere
 - `hfr-fribourg-formation` (generic): Generic parser output for https://www.h-fr.ch/formations needs human review.
   Source: https://www.h-fr.ch/formations
@@ -847,9 +725,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.hopitalduvalais.ch/formations-professionnels
 - `hopital-valais-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.hopitalduvalais.ch/formations-professionnels
-- `hug-geneve-enseignement-formation` (generic): Generic parser output for https://www.hug.ch/formation-de-base needs human review.
-  Source: https://www.hug.ch/formation-de-base
-- `hug-geneve-enseignement-formation` (generic): No medium-confidence record was extracted.
+- `hug-geneve-enseignement-formation` (generic): Generic parser found no medical placement signal on https://www.hug.ch/formation-de-base.
   Source: https://www.hug.ch/formation-de-base
 - `hug-geneve-stages` (generic): Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review.
   Source: https://www.hug.ch/emploi/offres-stage
@@ -861,9 +737,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe
 - `inselspital-bern-medical-students` (generic): No medium-confidence record was extracted.
   Source: https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe
-- `kantonsspital-nidwalden-ausbildung` (generic): Generic parser output for https://www.spital-nidwalden.ch/ needs human review.
-  Source: https://www.spital-nidwalden.ch/
-- `kantonsspital-nidwalden-ausbildung` (generic): No medium-confidence record was extracted.
+- `kantonsspital-nidwalden-ausbildung` (generic): Generic parser found no medical placement signal on https://www.spital-nidwalden.ch/.
   Source: https://www.spital-nidwalden.ch/
 - `kantonsspital-obwalden-ausbildung` (generic): Generic parser skipped likely irrelevant job page https://www.ksow.ch/jobs-karriere/ausbildung.
   Source: https://www.ksow.ch/jobs-karriere/ausbildung
@@ -897,9 +771,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.rhne.ch/espace-emploi/formation/formations-medicales
 - `see-spital-karriere` (generic): Generic parser skipped likely irrelevant job page https://see-spital.ch/ueber-das-see-spital/karriere/.
   Source: https://see-spital.ch/ueber-das-see-spital/karriere/
-- `solothurner-spitaeler-aerztliche-ausbildung` (generic): Generic parser output for https://www.solothurnerspitaeler.ch/jobs-karriere needs human review.
-  Source: https://www.solothurnerspitaeler.ch/jobs-karriere
-- `solothurner-spitaeler-aerztliche-ausbildung` (generic): No medium-confidence record was extracted.
+- `solothurner-spitaeler-aerztliche-ausbildung` (generic): Generic parser found no medical placement signal on https://www.solothurnerspitaeler.ch/jobs-karriere.
   Source: https://www.solothurnerspitaeler.ch/jobs-karriere
 - `spitaeler-schaffhausen-aus-und-weiterbildung` (generic): Generic parser found no medical placement signal on https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung.
   Source: https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung
@@ -933,9 +805,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.swissmedical.net/it/carriera
 - `swiss-medical-network-it-carriera` (generic): No medium-confidence record was extracted.
   Source: https://www.swissmedical.net/it/carriera
-- `unibas-medizin-studium` (generic): Generic parser output for https://medizin.unibas.ch/de/ needs human review.
-  Source: https://medizin.unibas.ch/de/
-- `unibas-medizin-studium` (generic): No medium-confidence record was extracted.
+- `unibas-medizin-studium` (generic): Generic parser found no medical placement signal on https://medizin.unibas.ch/de/.
   Source: https://medizin.unibas.ch/de/
 - `unibe-medizin-studium` (generic): Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html.
   Source: https://www.medizin.unibe.ch/studium/index_ger.html
@@ -959,7 +829,7 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.usi.ch/en/education/master/medicine
 - `usz-zuerich-frauenheilkunde-medizinstudium` (usz): usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/ needs human review.
   Source: https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/
-- `usz-zuerich-medizinstudium-overview` (usz): usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/ needs human review.
+- `usz-zuerich-medizinstudium-overview` (usz): usz parser found no placement section on https://www.usz.ch/bildung/aerzte/medizinstudium/.
   Source: https://www.usz.ch/bildung/aerzte/medizinstudium/
 - `usz-zuerich-radiologie-medizinstudium` (usz): usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/ needs human review.
   Source: https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/
@@ -971,13 +841,13 @@ Generated at: 2026-07-08T10:39:02.016Z
   Source: https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber
 ## Lead Time Warnings
 
-- `leadtime-summary-350e4b83091f` (historical-observed, low)
+- `leadtime-summary-a0fc5ffb997c` (historical-observed, low)
   Warnings: Estimated recommendation is based on fewer than 3 observations.
   Label: Estimated lead time is low confidence and should not be treated as fact.
-- `leadtime-summary-4ca58752b2de` (historical-observed, low)
+- `leadtime-summary-c476ffe11154` (historical-observed, low)
   Warnings: Estimated recommendation is based on fewer than 3 observations.
   Label: Estimated lead time is low confidence and should not be treated as fact.
-- `leadtime-summary-f061934f73be` (historical-observed, low)
+- `leadtime-summary-cd399a0e28b7` (historical-observed, low)
   Warnings: Estimated recommendation is based on fewer than 3 observations.
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages

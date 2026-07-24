@@ -5,6 +5,7 @@ import {
   PlacementRecordSchema,
 } from "@scpi/schema";
 import { normalizeWhitespace, parseAvailabilityStatus, parseDurationWeeks } from "@scpi/utils";
+import { normalizeDepartmentName } from "./language-packs/index.js";
 import type { ParsedPage, ParserResult, SourceParser } from "./types.js";
 
 export interface InstitutionParserConfig {
@@ -135,7 +136,7 @@ function buildRecord(
     sourceId: input.sourceId,
     institutionName: config.institutionName,
     department: section.department,
-    departmentNormalized: section.department,
+    departmentNormalized: normalizeDepartmentName(section.department),
     roleType: config.roleType ?? detectRoleType(fullText),
     country: "CH",
     canton: config.canton,
@@ -157,6 +158,7 @@ function buildRecord(
     applicationUrl,
     contactEmail: input.emails[0] ?? null,
     contactName: extractContactName(section.text),
+    originalDepartmentName: section.department,
     eligibilityNotes:
       config.extractEligibilityNotes?.(section.text) ?? extractEligibilityNotes(section.text),
     languageRequirement: extractLanguageRequirement(section.text),
@@ -169,7 +171,10 @@ function buildRecord(
     lastChecked: input.fetchedAt,
     extractionMethod: "site-parser",
     confidence,
-    reviewStatus: confidence === "high" ? "auto-published" : "needs-human-review",
+    reviewStatus:
+      confidence === "high" && availabilityStatus !== "fully-booked-until"
+        ? "auto-published"
+        : "needs-human-review",
     warnings: buildRecordWarnings(
       config.id,
       section.department,

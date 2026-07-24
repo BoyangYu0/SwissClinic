@@ -1,14 +1,14 @@
 # Sparse Information Reliability Audit
 
-Generated at: 2026-07-08T10:30:15.185Z
+Generated at: 2026-07-24T08:41:39.489Z
 
 ## Summary
 
 - Sources: 61
-- Placements: 55
+- Placements: 47
 - Sources requiring manual verification: 61
-- Sparse placement records: 54
-- Risky auto-published placement records: 3
+- Sparse placement records: 47
+- Risky auto-published placement records: 0
 
 ## Sources by language
 
@@ -20,9 +20,9 @@ Generated at: 2026-07-08T10:30:15.185Z
 
 ## Placements by language
 
-- de: 39
+- de: 32
 - en: 1
-- fr: 10
+- fr: 9
 - it: 2
 - mixed: 3
 
@@ -35,8 +35,8 @@ Generated at: 2026-07-08T10:30:15.185Z
 
 ## Placements by region
 
-- de-CH: 38
-- fr-CH: 9
+- de-CH: 31
+- fr-CH: 8
 - it-CH: 2
 - mixed: 6
 
@@ -44,18 +44,18 @@ Generated at: 2026-07-08T10:30:15.185Z
 ## Phase A-G Checks
 
 - Phase A: pass - 61 sources loaded; 61 remain in candidate/needs-review status.
-- Phase B: pass - 55 placement records validate with multilingual source metadata.
+- Phase B: pass - 47 placement records validate with multilingual source metadata.
 - Phase C: pass - Monorepo scripts are available for validation, typecheck, lint, tests, build, data generation, and reports.
 - Phase D: pass - Date, availability, HTML, fetch, hash, and diff utilities are covered by automated tests.
 - Phase E: pass - Parser framework is multilingual, but non-German real sources are still source-only until crawled fixtures exist.
-- Phase F: warning - 54 sparse placement records and 3 risky auto-published records found.
+- Phase F: pass - 47 sparse placement records and 0 risky auto-published records found.
 - Phase G: pass - Static frontend supports source/detail display, review warnings, language/region filtering, and generated report copying.
 
 ## Language Reliability
 
-- de: needs-review; 41 sources, 39 placements, 34 records needing review, 41 manual source checks
+- de: needs-review; 41 sources, 32 placements, 30 records needing review, 41 manual source checks
 - en: needs-review; 1 sources, 1 placements, 1 records needing review, 1 manual source checks
-- fr: needs-review; 11 sources, 10 placements, 10 records needing review, 11 manual source checks
+- fr: needs-review; 11 sources, 9 placements, 9 records needing review, 11 manual source checks
 - it: needs-review; 5 sources, 2 placements, 2 records needing review, 5 manual source checks
 - mixed: needs-review; 3 sources, 3 placements, 3 records needing review, 3 manual source checks
 
@@ -73,8 +73,6 @@ Generated at: 2026-07-08T10:30:15.185Z
   Action: Review this placement against the official source page.
 - info: `etablissements-hospitaliers-du-nord-vaudois-unknown-unknown-b403800a8c63` (fr, fr-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
 - info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - sparse availability: not-specified
@@ -94,10 +92,6 @@ Generated at: 2026-07-08T10:30:15.185Z
 - info: `hug-unknown-clinicalplacement-edf016518bcc` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `hug-unknown-clinicalplacement-edf016518bcc` (fr, fr-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `hug-unknown-unknown-95d8d27f0273` (fr, fr-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `hug-unknown-unknown-95d8d27f0273` (fr, fr-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -121,75 +115,71 @@ Generated at: 2026-07-08T10:30:15.185Z
   Action: Confirm the parser selected the intended language pack.
 - info: `kantonsspital-baden-unknown-unterassistenz-32f569a1e560` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-baden-surgery-unterassistenz-132570b8adb9` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-baden-surgery-unterassistenz-132570b8adb9` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-baden-internal-medicine-unterassistenz-d12d2a8e2a47` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-baden-internal-medicine-unterassistenz-d12d2a8e2a47` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-anesthesiology-unterassistenz-517b534ec8c2` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-graubunden-anesthesiology-unterassistenz-517b534ec8c2` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-surgery-unterassistenz-56f7e75886e0` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-graubunden-surgery-unterassistenz-56f7e75886e0` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-gynecology-unterassistenz-bb7bf677d7df` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-graubunden-gynecology-unterassistenz-bb7bf677d7df` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-internal-medicine-unterassistenz-1fcb1f4b8d8b` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-graubunden-internal-medicine-unterassistenz-1fcb1f4b8d8b` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-pediatrics-unterassistenz-334ceae547d9` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-graubunden-pediatrics-unterassistenz-334ceae547d9` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-graubunden-radiology-unterassistenz-b9e050bdbeb1` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-graubunden-radiology-unterassistenz-b9e050bdbeb1` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `spital-nidwalden-unknown-unknown-7744e5c43113` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-st-gallen-orthopedics-unterassistenz-6d2109f8c0ae` (de, de-CH) - unknown extraction language
+  Action: Confirm the parser selected the intended language pack.
+- info: `kantonsspital-winterthur-anesthesiology-wahlstudienjahr-f1fdc40922eb` (de, de-CH) - unknown extraction language
+  Action: Confirm the parser selected the intended language pack.
+- info: `kantonsspital-winterthur-anesthesiology-wahlstudienjahr-f1fdc40922eb` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-st-gallen-orthopadie-unterassistenz-8a9d68966cc9` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-ophthalmology-wahlstudienjahr-c58e524d73d1` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751` (de, de-CH) - unknown extraction language
-  Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-winterthur-ophthalmology-wahlstudienjahr-c58e524d73d1` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-surgery-wahlstudienjahr-decaceaaa035` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-winterthur-surgery-wahlstudienjahr-decaceaaa035` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-gynecology-wahlstudienjahr-711ae570d87c` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-winterthur-gynecology-wahlstudienjahr-711ae570d87c` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-internal-medicine-wahlstudienjahr-f52df3a06724` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e` (de, de-CH) - sparse availability: application-only
+- info: `kantonsspital-winterthur-internal-medicine-wahlstudienjahr-f52df3a06724` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-orthopedics-wahlstudienjahr-93c01844ebc6` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-winterthur-orthopedics-wahlstudienjahr-93c01844ebc6` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-pediatrics-wahlstudienjahr-33f043fb9f19` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-winterthur-pediatrics-wahlstudienjahr-33f043fb9f19` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5` (de, de-CH) - unknown extraction language
+- info: `kantonsspital-winterthur-radiology-wahlstudienjahr-f5a73a3aec73` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5` (de, de-CH) - sparse availability: application-only
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f` (de, de-CH) - unknown extraction language
-  Action: Confirm the parser selected the intended language pack.
-- info: `kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f` (de, de-CH) - sparse availability: not-specified
+- info: `kantonsspital-winterthur-radiology-wahlstudienjahr-f5a73a3aec73` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `luzerner-kantonsspital-unknown-unknown-aea647ec446c` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -198,10 +188,6 @@ Generated at: 2026-07-08T10:30:15.185Z
 - info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `internet-rhne-unknown-clinicalplacement-2c380015d7ac` (fr, fr-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `spital-uster-chirurgie-unterassistenten-pdf-unknown-unknown-2819d96665c8` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
@@ -227,48 +213,30 @@ Generated at: 2026-07-08T10:30:15.185Z
   Action: Review this placement against the official source page.
 - info: `usi-ch-unknown-unknown-2e4c85a4286c` (en, it-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitat-basel-unknown-unknown-620d5e127d50` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `universitat-basel-unknown-unknown-620d5e127d50` (de, de-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `uzh-unknown-wahlstudienjahr-4a72385481cd` (de, de-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsklinik-balgrist-karriere-anesthesiology-unknown-f8d0011080ad` (de, de-CH) - sparse availability: application-only
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsklinik-balgrist-karriere-radiology-unknown-48776a5f531d` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `medizinstudierende-unknown-unterassistenz-0d01166ec59a` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-anesthesiology-unterassistenz-bbc088793b1a` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- warning: `universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3` (de, de-CH) - fully booked wording may be over-interpreted
-  Action: Do not convert fully-booked-until into available-from unless the source explicitly says so.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-7d3e538377da` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-surgery-unterassistenz-a85f4377c788` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217` (de, de-CH) - sparse availability: not-specified
+- info: `universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-internal-medicine-unterassistenz-30be2762a054` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- warning: `universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b` (de, de-CH) - fully booked wording may be over-interpreted
-  Action: Do not convert fully-booked-until into available-from unless the source explicitly says so.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-neuroradiology-unterassistenz-b12e6b8ec025` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28` (de, de-CH) - sparse availability: not-specified
+- info: `universitatsspital-zurich-radiology-unterassistenz-30ee75461a48` (de, de-CH) - unknown extraction language
+  Action: Confirm the parser selected the intended language pack.
+- info: `universitatsspital-zurich-radiology-unterassistenz-30ee75461a48` (de, de-CH) - sparse availability: application-only
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92` (de, de-CH) - unknown extraction language
-  Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92` (de, de-CH) - sparse availability: application-only
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b` (de, de-CH) - unknown extraction language
-  Action: Confirm the parser selected the intended language pack.
-- warning: `universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b` (de, de-CH) - fully booked wording may be over-interpreted
-  Action: Do not convert fully-booked-until into available-from unless the source explicitly says so.
 - info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `unige-unknown-unknown-dcc038c510a5` (fr, fr-CH) - sparse availability: not-specified

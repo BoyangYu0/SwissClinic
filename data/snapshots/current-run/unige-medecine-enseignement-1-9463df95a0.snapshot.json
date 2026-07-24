@@ -1,18 +1,14 @@
 {
   "sourceId": "unige-medecine-enseignement",
   "url": "https://www.unige.ch/medecine/enseignement1",
-  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "fetchedAt": "2026-07-24T08:09:17.571Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "09f859155f0532df8d80e68c7ee01916ce1b3d2d47407bcc05ae9f4ca4643313",
-  "textHash": "83f34b69ee022517a145fa597bc85f72eabbce169ad35f34585d8b8f99bb95e2",
+  "rawHash": "7237e21208f3ca94914cee7a456b530176a25cbae1349d47c384d2a03d316430",
+  "textHash": "e4c2580313fe55560b955db1ec760297f9cc6af8b3eb7a97094f8ab7918837b3",
   "title": "ENSEIGNEMENT - Faculté de médecine - UNIGE",
-  "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2025-2026 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées",
+  "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées Forum \"Médecine et après?\" Quelle spécialisation choisir? 2023",
   "extractedLinks": [
-    {
-      "text": "Rentrée académique 2025-2026",
-      "href": "https://www.unige.ch/medecine/enseignement/Rentree2025-2026"
-    },
     {
       "text": "Contacts et liens",
       "href": "https://www.unige.ch/medecine/fr/contacts-acces/enseignement"
@@ -40,6 +36,10 @@
     {
       "text": "Formations post-graduées",
       "href": "https://www.unige.ch/medecine/enseignement1/formationpostgrade"
+    },
+    {
+      "text": "Forum \"Médecine et après?\" Quelle spécialisation choisir? 2023",
+      "href": "https://www.unige.ch/medecine/enseignement1/postulationmedecininterne-2023"
     }
   ],
   "extractedEmails": [],

@@ -1,8 +1,8 @@
 # Source Coverage
 
-Generated at: 2026-07-08T10:29:45.940Z
+Generated at: 2026-07-24T08:41:25.885Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-08T10%3A29%3A45.940Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-24T08%3A41%3A25.885Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
@@ -14,7 +14,7 @@ Record count is not national clinic coverage. This report counts curated source 
 | Source URLs | 61 |
 | Failed crawl pages | 0 |
 | Manual/PDF/Playwright sources | 1 |
-| Sources with no extracted records | 20 |
+| Sources with no extracted records | 27 |
 
 ## Sources by canton
 
@@ -97,12 +97,21 @@ Record count is not national clinic coverage. This report counts curated source 
 - `unibe-medizin-studium` Universität Bern, Medizinische Fakultät (BE, Bern)
   Status: candidate; language: de; region: de-CH
   URLs: https://www.medizin.unibe.ch/studium/index_ger.html
+- `usz-zuerich-medizinstudium-overview` Universitätsspital Zürich (USZ) (ZH, Zuerich)
+  Status: candidate; language: de; region: de-CH
+  URLs: https://www.usz.ch/bildung/aerzte/medizinstudium/
 - `stadtspital-zuerich-karriere-ausbildung` Stadtspital Zürich (ZH, Zuerich)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.stadt-zuerich.ch/stadtspital
+- `unibas-medizin-studium` Universität Basel, Medizinische Fakultät (BS, Basel)
+  Status: candidate; language: de; region: de-CH
+  URLs: https://medizin.unibas.ch/de/
 - `kssg-stgallen-aerztliche-ausbildung` Kantonsspital St. Gallen (KSSG) (SG, St. Gallen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.h-och.ch/karriere
+- `solothurner-spitaeler-aerztliche-ausbildung` Solothurner Spitäler AG (soH) (SO, Solothurn)
+  Status: needs-review; language: de; region: de-CH
+  URLs: https://www.solothurnerspitaeler.ch/jobs-karriere
 - `spital-thurgau-aerztliche-ausbildung` Spital Thurgau (TG, Frauenfeld)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.stgag.ch/karriere
@@ -118,6 +127,12 @@ Record count is not national clinic coverage. This report counts curated source 
 - `kantonsspital-obwalden-ausbildung` Kantonsspital Obwalden (OW, Sarnen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.ksow.ch/jobs-karriere/ausbildung
+- `kantonsspital-nidwalden-ausbildung` Kantonsspital Nidwalden (NW, Stans)
+  Status: needs-review; language: de; region: de-CH
+  URLs: https://www.ksnw.ch/karriere/ausbildung
+- `hug-geneve-enseignement-formation` Hôpitaux universitaires de Genève (HUG) (GE, Geneve)
+  Status: needs-review; language: fr; region: fr-CH
+  URLs: https://www.hug.ch/formation-de-base
 - `hopital-riviera-chablais-formation` Hôpital Riviera-Chablais (HRC) (VD, Rennaz)
   Status: needs-review; language: fr; region: fr-CH
   URLs: https://www.hopitalrivierachablais.ch/formation
@@ -142,9 +157,15 @@ Record count is not national clinic coverage. This report counts curated source 
 - `spital-limmattal-aus-und-weiterbildung` Spital Limmattal (ZH, Schlieren)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.spital-limmattal.ch/karriere/aus-und-weiterbildung
+- `gzo-wetzikon-karriere` GZO AG Spital Wetzikon (ZH, Wetzikon)
+  Status: needs-review; language: de; region: de-CH
+  URLs: https://www.gzo.ch/karriere
 - `see-spital-karriere` See-Spital (ZH, Horgen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.see-spital.ch/karriere
+- `balgrist-zuerich-karriere` Universitätsklinik Balgrist (ZH, Zuerich)
+  Status: needs-review; language: de; region: de-CH
+  URLs: https://www.balgrist.ch/karriere
 - `clinica-moncucco-lavoro-formazione` Clinica Moncucco (TI, Lugano)
   Status: needs-review; language: it; region: it-CH
   URLs: https://www.moncucco.ch/lavoro-e-formazione

@@ -1925,8 +1925,9 @@ Create:
 Triggers:
 
 - manual `workflow_dispatch`
-- scheduled weekly run initially
-- later daily run if stable
+- scheduled daily run at 04:17 UTC
+- concurrency guard so runs never overlap
+- 60-minute job timeout
 
 Workflow:
 
@@ -1942,8 +1943,9 @@ Workflow:
 10. generate review-needed report
 11. generate reliability audit
 12. build static site
-13. commit updated data or upload artifact
-14. optionally open PR instead of pushing directly
+13. run scheduled quality gate against the previous placement baseline
+14. upload raw snapshots, reports, and static site as an artifact
+15. open or update a generated data PR
 
 Recommended early behavior:
 
@@ -1951,6 +1953,8 @@ Recommended early behavior:
 - human reviews PR
 - merge after sanity check
 - never push directly to the default branch from a scheduled crawl
+- commit only curated static data and exports; keep raw snapshots in the workflow artifact
+- fail before PR creation when crawl failures exceed 15%, record count falls by more than 25%, IDs/source references break, availability fields conflict, or generic records bypass review
 
 ### Automated tests
 
@@ -1964,6 +1968,7 @@ pnpm lead-time:build -- --data data/current
 pnpm review:report -- --data data/current --out data/current/review-needed.md
 pnpm source:coverage -- --sources packages/sources/sources.yaml --out data/current
 pnpm reliability:audit -- --data data/current --sources packages/sources/sources.yaml --out data/current
+pnpm scheduled:quality -- --data data/current --crawl-report data/snapshots/current-run/crawler-report.json --previous previous-placements.json
 ```
 
 ### Manual checks
@@ -1979,9 +1984,9 @@ Before enabling schedule:
 - Confirm failed sources do not break the whole run.
 - Confirm `reliability-audit.md`, `source-coverage.md`, and `review-needed.md` are usable by maintainers.
 
-### Codex stop
+### Current status
 
-Pause before enabling scheduled crawl.
+Daily PR-only crawling is enabled. Deployment remains manual, and scheduled runs do not push directly to the default branch.
 
 ---
 

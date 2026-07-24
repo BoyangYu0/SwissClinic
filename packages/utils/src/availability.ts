@@ -23,7 +23,7 @@ export interface AvailabilityParseResult {
   warnings: string[];
 }
 
-export function parseAvailabilityStatus(text: string): AvailabilityParseResult {
+export function parseAvailabilityStatus(text: string, language?: string): AvailabilityParseResult {
   const normalized = normalizeDateText(text);
   const applicationLeadTimeMonths = parseLeadTimeMonths(text);
   const duration = parseDurationWeeks(text);
@@ -67,7 +67,7 @@ export function parseAvailabilityStatus(text: string): AvailabilityParseResult {
     };
   }
 
-  const availableFrom = hasStartCue(normalized) ? parseMonthExpression(text) : null;
+  const availableFrom = parseAvailableFrom(text, language);
 
   if (availableFrom) {
     return { ...base, availabilityStatus: "available-from", availableFrom, warnings: [] };
@@ -110,10 +110,54 @@ function hasArrangementPhrase(text: string): boolean {
   );
 }
 
-function hasStartCue(text: string): boolean {
-  return /\b(?:ab|ab\s+dem|ab\s+den|ab\s+semester|ab\s+monat|dès|des|a\s+partir\s+du|a\s+partir\s+de|da|a\s+partire\s+dal|a\s+partire\s+da|from|starting)\b/.test(
-    text,
-  );
+function parseAvailableFrom(text: string, language?: string): string | null {
+  const normalized = normalizeDateText(text);
+  const cuePattern = startCuePattern(language);
+
+  for (const match of normalized.matchAll(cuePattern)) {
+    if (match.index === undefined) {
+      continue;
+    }
+
+    const cueAndDate = normalized.slice(match.index, match.index + 40);
+    const dateExpression = cueAndDate.match(
+      /\b(?:\d{1,2}\.\d{1,2}\.\d{4}|(?:ende|fin|fine)\s+\d{4}|[a-z]+\s+\d{4})\b/,
+    );
+
+    if (!dateExpression || dateExpression.index === undefined) {
+      continue;
+    }
+
+    const connector = cueAndDate.slice(match[0].length, dateExpression.index);
+    const connectorWordCount = connector.match(/[a-z]+/g)?.length ?? 0;
+
+    if (connectorWordCount > 4) {
+      continue;
+    }
+
+    const parsed = parseMonthExpression(cueAndDate, language);
+
+    if (parsed) {
+      return parsed;
+    }
+  }
+
+  return null;
+}
+
+function startCuePattern(language?: string): RegExp {
+  switch (language) {
+    case "de":
+      return /\bab(?:\s+(?:dem|den|semester|monat))?\b/g;
+    case "fr":
+      return /\b(?:des|a\s+partir\s+(?:du|de))\b/g;
+    case "it":
+      return /\b(?:da|a\s+partire\s+(?:dal|da))\b/g;
+    case "en":
+      return /\b(?:from|starting(?:\s+from)?)\b/g;
+    default:
+      return /\b(?:ab(?:\s+(?:dem|den|semester|monat))?|des|a\s+partir\s+(?:du|de)|da|a\s+partire\s+(?:dal|da)|from|starting(?:\s+from)?)\b/g;
+  }
 }
 
 function hasApplicationPhrase(text: string): boolean {

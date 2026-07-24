@@ -247,6 +247,19 @@ describe("availability parsing utilities", () => {
     });
   });
 
+  it.each([
+    [
+      "Mit einem neuen Arbeitszeitmodell erkennen wir die Tätigkeit des Pflegepersonals an. News 13.07.2026",
+      "de",
+    ],
+    ["ERC Starting and Consolidator Grants: Masterclass on Proposal Writing 28 August 2026", "en"],
+  ])("does not treat unrelated page dates as availability: %s", (phrase, language) => {
+    expect(parseAvailabilityStatus(phrase, language)).toMatchObject({
+      availabilityStatus: "not-specified",
+      availableFrom: null,
+    });
+  });
+
   it("returns not-specified for empty text", () => {
     expect(parseAvailabilityStatus(" ")).toMatchObject({
       availabilityStatus: "not-specified",

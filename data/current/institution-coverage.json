@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T10:29:45.940Z",
+  "generatedAt": "2026-07-24T08:41:25.885Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -76,26 +76,6 @@
       ]
     },
     {
-      "institutionName": "GZO AG Spital Wetzikon",
-      "normalizedName": "gzo ag hospital wetzikon",
-      "canton": "ZH",
-      "city": "Wetzikon",
-      "sourceIds": [
-        "gzo-wetzikon-karriere"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Hôpital du Jura (H-JU)",
       "normalizedName": "hospital du jura h ju",
       "canton": "JU",
@@ -165,7 +145,7 @@
         "hug-geneve-stages"
       ],
       "sourceCount": 2,
-      "recordCount": 2,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -260,26 +240,6 @@
       ]
     },
     {
-      "institutionName": "Kantonsspital Nidwalden",
-      "normalizedName": "kantonsspital nidwalden",
-      "canton": "NW",
-      "city": "Stans",
-      "sourceIds": [
-        "kantonsspital-nidwalden-ausbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Kantonsspital St. Gallen (KSSG) / H-OCH",
       "normalizedName": "kantonsspital st gallen kssg h och",
       "canton": "SG",
@@ -360,26 +320,6 @@
       ]
     },
     {
-      "institutionName": "Solothurner Spitäler AG (soH)",
-      "normalizedName": "solothurner spitaeler ag soh",
-      "canton": "SO",
-      "city": "Solothurn",
-      "sourceIds": [
-        "solothurner-spitaeler-aerztliche-ausbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Spital Uster",
       "normalizedName": "hospital uster",
       "canton": "ZH",
@@ -446,26 +386,6 @@
       ]
     },
     {
-      "institutionName": "Universität Basel, Medizinische Fakultät",
-      "normalizedName": "universitat basel medizinische fakultaet",
-      "canton": "BS",
-      "city": "Basel",
-      "sourceIds": [
-        "unibas-medizin-studium"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
       "normalizedName": "universitat zuerich uzh medizinische fakultaet",
       "canton": "ZH",
@@ -477,26 +397,6 @@
       "recordCount": 1,
       "status": [
         "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Universitätsklinik Balgrist",
-      "normalizedName": "universitaetsklinik balgrist",
-      "canton": "ZH",
-      "city": "Zuerich",
-      "sourceIds": [
-        "balgrist-zuerich-karriere"
-      ],
-      "sourceCount": 1,
-      "recordCount": 2,
-      "status": [
-        "needs-review"
       ],
       "sourceLanguage": [
         "de"
@@ -540,7 +440,7 @@
         "usz-zuerich-radiologie-medizinstudium"
       ],
       "sourceCount": 7,
-      "recordCount": 7,
+      "recordCount": 6,
       "status": [
         "candidate"
       ],
@@ -635,6 +535,26 @@
       ]
     },
     {
+      "institutionName": "GZO AG Spital Wetzikon",
+      "normalizedName": "gzo ag hospital wetzikon",
+      "canton": "ZH",
+      "city": "Wetzikon",
+      "sourceIds": [
+        "gzo-wetzikon-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
       "institutionName": "Hôpital Riviera-Chablais (HRC)",
       "normalizedName": "hospital riviera chablais hrc",
       "canton": "VD",
@@ -681,6 +601,26 @@
       "city": "Liestal",
       "sourceIds": [
         "ksbl-baselland-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Kantonsspital Nidwalden",
+      "normalizedName": "kantonsspital nidwalden",
+      "canton": "NW",
+      "city": "Stans",
+      "sourceIds": [
+        "kantonsspital-nidwalden-ausbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
@@ -761,6 +701,26 @@
       "city": "Horgen",
       "sourceIds": [
         "see-spital-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Solothurner Spitäler AG (soH)",
+      "normalizedName": "solothurner spitaeler ag soh",
+      "canton": "SO",
+      "city": "Solothurn",
+      "sourceIds": [
+        "solothurner-spitaeler-aerztliche-ausbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
@@ -935,6 +895,26 @@
       ]
     },
     {
+      "institutionName": "Universität Basel, Medizinische Fakultät",
+      "normalizedName": "universitat basel medizinische fakultaet",
+      "canton": "BS",
+      "city": "Basel",
+      "sourceIds": [
+        "unibas-medizin-studium"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
       "institutionName": "Universität Bern, Medizinische Fakultät",
       "normalizedName": "universitat bern medizinische fakultaet",
       "canton": "BE",
@@ -946,6 +926,26 @@
       "recordCount": 0,
       "status": [
         "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universitätsklinik Balgrist",
+      "normalizedName": "universitaetsklinik balgrist",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "sourceIds": [
+        "balgrist-zuerich-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
       ],
       "sourceLanguage": [
         "de"
@@ -1068,7 +1068,7 @@
         "gzo-wetzikon-karriere"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1169,7 +1169,7 @@
         "hug-geneve-stages"
       ],
       "sourceCount": 2,
-      "recordCount": 2,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1312,7 +1312,7 @@
         "kantonsspital-nidwalden-ausbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1492,7 +1492,7 @@
         "solothurner-spitaeler-aerztliche-ausbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1738,7 +1738,7 @@
         "unibas-medizin-studium"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],
@@ -1798,7 +1798,7 @@
         "balgrist-zuerich-karriere"
       ],
       "sourceCount": 1,
-      "recordCount": 2,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1844,7 +1844,7 @@
         "usz-zuerich-radiologie-medizinstudium"
       ],
       "sourceCount": 7,
-      "recordCount": 7,
+      "recordCount": 6,
       "status": [
         "candidate"
       ],

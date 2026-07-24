@@ -25,6 +25,8 @@ describe("institution parsers", () => {
         {
           institutionName: "Universitätsspital Zürich",
           department: "Neuroradiologie",
+          originalDepartmentName: "Neuroradiologie",
+          departmentNormalized: "neuroradiology",
           roleType: "Unterassistenz",
           canton: "ZH",
           city: "Zürich",
@@ -45,6 +47,49 @@ describe("institution parsers", () => {
     });
 
     expectUsableRecords(result.records);
+  });
+
+  it.each([
+    ["medizin", "Unterassistenzen Medizin", "Innere Medizin", "internal-medicine"],
+    ["chirurgie", "Unterassistenzen Chirurgie", "Chirurgie", "surgery"],
+    ["anaesthesiologie", "Unterassistenzen Anästhesiologie", "Anästhesiologie", "anesthesiology"],
+    ["frauenheilkunde", "Unterassistenzen Frauenheilkunde", "Frauenheilkunde", "gynecology"],
+    ["radiologie", "Unterassistenzen Radiologie", "Radiologie", "radiology"],
+  ])("maps the USZ %s page to its own normalized department", async (path, title, department, departmentNormalized) => {
+    const result = await uszParser.parse({
+      sourceId: `usz-zuerich-${path}-medizinstudium`,
+      url: `https://www.usz.ch/bildung/aerzte/medizinstudium/${path}/`,
+      title,
+      html: `<html><body>${title}</body></html>`,
+      visibleText: `${title}. Unterassistenz im Wahlstudienjahr.`,
+      links: [],
+      emails: [],
+      tables: [],
+      fetchedAt: "2026-07-24T08:00:00.000Z",
+    });
+
+    expect(result.records).toHaveLength(1);
+    expect(result.records[0]).toMatchObject({
+      department,
+      originalDepartmentName: department,
+      departmentNormalized,
+    });
+  });
+
+  it("does not turn the USZ medical-studies overview into a department record", async () => {
+    const result = await uszParser.parse({
+      sourceId: "usz-zuerich-medizinstudium-overview",
+      url: "https://www.usz.ch/bildung/aerzte/medizinstudium/",
+      title: "Medizinstudium",
+      html: "<html><body>Medizinstudium und Unterassistenz</body></html>",
+      visibleText: "Medizinstudium und Unterassistenz am Universitätsspital Zürich.",
+      links: [],
+      emails: [],
+      tables: [],
+      fetchedAt: "2026-07-24T08:00:00.000Z",
+    });
+
+    expect(result.records).toEqual([]);
   });
 
   it("extracts KSW department records without fabricated availability", async () => {
