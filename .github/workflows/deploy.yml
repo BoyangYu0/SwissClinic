@@ -2,6 +2,21 @@ name: Deploy Static Site
 
 on:
   workflow_dispatch:
+  
+  push:
+    branches:
+      - master
+    paths:
+      - "data/current/**"
+      - "data/exports/**"
+      - "apps/web/**"
+      - "packages/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+  
+  schedule:
+    - cron: "47 5 * * *"
+      timezone: "Europe/Zurich"
 
 # Public deployment is intentionally manual until source accuracy, reliability,
 # and lead-time display checks have been reviewed.
