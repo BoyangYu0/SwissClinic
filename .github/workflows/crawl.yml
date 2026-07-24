@@ -30,8 +30,9 @@ on:
   # Schedule intentionally disabled until manual review gates are complete.
   # Before enabling, review source-coverage.md, reliability-audit.md, review-needed.md,
   # crawl frequency, and multilingual/native-language verification status.
-  # schedule:
-  #   - cron: "17 4 * * 1"
+  schedule:
+    - cron: "17 4 * * *"
+      timezone: "Europe/Zurich"
 
 permissions:
   contents: write
