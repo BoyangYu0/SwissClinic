@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T10:30:15.185Z",
+  "generatedAt": "2026-07-24T08:41:39.489Z",
   "sourceCount": 61,
-  "placementCount": 55,
+  "placementCount": 47,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -10,9 +10,9 @@
     "mixed": 3
   },
   "placementCountsBySourceLanguage": {
-    "de": 39,
+    "de": 32,
     "en": 1,
-    "fr": 10,
+    "fr": 9,
     "it": 2,
     "mixed": 3
   },
@@ -23,21 +23,21 @@
     "mixed": 6
   },
   "placementCountsByRegion": {
-    "de-CH": 38,
-    "fr-CH": 9,
+    "de-CH": 31,
+    "fr-CH": 8,
     "it-CH": 2,
     "mixed": 6
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 54,
-  "riskyPublishedPlacementCount": 3,
+  "sparsePlacementCount": 47,
+  "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
       "sourceLanguage": "de",
       "sources": 41,
-      "placements": 39,
-      "recordsNeedingReview": 34,
-      "sparseRecords": 38,
+      "placements": 32,
+      "recordsNeedingReview": 30,
+      "sparseRecords": 32,
       "manualVerificationSources": 41,
       "status": "needs-review"
     },
@@ -53,9 +53,9 @@
     {
       "sourceLanguage": "fr",
       "sources": 11,
-      "placements": 10,
-      "recordsNeedingReview": 10,
-      "sparseRecords": 10,
+      "placements": 9,
+      "recordsNeedingReview": 9,
+      "sparseRecords": 9,
       "manualVerificationSources": 11,
       "status": "needs-review"
     },
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "55 placement records validate with multilingual source metadata."
+      "summary": "47 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -106,8 +106,8 @@
     },
     {
       "phase": "F",
-      "status": "warning",
-      "summary": "54 sparse placement records and 3 risky auto-published records found."
+      "status": "pass",
+      "summary": "47 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -732,15 +732,6 @@
     },
     {
       "severity": "info",
-      "id": "karriere-im-gzo-spital-wetzikon-unknown-unknown-3a818b082c43",
-      "sourceId": "gzo-wetzikon-karriere",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
       "id": "programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73",
       "sourceId": "hopital-jura-formation",
       "sourceLanguage": "fr",
@@ -824,24 +815,6 @@
       "severity": "info",
       "id": "hug-unknown-clinicalplacement-edf016518bcc",
       "sourceId": "hug-geneve-stages",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "hug-unknown-unknown-95d8d27f0273",
-      "sourceId": "hug-geneve-enseignement-formation",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "hug-unknown-unknown-95d8d27f0273",
-      "sourceId": "hug-geneve-enseignement-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
       "reason": "sparse availability: not-specified",
@@ -948,7 +921,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23",
+      "id": "kantonsspital-baden-surgery-unterassistenz-132570b8adb9",
       "sourceId": "ksb-baden-unterassistentin-chirurgie",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -957,7 +930,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-baden-chirurgie-unterassistenz-37158ea55b23",
+      "id": "kantonsspital-baden-surgery-unterassistenz-132570b8adb9",
       "sourceId": "ksb-baden-unterassistentin-chirurgie",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -966,7 +939,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7",
+      "id": "kantonsspital-baden-internal-medicine-unterassistenz-d12d2a8e2a47",
       "sourceId": "ksb-baden-unterassistentin-innere-medizin",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -975,7 +948,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-baden-innere-medizin-unterassistenz-2142f92853b7",
+      "id": "kantonsspital-baden-internal-medicine-unterassistenz-d12d2a8e2a47",
       "sourceId": "ksb-baden-unterassistentin-innere-medizin",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -984,7 +957,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb",
+      "id": "kantonsspital-graubunden-anesthesiology-unterassistenz-517b534ec8c2",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -993,7 +966,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-anasthesiologie-unterassistenz-5a609d15fadb",
+      "id": "kantonsspital-graubunden-anesthesiology-unterassistenz-517b534ec8c2",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1002,7 +975,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade",
+      "id": "kantonsspital-graubunden-surgery-unterassistenz-56f7e75886e0",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1011,7 +984,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-chirurgie-unterassistenz-d8b8d4294ade",
+      "id": "kantonsspital-graubunden-surgery-unterassistenz-56f7e75886e0",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1020,7 +993,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc",
+      "id": "kantonsspital-graubunden-gynecology-unterassistenz-bb7bf677d7df",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1029,7 +1002,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-frauenheilkunde-unterassistenz-a7882928cbcc",
+      "id": "kantonsspital-graubunden-gynecology-unterassistenz-bb7bf677d7df",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1038,7 +1011,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb",
+      "id": "kantonsspital-graubunden-internal-medicine-unterassistenz-1fcb1f4b8d8b",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1047,7 +1020,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-innere-medizin-unterassistenz-3c3e95215aeb",
+      "id": "kantonsspital-graubunden-internal-medicine-unterassistenz-1fcb1f4b8d8b",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1056,7 +1029,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef",
+      "id": "kantonsspital-graubunden-pediatrics-unterassistenz-334ceae547d9",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1065,7 +1038,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-padiatrie-unterassistenz-5a28da8501ef",
+      "id": "kantonsspital-graubunden-pediatrics-unterassistenz-334ceae547d9",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1074,7 +1047,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b",
+      "id": "kantonsspital-graubunden-radiology-unterassistenz-b9e050bdbeb1",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1083,7 +1056,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-graubunden-radiologie-unterassistenz-eb6aff1cb02b",
+      "id": "kantonsspital-graubunden-radiology-unterassistenz-b9e050bdbeb1",
       "sourceId": "ksgr-chur-blockstudenten-unterassistenten",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1092,25 +1065,7 @@
     },
     {
       "severity": "info",
-      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
-      "sourceId": "kantonsspital-nidwalden-ausbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "spital-nidwalden-unknown-unknown-7744e5c43113",
-      "sourceId": "kantonsspital-nidwalden-ausbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "kantonsspital-st-gallen-orthopadie-unterassistenz-8a9d68966cc9",
+      "id": "kantonsspital-st-gallen-orthopedics-unterassistenz-6d2109f8c0ae",
       "sourceId": "kssg-stgallen-h-och-orthopaedie-unterassistenzstellen",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1119,7 +1074,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751",
+      "id": "kantonsspital-winterthur-anesthesiology-wahlstudienjahr-f1fdc40922eb",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1128,7 +1083,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-anasthesiologie-wahlstudienjahr-cd979639e751",
+      "id": "kantonsspital-winterthur-anesthesiology-wahlstudienjahr-f1fdc40922eb",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1137,7 +1092,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969",
+      "id": "kantonsspital-winterthur-ophthalmology-wahlstudienjahr-c58e524d73d1",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1146,7 +1101,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-augenheilkunde-wahlstudienjahr-9781e4ab4969",
+      "id": "kantonsspital-winterthur-ophthalmology-wahlstudienjahr-c58e524d73d1",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1155,7 +1110,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075",
+      "id": "kantonsspital-winterthur-surgery-wahlstudienjahr-decaceaaa035",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1164,7 +1119,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-chirurgie-wahlstudienjahr-9fba9d91d075",
+      "id": "kantonsspital-winterthur-surgery-wahlstudienjahr-decaceaaa035",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1173,7 +1128,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e",
+      "id": "kantonsspital-winterthur-gynecology-wahlstudienjahr-711ae570d87c",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1182,7 +1137,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-frauenheilkunde-wahlstudienjahr-41d148b00e5e",
+      "id": "kantonsspital-winterthur-gynecology-wahlstudienjahr-711ae570d87c",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1191,7 +1146,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b",
+      "id": "kantonsspital-winterthur-internal-medicine-wahlstudienjahr-f52df3a06724",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1200,7 +1155,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-innere-medizin-wahlstudienjahr-b91933a9f31b",
+      "id": "kantonsspital-winterthur-internal-medicine-wahlstudienjahr-f52df3a06724",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1209,7 +1164,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a",
+      "id": "kantonsspital-winterthur-orthopedics-wahlstudienjahr-93c01844ebc6",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1218,7 +1173,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-orthopadie-wahlstudienjahr-a6723bc1771a",
+      "id": "kantonsspital-winterthur-orthopedics-wahlstudienjahr-93c01844ebc6",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1227,7 +1182,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5",
+      "id": "kantonsspital-winterthur-pediatrics-wahlstudienjahr-33f043fb9f19",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1236,7 +1191,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-padiatrie-wahlstudienjahr-54f209e487e5",
+      "id": "kantonsspital-winterthur-pediatrics-wahlstudienjahr-33f043fb9f19",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1245,7 +1200,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f",
+      "id": "kantonsspital-winterthur-radiology-wahlstudienjahr-f5a73a3aec73",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1254,7 +1209,7 @@
     },
     {
       "severity": "info",
-      "id": "kantonsspital-winterthur-radiologie-wahlstudienjahr-aefd246c186f",
+      "id": "kantonsspital-winterthur-radiology-wahlstudienjahr-f5a73a3aec73",
       "sourceId": "ksw-winterthur-unterassistenz-famulatur-wahlstudienjahr",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1294,24 +1249,6 @@
       "sourceId": "rhne-neuchatel-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
-      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "jobs-karriere-ausbildung-unknown-unknown-4a35d8e28824",
-      "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
@@ -1425,24 +1362,6 @@
     },
     {
       "severity": "info",
-      "id": "universitat-basel-unknown-unknown-620d5e127d50",
-      "sourceId": "unibas-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "universitat-basel-unknown-unknown-620d5e127d50",
-      "sourceId": "unibas-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
       "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
       "sourceId": "uzh-medizin-studium",
       "sourceLanguage": "de",
@@ -1457,24 +1376,6 @@
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsklinik-balgrist-karriere-anesthesiology-unknown-f8d0011080ad",
-      "sourceId": "balgrist-zuerich-karriere",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: application-only",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsklinik-balgrist-karriere-radiology-unknown-48776a5f531d",
-      "sourceId": "balgrist-zuerich-karriere",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: application-only",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {
@@ -1497,7 +1398,16 @@
     },
     {
       "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
+      "id": "universitatsspital-zurich-anesthesiology-unterassistenz-bbc088793b1a",
+      "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-surgery-unterassistenz-a85f4377c788",
       "sourceId": "usz-zuerich-chirurgie-medizinstudium",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1505,17 +1415,35 @@
       "action": "Confirm the parser selected the intended language pack."
     },
     {
-      "severity": "warning",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-4a351a7f50c3",
-      "sourceId": "usz-zuerich-chirurgie-medizinstudium",
+      "severity": "info",
+      "id": "universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf",
+      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
       "sourceLanguage": "de",
       "region": "de-CH",
-      "reason": "fully booked wording may be over-interpreted",
-      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
     },
     {
       "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-7d3e538377da",
+      "id": "universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf",
+      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-internal-medicine-unterassistenz-30be2762a054",
+      "sourceId": "usz-zuerich-medizin-medizinstudium",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "reason": "unknown extraction language",
+      "action": "Confirm the parser selected the intended language pack."
+    },
+    {
+      "severity": "info",
+      "id": "universitatsspital-zurich-neuroradiology-unterassistenz-b12e6b8ec025",
       "sourceId": "usz-zuerich-neuroradiologie-unterassistenzen-famulatur",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1524,61 +1452,7 @@
     },
     {
       "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217",
-      "sourceId": "usz-zuerich-medizinstudium-overview",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "unknown extraction language",
-      "action": "Confirm the parser selected the intended language pack."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-80e4d9b83217",
-      "sourceId": "usz-zuerich-medizinstudium-overview",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
-      "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "unknown extraction language",
-      "action": "Confirm the parser selected the intended language pack."
-    },
-    {
-      "severity": "warning",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-9ae234b6a80b",
-      "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "fully booked wording may be over-interpreted",
-      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
-      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "unknown extraction language",
-      "action": "Confirm the parser selected the intended language pack."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-d104a623bd28",
-      "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92",
+      "id": "universitatsspital-zurich-radiology-unterassistenz-30ee75461a48",
       "sourceId": "usz-zuerich-radiologie-medizinstudium",
       "sourceLanguage": "de",
       "region": "de-CH",
@@ -1587,30 +1461,12 @@
     },
     {
       "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-e3e88be11c92",
+      "id": "universitatsspital-zurich-radiology-unterassistenz-30ee75461a48",
       "sourceId": "usz-zuerich-radiologie-medizinstudium",
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: application-only",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
-      "sourceId": "usz-zuerich-medizin-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "unknown extraction language",
-      "action": "Confirm the parser selected the intended language pack."
-    },
-    {
-      "severity": "warning",
-      "id": "universitatsspital-zurich-neuroradiologie-unterassistenz-f1b2c99b7b1b",
-      "sourceId": "usz-zuerich-medizin-medizinstudium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "fully booked wording may be over-interpreted",
-      "action": "Do not convert fully-booked-until into available-from unless the source explicitly says so."
     },
     {
       "severity": "info",

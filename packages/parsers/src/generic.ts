@@ -83,7 +83,11 @@ function hasPlacementSignal(
   const normalized = normalizeForMatching(text);
   return (
     hasAnyKeyword(normalized, roleKeywords) ||
-    (hasAnyKeyword(normalized, applicationKeywords) && medicalTrainingContextPattern.test(text))
+    splitSentences(text).some(
+      (sentence) =>
+        hasAnyKeyword(normalizeForMatching(sentence), applicationKeywords) &&
+        medicalTrainingContextPattern.test(sentence),
+    )
   );
 }
 
@@ -124,8 +128,8 @@ function buildRecord(
   extractionLanguage: PackLanguage,
   sourceLanguage: PlacementRecordInput["sourceLanguage"],
 ): PlacementRecordInput {
-  const snippet = extractSnippet(text, department);
-  const availability = parseAvailabilityStatus(snippet);
+  const snippet = extractSnippet(text, department, extractionLanguage);
+  const availability = parseAvailabilityStatus(snippet, extractionLanguage);
   const contactEmail = input.emails[0] ?? null;
   const applicationUrl = findApplicationUrl(input);
   const applicationMethod = applicationUrl
@@ -257,7 +261,11 @@ function inferInstitutionName(input: ParsedPage): string {
   return parts.at(-1) ?? input.title;
 }
 
-function extractSnippet(text: string, department: DepartmentDetection | null): string {
+function extractSnippet(
+  text: string,
+  department: DepartmentDetection | null,
+  extractionLanguage: PackLanguage,
+): string {
   const sentences = splitSentences(text);
   const departmentIndex = department
     ? sentences.findIndex((sentence) =>
@@ -268,7 +276,9 @@ function extractSnippet(text: string, department: DepartmentDetection | null): s
     (departmentIndex >= 0
       ? sentences.slice(departmentIndex, departmentIndex + 3).join(" ")
       : undefined) ??
-    sentences.find((sentence) => hasExplicitAvailability(parseAvailabilityStatus(sentence))) ??
+    sentences.find((sentence) =>
+      hasExplicitAvailability(parseAvailabilityStatus(sentence, extractionLanguage)),
+    ) ??
     sentences.find((sentence) => sentenceHasApplicationKeyword(sentence)) ??
     sentences.find((sentence) => sentenceHasRoleKeyword(sentence)) ??
     text;

@@ -80,6 +80,14 @@ pnpm validate:data:local
 
 The validation command checks `placements.json`, `sources.json`, `parser-health.json`, optional lead-time files, and that `review-needed.md` exists.
 
+After a full crawl and data build, run the same quality gate used by the daily workflow:
+
+```sh
+pnpm scheduled:quality -- --data data/current --crawl-report data/snapshots/current-run/crawler-report.json --previous path/to/previous-placements.json
+```
+
+The command writes `data/current/scheduled-quality-report.json`. It blocks unsafe automated refreshes while keeping expected sparse records and expired availability dates as visible warnings for manual review.
+
 You can also validate any generated data directory directly:
 
 ```sh

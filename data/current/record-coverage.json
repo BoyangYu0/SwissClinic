@@ -1,71 +1,67 @@
 {
-  "generatedAt": "2026-07-08T10:29:45.940Z",
-  "totalRecords": 55,
+  "generatedAt": "2026-07-24T08:41:25.885Z",
+  "totalRecords": 47,
   "recordsByCanton": {
     "AG": 5,
     "BE": 1,
     "BS": 1,
-    "GE": 2,
+    "GE": 1,
     "GR": 6,
     "LU": 1,
-    "NW": 1,
     "SG": 1,
-    "unknown": 16,
+    "unknown": 14,
     "VD": 2,
-    "ZH": 19
+    "ZH": 15
   },
   "recordsByLanguage": {
-    "de": 39,
+    "de": 32,
     "en": 1,
-    "fr": 10,
+    "fr": 9,
     "it": 2,
     "mixed": 3
   },
   "recordsByRegion": {
-    "de-CH": 38,
-    "fr-CH": 9,
+    "de-CH": 31,
+    "fr-CH": 8,
     "it-CH": 2,
     "mixed": 6
   },
   "recordsByDepartmentNormalized": {
-    "Anästhesiologie": 2,
-    "anesthesiology": 1,
-    "Augenheilkunde": 1,
-    "Chirurgie": 3,
+    "anesthesiology": 3,
     "emergency-medicine": 3,
-    "Frauenheilkunde": 2,
-    "Innere Medizin": 3,
-    "Neuroradiologie": 7,
-    "not-specified": 25,
-    "Orthopädie": 2,
-    "Pädiatrie": 2,
+    "gynecology": 3,
+    "internal-medicine": 4,
+    "neuroradiology": 1,
+    "not-specified": 20,
+    "ophthalmology": 1,
+    "orthopedics": 2,
+    "pediatrics": 2,
     "psychiatry": 1,
-    "Radiologie": 2,
-    "radiology": 1
+    "radiology": 3,
+    "surgery": 4
   },
   "recordsByRoleType": {
     "ClinicalPlacement": 11,
-    "Unknown": 14,
-    "Unterassistenz": 20,
+    "Unknown": 7,
+    "Unterassistenz": 19,
     "Wahlstudienjahr": 10
   },
   "recordsByAvailabilityStatus": {
-    "application-only": 11,
+    "application-only": 9,
     "available": 2,
-    "available-from": 1,
     "fully-booked-until": 3,
-    "not-specified": 38
+    "not-specified": 33
   },
   "recordsByConfidence": {
     "high": 5,
-    "low": 28,
-    "medium": 22
+    "low": 23,
+    "medium": 19
   },
   "recordsByExtractionMethod": {
-    "generic-parser": 28,
-    "site-parser": 27
+    "generic-parser": 21,
+    "site-parser": 26
   },
   "highConfidenceCount": 5,
-  "reviewNeededCount": 50,
-  "highConfidenceToReviewNeededRatio": 0.1
+  "reviewNeededCount": 45,
+  "highConfidenceToReviewNeededRatio": 0.1111111111111111
 }

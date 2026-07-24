@@ -46,6 +46,23 @@ export function allDepartmentAliases(): DepartmentAlias[] {
   return [...aliases.values()];
 }
 
+export function normalizeDepartmentName(value: string | null): string | null {
+  if (!value) {
+    return null;
+  }
+
+  const normalizedValue = normalizeForMatching(value);
+  const alias = allDepartmentAliases().find((candidate) =>
+    candidate.names.some((name) => normalizeForMatching(name) === normalizedValue),
+  );
+
+  if (alias) {
+    return alias.normalized;
+  }
+
+  return normalizedValue.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
 export function normalizeForMatching(value: string): string {
   return value
     .normalize("NFD")

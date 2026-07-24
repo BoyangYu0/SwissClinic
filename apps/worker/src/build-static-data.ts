@@ -94,7 +94,9 @@ function enrichPlacementsFromSources(
 
   return placements.map((placement) => {
     const source = sourcesById.get(placement.sourceId);
-    const snippet = officialSnippetForSource(placement.sourceId) ?? placement.extractedSnippet;
+    const snippet = (
+      officialSnippetForSource(placement.sourceId) ?? placement.extractedSnippet
+    )?.trim() ?? null;
 
     if (!source) {
       return PlacementRecordSchema.parse({

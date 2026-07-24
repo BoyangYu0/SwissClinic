@@ -18,7 +18,8 @@
     "review:report": "pnpm run build:deps && tsc -p tsconfig.json && node dist/review-report.js",
     "source:coverage": "pnpm run build:deps && tsc -p tsconfig.json && node dist/source-coverage.js",
     "lead-time:build": "pnpm run build:deps && tsc -p tsconfig.json && node dist/lead-time.js",
-    "reliability:audit": "pnpm run build:deps && tsc -p tsconfig.json && node dist/reliability-audit.js"
+    "reliability:audit": "pnpm run build:deps && tsc -p tsconfig.json && node dist/reliability-audit.js",
+    "scheduled:quality": "pnpm run build:deps && tsc -p tsconfig.json && node dist/scheduled-quality-check.js"
   },
   "dependencies": {
     "@scpi/parsers": "workspace:*",

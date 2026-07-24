@@ -8,4 +8,5 @@ export * from "./diff-snapshots.js";
 export * from "./lead-time.js";
 export * from "./reliability-audit.js";
 export * from "./review-report.js";
+export * from "./scheduled-quality-check.js";
 export * from "./source-coverage.js";

@@ -112,6 +112,37 @@ describe("genericParser", () => {
     expect(result.warnings[0]).toContain("no medical placement signal");
   });
 
+  it("does not combine unrelated career contact and medical event text into a placement", async () => {
+    const result = await genericParser.parse(
+      page({
+        title: "Karriere im Spital Beispiel",
+        visibleText:
+          "Kontakt Veranstaltungen. Entdecken Sie Jobs und Ausbildung im Spital. Medizinische Informationen folgen in einem öffentlichen Vortrag. News 13.07.2026.",
+      }),
+    );
+
+    expect(result.records).toEqual([]);
+    expect(result.warnings[0]).toContain("no medical placement signal");
+  });
+
+  it("does not treat an English grant event date as placement availability", async () => {
+    const result = await genericParser.parse(
+      page({
+        title: "Medicine | Example University",
+        visibleText:
+          "Medical student elective information. ERC Starting and Consolidator Grants: Masterclass on Proposal Writing 28 August 2026.",
+        sourceLanguage: "en",
+        region: "unknown",
+      }),
+    );
+
+    expect(result.records).toHaveLength(1);
+    expect(result.records[0]).toMatchObject({
+      availabilityStatus: "not-specified",
+      availableFrom: null,
+    });
+  });
+
   it("classifies fully booked wording correctly", async () => {
     const result = await genericParser.parse(
       page({

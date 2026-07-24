@@ -40,6 +40,7 @@ Important review artifacts:
 data/current/review-needed.md
 data/current/source-coverage.md
 data/current/reliability-audit.md
+data/current/scheduled-quality-report.json
 data/current/lead-time-evidence.json
 data/current/lead-time-summary.json
 data/snapshots/current-run/crawler-report.json
@@ -81,7 +82,7 @@ The crawl workflow is:
 .github/workflows/crawl.yml
 ```
 
-It is currently manual-only. The weekly schedule is intentionally commented out until manual review gates are complete.
+It runs daily at 04:17 UTC and can also be started manually. Runs are serialized and limited to 60 minutes so a slow crawl cannot overlap the next update.
 
 The crawl workflow:
 
@@ -91,15 +92,16 @@ The crawl workflow:
 4. generates lead-time, review-needed, source-coverage, and reliability reports
 5. validates generated data
 6. builds the static site
-7. uploads artifacts
-8. opens a pull request when requested
+7. enforces crawl-failure, record-drop, identifier, source-reference, availability-consistency, and review-status quality gates
+8. uploads the static site, reports, crawler report, and raw snapshots as a workflow artifact
+9. opens or updates a review pull request containing only `data/current` and `data/exports`
 
-The current full-crawl baseline is 49 registry URLs, 49 successful snapshots, 0 crawl failures, and 0 duplicate URLs. A future crawl can still legitimately produce failed pages if an official site changes, times out, or blocks access; review the crawler report and generated review reports before merging.
+The 2026-07-24 local full-crawl baseline is 61 registry URLs, 61 successful snapshots, 0 crawl failures, 0 duplicate URLs, and 55 extracted records. A future crawl can still legitimately produce failed pages if an official site changes, times out, or blocks access; review the crawler report and generated review reports before merging.
 
 Recommended early operation:
 
 ```txt
-Run crawl workflow -> review generated PR/artifact -> merge if sane -> run deploy workflow manually
+Daily crawl -> automated quality gate -> review generated PR/artifact -> merge if sane -> run deploy workflow manually
 ```
 
 Do not push crawler outputs directly to the default branch without review.
@@ -108,6 +110,7 @@ Before merging a generated data PR, check:
 
 - `data/snapshots/current-run/crawler-report.json` has expected success/failure counts.
 - `data/current/parser-health.json` explains parser warnings and failed pages.
+- `data/current/scheduled-quality-report.json` passed and any warnings are understood.
 - `data/current/review-needed.md` lists low-confidence and sparse records.
 - `data/current/reliability-audit.md` does not show risky auto-published multilingual records.
 - `data/current/lead-time-summary.json` does not present low-confidence estimates as facts.
@@ -128,13 +131,13 @@ For an urgent rollback, redeploy the last known-good commit from GitHub Actions 
 
 If crawling needs to stop immediately:
 
-1. Keep the `schedule` block in `.github/workflows/crawl.yml` commented out.
+1. Comment out or remove the `schedule` block in `.github/workflows/crawl.yml`.
 2. Disable the `Crawl Data Refresh` workflow in GitHub Actions repository settings if needed.
 3. Cancel any running crawl workflow.
 4. Set source entries to `blocked` or `inactive` when a public page should no longer be fetched.
 5. Remove or lower priority for sources that need manual review before another crawl.
 
-No scheduled crawling should be enabled until the maintainers explicitly approve it.
+Disabling the workflow in GitHub Actions is the fastest emergency stop and does not affect the published static site.
 
 ## Manual Checks Before Public Deployment
 

@@ -26,6 +26,8 @@ describe("ksbParser", () => {
       sourceId: "ksb-baden-unterassistentin-innere-medizin",
       institutionName: "Kantonsspital Baden",
       department: "Innere Medizin",
+      originalDepartmentName: "Innere Medizin",
+      departmentNormalized: "internal-medicine",
       roleType: "Unterassistenz",
       canton: "AG",
       city: "Baden",
@@ -61,11 +63,13 @@ describe("ksbParser", () => {
     expect(parsed.confidence).toBe("high");
     expect(parsed.records[0]).toMatchObject({
       department: "Chirurgie",
+      originalDepartmentName: "Chirurgie",
+      departmentNormalized: "surgery",
       availabilityStatus: "fully-booked-until",
       fullyBookedUntil: "2026-12",
       availableFrom: null,
       confidence: "high",
-      reviewStatus: "auto-published",
+      reviewStatus: "needs-human-review",
     });
   });
 

@@ -1,13 +1,13 @@
 {
   "sourceId": "zuger-kantonsspital-ausbildung",
   "url": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber",
-  "fetchedAt": "2026-07-07T15:51:40.165Z",
+  "fetchedAt": "2026-07-24T08:09:17.571Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "adbe29825a24633aee53730fed9f696b3628c6383f665094b518c5b29999069c",
-  "textHash": "aa464100438423ad10ccdff5875e28571a6d4737f6488e2c0f409a0d50df4493",
+  "rawHash": "52d8caedb1940c82f716081b48c040e79be2bec8272cba904bf00c24187a5f6d",
+  "textHash": "9fac830bff6d6fd32ebc0fa67b9544e39be4040a87be11a43d6342a039b488ac",
   "title": "Ihr Arbeitgeber - Zuger Kantonsspital AG",
-  "visibleText": "Unsere Werte Arbeitgeberleistungen Für Interessenten aus dem Ausland Seite drucken Das Zuger Kantonsspital zählt zu den grössten Arbeitgebern und Ausbildungsbetrieben der Region. Wir setzen auf ein gutes Arbeitsklima, attraktive Anstellungsbedingungen, vielseitige Weiterentwicklungsmöglichkeiten und eine erstklassige Arbeitsinfrastruktur. Vielseitige und interessante Aus- undWeiterbildungsmöglichkeiten Unterstützen Sie unser Pflegefachteam als freiwillige Mitarbeiterin oder freiwilliger Mitarbeiter. Wir freuen uns auf Ihre Kontaktnahme.. Serge Wilhelm Leiter Personal T+41 41 399 44 72 nach oben",
+  "visibleText": "Unsere Werte Arbeitgeberleistungen Für Interessenten aus dem Ausland Seite drucken Das Zuger Kantonsspital zählt zu den grössten Arbeitgebern und Ausbildungsbetrieben der Region. Wir setzen auf ein gutes Arbeitsklima, attraktive Anstellungsbedingungen, vielseitige Weiterentwicklungsmöglichkeiten und eine erstklassige Arbeitsinfrastruktur. Vielseitige und interessante Aus- undWeiterbildungsmöglichkeiten Unterstützen Sie unser Pflegefachteam als freiwillige Mitarbeiterin oder freiwilliger Mitarbeiter. Wir freuen uns auf Ihre Kontaktnahme.. nach oben",
   "extractedLinks": [
     {
       "text": "Unsere Werte",
@@ -28,10 +28,6 @@
     {
       "text": "Unterstützen Sie unser Pflegefachteam als freiwillige Mitarbeiterin oder freiwilliger Mitarbeiter. Wir freuen uns auf Ihre Kontaktnahme..",
       "href": "https://www.zgks.ch/kliniken-bereiche/pflege/freiwilligenarbeit"
-    },
-    {
-      "text": "Serge Wilhelm",
-      "href": "https://www.zgks.ch/personen/details/wilhelm"
     },
     {
       "text": "nach oben",

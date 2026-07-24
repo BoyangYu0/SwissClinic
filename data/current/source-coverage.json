@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T10:29:45.940Z",
+  "generatedAt": "2026-07-24T08:41:25.885Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -84,6 +84,18 @@
       ]
     },
     {
+      "id": "usz-zuerich-medizinstudium-overview",
+      "institutionName": "Universitätsspital Zürich (USZ)",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "status": "candidate",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.usz.ch/bildung/aerzte/medizinstudium/"
+      ]
+    },
+    {
       "id": "stadtspital-zuerich-karriere-ausbildung",
       "institutionName": "Stadtspital Zürich",
       "canton": "ZH",
@@ -96,6 +108,18 @@
       ]
     },
     {
+      "id": "unibas-medizin-studium",
+      "institutionName": "Universität Basel, Medizinische Fakultät",
+      "canton": "BS",
+      "city": "Basel",
+      "status": "candidate",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://medizin.unibas.ch/de/"
+      ]
+    },
+    {
       "id": "kssg-stgallen-aerztliche-ausbildung",
       "institutionName": "Kantonsspital St. Gallen (KSSG)",
       "canton": "SG",
@@ -105,6 +129,18 @@
       "region": "de-CH",
       "urls": [
         "https://www.h-och.ch/karriere"
+      ]
+    },
+    {
+      "id": "solothurner-spitaeler-aerztliche-ausbildung",
+      "institutionName": "Solothurner Spitäler AG (soH)",
+      "canton": "SO",
+      "city": "Solothurn",
+      "status": "needs-review",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.solothurnerspitaeler.ch/jobs-karriere"
       ]
     },
     {
@@ -165,6 +201,30 @@
       "region": "de-CH",
       "urls": [
         "https://www.ksow.ch/jobs-karriere/ausbildung"
+      ]
+    },
+    {
+      "id": "kantonsspital-nidwalden-ausbildung",
+      "institutionName": "Kantonsspital Nidwalden",
+      "canton": "NW",
+      "city": "Stans",
+      "status": "needs-review",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.ksnw.ch/karriere/ausbildung"
+      ]
+    },
+    {
+      "id": "hug-geneve-enseignement-formation",
+      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
+      "canton": "GE",
+      "city": "Geneve",
+      "status": "needs-review",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "urls": [
+        "https://www.hug.ch/formation-de-base"
       ]
     },
     {
@@ -264,6 +324,18 @@
       ]
     },
     {
+      "id": "gzo-wetzikon-karriere",
+      "institutionName": "GZO AG Spital Wetzikon",
+      "canton": "ZH",
+      "city": "Wetzikon",
+      "status": "needs-review",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.gzo.ch/karriere"
+      ]
+    },
+    {
       "id": "see-spital-karriere",
       "institutionName": "See-Spital",
       "canton": "ZH",
@@ -273,6 +345,18 @@
       "region": "de-CH",
       "urls": [
         "https://www.see-spital.ch/karriere"
+      ]
+    },
+    {
+      "id": "balgrist-zuerich-karriere",
+      "institutionName": "Universitätsklinik Balgrist",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "status": "needs-review",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.balgrist.ch/karriere"
       ]
     },
     {
