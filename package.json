@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "pnpm -r --if-present build",
+    "pretest": "pnpm build",
     "test": "pnpm -r --if-present test",
     "typecheck": "pnpm -r --if-present build && pnpm -r --if-present typecheck",
     "lint": "pnpm -r --if-present lint",
