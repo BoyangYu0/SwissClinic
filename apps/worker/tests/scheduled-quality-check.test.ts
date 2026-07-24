@@ -1,3 +1,4 @@
+import { resolve } from "node:path";
 import type { PlacementRecord, SourceRegistryEntry } from "@scpi/schema";
 import { describe, expect, it } from "vitest";
 import {
@@ -94,7 +95,7 @@ describe("scheduled quality check", () => {
       maxFailureRate: 0.1,
       maxRecordDropRate: 0.2,
     });
-    expect(options.outPath).toBe(`${baseDir}\\data\\current\\scheduled-quality-report.json`);
+    expect(options.outPath).toBe(resolve(baseDir, "data/current", "scheduled-quality-report.json"));
   });
 });
 
