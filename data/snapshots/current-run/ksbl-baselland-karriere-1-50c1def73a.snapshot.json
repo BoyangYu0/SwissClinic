@@ -1,14 +1,30 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-07-24T09:57:58.990Z",
+  "fetchedAt": "2026-07-31T05:47:28.095Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "17cd7c9fd738b0a436a360dc6ffcfaee9c8747b666796a8a55e2f5e039558c98",
-  "textHash": "d9d2d363feb35f8c3f8f3057de9dd42011519ccc274242e0a4ae4def6614c2da",
+  "rawHash": "0b1bfc9d7f8691df960709ed6680b6457296087107a6a599ff3866c428bccd61",
+  "textHash": "c4f7bcaca772e736447ff6f0f1d018c1b4f8216791a5f75f8c810733303c1951",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Apotheke Ertragsmanagement Frauenklinik Gastronomie Gesundheitszentrum Laufen Grossbauprojekte Hauswirtschaft HNO Klinik Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 83 offene Stellen Technischer Dienst Teamleiterin/Teamleiter Elektrotechnik (a) 100% Therapien Dipl. Physiotherapeutin/Physiotherapeut (a) 40-50% Innere Medizin Mitarbeiterin/Mitarbeiter Verpflegungs-Service Bettenstation (a) 40% Altersmedizin & Rehabilitation Dipl. Pflegefachfrau/Pflegefachmann Akutgeriatrie (a) 80-100% Orthopädie & Traumatologie Arztsekretärin/Arztsekretär oder MPA (a) 100% Interdisziplinäres Ambulatorium MPA Interdisziplinären Ambulatorium (a) 60% Zentrallaboratorien Biomed. Analytikerin/Analytiker HF (a) 80-100% Gesundheitszentrum Laufen Ärztin/Arzt Gesundheitszentrum Laufen (a) 50-100% Intensivpflege Dipl. Pflegefachfrau/Pflegefachmann Intensivpflege (a) 100% Intensivpflege Dipl. Expertin/Experte Intensivpflege NDS HF (a) 50-80% Interdisziplinäre Privatstation Dipl. Pflegefachfrau/Pflegefachmann Privatstation (a) 80-100% 1 2 3 4 5 … 8",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Apotheke Ertragsmanagement Frauenklinik Gesundheitszentrum Laufen Grossbauprojekte Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 86 offene Stellen Altersmedizin & Rehabilitation Arztsekretärin/Arztsekretär ZAR (a) 60% Pflege Fachverantwortliche/Fachverantwortlicher Pflege (a) 80-100% Human Resources Teamleiterin/Teamleiter Zeitwirtschaft (a) 80-100% Zentrales Patientenmanagement Patientenmanagerin/Patientenmanager mit optionaler stv. Führungsfunktion (a) 80-100% Technischer Dienst Teamleiterin/Teamleiter Elektrotechnik (a) 100% Therapien Dipl. Physiotherapeutin/Physiotherapeut (a) 40-50% Innere Medizin Mitarbeiterin/Mitarbeiter Verpflegungs-Service Bettenstation (a) 40% Altersmedizin & Rehabilitation Dipl. Pflegefachfrau/Pflegefachmann Akutgeriatrie (a) 80-100% Orthopädie & Traumatologie Arztsekretärin/Arztsekretär oder MPA (a) 80% Interdisziplinäres Ambulatorium MPA Interdisziplinären Ambulatorium (a) 60% Zentrallaboratorien Biomed. Analytikerin/Analytiker HF (a) 80-100% 1 2 3 4 5 … 8",
   "extractedLinks": [
+    {
+      "text": "60%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/arztsekretaerin-arztsekretaer-zar-a/5d1f5dc8-b7ae-409b-aff3-6f2ab348bef7"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachverantwortliche-fachverantwortlicher-pflege-a/bb6a610b-3941-46f5-a7cc-f75455c7af71"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/teamleiterin-teamleiter-zeitwirtschaft-a/e69d3558-44f6-4cfe-a04a-43e00e00acc5"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/patientenmanagerin-patientenmanager-mit-optionaler-stv-fuehrungsfunktion-a/9caf5dc6-55da-44cb-9fc9-ccceecfe3cb7"
+    },
     {
       "text": "100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/teamleiterin-teamleiter-elektrotechnik-a/aa08c534-e941-457a-bacf-2cad734ebc9d"
@@ -26,8 +42,8 @@
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-akutgeriatrie-a/0c3fd09c-176f-4c42-a089-9a8fc2ce81cf"
     },
     {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/arztsekretaerin-arztsekretaer-oder-mpa-a/20e8edc0-5be6-487b-8dc4-8a715ad26156"
+      "text": "80%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/arztsekretaerin-arztsekretaer-oder-mpa-a/258f7087-c917-43c4-bf82-bd9851d17963"
     },
     {
       "text": "60%",
@@ -36,22 +52,6 @@
     {
       "text": "80-100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/biomed-analytikerin-analytiker-hf-a/4a421ebd-e538-403a-9853-160a110b002f"
-    },
-    {
-      "text": "50-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/aerztin-arzt-gesundheitszentrum-laufen-a/5346423f-693b-48e2-be1c-e92720c9980a"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-intensivpflege-a/585ce426-137d-4cfe-92a1-4d75ffec45b3"
-    },
-    {
-      "text": "50-80%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-expertin-experte-intensivpflege-nds-hf-a/fc0d54e5-29d0-4cdf-99bd-5906f284a1a5"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-privatstation-a/8c70a158-50e8-41c6-a1c5-6d24bcf22cce"
     },
     {
       "text": "2",
