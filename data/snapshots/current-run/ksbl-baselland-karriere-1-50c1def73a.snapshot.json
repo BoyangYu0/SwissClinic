@@ -1,57 +1,57 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-07-31T05:47:28.095Z",
+  "fetchedAt": "2026-08-03T05:54:38.727Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "0b1bfc9d7f8691df960709ed6680b6457296087107a6a599ff3866c428bccd61",
-  "textHash": "c4f7bcaca772e736447ff6f0f1d018c1b4f8216791a5f75f8c810733303c1951",
+  "rawHash": "556ecf38aafae0b1cf054db1cb3c3b7a44b61c6c16ea9c96fb2996e7c90ca0a8",
+  "textHash": "d9988cb462da78cd9c99d23d956453584983b4d847d1b30298c10403cb52c8d1",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Apotheke Ertragsmanagement Frauenklinik Gesundheitszentrum Laufen Grossbauprojekte Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 86 offene Stellen Altersmedizin & Rehabilitation Arztsekretärin/Arztsekretär ZAR (a) 60% Pflege Fachverantwortliche/Fachverantwortlicher Pflege (a) 80-100% Human Resources Teamleiterin/Teamleiter Zeitwirtschaft (a) 80-100% Zentrales Patientenmanagement Patientenmanagerin/Patientenmanager mit optionaler stv. Führungsfunktion (a) 80-100% Technischer Dienst Teamleiterin/Teamleiter Elektrotechnik (a) 100% Therapien Dipl. Physiotherapeutin/Physiotherapeut (a) 40-50% Innere Medizin Mitarbeiterin/Mitarbeiter Verpflegungs-Service Bettenstation (a) 40% Altersmedizin & Rehabilitation Dipl. Pflegefachfrau/Pflegefachmann Akutgeriatrie (a) 80-100% Orthopädie & Traumatologie Arztsekretärin/Arztsekretär oder MPA (a) 80% Interdisziplinäres Ambulatorium MPA Interdisziplinären Ambulatorium (a) 60% Zentrallaboratorien Biomed. Analytikerin/Analytiker HF (a) 80-100% 1 2 3 4 5 … 8",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Apotheke Betriebsunterhalt Ertragsmanagement Frauenklinik Gastronomie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 96 offene Stellen Pflege AGS EBA in Ausbildung 2027 (a) 100% Pflege MPA EFZ in Ausbildung 2027 (a) 100% Betriebsunterhalt Fachfrau/Fachmann Betriebsunterhalt EFZ in Ausbildung 2027 (a) 100% Administration Kauffrau/Kaufmann EFZ in Ausbildung 2027 (a) 100% AEMP Medizinproduktetechnologin/Medizinproduktetechnologe EFZ in Ausbildung 2027 (a) 100% Hauswirtschaft Fachfrau/Fachmann Hotellerie-Hauswirtschaft EFZ in Ausbildung 2027 (a) 100% Pflege FaGe EFZ in Ausbildung 2027 (a) 100% Gastronomie Köchin/Koch EFZ in Ausbildung 2027 (a) 100% Gastronomie Diätköchin/Diätkoch FA in Ausbildung 2027 (a) 100% Spitalhygiene Fachexpertin/Fachexperte für Infektionsprävention (a) 50% Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 100% 1 2 3 4 5 … 9",
   "extractedLinks": [
     {
-      "text": "60%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/arztsekretaerin-arztsekretaer-zar-a/5d1f5dc8-b7ae-409b-aff3-6f2ab348bef7"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachverantwortliche-fachverantwortlicher-pflege-a/bb6a610b-3941-46f5-a7cc-f75455c7af71"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/teamleiterin-teamleiter-zeitwirtschaft-a/e69d3558-44f6-4cfe-a04a-43e00e00acc5"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/patientenmanagerin-patientenmanager-mit-optionaler-stv-fuehrungsfunktion-a/9caf5dc6-55da-44cb-9fc9-ccceecfe3cb7"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/ags-eba-in-ausbildung-2027-a/8ecc2e38-ea70-4b44-92ad-4eaae5662dbb"
     },
     {
       "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/teamleiterin-teamleiter-elektrotechnik-a/aa08c534-e941-457a-bacf-2cad734ebc9d"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-efz-in-ausbildung-2027-a/7e899143-645a-4e92-8ac7-562e61278f27"
     },
     {
-      "text": "40-50%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-physiotherapeutin-physiotherapeut-a/d38dda0c-0856-4782-b116-fc9bc219cc9a"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-betriebsunterhalt-efz-in-ausbildung-2027-a/1c0eeced-fd79-4b53-9fca-8734c2a2b74f"
     },
     {
-      "text": "40%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-verpflegungs-service-bettenstation-a/e5fb4d03-704d-4017-9900-7154151a096f"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/kauffrau-kaufmann-efz-in-ausbildung-2027-a/48ab870d-816e-4573-bf74-ee211166e885"
     },
     {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-akutgeriatrie-a/0c3fd09c-176f-4c42-a089-9a8fc2ce81cf"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/medizinproduktetechnologin-medizinproduktetechnologe-efz-in-ausbildung-2027-a/6e6f47bd-9404-4065-8cd9-5e50b73be355"
     },
     {
-      "text": "80%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/arztsekretaerin-arztsekretaer-oder-mpa-a/258f7087-c917-43c4-bf82-bd9851d17963"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-hotellerie-hauswirtschaft-efz-in-ausbildung-2027-a/27d3f083-53cd-413b-b0ca-93178c092369"
     },
     {
-      "text": "60%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-interdisziplinaeren-ambulatorium-a/946c8b7f-7b75-48a9-a424-aaec99912fe7"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-efz-in-ausbildung-2027-a/d0da3607-cf37-4697-a79c-181a963d458b"
     },
     {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/biomed-analytikerin-analytiker-hf-a/4a421ebd-e538-403a-9853-160a110b002f"
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/koechin-koch-efz-in-ausbildung-2027-a/2ae22c5e-abfe-4960-bc55-ef43bf74f941"
+    },
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/diaetkoechin-diaetkoch-fa-in-ausbildung-2027-a/2db15d1e-57a8-4881-9d8d-5101f5a0e0e4"
+    },
+    {
+      "text": "50%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachexpertin-fachexperte-fuer-infektionspraevention-a/e57efabf-9a42-4e56-bddb-7bebe54bc19a"
+    },
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-handtherapie-a/66ca8cf8-a98e-4e38-bc1a-e6caa903b5a1"
     },
     {
       "text": "2",

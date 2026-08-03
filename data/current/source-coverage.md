@@ -1,8 +1,8 @@
 # Source Coverage
 
-Generated at: 2026-07-31T05:50:31.823Z
+Generated at: 2026-08-03T05:57:43.053Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-07-31T05%3A50%3A31.823Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-03T05%3A57%3A43.053Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
