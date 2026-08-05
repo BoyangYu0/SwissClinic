@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-08-03T05:57:34.667Z
+Generated at: 2026-08-05T05:30:41.848Z
 
 ## Summary
 
-- Records needing review: 45
-- Low-confidence records: 23
-- Parser warnings: 75
-- Failed pages: 0
+- Records needing review: 43
+- Low-confidence records: 21
+- Parser warnings: 73
+- Failed pages: 1
 - Recent changes: 0
 
 ## Placement Records
@@ -71,36 +71,6 @@ Generated at: 2026-08-03T05:57:34.667Z
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No explicit availability status was detected.; No application URL or contact email was detected.
 - Snippet: Urgences Patients et proches Admission/séjour Visites/accès/parkings Sortie Soutien des patients Nos médecins Ordre alphabétique Par spécialité Nos prestations Ordre alphabétique Thématiques Par site Carrières Offres d'emplois Apprentissage et stage Valeurs Formations ← Retour Professionnels Médecins traitants Evénements Programme de formation Documents utiles / en savoir + Personnel H-JU Programme de formation Le programme de formation 2026 est en ligne. Il s’articule autour de plusieurs axes forts : Collaboration Des formations transversales renforcent l’interprofessionnalité et le partage d’expériences : réanimation avancée, Pack qualité des soins et sécurité des patients, formations en r
-
-### Hôpital du Valais (HVS) / Psychiatrie / ClinicalPlacement
-
-- ID: `hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde`
-- Source ID: `hopital-valais-formation`
-- Source URL: https://www.hopitalduvalais.ch/formations-professionnels
-- Confidence: low
-- Review status: needs-human-review
-- Source language: mixed
-- Region: mixed
-- Extraction language: fr
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No explicit availability status was detected.; No application URL or contact email was detected.
-- Snippet: médecine somatique, psychiatrie, psychothérapie, urgences, soins aigus ou de longue durée,… Sion Stage 12 jours + 6 séances d’intervisions (6x1h) Plus de Détails Formation médicale Formation médicale - Formation approfondie FMH Gériatrie Les objectifs généraux de la formation post-graduée sont ceux de l’art.3 de la réglementation pour la formation post-graduée de la FMH (RFP) du 21 juin 2000, dernière révision le 27 septembre 2018. Un médecin assistant en formation post graduée de 1ère année devrait maitriser au minimum les bases de… Martigny, Saint-Amé, Sierre Formation approfondie 1 an Plus de Détails Formation médicale - Formation postgraduée FMH Oncologie gynécologique Sion Formation pos
-
-### Hôpital du Valais (HVS) / Urgences / ClinicalPlacement
-
-- ID: `hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60`
-- Source ID: `hopital-valais-formation`
-- Source URL: https://www.hopitalduvalais.ch/formations-professionnels
-- Confidence: low
-- Review status: needs-human-review
-- Source language: mixed
-- Region: mixed
-- Extraction language: fr
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No explicit availability status was detected.; No application URL or contact email was detected.
-- Snippet: médecine somatique, psychiatrie, psychothérapie, urgences, soins aigus ou de longue durée,… Sion Stage 12 jours + 6 séances d’intervisions (6x1h) Plus de Détails Formation médicale Formation médicale - Formation approfondie FMH Gériatrie Les objectifs généraux de la formation post-graduée sont ceux de l’art.3 de la réglementation pour la formation post-graduée de la FMH (RFP) du 21 juin 2000, dernière révision le 27 septembre 2018. Un médecin assistant en formation post graduée de 1ère année devrait maitriser au minimum les bases de… Martigny, Saint-Amé, Sierre Formation approfondie 1 an Plus de Détails Formation médicale - Formation postgraduée FMH Oncologie gynécologique Sion Formation pos
 
 ### Hôpital fribourgeois (HFR) / Not specified / Unknown
 
@@ -721,10 +691,6 @@ Generated at: 2026-08-03T05:57:34.667Z
   Source: https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html
 - `hopital-riviera-chablais-formation` (generic): Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found.
   Source: https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found
-- `hopital-valais-formation` (generic): Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review.
-  Source: https://www.hopitalduvalais.ch/formations-professionnels
-- `hopital-valais-formation` (generic): No medium-confidence record was extracted.
-  Source: https://www.hopitalduvalais.ch/formations-professionnels
 - `hug-geneve-enseignement-formation` (generic): Generic parser found no medical placement signal on https://www.hug.ch/formation-de-base.
   Source: https://www.hug.ch/formation-de-base
 - `hug-geneve-stages` (generic): Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review.
@@ -852,7 +818,9 @@ Generated at: 2026-08-03T05:57:34.667Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
-No failed pages.
+- `hopital-valais-formation`: fetch failed
+  Status: unknown
+  URL: https://www.hopitalduvalais.ch/fr/formation
 ## Changed Pages
 
 No recent changes.

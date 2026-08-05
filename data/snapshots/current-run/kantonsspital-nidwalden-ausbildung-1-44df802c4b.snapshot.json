@@ -1,10 +1,10 @@
 {
   "sourceId": "kantonsspital-nidwalden-ausbildung",
   "url": "https://www.spital-nidwalden.ch/",
-  "fetchedAt": "2026-08-03T05:54:38.727Z",
+  "fetchedAt": "2026-08-05T05:27:08.281Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "77f4221511068bbc8d6d2fdc169cb58e51f4bc6c455f5a227fb3c14bd8536aa0",
+  "rawHash": "89509c710f9db15432ee8036678e578bdd289a687554785cf7f5aa1879915fa8",
   "textHash": "38ab2547f7026fd0a26b0eae814e82f93f65c14e10b48640dc737c4769d1c354",
   "title": "Spital Nidwalden",
   "visibleText": "Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Spital NidwaldenNotfallSuchenNotfallWillkommen am Spital NidwaldenSucheSuche startenPatientinnen und PatientenKliniken und FachbereicheDie Kliniken und Fachbereiche am Spital NidwaldenWas wir behandelnHier finden Sie das Behandlungsangebot am Spital NidwaldenSymptomcheckerKontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den ParkplätzenVorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen BlickInformationen für Besuchende und AngehörigePatientenbesucheAllgemeine und besondere Besuchszeiten BabygalerieDie Neugeborenen am Spital NidwaldenRestaurant hip und ShopKarriere und JobsOffene StellenJob gesucht mit Sinn und Herz? Wir sind mit Leidenschaft für Menschen da. Arbeiten am Spital NidwaldenAlles rund ums Arbeiten am Spital NidwaldenAus- und WeiterbildungWer bei uns lernt, lernt fürs Leben.ZuweisendeInformationen für ZuweisendeEine partnerschaftliche Zusammenarbeit zwischen Ihnen und dem Spital Nidwalden ist uns ein grosses Anliegen.Fachpersonal findenHier finden Sie unsere Ärztinnen, Ärzte und FachkräfteÄrztliche FortbildungenDie Veranstaltungen am Spital Nidwalden auf einen BlickWar diese Seite hilfreich?JaNein",
@@ -23,7 +23,7 @@
     },
     {
       "text": "Was wir behandelnHier finden Sie das Behandlungsangebot am Spital Nidwalden",
-      "href": "https://www.spital-nidwalden.ch/was-wir-behandeln-1"
+      "href": "https://www.spital-nidwalden.ch/was-wir-behandeln-0"
     },
     {
       "text": "Symptomchecker",

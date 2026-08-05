@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-08-03T05:57:17.096Z",
+  "generatedAt": "2026-08-05T05:30:23.884Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 0,
-  "recordsExtracted": 47,
+  "pagesFailed": 1,
+  "recordsExtracted": 45,
   "confidenceCounts": {
     "high": 5,
     "medium": 19,
-    "low": 23
+    "low": 21
   },
   "sourceLanguageCounts": {
     "de": 32,
     "en": 1,
     "fr": 9,
     "it": 2,
-    "mixed": 3
+    "mixed": 1
   },
   "regionCounts": {
     "de-CH": 31,
     "fr-CH": 8,
     "it-CH": 2,
-    "mixed": 6
+    "mixed": 4
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 45
+    "needs-human-review": 43
   },
-  "recordsNeedingReview": 45,
+  "recordsNeedingReview": 43,
   "parserCounts": {
-    "generic": 46,
+    "generic": 45,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -36,7 +36,14 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedPages": [],
+  "failedPages": [
+    {
+      "sourceId": "hopital-valais-formation",
+      "url": "https://www.hopitalduvalais.ch/fr/formation",
+      "statusCode": null,
+      "error": "fetch failed"
+    }
+  ],
   "warnings": [
     {
       "sourceId": "balgrist-zuerich-karriere",
@@ -133,18 +140,6 @@
       "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
       "parserName": "generic",
       "warning": "Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found."
-    },
-    {
-      "sourceId": "hopital-valais-formation",
-      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review."
-    },
-    {
-      "sourceId": "hopital-valais-formation",
-      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
     },
     {
       "sourceId": "hug-geneve-enseignement-formation",
