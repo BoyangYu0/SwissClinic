@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T05:57:43.053Z",
+  "generatedAt": "2026-08-05T05:30:50.603Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -93,26 +93,6 @@
       ],
       "region": [
         "fr-CH"
-      ]
-    },
-    {
-      "institutionName": "Hôpital du Valais (HVS)",
-      "normalizedName": "hospital du valais hvs",
-      "canton": "VS",
-      "city": "Sion",
-      "sourceIds": [
-        "hopital-valais-formation"
-      ],
-      "sourceCount": 1,
-      "recordCount": 2,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "mixed"
-      ],
-      "region": [
-        "mixed"
       ]
     },
     {
@@ -555,6 +535,26 @@
       ]
     },
     {
+      "institutionName": "Hôpital du Valais (HVS)",
+      "normalizedName": "hospital du valais hvs",
+      "canton": "VS",
+      "city": "Sion",
+      "sourceIds": [
+        "hopital-valais-formation"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "mixed"
+      ],
+      "region": [
+        "mixed"
+      ]
+    },
+    {
       "institutionName": "Hôpital Riviera-Chablais (HRC)",
       "normalizedName": "hospital riviera chablais hrc",
       "canton": "VD",
@@ -975,7 +975,28 @@
       ]
     }
   ],
-  "institutionsWithFailedCrawl": [],
+  "institutionsWithFailedCrawl": [
+    {
+      "institutionName": "Hôpital du Valais (HVS)",
+      "normalizedName": "hospital du valais hvs",
+      "canton": "VS",
+      "city": "Sion",
+      "sourceIds": [
+        "hopital-valais-formation"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "mixed"
+      ],
+      "region": [
+        "mixed"
+      ]
+    }
+  ],
   "institutionsNeedingManualVerification": [
     {
       "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
@@ -1108,7 +1129,7 @@
         "hopital-valais-formation"
       ],
       "sourceCount": 1,
-      "recordCount": 2,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],

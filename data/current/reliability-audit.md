@@ -1,13 +1,13 @@
 # Sparse Information Reliability Audit
 
-Generated at: 2026-08-03T05:57:51.600Z
+Generated at: 2026-08-05T05:30:59.495Z
 
 ## Summary
 
 - Sources: 61
-- Placements: 47
+- Placements: 45
 - Sources requiring manual verification: 61
-- Sparse placement records: 47
+- Sparse placement records: 45
 - Risky auto-published placement records: 0
 
 ## Sources by language
@@ -24,7 +24,7 @@ Generated at: 2026-08-03T05:57:51.600Z
 - en: 1
 - fr: 9
 - it: 2
-- mixed: 3
+- mixed: 1
 
 ## Sources by region
 
@@ -38,17 +38,17 @@ Generated at: 2026-08-03T05:57:51.600Z
 - de-CH: 31
 - fr-CH: 8
 - it-CH: 2
-- mixed: 6
+- mixed: 4
 
 
 ## Phase A-G Checks
 
 - Phase A: pass - 61 sources loaded; 61 remain in candidate/needs-review status.
-- Phase B: pass - 47 placement records validate with multilingual source metadata.
+- Phase B: pass - 45 placement records validate with multilingual source metadata.
 - Phase C: pass - Monorepo scripts are available for validation, typecheck, lint, tests, build, data generation, and reports.
 - Phase D: pass - Date, availability, HTML, fetch, hash, and diff utilities are covered by automated tests.
 - Phase E: pass - Parser framework is multilingual, but non-German real sources are still source-only until crawled fixtures exist.
-- Phase F: pass - 47 sparse placement records and 0 risky auto-published records found.
+- Phase F: pass - 45 sparse placement records and 0 risky auto-published records found.
 - Phase G: pass - Static frontend supports source/detail display, review warnings, language/region filtering, and generated report copying.
 
 ## Language Reliability
@@ -57,7 +57,7 @@ Generated at: 2026-08-03T05:57:51.600Z
 - en: needs-review; 1 sources, 1 placements, 1 records needing review, 1 manual source checks
 - fr: needs-review; 11 sources, 9 placements, 9 records needing review, 11 manual source checks
 - it: needs-review; 5 sources, 2 placements, 2 records needing review, 5 manual source checks
-- mixed: needs-review; 3 sources, 3 placements, 3 records needing review, 3 manual source checks
+- mixed: needs-review; 3 sources, 1 placements, 1 records needing review, 3 manual source checks
 
 ## Placement Issues
 
@@ -76,14 +76,6 @@ Generated at: 2026-08-03T05:57:51.600Z
 - info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `programme-de-formation-emergency-medicine-clinicalplacement-7df446ea6f73` (fr, fr-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde` (mixed, mixed) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde` (mixed, mixed) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60` (mixed, mixed) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60` (mixed, mixed) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `hopital-fribourgeois-unknown-unknown-33e35c2287ba` (mixed, mixed) - low-confidence review queue marker
   Action: Review this placement against the official source page.

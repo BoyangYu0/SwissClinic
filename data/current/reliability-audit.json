@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-03T05:57:51.600Z",
+  "generatedAt": "2026-08-05T05:30:59.495Z",
   "sourceCount": 61,
-  "placementCount": 47,
+  "placementCount": 45,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -14,7 +14,7 @@
     "en": 1,
     "fr": 9,
     "it": 2,
-    "mixed": 3
+    "mixed": 1
   },
   "countsByRegion": {
     "de-CH": 40,
@@ -26,10 +26,10 @@
     "de-CH": 31,
     "fr-CH": 8,
     "it-CH": 2,
-    "mixed": 6
+    "mixed": 4
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 47,
+  "sparsePlacementCount": 45,
   "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
@@ -71,9 +71,9 @@
     {
       "sourceLanguage": "mixed",
       "sources": 3,
-      "placements": 3,
-      "recordsNeedingReview": 3,
-      "sparseRecords": 3,
+      "placements": 1,
+      "recordsNeedingReview": 1,
+      "sparseRecords": 1,
       "manualVerificationSources": 3,
       "status": "needs-review"
     }
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "47 placement records validate with multilingual source metadata."
+      "summary": "45 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -107,7 +107,7 @@
     {
       "phase": "F",
       "status": "pass",
-      "summary": "47 sparse placement records and 0 risky auto-published records found."
+      "summary": "45 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -745,42 +745,6 @@
       "sourceId": "hopital-jura-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
-      "sourceId": "hopital-valais-formation",
-      "sourceLanguage": "mixed",
-      "region": "mixed",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
-      "sourceId": "hopital-valais-formation",
-      "sourceLanguage": "mixed",
-      "region": "mixed",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
-      "sourceId": "hopital-valais-formation",
-      "sourceLanguage": "mixed",
-      "region": "mixed",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
-      "sourceId": "hopital-valais-formation",
-      "sourceLanguage": "mixed",
-      "region": "mixed",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-03T05:54:38.727Z",
+  "generatedAt": "2026-08-05T05:27:08.281Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 61,
-  "failureCount": 0,
+  "successCount": 60,
+  "failureCount": 1,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -458,11 +458,11 @@
       "sourceId": "hopital-valais-formation",
       "url": "https://www.hopitalduvalais.ch/fr/formation",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hopital-valais-formation-1-edf7472a0c.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "hopital-riviera-chablais-formation",

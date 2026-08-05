@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T05:57:43.053Z",
+  "generatedAt": "2026-08-05T05:30:50.603Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 0,
+  "failedCrawlCount": 1,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {
@@ -225,6 +225,18 @@
       "region": "fr-CH",
       "urls": [
         "https://www.hug.ch/formation-de-base"
+      ]
+    },
+    {
+      "id": "hopital-valais-formation",
+      "institutionName": "Hôpital du Valais (HVS)",
+      "canton": "VS",
+      "city": "Sion",
+      "status": "needs-review",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "urls": [
+        "https://www.hopitalduvalais.ch/fr/formation"
       ]
     },
     {
