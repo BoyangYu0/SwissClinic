@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-08-05T05:30:23.884Z",
+  "generatedAt": "2026-08-09T03:58:41.942Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 1,
-  "recordsExtracted": 45,
+  "pagesFailed": 2,
+  "recordsExtracted": 46,
   "confidenceCounts": {
     "high": 5,
-    "medium": 19,
-    "low": 21
+    "medium": 18,
+    "low": 23
   },
   "sourceLanguageCounts": {
     "de": 32,
     "en": 1,
-    "fr": 9,
+    "fr": 8,
     "it": 2,
-    "mixed": 1
+    "mixed": 3
   },
   "regionCounts": {
     "de-CH": 31,
-    "fr-CH": 8,
+    "fr-CH": 7,
     "it-CH": 2,
-    "mixed": 4
+    "mixed": 6
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 43
+    "needs-human-review": 44
   },
-  "recordsNeedingReview": 43,
+  "recordsNeedingReview": 44,
   "parserCounts": {
-    "generic": 45,
+    "generic": 44,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -38,10 +38,16 @@
   },
   "failedPages": [
     {
-      "sourceId": "hopital-valais-formation",
-      "url": "https://www.hopitalduvalais.ch/fr/formation",
+      "sourceId": "hopital-riviera-chablais-formation",
+      "url": "https://www.hopitalrivierachablais.ch/formation",
       "statusCode": null,
-      "error": "fetch failed"
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "sourceId": "unil-ecole-medecine-stages",
+      "url": "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html",
+      "statusCode": null,
+      "error": "The operation was aborted due to timeout"
     }
   ],
   "warnings": [
@@ -136,10 +142,16 @@
       "warning": "No medium-confidence record was extracted."
     },
     {
-      "sourceId": "hopital-riviera-chablais-formation",
-      "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
+      "sourceId": "hopital-valais-formation",
+      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
       "parserName": "generic",
-      "warning": "Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found."
+      "warning": "Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review."
+    },
+    {
+      "sourceId": "hopital-valais-formation",
+      "url": "https://www.hopitalduvalais.ch/formations-professionnels",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
     },
     {
       "sourceId": "hug-geneve-enseignement-formation",
@@ -404,12 +416,6 @@
       "url": "https://www.unige.ch/medecine/enseignement1",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
-    },
-    {
-      "sourceId": "unil-ecole-medecine-stages",
-      "url": "https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html needs human review."
     },
     {
       "sourceId": "usb-basel-career-education",

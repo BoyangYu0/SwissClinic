@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T05:30:50.603Z",
-  "totalRecords": 45,
+  "generatedAt": "2026-08-09T03:59:07.274Z",
+  "totalRecords": 46,
   "recordsByCanton": {
     "AG": 5,
     "BE": 1,
@@ -9,22 +9,22 @@
     "GR": 6,
     "LU": 1,
     "SG": 1,
-    "unknown": 12,
+    "unknown": 13,
     "VD": 2,
     "ZH": 15
   },
   "recordsByLanguage": {
     "de": 32,
     "en": 1,
-    "fr": 9,
+    "fr": 8,
     "it": 2,
-    "mixed": 1
+    "mixed": 3
   },
   "recordsByRegion": {
     "de-CH": 31,
-    "fr-CH": 8,
+    "fr-CH": 7,
     "it-CH": 2,
-    "mixed": 4
+    "mixed": 6
   },
   "recordsByDepartmentNormalized": {
     "anesthesiology": 3,
@@ -36,11 +36,12 @@
     "ophthalmology": 1,
     "orthopedics": 2,
     "pediatrics": 2,
+    "psychiatry": 1,
     "radiology": 3,
     "surgery": 4
   },
   "recordsByRoleType": {
-    "ClinicalPlacement": 9,
+    "ClinicalPlacement": 10,
     "Unknown": 7,
     "Unterassistenz": 19,
     "Wahlstudienjahr": 10
@@ -49,18 +50,18 @@
     "application-only": 9,
     "available": 2,
     "fully-booked-until": 3,
-    "not-specified": 31
+    "not-specified": 32
   },
   "recordsByConfidence": {
     "high": 5,
-    "low": 21,
-    "medium": 19
+    "low": 23,
+    "medium": 18
   },
   "recordsByExtractionMethod": {
-    "generic-parser": 19,
+    "generic-parser": 20,
     "site-parser": 26
   },
   "highConfidenceCount": 5,
-  "reviewNeededCount": 43,
-  "highConfidenceToReviewNeededRatio": 0.11627906976744186
+  "reviewNeededCount": 44,
+  "highConfidenceToReviewNeededRatio": 0.11363636363636363
 }
