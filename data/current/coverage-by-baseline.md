@@ -1,8 +1,8 @@
 # Coverage By Baseline
 
-Generated at: 2026-08-05T05:30:50.603Z
+Generated at: 2026-08-09T03:59:07.274Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-05T05%3A30%3A50.603Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-09T03%3A59%3A07.274Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured against selected baselines. Candidate sources may not yet be verified, and some hospitals may not publish placement availability online.
 
@@ -12,8 +12,8 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
 | --- | ---: |
 | Baseline entries | 17 |
 | Ambiguous | 2 |
-| Covered | 9 |
-| Likely Covered | 3 |
+| Covered | 7 |
+| Likely Covered | 5 |
 | Missing | 3 |
 
 ## Baseline entries by baseline source
@@ -30,8 +30,8 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
 | Value | Count |
 | --- | ---: |
 | ambiguous | 2 |
-| covered | 9 |
-| likely-covered | 3 |
+| covered | 7 |
+| likely-covered | 5 |
 | missing | 3 |
 
 
@@ -92,11 +92,11 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Baseline source: manual-example-swiss-hospitals
   Source URL: https://www.hug.ch/
   Notes: No source-registry institution matched this baseline entry.
-- `lausanne-university-hospital` Lausanne University Hospital (VD, Lausanne): covered (fuzzy)
+- `lausanne-university-hospital` Lausanne University Hospital (VD, Lausanne): likely-covered (fuzzy)
   Matched institutions: Université de Lausanne (UNIL), École de médecine
   Baseline source: manual-example-swiss-hospitals
   Source URL: https://www.chuv.ch/
-  Notes: Matched source registry institution has extracted placement records.
+  Notes: Matched source registry institution is source-only; no records extracted yet.
 - `spital-schaffhausen` Spitaeler Schaffhausen (SH, Schaffhausen): likely-covered (exact)
   Matched institutions: Spitäler Schaffhausen
   Baseline source: manual-example-swiss-hospitals
@@ -112,11 +112,11 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Baseline source: manual-example-university-catalogue
   Source URL: https://www.med.uzh.ch/
   Notes: Matched source registry institution has extracted placement records.
-- `university-lausanne-medicine` Universite de Lausanne Ecole de medecine (VD, Lausanne): covered (fuzzy)
+- `university-lausanne-medicine` Universite de Lausanne Ecole de medecine (VD, Lausanne): likely-covered (fuzzy)
   Matched institutions: Université de Lausanne (UNIL), École de médecine
   Baseline source: manual-example-university-catalogue
   Source URL: https://www.unil.ch/ecoledemedecine/
-  Notes: Matched source registry institution has extracted placement records.
+  Notes: Matched source registry institution is source-only; no records extracted yet.
 - `university-usi-biomed` Universita della Svizzera italiana Faculty of Biomedical Sciences (TI, Lugano): missing (none)
   Matched institutions: none
   Baseline source: manual-example-university-catalogue
@@ -151,7 +151,7 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Status: needs-review
 - Hôpital du Valais (HVS) (VS, Sion)
   Sources: hopital-valais-formation
-  Records: 0
+  Records: 2
   Status: needs-review
 - Hôpital fribourgeois (HFR) (FR, Fribourg)
   Sources: hfr-fribourg-formation

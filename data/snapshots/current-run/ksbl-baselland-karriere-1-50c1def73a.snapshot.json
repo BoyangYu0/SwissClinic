@@ -1,21 +1,37 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-08-05T05:27:08.281Z",
+  "fetchedAt": "2026-08-09T03:54:58.694Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "590bb156dd28c20304f4d4a7cbee6216b3eb5834496a5ed22a338d50b3e5147e",
-  "textHash": "db0f464160d78795796c7d0c87d320e84fd32af13de77ddc4e4565e5b9a784d1",
+  "rawHash": "dcfad8c40c32a8461afc18d23005befff3910a53f066cfc5f4897c40b51896f2",
+  "textHash": "9259428aeb0678f4ddef0bcb5373db4b92aa23abf35ad53506527ca46d5b4464",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Betriebsunterhalt Frauenklinik Gastronomie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 92 offene Stellen Orthopädie & Traumatologie Oberärztin/Oberarzt Orthopädie Team Wirbelsäule (a) 100% Pflege AGS EBA in Ausbildung 2027 (a) 100% Pflege MPA EFZ in Ausbildung 2027 (a) 100% Betriebsunterhalt Fachfrau/Fachmann Betriebsunterhalt EFZ in Ausbildung 2027 (a) 100% AEMP Medizinproduktetechnologin/Medizinproduktetechnologe EFZ in Ausbildung 2027 (a) 100% Administration Kauffrau/Kaufmann EFZ in Ausbildung 2027 (a) 100% Hauswirtschaft Fachfrau/Fachmann Hotellerie-Hauswirtschaft EFZ in Ausbildung 2027 (a) 100% Pflege FaGe EFZ in Ausbildung 2027 (a) 100% Gastronomie Köchin/Koch EFZ in Ausbildung 2027 (a) 100% Gastronomie Diätköchin/Diätkoch FA in Ausbildung 2027 (a) 100% Spitalhygiene Fachexpertin/Fachexperte für Infektionsprävention (a) 50% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Frauenklinik Gastronomie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 95 offene Stellen Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Innere Medizin MPA Ambulatorium Universitäre Innere Medizin (a) 80-100% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Stv. Stationsleiterin/Stv. Stationsleiter (a) 80-100% Orthopädie & Traumatologie Oberärztin/Oberarzt Orthopädie Team Wirbelsäule (a) 100% Pflege MPA EFZ in Ausbildung 2027 (a) 100% Pflege AGS EBA in Ausbildung 2027 (a) 100% Technischer Dienst Fachfrau/Fachmann Betriebsunterhalt EFZ in Ausbildung 2027 (a) 100% Hauswirtschaft Fachfrau/Fachmann Hotellerie-Hauswirtschaft EFZ in Ausbildung 2027 (a) 100% AEMP Medizinproduktetechnologin/Medizinproduktetechnologe EFZ in Ausbildung 2027 (a) 100% 1 2 3 4 5 … 9",
   "extractedLinks": [
     {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-orthopaedie-team-wirbelsaeule-a/a6ce443c-1981-4224-a7af-a9e62db79ab5"
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachspezialistin-fachspezialist-fakturierung-a/290bba64-4ee9-4c04-b89f-c37fa9b2da45"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-endoskopie-a/d7e21492-0bf2-49c6-9b25-3ce1d2e9476b"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-ambulatorium-universitaere-innere-medizin-a/9aae7b8b-f967-490c-a8ac-4a80a8d865ad"
+    },
+    {
+      "text": "50%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/68555bfe-7c27-49c8-964b-600a9e1fe56f"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stv-stationsleiter-a/5d258ee6-5416-4f85-827e-eef215150384"
     },
     {
       "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/ags-eba-in-ausbildung-2027-a/8ecc2e38-ea70-4b44-92ad-4eaae5662dbb"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-orthopaedie-team-wirbelsaeule-a/a6ce443c-1981-4224-a7af-a9e62db79ab5"
     },
     {
       "text": "100%",
@@ -23,15 +39,11 @@
     },
     {
       "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/ags-eba-in-ausbildung-2027-a/8ecc2e38-ea70-4b44-92ad-4eaae5662dbb"
+    },
+    {
+      "text": "100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-betriebsunterhalt-efz-in-ausbildung-2027-a/1c0eeced-fd79-4b53-9fca-8734c2a2b74f"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/medizinproduktetechnologin-medizinproduktetechnologe-efz-in-ausbildung-2027-a/6e6f47bd-9404-4065-8cd9-5e50b73be355"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/kauffrau-kaufmann-efz-in-ausbildung-2027-a/48ab870d-816e-4573-bf74-ee211166e885"
     },
     {
       "text": "100%",
@@ -39,19 +51,7 @@
     },
     {
       "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-efz-in-ausbildung-2027-a/d0da3607-cf37-4697-a79c-181a963d458b"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/koechin-koch-efz-in-ausbildung-2027-a/2ae22c5e-abfe-4960-bc55-ef43bf74f941"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/diaetkoechin-diaetkoch-fa-in-ausbildung-2027-a/2db15d1e-57a8-4881-9d8d-5101f5a0e0e4"
-    },
-    {
-      "text": "50%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachexpertin-fachexperte-fuer-infektionspraevention-a/e57efabf-9a42-4e56-bddb-7bebe54bc19a"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/medizinproduktetechnologin-medizinproduktetechnologe-efz-in-ausbildung-2027-a/6e6f47bd-9404-4065-8cd9-5e50b73be355"
     },
     {
       "text": "2",

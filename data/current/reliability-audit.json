@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-05T05:30:59.495Z",
+  "generatedAt": "2026-08-09T03:59:15.721Z",
   "sourceCount": 61,
-  "placementCount": 45,
+  "placementCount": 46,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -12,9 +12,9 @@
   "placementCountsBySourceLanguage": {
     "de": 32,
     "en": 1,
-    "fr": 9,
+    "fr": 8,
     "it": 2,
-    "mixed": 1
+    "mixed": 3
   },
   "countsByRegion": {
     "de-CH": 40,
@@ -24,12 +24,12 @@
   },
   "placementCountsByRegion": {
     "de-CH": 31,
-    "fr-CH": 8,
+    "fr-CH": 7,
     "it-CH": 2,
-    "mixed": 4
+    "mixed": 6
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 45,
+  "sparsePlacementCount": 46,
   "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
@@ -53,9 +53,9 @@
     {
       "sourceLanguage": "fr",
       "sources": 11,
-      "placements": 9,
-      "recordsNeedingReview": 9,
-      "sparseRecords": 9,
+      "placements": 8,
+      "recordsNeedingReview": 8,
+      "sparseRecords": 8,
       "manualVerificationSources": 11,
       "status": "needs-review"
     },
@@ -71,9 +71,9 @@
     {
       "sourceLanguage": "mixed",
       "sources": 3,
-      "placements": 1,
-      "recordsNeedingReview": 1,
-      "sparseRecords": 1,
+      "placements": 3,
+      "recordsNeedingReview": 3,
+      "sparseRecords": 3,
       "manualVerificationSources": 3,
       "status": "needs-review"
     }
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "45 placement records validate with multilingual source metadata."
+      "summary": "46 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -107,7 +107,7 @@
     {
       "phase": "F",
       "status": "pass",
-      "summary": "45 sparse placement records and 0 risky auto-published records found."
+      "summary": "46 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -745,6 +745,42 @@
       "sourceId": "hopital-jura-formation",
       "sourceLanguage": "fr",
       "region": "fr-CH",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-psychiatry-clinicalplacement-072d6948dcde",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "sparse availability: not-specified",
+      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
+      "reason": "low-confidence review queue marker",
+      "action": "Review this placement against the official source page."
+    },
+    {
+      "severity": "info",
+      "id": "hopital-du-valais-emergency-medicine-clinicalplacement-cb3c8abb2a60",
+      "sourceId": "hopital-valais-formation",
+      "sourceLanguage": "mixed",
+      "region": "mixed",
       "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
@@ -1445,15 +1481,6 @@
       "severity": "info",
       "id": "unige-unknown-unknown-dcc038c510a5",
       "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9",
-      "sourceId": "unil-ecole-medecine-stages",
       "sourceLanguage": "fr",
       "region": "fr-CH",
       "reason": "sparse availability: not-specified",
