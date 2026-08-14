@@ -1,13 +1,13 @@
 {
   "sourceId": "kantonsspital-nidwalden-ausbildung",
   "url": "https://www.spital-nidwalden.ch/",
-  "fetchedAt": "2026-08-09T03:54:58.694Z",
+  "fetchedAt": "2026-08-14T04:20:10.586Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "18ea88e4414fdace101dabcfca525d68ee6599095a3fa7c50b51637435a17b58",
-  "textHash": "38ab2547f7026fd0a26b0eae814e82f93f65c14e10b48640dc737c4769d1c354",
+  "rawHash": "c6263ef1dcaa408ed36fd9a39569ee26d7e82436bf7c9bd7ab54b7698bbc58d1",
+  "textHash": "12f59b134258014c51560736c2d237fe8c3fed5a47b6e61ec54125dc79311ff8",
   "title": "Spital Nidwalden",
-  "visibleText": "Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Spital NidwaldenNotfallSuchenNotfallWillkommen am Spital NidwaldenSucheSuche startenPatientinnen und PatientenKliniken und FachbereicheDie Kliniken und Fachbereiche am Spital NidwaldenWas wir behandelnHier finden Sie das Behandlungsangebot am Spital NidwaldenSymptomcheckerKontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den ParkplätzenVorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen BlickInformationen für Besuchende und AngehörigePatientenbesucheAllgemeine und besondere Besuchszeiten BabygalerieDie Neugeborenen am Spital NidwaldenRestaurant hip und ShopKarriere und JobsOffene StellenJob gesucht mit Sinn und Herz? Wir sind mit Leidenschaft für Menschen da. Arbeiten am Spital NidwaldenAlles rund ums Arbeiten am Spital NidwaldenAus- und WeiterbildungWer bei uns lernt, lernt fürs Leben.ZuweisendeInformationen für ZuweisendeEine partnerschaftliche Zusammenarbeit zwischen Ihnen und dem Spital Nidwalden ist uns ein grosses Anliegen.Fachpersonal findenHier finden Sie unsere Ärztinnen, Ärzte und FachkräfteÄrztliche FortbildungenDie Veranstaltungen am Spital Nidwalden auf einen BlickWar diese Seite hilfreich?JaNein",
+  "visibleText": "Direkt zum InhaltDirekt zum FussbereichDirekt zur SucheStartseite des Spital NidwaldenNotfallSuchenNotfallWillkommen am Spital NidwaldenSucheSuche startenPatientinnen und PatientenKliniken und FachbereicheDie Kliniken und Fachbereiche am Spital NidwaldenWas wir behandelnHier finden Sie das Behandlungsangebot am Spital NidwaldenSymptomcheckerVorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen BlickInformationen für Besuchende und AngehörigePatientenbesucheAllgemeine und besondere Besuchszeiten BabygalerieDie Neugeborenen am Spital NidwaldenRestaurant hip und ShopKarriere und JobsOffene StellenJob gesucht mit Sinn und Herz? Wir sind mit Leidenschaft für Menschen da. Arbeiten am Spital NidwaldenAlles rund ums Arbeiten am Spital NidwaldenAus- und WeiterbildungWer bei uns lernt, lernt fürs Leben.ZuweisendeInformationen für ZuweisendeEine partnerschaftliche Zusammenarbeit zwischen Ihnen und dem Spital Nidwalden ist uns ein grosses Anliegen.Fachpersonal findenHier finden Sie unsere Ärztinnen, Ärzte und FachkräfteÄrztliche FortbildungenDie Veranstaltungen am Spital Nidwalden auf einen BlickWar diese Seite hilfreich?JaNein",
   "extractedLinks": [
     {
       "text": "Direkt zum Inhalt",
@@ -28,10 +28,6 @@
     {
       "text": "Symptomchecker",
       "href": "https://www.spital-nidwalden.ch/symptomchecker"
-    },
-    {
-      "text": "Kontakt und AnreiseInformationen zur Adresse, Anreise mit ÖV und den Parkplätzen",
-      "href": "https://www.spital-nidwalden.ch/standorte/kontakt-und-anreise-spital-nidwalden"
     },
     {
       "text": "Vorträge und KurseDie Veranstaltungen am Spital Nidwalden auf einen Blick",

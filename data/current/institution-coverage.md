@@ -1,8 +1,8 @@
 # Institution Coverage
 
-Generated at: 2026-08-09T03:59:07.274Z
+Generated at: 2026-08-14T04:23:39.563Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+institution-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Institution+Coverage%22%2C%0A++++%22reportPath%22%3A+%22institution-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-09T03%3A59%3A07.274Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+institution-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Institution+Coverage%22%2C%0A++++%22reportPath%22%3A+%22institution-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-14T04%3A23%3A39.563Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured by normalized institution names from the source registry and extracted placement records. Candidate sources may not yet be verified.
 
@@ -11,9 +11,9 @@ Coverage is measured by normalized institution names from the source registry an
 | Metric | Count |
 | --- | ---: |
 | Unique institutions | 46 |
-| Institutions with extracted records | 21 |
-| Institutions without extracted records | 25 |
-| Institutions with failed crawl | 2 |
+| Institutions with extracted records | 23 |
+| Institutions without extracted records | 23 |
+| Institutions with failed crawl | 0 |
 | Institutions needing manual verification | 46 |
 
 ## Institutions by canton
@@ -125,10 +125,6 @@ Coverage is measured by normalized institution names from the source registry an
   Sources: spitaeler-schaffhausen-aus-und-weiterbildung
   Records: 0
   Status: needs-review
-- Spitalverbund Appenzell Ausserrhoden (SVAR) (AR, Herisau)
-  Sources: svar-appenzell-aus-und-weiterbildung
-  Records: 0
-  Status: needs-review
 - Stadtspital Zürich (ZH, Zuerich)
   Sources: stadtspital-zuerich-karriere-ausbildung
   Records: 0
@@ -147,10 +143,6 @@ Coverage is measured by normalized institution names from the source registry an
   Status: candidate
 - Universitätsklinik Balgrist (ZH, Zuerich)
   Sources: balgrist-zuerich-karriere
-  Records: 0
-  Status: needs-review
-- Université de Lausanne (UNIL), École de médecine (VD, Lausanne)
-  Sources: unil-ecole-medecine-stages
   Records: 0
   Status: needs-review
 - Zuger Kantonsspital (ZG, Baar)

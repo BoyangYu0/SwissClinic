@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T03:59:07.274Z",
+  "generatedAt": "2026-08-14T04:23:39.563Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 2,
+  "failedCrawlCount": 0,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {
@@ -216,18 +216,6 @@
       ]
     },
     {
-      "id": "unil-ecole-medecine-stages",
-      "institutionName": "Université de Lausanne (UNIL), École de médecine",
-      "canton": "VD",
-      "city": "Lausanne",
-      "status": "needs-review",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "urls": [
-        "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html"
-      ]
-    },
-    {
       "id": "hug-geneve-enseignement-formation",
       "institutionName": "Hôpitaux universitaires de Genève (HUG)",
       "canton": "GE",
@@ -297,18 +285,6 @@
       "region": "de-CH",
       "urls": [
         "https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung"
-      ]
-    },
-    {
-      "id": "svar-appenzell-aus-und-weiterbildung",
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
-      "canton": "AR",
-      "city": "Herisau",
-      "status": "needs-review",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "urls": [
-        "https://www.svar.ch/karriere/aus-und-weiterbildung"
       ]
     },
     {

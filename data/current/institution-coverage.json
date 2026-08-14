@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T03:59:07.274Z",
+  "generatedAt": "2026-08-14T04:23:39.563Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -340,6 +340,26 @@
       ]
     },
     {
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
+      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
+      "canton": "AR",
+      "city": "Herisau",
+      "sourceIds": [
+        "svar-appenzell-aus-und-weiterbildung"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
       "institutionName": "Swiss Medical Network",
       "normalizedName": "swiss medical network",
       "canton": "VD",
@@ -463,6 +483,26 @@
       "recordCount": 1,
       "status": [
         "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Université de Lausanne (UNIL), École de médecine",
+      "normalizedName": "universitat de lausanne unil ecole de medecine",
+      "canton": "VD",
+      "city": "Lausanne",
+      "sourceIds": [
+        "unil-ecole-medecine-stages"
+      ],
+      "sourceCount": 1,
+      "recordCount": 1,
+      "status": [
+        "needs-review"
       ],
       "sourceLanguage": [
         "fr"
@@ -815,26 +855,6 @@
       ]
     },
     {
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
-      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
-      "canton": "AR",
-      "city": "Herisau",
-      "sourceIds": [
-        "svar-appenzell-aus-und-weiterbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Stadtspital Zürich",
       "normalizedName": "stadtspital zuerich",
       "canton": "ZH",
@@ -935,26 +955,6 @@
       ]
     },
     {
-      "institutionName": "Université de Lausanne (UNIL), École de médecine",
-      "normalizedName": "universitat de lausanne unil ecole de medecine",
-      "canton": "VD",
-      "city": "Lausanne",
-      "sourceIds": [
-        "unil-ecole-medecine-stages"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
       "institutionName": "Zuger Kantonsspital",
       "normalizedName": "zuger kantonsspital",
       "canton": "ZG",
@@ -975,48 +975,7 @@
       ]
     }
   ],
-  "institutionsWithFailedCrawl": [
-    {
-      "institutionName": "Hôpital Riviera-Chablais (HRC)",
-      "normalizedName": "hospital riviera chablais hrc",
-      "canton": "VD",
-      "city": "Rennaz",
-      "sourceIds": [
-        "hopital-riviera-chablais-formation"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
-      "institutionName": "Université de Lausanne (UNIL), École de médecine",
-      "normalizedName": "universitat de lausanne unil ecole de medecine",
-      "canton": "VD",
-      "city": "Lausanne",
-      "sourceIds": [
-        "unil-ecole-medecine-stages"
-      ],
-      "sourceCount": 1,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    }
-  ],
+  "institutionsWithFailedCrawl": [],
   "institutionsNeedingManualVerification": [
     {
       "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
@@ -1673,7 +1632,7 @@
         "svar-appenzell-aus-und-weiterbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
@@ -1925,7 +1884,7 @@
         "unil-ecole-medecine-stages"
       ],
       "sourceCount": 1,
-      "recordCount": 0,
+      "recordCount": 1,
       "status": [
         "needs-review"
       ],
