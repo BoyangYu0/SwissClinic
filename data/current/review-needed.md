@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-08-09T03:58:58.996Z
+Generated at: 2026-08-14T04:23:31.097Z
 
 ## Summary
 
-- Records needing review: 44
-- Low-confidence records: 23
-- Parser warnings: 73
-- Failed pages: 2
+- Records needing review: 46
+- Low-confidence records: 24
+- Parser warnings: 76
+- Failed pages: 0
 - Recent changes: 0
 
 ## Placement Records
@@ -55,7 +55,7 @@ Generated at: 2026-08-09T03:58:58.996Z
 - Availability: application-only
 - Reasons: low confidence; parser warnings; availability is application-only
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Offres d'emploi Candidature spontanée Si aucun poste ouvert ne correspond à votre profil, n’hésitez pas à nous envoyer une offre spontanée, comprenant votre CV, une lettre de motivation et l’ensemble de vos diplômes et certificats de travail.
+- Snippet: Offres d'emploi Candidature spontanéeSi aucun poste ouvert ne correspond à votre profil, n’hésitez pas à nous envoyer une offre spontanée, comprenant votre CV, une lettre de motivation et l’ensemble de vos diplômes et certificats de travail.Postulation spontanéePostulations des médecins assistant-e-s et chef-fe-s de clinique en médecineVous recherchez un poste de médecin assistant-e en médecine ?
 
 ### Hôpital du Jura (H-JU) / Urgences / ClinicalPlacement
 
@@ -477,6 +477,21 @@ Generated at: 2026-08-09T03:58:58.996Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.; No application URL or contact email was detected.
 - Snippet: Programm Unterassistenten Chirurgische Klinik. Programmtitel: Allgemeinchirurgie am Schwerpunktspital (Viszeralchirurgie und Traumatologie). Institution: Chirurgische Klinik, Spital Uster, 8610 Uster. Programmdauer: 1 - 3 Monate. Studenten pro Monat: 1 - 5.
 
+### Spitalverbund Appenzell Ausserrhoden (SVAR) / Not specified / Unknown
+
+- ID: `spitalverbund-ar-unknown-unknown-9e238ccd67b4`
+- Source ID: `svar-appenzell-aus-und-weiterbildung`
+- Source URL: https://spitalverbund.ch/
+- Confidence: low
+- Review status: needs-human-review
+- Source language: de
+- Region: de-CH
+- Extraction language: de
+- Availability: not-specified
+- Reasons: low confidence; parser warnings; availability is not-specified
+- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
+- Snippet: Spital Herisau Psychiatrisches Zentrum AR Kontakt Anfahrt Zuweiser Jobs News & Stories Medienmitteilungen Sieben neue FaGe-Lernende starten ihre Ausbildung im Spitalverbund AR 13.
+
 ### Swiss Medical Network / Not specified / ClinicalPlacement
 
 - ID: `swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61`
@@ -672,6 +687,21 @@ Generated at: 2026-08-09T03:58:58.996Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: ENSEIGNEMENT ENSEIGNEMENT Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées Forum "Médecine et après?" Quelle spécialisation choisir?
 
+### Université de Lausanne (UNIL), École de médecine / Urgences / ClinicalPlacement
+
+- ID: `fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9`
+- Source ID: `unil-ecole-medecine-stages`
+- Source URL: https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html
+- Confidence: medium
+- Review status: needs-human-review
+- Source language: fr
+- Region: fr-CH
+- Extraction language: fr
+- Availability: not-specified
+- Reasons: parser warnings; availability is not-specified
+- Warnings: Generic parser output requires human review.; No explicit availability status was detected.
+- Snippet: Publié le Santé Enseignement et Formation Le Pr Olivier Hugli reçoit le "Special Award for Outstanding Dedication in Practical Teaching" de la FBM À travers son investissement comme tuteur de très nombreux Travaux de Master, ainsi que son rôle de responsable de l'année de stage depuis 2019, le Pr Olivier Hugli, médecin chef au Service des urgences du CHUV, se distingue par son engagement auprès des étudiant·es en médecine, leur transmettant sa passion, tant pour la recherche que pour la clinique. Publié le Enseignement et Formation Santé
+
 ## Parser Warnings
 
 - `balgrist-zuerich-karriere` (generic): Generic parser found no medical placement signal on https://www.balgrist.ch/karriere.
@@ -704,6 +734,8 @@ Generated at: 2026-08-09T03:58:58.996Z
   Source: https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html
 - `hopital-jura-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html
+- `hopital-riviera-chablais-formation` (generic): Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found.
+  Source: https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found
 - `hopital-valais-formation` (generic): Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review.
   Source: https://www.hopitalduvalais.ch/formations-professionnels
 - `hopital-valais-formation` (generic): No medium-confidence record was extracted.
@@ -772,7 +804,9 @@ Generated at: 2026-08-09T03:58:58.996Z
   Source: https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf
 - `stadtspital-zuerich-karriere-ausbildung` (generic): Generic parser found no medical placement signal on https://www.stadt-zuerich.ch/stadtspital.
   Source: https://www.stadt-zuerich.ch/stadtspital
-- `svar-appenzell-aus-und-weiterbildung` (generic): Generic parser found no medical placement signal on https://spitalverbund.ch/.
+- `svar-appenzell-aus-und-weiterbildung` (generic): Generic parser output for https://spitalverbund.ch/ needs human review.
+  Source: https://spitalverbund.ch/
+- `svar-appenzell-aus-und-weiterbildung` (generic): No medium-confidence record was extracted.
   Source: https://spitalverbund.ch/
 - `swimsa-exchanges` (generic): Generic parser found no medical placement signal on https://swimsa.ch/exchanges/.
   Source: https://swimsa.ch/exchanges/
@@ -796,6 +830,8 @@ Generated at: 2026-08-09T03:58:58.996Z
   Source: https://www.unige.ch/medecine/enseignement1
 - `unige-medecine-enseignement` (generic): No medium-confidence record was extracted.
   Source: https://www.unige.ch/medecine/enseignement1
+- `unil-ecole-medecine-stages` (generic): Generic parser output for https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html needs human review.
+  Source: https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html
 - `usb-basel-career-education` (generic): Generic parser output for https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende needs human review.
   Source: https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende
 - `usb-basel-career-education` (generic): No medium-confidence record was extracted.
@@ -833,12 +869,7 @@ Generated at: 2026-08-09T03:58:58.996Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
-- `hopital-riviera-chablais-formation`: The operation was aborted due to timeout
-  Status: unknown
-  URL: https://www.hopitalrivierachablais.ch/formation
-- `unil-ecole-medecine-stages`: The operation was aborted due to timeout
-  Status: unknown
-  URL: https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html
+No failed pages.
 ## Changed Pages
 
 No recent changes.

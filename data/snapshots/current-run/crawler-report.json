@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-09T03:54:58.694Z",
+  "generatedAt": "2026-08-14T04:20:10.586Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 59,
-  "failureCount": 2,
+  "successCount": 61,
+  "failureCount": 0,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -418,11 +418,11 @@
       "sourceId": "unil-ecole-medecine-stages",
       "url": "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html",
       "fetchMode": "html",
-      "status": "failed",
-      "statusCode": null,
+      "status": "success",
+      "statusCode": 200,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/unil-ecole-medecine-stages-1-de0bb244cf.snapshot.json",
       "rawHtmlPath": null,
-      "error": "The operation was aborted due to timeout"
+      "error": null
     },
     {
       "sourceId": "hug-geneve-enseignement-formation",
@@ -468,11 +468,11 @@
       "sourceId": "hopital-riviera-chablais-formation",
       "url": "https://www.hopitalrivierachablais.ch/formation",
       "fetchMode": "html",
-      "status": "failed",
-      "statusCode": null,
+      "status": "success",
+      "statusCode": 200,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hopital-riviera-chablais-formation-1-6fa4091511.snapshot.json",
       "rawHtmlPath": null,
-      "error": "The operation was aborted due to timeout"
+      "error": null
     },
     {
       "sourceId": "hfr-fribourg-formation",

@@ -1,8 +1,8 @@
 # Source Coverage
 
-Generated at: 2026-08-09T03:59:07.274Z
+Generated at: 2026-08-14T04:23:39.563Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-09T03%3A59%3A07.274Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-14T04%3A23%3A39.563Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
@@ -12,9 +12,9 @@ Record count is not national clinic coverage. This report counts curated source 
 | --- | ---: |
 | Source entries | 61 |
 | Source URLs | 61 |
-| Failed crawl pages | 2 |
+| Failed crawl pages | 0 |
 | Manual/PDF/Playwright sources | 1 |
-| Sources with no extracted records | 28 |
+| Sources with no extracted records | 26 |
 
 ## Sources by canton
 
@@ -130,9 +130,6 @@ Record count is not national clinic coverage. This report counts curated source 
 - `kantonsspital-nidwalden-ausbildung` Kantonsspital Nidwalden (NW, Stans)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.ksnw.ch/karriere/ausbildung
-- `unil-ecole-medecine-stages` Université de Lausanne (UNIL), École de médecine (VD, Lausanne)
-  Status: needs-review; language: fr; region: fr-CH
-  URLs: https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html
 - `hug-geneve-enseignement-formation` Hôpitaux universitaires de Genève (HUG) (GE, Geneve)
   Status: needs-review; language: fr; region: fr-CH
   URLs: https://www.hug.ch/formation-de-base
@@ -151,9 +148,6 @@ Record count is not national clinic coverage. This report counts curated source 
 - `spitaeler-schaffhausen-aus-und-weiterbildung` Spitäler Schaffhausen (SH, Schaffhausen)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung
-- `svar-appenzell-aus-und-weiterbildung` Spitalverbund Appenzell Ausserrhoden (SVAR) (AR, Herisau)
-  Status: needs-review; language: de; region: de-CH
-  URLs: https://www.svar.ch/karriere/aus-und-weiterbildung
 - `spital-maennedorf-aus-und-weiterbildung` Spital Männedorf (ZH, Maennedorf)
   Status: needs-review; language: de; region: de-CH
   URLs: https://www.spitalmaennedorf.ch/karriere/aus-und-weiterbildung

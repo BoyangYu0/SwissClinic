@@ -1,15 +1,20 @@
 {
   "sourceId": "hopital-riviera-chablais-formation",
-  "url": "https://www.hopitalrivierachablais.ch/formation",
-  "fetchedAt": "2026-08-09T03:54:58.694Z",
-  "statusCode": null,
-  "contentType": null,
-  "rawHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "title": null,
-  "visibleText": "",
-  "extractedLinks": [],
+  "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
+  "fetchedAt": "2026-08-14T04:20:10.586Z",
+  "statusCode": 200,
+  "contentType": "text/html;charset=UTF-8",
+  "rawHash": "6a7211ae72b77595eb28b591c2e32bb931246d3d260795efc6fe98db01478551",
+  "textHash": "a57f5ea43ddd6f48114cf86fc83202279df465c1b533e6861ee1ee883cf1061b",
+  "title": "Hôpital Riviera Chablais (HRC) - 404 Page Not Found",
+  "visibleText": "404 La page demandée n'existe pas ! Avez-vous essayé de faire une recherche ? Revenir à l'accueil",
+  "extractedLinks": [
+    {
+      "text": "Revenir à l'accueil",
+      "href": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/index.jsp"
+    }
+  ],
   "extractedEmails": [],
   "fetchModeUsed": "html",
-  "error": "The operation was aborted due to timeout"
+  "error": null
 }
