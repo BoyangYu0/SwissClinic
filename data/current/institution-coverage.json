@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T03:19:03.975Z",
+  "generatedAt": "2026-08-22T03:13:35.270Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -331,26 +331,6 @@
       "recordCount": 1,
       "status": [
         "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
-      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
-      "canton": "AR",
-      "city": "Herisau",
-      "sourceIds": [
-        "svar-appenzell-aus-und-weiterbildung"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "needs-review"
       ],
       "sourceLanguage": [
         "de"
@@ -841,6 +821,26 @@
       "city": "Schaffhausen",
       "sourceIds": [
         "spitaeler-schaffhausen-aus-und-weiterbildung"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
+      "normalizedName": "spitalverbund appenzell ausserrhoden svar",
+      "canton": "AR",
+      "city": "Herisau",
+      "sourceIds": [
+        "svar-appenzell-aus-und-weiterbildung"
       ],
       "sourceCount": 1,
       "recordCount": 0,
@@ -1632,7 +1632,7 @@
         "svar-appenzell-aus-und-weiterbildung"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],

@@ -1,14 +1,30 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-08-17T03:15:34.776Z",
+  "fetchedAt": "2026-08-22T03:10:33.067Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "054c10976bff22b1832665e7d3fe92cf47d3700bd17049a59b49f8b20502ae46",
-  "textHash": "cd24acba43c5558ca06458b6a601cb37ec99901b6abedc91b87a9b3d525cf2cb",
+  "rawHash": "3f908800acc0ef168cd34b77de0289247eee649eb4160c910c2c493f05ea7b45",
+  "textHash": "ab088a7812929e756a9e310ef8476845b3fd336a8908be42901f530c5facb569",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Frauenklinik Gastronomie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrales Patientenmanagement Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 94 offene Stellen Gastronomie Diätköchin/Diätkoch / Köchin/Koch (a) 100% Orthopädie & Traumatologie Hausarztrotation (a) Station 80-100% Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Innere Medizin MPA Ambulatorium Universitäre Innere Medizin (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Stv. Stationsleiterin/Stv. Stationsleiter (a) 80-100% Orthopädie & Traumatologie Oberärztin/Oberarzt Orthopädie Team Wirbelsäule (a) 100% Pflege MPA EFZ in Ausbildung 2027 (a) 100% Pflege AGS EBA in Ausbildung 2027 (a) 100% Technischer Dienst Fachfrau/Fachmann Betriebsunterhalt EFZ in Ausbildung 2027 (a) 100% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Frauenklinik Gastronomie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Informatik & Digitalisierung Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 97 offene Stellen Altersmedizin & Rehabilitation Qualitätsmanagerin/Qualitätsmanager (a) 80-100% Therapien Stv. Leiterin/Leiter Ergotherapie/Physiotherapie Altersmedizin & Rehabilitation (a) 80-100% Notfallporte MPA oder FAGE an der Notfallporte (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Gastronomie Diätköchin/Diätkoch / Köchin/Koch (a) 100% Orthopädie & Traumatologie Hausarztrotation (a) Station 80-100% Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Innere Medizin MPA Ambulatorium Universitäre Innere Medizin (a) 80-100% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Stv. Stationsleiterin/Stv. Stationsleiter (a) 80-100% 1 2 3 4 5 … 9",
   "extractedLinks": [
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/qualitaetsmanagerin-qualitaetsmanager-a/173bebbb-c3a9-4329-8058-34c0ecd9e914"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-leiterin-leiter-ergotherapie-physiotherapie-altersmedizin-rehabilitation-a/6abb0ffa-8d12-4af0-8697-e738e8110ead"
+    },
+    {
+      "text": "80%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-oder-fage-an-der-notfallporte-a/37ebfb29-ddaa-43da-b2fa-a3738ebdffa8"
+    },
+    {
+      "text": "50%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/da3b1ee2-2c0f-4579-a77c-2790f3da5e6d"
+    },
     {
       "text": "100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/diaetkoechin-diaetkoch-koechin-koch-a/c71f276b-4def-4545-baca-e4926a9e32de"
@@ -23,11 +39,11 @@
     },
     {
       "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-ambulatorium-universitaere-innere-medizin-a/9aae7b8b-f967-490c-a8ac-4a80a8d865ad"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-endoskopie-a/d7e21492-0bf2-49c6-9b25-3ce1d2e9476b"
     },
     {
       "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-endoskopie-a/d7e21492-0bf2-49c6-9b25-3ce1d2e9476b"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-ambulatorium-universitaere-innere-medizin-a/9aae7b8b-f967-490c-a8ac-4a80a8d865ad"
     },
     {
       "text": "50%",
@@ -36,22 +52,6 @@
     {
       "text": "80-100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stv-stationsleiter-a/5d258ee6-5416-4f85-827e-eef215150384"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-orthopaedie-team-wirbelsaeule-a/a6ce443c-1981-4224-a7af-a9e62db79ab5"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-efz-in-ausbildung-2027-a/7e899143-645a-4e92-8ac7-562e61278f27"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/ags-eba-in-ausbildung-2027-a/8ecc2e38-ea70-4b44-92ad-4eaae5662dbb"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-betriebsunterhalt-efz-in-ausbildung-2027-a/1c0eeced-fd79-4b53-9fca-8734c2a2b74f"
     },
     {
       "text": "2",

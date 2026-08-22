@@ -1,8 +1,8 @@
 # Record Coverage
 
-Generated at: 2026-08-17T03:19:03.975Z
+Generated at: 2026-08-22T03:13:35.270Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Parser+bug%3A+record-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Parser+bug+%28parser-bug%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22parser-bug%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Record+Coverage%22%2C%0A++++%22reportPath%22%3A+%22record-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-17T03%3A19%3A03.975Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Parser+bug%3A+record-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Parser+bug+%28parser-bug%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22parser-bug%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Record+Coverage%22%2C%0A++++%22reportPath%22%3A+%22record-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-22T03%3A13%3A35.270Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. Some hospitals may not publish placement availability online.
 
@@ -10,9 +10,9 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 
 | Metric | Count |
 | --- | ---: |
-| Total records | 48 |
+| Total records | 47 |
 | High-confidence records | 5 |
-| Review-needed records | 46 |
+| Review-needed records | 45 |
 | High-confidence / review-needed ratio | 0.11 |
 
 ## Records by canton
@@ -26,7 +26,7 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 | GR | 6 |
 | LU | 1 |
 | SG | 1 |
-| unknown | 15 |
+| unknown | 14 |
 | VD | 2 |
 | ZH | 15 |
 
@@ -34,7 +34,7 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 
 | Value | Count |
 | --- | ---: |
-| de | 33 |
+| de | 32 |
 | en | 1 |
 | fr | 9 |
 | it | 2 |
@@ -44,7 +44,7 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 
 | Value | Count |
 | --- | ---: |
-| de-CH | 32 |
+| de-CH | 31 |
 | fr-CH | 8 |
 | it-CH | 2 |
 | mixed | 6 |
@@ -58,7 +58,7 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 | gynecology | 3 |
 | internal-medicine | 4 |
 | neuroradiology | 1 |
-| not-specified | 21 |
+| not-specified | 20 |
 | ophthalmology | 1 |
 | orthopedics | 2 |
 | pediatrics | 2 |
@@ -71,7 +71,7 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 | Value | Count |
 | --- | ---: |
 | ClinicalPlacement | 11 |
-| Unknown | 8 |
+| Unknown | 7 |
 | Unterassistenz | 19 |
 | Wahlstudienjahr | 10 |
 
@@ -82,20 +82,20 @@ Record count is not national clinic coverage. Some hospitals may not publish pla
 | application-only | 9 |
 | available | 2 |
 | fully-booked-until | 3 |
-| not-specified | 34 |
+| not-specified | 33 |
 
 ## Records by confidence
 
 | Value | Count |
 | --- | ---: |
 | high | 5 |
-| low | 24 |
+| low | 23 |
 | medium | 19 |
 
 ## Records by extraction method
 
 | Value | Count |
 | --- | ---: |
-| generic-parser | 22 |
+| generic-parser | 21 |
 | site-parser | 26 |
 
