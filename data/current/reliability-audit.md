@@ -1,13 +1,13 @@
 # Sparse Information Reliability Audit
 
-Generated at: 2026-08-17T03:19:12.804Z
+Generated at: 2026-08-22T03:13:43.908Z
 
 ## Summary
 
 - Sources: 61
-- Placements: 48
+- Placements: 47
 - Sources requiring manual verification: 61
-- Sparse placement records: 48
+- Sparse placement records: 47
 - Risky auto-published placement records: 0
 
 ## Sources by language
@@ -20,7 +20,7 @@ Generated at: 2026-08-17T03:19:12.804Z
 
 ## Placements by language
 
-- de: 33
+- de: 32
 - en: 1
 - fr: 9
 - it: 2
@@ -35,7 +35,7 @@ Generated at: 2026-08-17T03:19:12.804Z
 
 ## Placements by region
 
-- de-CH: 32
+- de-CH: 31
 - fr-CH: 8
 - it-CH: 2
 - mixed: 6
@@ -44,16 +44,16 @@ Generated at: 2026-08-17T03:19:12.804Z
 ## Phase A-G Checks
 
 - Phase A: pass - 61 sources loaded; 61 remain in candidate/needs-review status.
-- Phase B: pass - 48 placement records validate with multilingual source metadata.
+- Phase B: pass - 47 placement records validate with multilingual source metadata.
 - Phase C: pass - Monorepo scripts are available for validation, typecheck, lint, tests, build, data generation, and reports.
 - Phase D: pass - Date, availability, HTML, fetch, hash, and diff utilities are covered by automated tests.
 - Phase E: pass - Parser framework is multilingual, but non-German real sources are still source-only until crawled fixtures exist.
-- Phase F: pass - 48 sparse placement records and 0 risky auto-published records found.
+- Phase F: pass - 47 sparse placement records and 0 risky auto-published records found.
 - Phase G: pass - Static frontend supports source/detail display, review warnings, language/region filtering, and generated report copying.
 
 ## Language Reliability
 
-- de: needs-review; 41 sources, 33 placements, 31 records needing review, 41 manual source checks
+- de: needs-review; 41 sources, 32 placements, 30 records needing review, 41 manual source checks
 - en: needs-review; 1 sources, 1 placements, 1 records needing review, 1 manual source checks
 - fr: needs-review; 11 sources, 9 placements, 9 records needing review, 11 manual source checks
 - it: needs-review; 5 sources, 2 placements, 2 records needing review, 5 manual source checks
@@ -193,10 +193,6 @@ Generated at: 2026-08-17T03:19:12.804Z
   Action: Review this placement against the official source page.
 - info: `spital-uster-chirurgie-unterassistenten-pdf-unknown-unknown-2819d96665c8` (de, de-CH) - sparse availability: not-specified
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
-- info: `spitalverbund-ar-unknown-unknown-9e238ccd67b4` (de, de-CH) - low-confidence review queue marker
-  Action: Review this placement against the official source page.
-- info: `spitalverbund-ar-unknown-unknown-9e238ccd67b4` (de, de-CH) - sparse availability: not-specified
-  Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61` (it, mixed) - low-confidence review queue marker
   Action: Review this placement against the official source page.
 - info: `swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61` (it, mixed) - sparse availability: not-specified
@@ -235,7 +231,7 @@ Generated at: 2026-08-17T03:19:12.804Z
   Action: Keep the record visible as review-needed and avoid implying confirmed availability.
 - info: `universitatsspital-zurich-internal-medicine-unterassistenz-30be2762a054` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
-- info: `universitatsspital-zurich-neuroradiology-unterassistenz-b12e6b8ec025` (de, de-CH) - unknown extraction language
+- info: `universitatsspital-zurich-neuroradiology-unterassistenz-b92b616d77a3` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.
 - info: `universitatsspital-zurich-radiology-unterassistenz-30ee75461a48` (de, de-CH) - unknown extraction language
   Action: Confirm the parser selected the intended language pack.

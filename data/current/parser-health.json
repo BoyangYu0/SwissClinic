@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-08-17T03:18:36.848Z",
+  "generatedAt": "2026-08-22T03:13:09.712Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
   "pagesFailed": 0,
-  "recordsExtracted": 48,
+  "recordsExtracted": 47,
   "confidenceCounts": {
     "high": 5,
     "medium": 19,
-    "low": 24
+    "low": 23
   },
   "sourceLanguageCounts": {
-    "de": 33,
+    "de": 32,
     "en": 1,
     "fr": 9,
     "it": 2,
     "mixed": 3
   },
   "regionCounts": {
-    "de-CH": 32,
+    "de-CH": 31,
     "fr-CH": 8,
     "it-CH": 2,
     "mixed": 6
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 46
+    "needs-human-review": 45
   },
-  "recordsNeedingReview": 46,
+  "recordsNeedingReview": 45,
   "parserCounts": {
     "generic": 46,
     "ksa": 2,
@@ -342,13 +342,7 @@
       "sourceId": "svar-appenzell-aus-und-weiterbildung",
       "url": "https://spitalverbund.ch/",
       "parserName": "generic",
-      "warning": "Generic parser output for https://spitalverbund.ch/ needs human review."
-    },
-    {
-      "sourceId": "svar-appenzell-aus-und-weiterbildung",
-      "url": "https://spitalverbund.ch/",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
+      "warning": "Generic parser found no medical placement signal on https://spitalverbund.ch/."
     },
     {
       "sourceId": "swimsa-exchanges",
