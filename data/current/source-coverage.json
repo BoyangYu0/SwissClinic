@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T03:19:03.975Z",
+  "generatedAt": "2026-08-23T03:21:13.408Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -285,6 +285,18 @@
       "region": "de-CH",
       "urls": [
         "https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung"
+      ]
+    },
+    {
+      "id": "svar-appenzell-aus-und-weiterbildung",
+      "institutionName": "Spitalverbund Appenzell Ausserrhoden (SVAR)",
+      "canton": "AR",
+      "city": "Herisau",
+      "status": "needs-review",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.svar.ch/karriere/aus-und-weiterbildung"
       ]
     },
     {
