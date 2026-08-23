@@ -1,12 +1,12 @@
 # Manual Review Needed
 
-Generated at: 2026-08-17T03:18:55.383Z
+Generated at: 2026-08-23T03:21:04.926Z
 
 ## Summary
 
-- Records needing review: 46
-- Low-confidence records: 24
-- Parser warnings: 76
+- Records needing review: 45
+- Low-confidence records: 23
+- Parser warnings: 75
 - Failed pages: 0
 - Recent changes: 0
 
@@ -477,21 +477,6 @@ Generated at: 2026-08-17T03:18:55.383Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.; No application URL or contact email was detected.
 - Snippet: Programm Unterassistenten Chirurgische Klinik. Programmtitel: Allgemeinchirurgie am Schwerpunktspital (Viszeralchirurgie und Traumatologie). Institution: Chirurgische Klinik, Spital Uster, 8610 Uster. Programmdauer: 1 - 3 Monate. Studenten pro Monat: 1 - 5.
 
-### Spitalverbund Appenzell Ausserrhoden (SVAR) / Not specified / Unknown
-
-- ID: `spitalverbund-ar-unknown-unknown-9e238ccd67b4`
-- Source ID: `svar-appenzell-aus-und-weiterbildung`
-- Source URL: https://spitalverbund.ch/
-- Confidence: low
-- Review status: needs-human-review
-- Source language: de
-- Region: de-CH
-- Extraction language: de
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Spital Herisau Psychiatrisches Zentrum AR Kontakt Anfahrt Zuweiser Jobs News & Stories Medienmitteilungen Sieben neue FaGe-Lernende starten ihre Ausbildung im Spitalverbund AR 13.
-
 ### Swiss Medical Network / Not specified / ClinicalPlacement
 
 - ID: `swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61`
@@ -804,9 +789,7 @@ Generated at: 2026-08-17T03:18:55.383Z
   Source: https://www.spitaluster.ch/resources/Programm_Unterassistenten_ChirKlinik_kurz_pdf1.pdf
 - `stadtspital-zuerich-karriere-ausbildung` (generic): Generic parser found no medical placement signal on https://www.stadt-zuerich.ch/stadtspital.
   Source: https://www.stadt-zuerich.ch/stadtspital
-- `svar-appenzell-aus-und-weiterbildung` (generic): Generic parser output for https://spitalverbund.ch/ needs human review.
-  Source: https://spitalverbund.ch/
-- `svar-appenzell-aus-und-weiterbildung` (generic): No medium-confidence record was extracted.
+- `svar-appenzell-aus-und-weiterbildung` (generic): Generic parser found no medical placement signal on https://spitalverbund.ch/.
   Source: https://spitalverbund.ch/
 - `swimsa-exchanges` (generic): Generic parser found no medical placement signal on https://swimsa.ch/exchanges/.
   Source: https://swimsa.ch/exchanges/

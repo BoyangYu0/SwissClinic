@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-17T03:19:12.804Z",
+  "generatedAt": "2026-08-23T03:21:22.384Z",
   "sourceCount": 61,
-  "placementCount": 48,
+  "placementCount": 47,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -10,7 +10,7 @@
     "mixed": 3
   },
   "placementCountsBySourceLanguage": {
-    "de": 33,
+    "de": 32,
     "en": 1,
     "fr": 9,
     "it": 2,
@@ -23,21 +23,21 @@
     "mixed": 6
   },
   "placementCountsByRegion": {
-    "de-CH": 32,
+    "de-CH": 31,
     "fr-CH": 8,
     "it-CH": 2,
     "mixed": 6
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 48,
+  "sparsePlacementCount": 47,
   "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
       "sourceLanguage": "de",
       "sources": 41,
-      "placements": 33,
-      "recordsNeedingReview": 31,
-      "sparseRecords": 33,
+      "placements": 32,
+      "recordsNeedingReview": 30,
+      "sparseRecords": 32,
       "manualVerificationSources": 41,
       "status": "needs-review"
     },
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "48 placement records validate with multilingual source metadata."
+      "summary": "47 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -107,7 +107,7 @@
     {
       "phase": "F",
       "status": "pass",
-      "summary": "48 sparse placement records and 0 risky auto-published records found."
+      "summary": "47 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -1272,24 +1272,6 @@
     },
     {
       "severity": "info",
-      "id": "spitalverbund-ar-unknown-unknown-9e238ccd67b4",
-      "sourceId": "svar-appenzell-aus-und-weiterbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "spitalverbund-ar-unknown-unknown-9e238ccd67b4",
-      "sourceId": "svar-appenzell-aus-und-weiterbildung",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
       "id": "swiss-medical-network-unknown-clinicalplacement-410dbfe7eb61",
       "sourceId": "swiss-medical-network-it-carriera",
       "sourceLanguage": "it",
@@ -1461,7 +1443,7 @@
     },
     {
       "severity": "info",
-      "id": "universitatsspital-zurich-neuroradiology-unterassistenz-b12e6b8ec025",
+      "id": "universitatsspital-zurich-neuroradiology-unterassistenz-b92b616d77a3",
       "sourceId": "usz-zuerich-neuroradiologie-unterassistenzen-famulatur",
       "sourceLanguage": "de",
       "region": "de-CH",
