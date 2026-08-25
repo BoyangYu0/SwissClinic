@@ -1,6 +1,6 @@
 # Manual Review Needed
 
-Generated at: 2026-08-23T03:21:04.926Z
+Generated at: 2026-08-25T03:18:16.166Z
 
 ## Summary
 
@@ -535,7 +535,7 @@ Generated at: 2026-08-23T03:21:04.926Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Becker, Translational Skin Cancer Research, German Cancer Consortium, University Medicine Essen, Essen &amp; DKFZ, Heidelberg, DE Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
+- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Barbara Marte, Senior Editor, Nature Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
 
 ### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
 
@@ -670,7 +670,7 @@ Generated at: 2026-08-23T03:21:04.926Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: ENSEIGNEMENT ENSEIGNEMENT Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées Forum "Médecine et après?" Quelle spécialisation choisir?
+- Snippet: ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées
 
 ### Université de Lausanne (UNIL), École de médecine / Urgences / ClinicalPlacement
 

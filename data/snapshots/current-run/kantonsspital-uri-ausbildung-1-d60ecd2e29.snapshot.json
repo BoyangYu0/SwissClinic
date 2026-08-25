@@ -1,10 +1,10 @@
 {
   "sourceId": "kantonsspital-uri-ausbildung",
   "url": "https://www.ksuri.ch/404-nicht-gefunden",
-  "fetchedAt": "2026-08-23T03:18:07.071Z",
+  "fetchedAt": "2026-08-25T03:15:11.758Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "ab1d9352f5e0b68d7c1f4b3b8231609d8139bbc9ccb22cbbed54d691d828e146",
+  "rawHash": "e6b44a6fe1c49494726f5be2b5a85b56e78de259e9ad0acc5aa556245b52f47c",
   "textHash": "a2706532c6e4ef3cbe1e20832b61d037ce67959b09d3cf0b5b1db3c380198a60",
   "title": "Seite nicht gefunden | Kantonsspital Uri",
   "visibleText": "404 Error Seite nicht gefunden Die gewünschte Seite konnte leider nicht gefunden werden. Zurück zur Startseite",
