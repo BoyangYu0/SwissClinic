@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:18:24.284Z",
+  "generatedAt": "2026-08-26T03:31:42.280Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -133,27 +133,6 @@
       ],
       "region": [
         "mixed"
-      ]
-    },
-    {
-      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
-      "normalizedName": "hospital universitaires de geneve hug",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "hug-geneve-enseignement-formation",
-        "hug-geneve-stages"
-      ],
-      "sourceCount": 2,
-      "recordCount": 1,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
       ]
     },
     {
@@ -452,26 +431,6 @@
       ]
     },
     {
-      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
-      "normalizedName": "universitat de geneve unige faculte de medecine",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "unige-medecine-enseignement"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
-      ]
-    },
-    {
       "institutionName": "Université de Lausanne (UNIL), École de médecine",
       "normalizedName": "universitat de lausanne unil ecole de medecine",
       "canton": "VD",
@@ -563,6 +522,27 @@
         "hopital-riviera-chablais-formation"
       ],
       "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
+      "normalizedName": "hospital universitaires de geneve hug",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "hug-geneve-enseignement-formation",
+        "hug-geneve-stages"
+      ],
+      "sourceCount": 2,
       "recordCount": 0,
       "status": [
         "needs-review"
@@ -955,6 +935,26 @@
       ]
     },
     {
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
       "institutionName": "Zuger Kantonsspital",
       "normalizedName": "zuger kantonsspital",
       "canton": "ZG",
@@ -975,7 +975,69 @@
       ]
     }
   ],
-  "institutionsWithFailedCrawl": [],
+  "institutionsWithFailedCrawl": [
+    {
+      "institutionName": "Hôpital Riviera-Chablais (HRC)",
+      "normalizedName": "hospital riviera chablais hrc",
+      "canton": "VD",
+      "city": "Rennaz",
+      "sourceIds": [
+        "hopital-riviera-chablais-formation"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
+      "normalizedName": "hospital universitaires de geneve hug",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "hug-geneve-enseignement-formation",
+        "hug-geneve-stages"
+      ],
+      "sourceCount": 2,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    }
+  ],
   "institutionsNeedingManualVerification": [
     {
       "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
@@ -1169,7 +1231,7 @@
         "hug-geneve-stages"
       ],
       "sourceCount": 2,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "needs-review"
       ],
@@ -1864,7 +1926,7 @@
         "unige-medecine-enseignement"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],

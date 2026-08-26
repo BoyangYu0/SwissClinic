@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25T03:18:32.677Z",
+  "generatedAt": "2026-08-26T03:31:48.763Z",
   "sourceCount": 61,
-  "placementCount": 47,
+  "placementCount": 45,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -12,7 +12,7 @@
   "placementCountsBySourceLanguage": {
     "de": 32,
     "en": 1,
-    "fr": 9,
+    "fr": 7,
     "it": 2,
     "mixed": 3
   },
@@ -24,12 +24,12 @@
   },
   "placementCountsByRegion": {
     "de-CH": 31,
-    "fr-CH": 8,
+    "fr-CH": 6,
     "it-CH": 2,
     "mixed": 6
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 47,
+  "sparsePlacementCount": 45,
   "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
@@ -53,9 +53,9 @@
     {
       "sourceLanguage": "fr",
       "sources": 11,
-      "placements": 9,
-      "recordsNeedingReview": 9,
-      "sparseRecords": 9,
+      "placements": 7,
+      "recordsNeedingReview": 7,
+      "sparseRecords": 7,
       "manualVerificationSources": 11,
       "status": "needs-review"
     },
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "47 placement records validate with multilingual source metadata."
+      "summary": "45 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -107,7 +107,7 @@
     {
       "phase": "F",
       "status": "pass",
-      "summary": "47 sparse placement records and 0 risky auto-published records found."
+      "summary": "45 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -804,24 +804,6 @@
     },
     {
       "severity": "info",
-      "id": "hug-unknown-clinicalplacement-edf016518bcc",
-      "sourceId": "hug-geneve-stages",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "hug-unknown-clinicalplacement-edf016518bcc",
-      "sourceId": "hug-geneve-stages",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
       "id": "insel-gruppe-ag-unknown-wahlstudienjahr-ca53970d308c",
       "sourceId": "inselspital-bern-medical-students",
       "sourceLanguage": "de",
@@ -1466,24 +1448,6 @@
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: application-only",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {

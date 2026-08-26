@@ -1,48 +1,15 @@
 {
   "sourceId": "unige-medecine-enseignement",
-  "url": "https://www.unige.ch/medecine/enseignement1",
-  "fetchedAt": "2026-08-25T03:15:11.758Z",
-  "statusCode": 200,
-  "contentType": "text/html; charset=UTF-8",
-  "rawHash": "902ab268185f01d812172e66e6cdf35f41edc8b796ae004b17263d78291bea5f",
-  "textHash": "2fa9e63d49fb34371215bd1d44cb157114a5540cda1952c1bd4f890f2b3b46e2",
-  "title": "ENSEIGNEMENT - Faculté de médecine - UNIGE",
-  "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées",
-  "extractedLinks": [
-    {
-      "text": "Rentrée académique 2026-2027",
-      "href": "https://www.unige.ch/medecine/enseignement/Rentree2026-2027"
-    },
-    {
-      "text": "Contacts et liens",
-      "href": "https://www.unige.ch/medecine/fr/contacts-acces/enseignement"
-    },
-    {
-      "text": "Bachelor et Master en médecine humaine",
-      "href": "https://www.unige.ch/medecine/enseignement1/bachelor-et-master-en-medecine-humaine"
-    },
-    {
-      "text": "Bachelor et Master en médecine dentaire",
-      "href": "https://www.unige.ch/medecine/dentaire/fr/en/formation-de-base"
-    },
-    {
-      "text": "Bachelor en sciences biomédicales",
-      "href": "https://www.unige.ch/medecine/enseignement1/bachelorscienessbiomedicales"
-    },
-    {
-      "text": "Master en neurosciences",
-      "href": "https://www.unige.ch/medecine/enseignement1/master-en-neurosciences"
-    },
-    {
-      "text": "Master en santé globale",
-      "href": "https://unige.ch/medecine/isg/en/teaching/master-of-science-in-global-health-mscgh"
-    },
-    {
-      "text": "Formations post-graduées",
-      "href": "https://www.unige.ch/medecine/enseignement1/formationpostgrade"
-    }
-  ],
+  "url": "https://www.unige.ch/medecine/fr/enseignement/",
+  "fetchedAt": "2026-08-26T03:28:09.972Z",
+  "statusCode": null,
+  "contentType": null,
+  "rawHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
   "extractedEmails": [],
   "fetchModeUsed": "html",
-  "error": null
+  "error": "fetch failed"
 }
