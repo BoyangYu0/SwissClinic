@@ -1,10 +1,10 @@
 {
   "sourceId": "swimsa-exchanges",
   "url": "https://swimsa.ch/exchanges/",
-  "fetchedAt": "2026-08-25T03:15:11.758Z",
+  "fetchedAt": "2026-08-26T03:28:09.972Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "09d2e9614833c10a225d234a95c341a7e5c22b8bc8bb24b7351c1a7818fe87ee",
+  "rawHash": "c3fa723625180af3bf4f4c84ebcd9909a55679b1a0d430fd425195177a8910e7",
   "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "title": "Exchanges - swimsa",
   "visibleText": "",

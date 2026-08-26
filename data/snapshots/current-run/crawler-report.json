@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-25T03:15:11.758Z",
+  "generatedAt": "2026-08-26T03:28:09.972Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 61,
-  "failureCount": 0,
+  "successCount": 57,
+  "failureCount": 4,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -428,31 +428,31 @@
       "sourceId": "hug-geneve-enseignement-formation",
       "url": "https://www.hug.ch/formation-de-base",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hug-geneve-enseignement-formation-1-59cfffa3f4.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "hug-geneve-stages",
       "url": "https://www.hug.ch/emploi/offres-stage",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hug-geneve-stages-1-754a961c81.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "unige-medecine-enseignement",
       "url": "https://www.unige.ch/medecine/fr/enseignement/",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/unige-medecine-enseignement-1-9463df95a0.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "hopital-valais-formation",
@@ -468,11 +468,11 @@
       "sourceId": "hopital-riviera-chablais-formation",
       "url": "https://www.hopitalrivierachablais.ch/formation",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hopital-riviera-chablais-formation-1-6fa4091511.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "hfr-fribourg-formation",

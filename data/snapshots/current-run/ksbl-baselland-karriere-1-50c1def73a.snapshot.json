@@ -1,14 +1,18 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-08-25T03:15:11.758Z",
+  "fetchedAt": "2026-08-26T03:28:09.972Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "5742873874da1494e19e823cb5d4bc414a9ba7d5e559e84efc2f8837f406e278",
-  "textHash": "8fd291a93e79ed123b6ba2574a3dc1de2dfeb36567b55784b2bbc749477ebf91",
+  "rawHash": "edeec1270d1a62fdbfa1dd3921d903813126c48878f790e21c7e6568887527e1",
+  "textHash": "6920c696572796c6d9ef0a19a25f8b4fc10dd6e36a958d16dd562459d64a0814",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Frauenklinik Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie PAHoA Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 97 offene Stellen Ertragsmanagement Sachbearbeiter:In Patientenaufnahme, mit Zusatzfunktion für VVG-Patienten 80% Altersmedizin & Rehabilitation Qualitätsmanagerin/Qualitätsmanager (a) 80-100% Therapien Stv. Leiterin/Leiter Ergotherapie/Physiotherapie Altersmedizin & Rehabilitation (a) 80-100% Notfallporte MPA oder FAGE an der Notfallporte (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Gastronomie Diätköchin/Diätkoch / Köchin/Koch (a) 100% Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Innere Medizin MPA Ambulatorium Universitäre Innere Medizin (a) 80-100% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Stv. Stationsleiterin/Stv. Stationsleiter (a) 80-100% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Frauenklinik Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 95 offene Stellen Innere Medizin Leiterin/Leiter Angiologie (a) 80-100% Ertragsmanagement Sachbearbeiter:In Patientenaufnahme, mit Zusatzfunktion für VVG-Patienten 80% Altersmedizin & Rehabilitation Qualitätsmanagerin/Qualitätsmanager (a) 80-100% Therapien Stv. Leiterin/Leiter Ergotherapie/Physiotherapie Altersmedizin & Rehabilitation (a) 80-100% Notfallporte MPA oder FAGE an der Notfallporte (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Gastronomie Diätköchin/Diätkoch / Köchin/Koch (a) 100% Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% Innere Medizin MPA Ambulatorium Universitäre Innere Medizin (a) 80-100% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% 1 2 3 4 5 … 9",
   "extractedLinks": [
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/leiterin-leiter-angiologie-a/7c0b2735-84ac-4c26-b4ab-08474fe1d5b7"
+    },
     {
       "text": "80%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/sachbearbeiterin-patientenaufnahme-mit-zusatzfunktion-fuer-vvg-patienten/1970e9e4-8df8-48be-afa0-58d9fb5d7320"
@@ -48,10 +52,6 @@
     {
       "text": "50%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/68555bfe-7c27-49c8-964b-600a9e1fe56f"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stv-stationsleiter-a/5d258ee6-5416-4f85-827e-eef215150384"
     },
     {
       "text": "2",

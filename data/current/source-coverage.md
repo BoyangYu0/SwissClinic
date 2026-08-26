@@ -1,8 +1,8 @@
 # Source Coverage
 
-Generated at: 2026-08-25T03:18:24.284Z
+Generated at: 2026-08-26T03:31:42.280Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-25T03%3A18%3A24.284Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Other%3A+source-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Other+%28other%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22other%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Source+Coverage%22%2C%0A++++%22reportPath%22%3A+%22source-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-26T03%3A31%3A42.280Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. This report counts curated source entries and source URLs, not every Swiss hospital, clinic, department, or placement slot.
 
@@ -12,9 +12,9 @@ Record count is not national clinic coverage. This report counts curated source 
 | --- | ---: |
 | Source entries | 61 |
 | Source URLs | 61 |
-| Failed crawl pages | 0 |
+| Failed crawl pages | 4 |
 | Manual/PDF/Playwright sources | 1 |
-| Sources with no extracted records | 27 |
+| Sources with no extracted records | 29 |
 
 ## Sources by canton
 
@@ -133,6 +133,12 @@ Record count is not national clinic coverage. This report counts curated source 
 - `hug-geneve-enseignement-formation` Hôpitaux universitaires de Genève (HUG) (GE, Geneve)
   Status: needs-review; language: fr; region: fr-CH
   URLs: https://www.hug.ch/formation-de-base
+- `hug-geneve-stages` Hôpitaux universitaires de Genève (HUG) (GE, Geneve)
+  Status: needs-review; language: fr; region: fr-CH
+  URLs: https://www.hug.ch/emploi/offres-stage
+- `unige-medecine-enseignement` Université de Genève (UNIGE), Faculté de médecine (GE, Geneve)
+  Status: candidate; language: fr; region: fr-CH
+  URLs: https://www.unige.ch/medecine/fr/enseignement/
 - `hopital-riviera-chablais-formation` Hôpital Riviera-Chablais (HRC) (VD, Rennaz)
   Status: needs-review; language: fr; region: fr-CH
   URLs: https://www.hopitalrivierachablais.ch/formation

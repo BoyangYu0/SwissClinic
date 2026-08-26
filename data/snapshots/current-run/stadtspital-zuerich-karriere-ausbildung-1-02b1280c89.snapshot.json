@@ -1,10 +1,10 @@
 {
   "sourceId": "stadtspital-zuerich-karriere-ausbildung",
   "url": "https://www.stadt-zuerich.ch/stadtspital",
-  "fetchedAt": "2026-08-25T03:15:11.758Z",
+  "fetchedAt": "2026-08-26T03:28:09.972Z",
   "statusCode": 200,
   "contentType": "text/html;charset=utf-8",
-  "rawHash": "8489886fc006a1e69937ca71ce3caf429149979d1a68c393512b557f05d5201a",
+  "rawHash": "dd9933fa50f28323c3fb36e42b085909605ee7fdef32a04605256e95c9755a07",
   "textHash": "bab58948d521bb3ccbf1e0df1bea512faf54ef38a456cfcf49ea16e394e096f3",
   "title": "Krankenhaus | Stadtspital Zürich",
   "visibleText": "Navigation Sprunglink Zur Bereichsauswahl Zum Inhalt Seite vorlesen Spitzenmedizin in der Stadt Zürich Aktuelles Alle Veranstaltungen Alle Medienmitteilungen Alle News",
