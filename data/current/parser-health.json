@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-08-26T03:31:22.722Z",
+  "generatedAt": "2026-08-27T12:54:42.185Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 4,
-  "recordsExtracted": 45,
+  "pagesFailed": 0,
+  "recordsExtracted": 47,
   "confidenceCounts": {
     "high": 5,
     "medium": 19,
-    "low": 21
+    "low": 23
   },
   "sourceLanguageCounts": {
     "de": 32,
     "en": 1,
-    "fr": 7,
+    "fr": 9,
     "it": 2,
     "mixed": 3
   },
   "regionCounts": {
     "de-CH": 31,
-    "fr-CH": 6,
+    "fr-CH": 8,
     "it-CH": 2,
     "mixed": 6
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 43
+    "needs-human-review": 45
   },
-  "recordsNeedingReview": 43,
+  "recordsNeedingReview": 45,
   "parserCounts": {
-    "generic": 42,
+    "generic": 46,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -36,32 +36,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedPages": [
-    {
-      "sourceId": "hopital-riviera-chablais-formation",
-      "url": "https://www.hopitalrivierachablais.ch/formation",
-      "statusCode": null,
-      "error": "fetch failed"
-    },
-    {
-      "sourceId": "hug-geneve-enseignement-formation",
-      "url": "https://www.hug.ch/formation-de-base",
-      "statusCode": null,
-      "error": "fetch failed"
-    },
-    {
-      "sourceId": "hug-geneve-stages",
-      "url": "https://www.hug.ch/emploi/offres-stage",
-      "statusCode": null,
-      "error": "fetch failed"
-    },
-    {
-      "sourceId": "unige-medecine-enseignement",
-      "url": "https://www.unige.ch/medecine/fr/enseignement/",
-      "statusCode": null,
-      "error": "fetch failed"
-    }
-  ],
+  "failedPages": [],
   "warnings": [
     {
       "sourceId": "balgrist-zuerich-karriere",
@@ -154,6 +129,12 @@
       "warning": "No medium-confidence record was extracted."
     },
     {
+      "sourceId": "hopital-riviera-chablais-formation",
+      "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found."
+    },
+    {
       "sourceId": "hopital-valais-formation",
       "url": "https://www.hopitalduvalais.ch/formations-professionnels",
       "parserName": "generic",
@@ -162,6 +143,24 @@
     {
       "sourceId": "hopital-valais-formation",
       "url": "https://www.hopitalduvalais.ch/formations-professionnels",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "hug-geneve-enseignement-formation",
+      "url": "https://www.hug.ch/formation-de-base",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.hug.ch/formation-de-base."
+    },
+    {
+      "sourceId": "hug-geneve-stages",
+      "url": "https://www.hug.ch/emploi/offres-stage",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review."
+    },
+    {
+      "sourceId": "hug-geneve-stages",
+      "url": "https://www.hug.ch/emploi/offres-stage",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
     },
@@ -398,6 +397,18 @@
       "url": "https://www.medizin.unibe.ch/studium/index_ger.html",
       "parserName": "generic",
       "warning": "Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html."
+    },
+    {
+      "sourceId": "unige-medecine-enseignement",
+      "url": "https://www.unige.ch/medecine/enseignement1",
+      "parserName": "generic",
+      "warning": "Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review."
+    },
+    {
+      "sourceId": "unige-medecine-enseignement",
+      "url": "https://www.unige.ch/medecine/enseignement1",
+      "parserName": "generic",
+      "warning": "No medium-confidence record was extracted."
     },
     {
       "sourceId": "unil-ecole-medecine-stages",

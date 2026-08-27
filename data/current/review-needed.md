@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-08-26T03:31:35.989Z
+Generated at: 2026-08-27T12:54:59.145Z
 
 ## Summary
 
-- Records needing review: 43
-- Low-confidence records: 21
-- Parser warnings: 69
-- Failed pages: 4
+- Records needing review: 45
+- Low-confidence records: 23
+- Parser warnings: 75
+- Failed pages: 0
 - Recent changes: 0
 
 ## Placement Records
@@ -116,6 +116,21 @@ Generated at: 2026-08-26T03:31:35.989Z
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: Aller au contenu principal Formations Établissement de formation postgrade, certifié par l’IFSM dans la plupart des disciplines médicales, nous formons les professionnel-le-s de la santé du futur.
+
+### Hôpitaux universitaires de Genève (HUG) / Not specified / ClinicalPlacement
+
+- ID: `hug-unknown-clinicalplacement-edf016518bcc`
+- Source ID: `hug-geneve-stages`
+- Source URL: https://www.hug.ch/emploi/offres-stage
+- Confidence: low
+- Review status: needs-human-review
+- Source language: fr
+- Region: fr-CH
+- Extraction language: fr
+- Availability: not-specified
+- Reasons: low confidence; parser warnings; availability is not-specified
+- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
+- Snippet: Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les candidatures aux offres de stage se font en ligne, aucun dossier papier ne sera accepté.
 
 ### Inselspital, Universitätsspital Bern / Not specified / Wahlstudienjahr
 
@@ -642,6 +657,21 @@ Generated at: 2026-08-26T03:31:35.989Z
 - Warnings: usz page does not state explicit availability; no date was inferred.; usz parser found no application URL.
 - Snippet: Unterassistenzen Radiologie – USZ. Unterassistenzen Radiologie Wir bieten Unterassistenten und Unterassistentinnen die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Diagnostische und Interventionelle Radiologie USZ zu arbeiten. Voraussetzung ist die Herkunft aus einem EU-/EFTA Staat. Dauer Sie können sich für 1 oder 3 Monate bewerben (Dauer ist jeweils vom Ersten bis Letzten des Monats); die Plätze sind begrenzt. Wir bieten keine 4-monatige Famulaturen an. Fachgebiete Ultraschall Befund Computertomographie Magnetresonanztomographie Interventionelle Radiologie Freie Ausbildungsplätze Bitte kontaktieren Sie andrea.bisculm@usz.ch wegen eines Ausbildung
 
+### Université de Genève (UNIGE), Faculté de médecine / Not specified / Unknown
+
+- ID: `unige-unknown-unknown-dcc038c510a5`
+- Source ID: `unige-medecine-enseignement`
+- Source URL: https://www.unige.ch/medecine/enseignement1
+- Confidence: low
+- Review status: needs-human-review
+- Source language: fr
+- Region: fr-CH
+- Extraction language: fr
+- Availability: not-specified
+- Reasons: low confidence; parser warnings; availability is not-specified
+- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
+- Snippet: ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées
+
 ### Université de Lausanne (UNIL), École de médecine / Urgences / ClinicalPlacement
 
 - ID: `fbm-unil-emergency-medicine-clinicalplacement-224dc08270b9`
@@ -689,10 +719,18 @@ Generated at: 2026-08-26T03:31:35.989Z
   Source: https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html
 - `hopital-jura-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.h-ju.ch/fr/Professionnels/Programme-de-formation/Programme-de-formation.html
+- `hopital-riviera-chablais-formation` (generic): Generic parser found no medical placement signal on https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found.
+  Source: https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found
 - `hopital-valais-formation` (generic): Generic parser output for https://www.hopitalduvalais.ch/formations-professionnels needs human review.
   Source: https://www.hopitalduvalais.ch/formations-professionnels
 - `hopital-valais-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.hopitalduvalais.ch/formations-professionnels
+- `hug-geneve-enseignement-formation` (generic): Generic parser found no medical placement signal on https://www.hug.ch/formation-de-base.
+  Source: https://www.hug.ch/formation-de-base
+- `hug-geneve-stages` (generic): Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review.
+  Source: https://www.hug.ch/emploi/offres-stage
+- `hug-geneve-stages` (generic): No medium-confidence record was extracted.
+  Source: https://www.hug.ch/emploi/offres-stage
 - `inselgruppe-bern-career-education` (generic): Generic parser skipped likely irrelevant job page https://inselgruppe.ch/de/bildung.
   Source: https://inselgruppe.ch/de/bildung
 - `inselspital-bern-medical-students` (generic): Generic parser output for https://inselgruppe.ch/de/bildung/universitaere-medizinalberufe needs human review.
@@ -771,6 +809,10 @@ Generated at: 2026-08-26T03:31:35.989Z
   Source: https://medizin.unibas.ch/de/
 - `unibe-medizin-studium` (generic): Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html.
   Source: https://www.medizin.unibe.ch/studium/index_ger.html
+- `unige-medecine-enseignement` (generic): Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review.
+  Source: https://www.unige.ch/medecine/enseignement1
+- `unige-medecine-enseignement` (generic): No medium-confidence record was extracted.
+  Source: https://www.unige.ch/medecine/enseignement1
 - `unil-ecole-medecine-stages` (generic): Generic parser output for https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html needs human review.
   Source: https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html
 - `usb-basel-career-education` (generic): Generic parser output for https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende needs human review.
@@ -810,18 +852,7 @@ Generated at: 2026-08-26T03:31:35.989Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
-- `hopital-riviera-chablais-formation`: fetch failed
-  Status: unknown
-  URL: https://www.hopitalrivierachablais.ch/formation
-- `hug-geneve-enseignement-formation`: fetch failed
-  Status: unknown
-  URL: https://www.hug.ch/formation-de-base
-- `hug-geneve-stages`: fetch failed
-  Status: unknown
-  URL: https://www.hug.ch/emploi/offres-stage
-- `unige-medecine-enseignement`: fetch failed
-  Status: unknown
-  URL: https://www.unige.ch/medecine/fr/enseignement/
+No failed pages.
 ## Changed Pages
 
 No recent changes.
