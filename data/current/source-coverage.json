@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T03:31:42.280Z",
+  "generatedAt": "2026-08-27T12:55:07.307Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 4,
+  "failedCrawlCount": 0,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {
@@ -225,30 +225,6 @@
       "region": "fr-CH",
       "urls": [
         "https://www.hug.ch/formation-de-base"
-      ]
-    },
-    {
-      "id": "hug-geneve-stages",
-      "institutionName": "Hôpitaux universitaires de Genève (HUG)",
-      "canton": "GE",
-      "city": "Geneve",
-      "status": "needs-review",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "urls": [
-        "https://www.hug.ch/emploi/offres-stage"
-      ]
-    },
-    {
-      "id": "unige-medecine-enseignement",
-      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
-      "canton": "GE",
-      "city": "Geneve",
-      "status": "candidate",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "urls": [
-        "https://www.unige.ch/medecine/fr/enseignement/"
       ]
     },
     {
