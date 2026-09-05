@@ -1,14 +1,30 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-08-31T08:42:18.952Z",
+  "fetchedAt": "2026-09-05T06:58:48.782Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "023e171a264031ebf4d7cac9d390ba9a222a77c4879fbe63d36f8f1c82507dc3",
-  "textHash": "64047e41e7acbedcfac35515146da896752007d9006e1c1aa32d9fc2159ef421",
+  "rawHash": "e173411da238b11654314cb4ed8602ad7454bf1a3cfb6f41d5f299b5f64c5e60",
+  "textHash": "02e282d352a5f3907d6a923d6749887ed463bbb0338d784817305b1cf18eb150",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Anästhesie<br/>Anästhesie Ertragsmanagement Facility Management<br/>Facility Management Frauenklinik Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 95 offene Stellen Facility ManagementFacility Management Projektleiterin/Projektleiter Bau & Infrastruktur (a) 100% Innere Medizin Stationsassistentin/Stationsassistent Innere Medizin (a) 60% AnästhesieAnästhesie Oberärztin/Oberarzt Anästhesie 80-100% Innere Medizin Leiterin/Leiter Angiologie (a) 80-100% Altersmedizin & Rehabilitation Qualitätsmanagerin/Qualitätsmanager (a) 80-100% Therapien Stv. Leiterin/Leiter Ergotherapie/Physiotherapie Altersmedizin & Rehabilitation (a) 80-100% Notfallporte MPA oder FAGE an der Notfallporte (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Gastronomie Diätköchin/Diätkoch / Köchin/Koch (a) 100% Ertragsmanagement Fachspezialistin/Fachspezialist Fakturierung (a) 80-100% Gesundheitszentrum Laufen Dipl. Pflegefachfrau/Pflegefachmann Endoskopie (a) 80-100% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Facility Management Frauenklinik Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Human Resources Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Neurologie Notfall Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie Personalärztlicher Dienst Pflege Pneumologie Radiologie & Nuklearmedizin Rehabilitation Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 98 offene Stellen OP Management OP Lagerungspflegerin/OP Lagerungspfleger 100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Frauenklinik/Urologie (a) 40-60% Pflege FaGe (a) 40-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie (a) 80-100% Facility Management Projektleiterin/Projektleiter Bau & Infrastruktur (a) 100% Innere Medizin Stationsassistentin/Stationsassistent Innere Medizin (a) 60% Anästhesie Oberärztin/Oberarzt Anästhesie 80-100% Innere Medizin Leiterin/Leiter Angiologie (a) 80-100% Altersmedizin & Rehabilitation Qualitätsmanagerin/Qualitätsmanager (a) 80-100% Therapien Stv. Leiterin/Leiter Ergotherapie/Physiotherapie Altersmedizin & Rehabilitation (a) 80-100% Notfallporte MPA oder FAGE an der Notfallporte (a) 80% 1 2 3 4 5 … 9",
   "extractedLinks": [
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/op-lagerungspflegerin-op-lagerungspfleger/d2d478d0-76b2-43bb-94cf-85f3588f9cb6"
+    },
+    {
+      "text": "40-60%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-frauenklinik-urologie-a/a96ae29f-2cfc-4996-8467-7e0d4bf04fd0"
+    },
+    {
+      "text": "40-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-a/6d5f5c01-d3ca-4bf7-88ca-8fb19d346af8"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-onkologie-a/892539ac-ddf6-43a4-a1fc-118387c12b14"
+    },
     {
       "text": "100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/projektleiterin-projektleiter-bau-infrastruktur-a/eae17a06-6ae6-49e7-ba94-99b8687d467d"
@@ -36,22 +52,6 @@
     {
       "text": "80%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-oder-fage-an-der-notfallporte-a/37ebfb29-ddaa-43da-b2fa-a3738ebdffa8"
-    },
-    {
-      "text": "50%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/da3b1ee2-2c0f-4579-a77c-2790f3da5e6d"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/diaetkoechin-diaetkoch-koechin-koch-a/c71f276b-4def-4545-baca-e4926a9e32de"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachspezialistin-fachspezialist-fakturierung-a/290bba64-4ee9-4c04-b89f-c37fa9b2da45"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-endoskopie-a/d7e21492-0bf2-49c6-9b25-3ce1d2e9476b"
     },
     {
       "text": "2",
