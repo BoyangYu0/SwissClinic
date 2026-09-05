@@ -1,8 +1,8 @@
 # Record Coverage
 
-Generated at: 2026-08-31T08:45:32.289Z
+Generated at: 2026-09-05T07:01:53.115Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Parser+bug%3A+record-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Parser+bug+%28parser-bug%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22parser-bug%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Record+Coverage%22%2C%0A++++%22reportPath%22%3A+%22record-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-08-31T08%3A45%3A32.289Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Parser+bug%3A+record-coverage.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Parser+bug+%28parser-bug%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22parser-bug%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Record+Coverage%22%2C%0A++++%22reportPath%22%3A+%22record-coverage.md%22%2C%0A++++%22generatedAt%22%3A+%222026-09-05T07%3A01%3A53.115Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Record count is not national clinic coverage. Some hospitals may not publish placement availability online.
 

@@ -1,6 +1,6 @@
 # Manual Review Needed
 
-Generated at: 2026-08-31T08:45:27.461Z
+Generated at: 2026-09-05T07:01:44.696Z
 
 ## Summary
 
@@ -535,7 +535,7 @@ Generated at: 2026-08-31T08:45:27.461Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Barbara Marte, Senior Editor, Nature Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
+- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Nicola Segata, CIBIO Department of the University of Trento, IT Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
 
 ### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
 
@@ -592,7 +592,7 @@ Generated at: 2026-08-31T08:45:27.461Z
 - Source language: de
 - Region: de-CH
 - Extraction language: unknown
-- Availability: fully-booked-until (2028-12)
+- Availability: fully-booked-until (2029-12)
 - Reasons: parser warnings; lead time is greater than 24 months
 - Warnings: usz parser found no application URL.
 - Snippet: Unterassistenzen Anästhesiologie – USZ. Unterassistenzen Anästhesiologie Wir bieten Unterassistentinnen und Unterassistenten die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Anästhesiologie zu arbeiten. Fachgebiete Unterassistentinnen und Unterassistenten werden bei uns in folgenden anästhesiologischen Fachbereichen eingesetzt: Unfall-, Wiederherstellungs-, Plastische- und Handchirurgie Gynäkologie Urologie Augen-, ORL und Kieferchirurgie Dauer Ausländische Studierende: ausschliesslich 16 Wochen Schweizer Studierende: 2 Monate Famulaturen Die Klinik für Anästhesiologie bietet keine Famulaturen an. Freie Ausbildungsplätze Zur Zeit können wir nur die
