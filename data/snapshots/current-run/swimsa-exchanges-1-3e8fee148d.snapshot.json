@@ -1,17 +1,15 @@
 {
   "sourceId": "swimsa-exchanges",
   "url": "https://swimsa.ch/exchanges/",
-  "fetchedAt": "2026-09-09T07:26:28.422Z",
+  "fetchedAt": "2026-09-11T07:20:13.352Z",
   "statusCode": 200,
-  "contentType": "text/html; charset=UTF-8",
-  "rawHash": "451f6470636ed7796231c96bfd5f244bd22ce9f3339fe5ffcebf001cc25f226e",
-  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "title": "Exchanges - swimsa",
-  "visibleText": "",
+  "contentType": "text/html",
+  "rawHash": "eb46512bfd88c489b38e2d633766975a86e3522392b86789df318eab32a77e60",
+  "textHash": "30b7536db4abe1eb61ccac02e66efa44647042da79225deb44a2069881870664",
+  "title": "One moment, please...",
+  "visibleText": "Loader Please wait while your request is being verified...",
   "extractedLinks": [],
-  "extractedEmails": [
-    "contact@swimsa.ch"
-  ],
+  "extractedEmails": [],
   "fetchModeUsed": "html",
   "error": null
 }
