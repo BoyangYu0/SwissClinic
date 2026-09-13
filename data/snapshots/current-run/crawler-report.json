@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-11T07:20:13.352Z",
+  "generatedAt": "2026-09-13T07:31:02.254Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 61,
-  "failureCount": 0,
+  "successCount": 59,
+  "failureCount": 2,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -458,11 +458,11 @@
       "sourceId": "hopital-valais-formation",
       "url": "https://www.hopitalduvalais.ch/fr/formation",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 502,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hopital-valais-formation-1-edf7472a0c.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 502 Bad Gateway"
     },
     {
       "sourceId": "hopital-riviera-chablais-formation",
@@ -618,11 +618,11 @@
       "sourceId": "see-spital-karriere",
       "url": "https://www.see-spital.ch/karriere",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/see-spital-karriere-1-524a952800.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "balgrist-zuerich-karriere",
