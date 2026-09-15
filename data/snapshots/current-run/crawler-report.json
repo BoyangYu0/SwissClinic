@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-11T07:20:13.352Z",
+  "generatedAt": "2026-09-15T07:50:26.308Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 61,
-  "failureCount": 0,
+  "successCount": 60,
+  "failureCount": 1,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -618,11 +618,11 @@
       "sourceId": "see-spital-karriere",
       "url": "https://www.see-spital.ch/karriere",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": null,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/see-spital-karriere-1-524a952800.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "fetch failed"
     },
     {
       "sourceId": "balgrist-zuerich-karriere",
