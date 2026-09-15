@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-09-11T07:23:04.614Z
+Generated at: 2026-09-15T07:53:29.040Z
 
 ## Summary
 
 - Records needing review: 45
 - Low-confidence records: 23
-- Parser warnings: 75
-- Failed pages: 0
+- Parser warnings: 74
+- Failed pages: 1
 - Recent changes: 0
 
 ## Placement Records
@@ -607,8 +607,8 @@ Generated at: 2026-09-11T07:23:04.614Z
 - Source language: de
 - Region: de-CH
 - Extraction language: unknown
-- Availability: fully-booked-until (2026-09-01)
-- Reasons: parser warnings
+- Availability: fully-booked-until (2029-12)
+- Reasons: parser warnings; lead time is greater than 24 months
 - Warnings: usz parser found no application URL.
 - Snippet: Unterassistenzen Chirurgie – USZ. Unterassistenzen Chirurgie Wir bieten Unterassistentinnen und Unterassistenten die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs in den aufgeführten chirurgischen Kliniken USZ und der Urologie USZ zu arbeiten. Fachgebiete Unser chirurgisches Unterassistenz-Curriculum für das Wahlstudienjahr bzw. Praktische Jahr ermöglicht Rotationen in diese Fachgebiete bzw. Kliniken: Unfallchirurgie Viszeralchirurgie Notfallmedizin Herz-Gefäss-Chirurgie Thoraxchirurgie Plastische Chirurgie und Handchirurgie Chirurgische Intensivmedizin Curriculum Allgemeinen Merkblatt zu Unterassistenzen Download 499 KB Curriculum Unterassistenz Chirurgie Download 61 KB C
 
@@ -769,8 +769,6 @@ Generated at: 2026-09-11T07:23:04.614Z
   Source: https://www.rhne.ch/espace-emploi/formation/formations-medicales
 - `rhne-neuchatel-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.rhne.ch/espace-emploi/formation/formations-medicales
-- `see-spital-karriere` (generic): Generic parser skipped likely irrelevant job page https://see-spital.ch/ueber-das-see-spital/karriere/.
-  Source: https://see-spital.ch/ueber-das-see-spital/karriere/
 - `solothurner-spitaeler-aerztliche-ausbildung` (generic): Generic parser found no medical placement signal on https://www.solothurnerspitaeler.ch/jobs-karriere.
   Source: https://www.solothurnerspitaeler.ch/jobs-karriere
 - `spitaeler-schaffhausen-aus-und-weiterbildung` (generic): Generic parser found no medical placement signal on https://www.spitaeler-sh.ch/karriere/aus-und-weiterbildung.
@@ -852,7 +850,9 @@ Generated at: 2026-09-11T07:23:04.614Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
-No failed pages.
+- `see-spital-karriere`: fetch failed
+  Status: unknown
+  URL: https://www.see-spital.ch/karriere
 ## Changed Pages
 
 No recent changes.

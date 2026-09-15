@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T07:22:51.933Z",
+  "generatedAt": "2026-09-15T07:53:11.708Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 0,
+  "pagesFailed": 1,
   "recordsExtracted": 47,
   "confidenceCounts": {
     "high": 5,
@@ -28,7 +28,7 @@
   },
   "recordsNeedingReview": 45,
   "parserCounts": {
-    "generic": 46,
+    "generic": 45,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -36,7 +36,14 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedPages": [],
+  "failedPages": [
+    {
+      "sourceId": "see-spital-karriere",
+      "url": "https://www.see-spital.ch/karriere",
+      "statusCode": null,
+      "error": "fetch failed"
+    }
+  ],
   "warnings": [
     {
       "sourceId": "balgrist-zuerich-karriere",
@@ -277,12 +284,6 @@
       "url": "https://www.rhne.ch/espace-emploi/formation/formations-medicales",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
-    },
-    {
-      "sourceId": "see-spital-karriere",
-      "url": "https://see-spital.ch/ueber-das-see-spital/karriere/",
-      "parserName": "generic",
-      "warning": "Generic parser skipped likely irrelevant job page https://see-spital.ch/ueber-das-see-spital/karriere/."
     },
     {
       "sourceId": "solothurner-spitaeler-aerztliche-ausbildung",

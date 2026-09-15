@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T07:23:10.760Z",
+  "generatedAt": "2026-09-15T07:53:37.397Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -975,7 +975,28 @@
       ]
     }
   ],
-  "institutionsWithFailedCrawl": [],
+  "institutionsWithFailedCrawl": [
+    {
+      "institutionName": "See-Spital",
+      "normalizedName": "see hospital",
+      "canton": "ZH",
+      "city": "Horgen",
+      "sourceIds": [
+        "see-spital-karriere"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "needs-review"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    }
+  ],
   "institutionsNeedingManualVerification": [
     {
       "institutionName": "Centre hospitalier universitaire vaudois (CHUV)",
