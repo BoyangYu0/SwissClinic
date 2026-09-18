@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-09-15T07:53:29.040Z
+Generated at: 2026-09-18T07:30:59.554Z
 
 ## Summary
 
 - Records needing review: 45
 - Low-confidence records: 23
-- Parser warnings: 74
-- Failed pages: 1
+- Parser warnings: 73
+- Failed pages: 2
 - Recent changes: 0
 
 ## Placement Records
@@ -535,7 +535,7 @@ Generated at: 2026-09-15T07:53:29.040Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Nicola Segata, CIBIO Department of the University of Trento, IT Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
+- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Barbara Marte, Senior Editor, Nature Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
 
 ### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
 
@@ -705,8 +705,6 @@ Generated at: 2026-09-15T07:53:29.040Z
   Source: https://www.ehnv.ch/emplois
 - `ehnv-nord-vaudois-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.ehnv.ch/emplois
-- `eoc-ticino-formazione` (generic): Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html.
-  Source: https://www.eoc.ch/lavorare-in-eoc.html
 - `eoc-ticino-lavoro-formazione` (generic): Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html.
   Source: https://www.eoc.ch/lavorare-in-eoc.html
 - `gzo-wetzikon-karriere` (generic): Generic parser found no medical placement signal on https://www.gzo.ch/karriere.
@@ -850,6 +848,9 @@ Generated at: 2026-09-15T07:53:29.040Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
+- `eoc-ticino-formazione`: HTTP 520 <none>
+  Status: 520
+  URL: https://www.eoc.ch/lavorare-in-eoc.html
 - `see-spital-karriere`: fetch failed
   Status: unknown
   URL: https://www.see-spital.ch/karriere
