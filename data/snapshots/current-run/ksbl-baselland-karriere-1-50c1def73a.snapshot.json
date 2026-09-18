@@ -1,21 +1,29 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-09-15T07:50:26.308Z",
+  "fetchedAt": "2026-09-18T07:27:46.003Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "300be76103210b7a758d1186d4b3b11fbbc76b3690490e138c4a36e948435e26",
-  "textHash": "9a3ab1769485a8411007821bb9d4395206027330f5b6fcf6858815828e73b4da",
+  "rawHash": "8398d0b9e1f119fa85c6bfe64f4e0f43cf0793f7582811d95bb78c82dd8d9dd9",
+  "textHash": "4e46f7b15f8b98cc6c3a6fd4eba0e7291447cb2837664b5c3764c7b2703d8274",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Ertragsmanagement Facility Management Frauenklinik Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Radiologie & Nuklearmedizin Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Urologie/Frauenklinik Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 96 offene Stellen Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie & Hämatologie 80-100% OP Management Fachfrau/Fachmann Operationstechnik HF 80-100% Urologie/Frauenklinik Stv. Stationsleiterin/Stationsleiter Frauenklinik/Urologie (a) 80-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann (a) 50-100% Pflege FaGe Akutgeriatrie (a) 40-50% Interdisziplinäres Ambulatorium MPA interdisziplinäres Ambulatorium (a) 60-100% Pflege dipl. Pflegefachfrau/Pflegefachmann Walk-in Permanence 60-90% OP Management OP Lagerungspflegerin/OP Lagerungspfleger 100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Frauenklinik/Urologie (a) 40-60% Pflege FaGe Zentrum Bauch 40-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie (a) 80-100% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Chirurgie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Radiologie & Nuklearmedizin Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 97 offene Stellen Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie & Hämatologie (a) 80-90% OP Management Fachfrau/Fachmann Operationstechnik HF (a) 80-100% Frauenklinik / Urologie Stv. Stationsleiterin/Stationsleiter Frauenklinik / Urologie (a) 80-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann (a) 50-100% Pflege FaGe Akutgeriatrie (a) 40-50% Interdisziplinäres Ambulatorium MPA interdisziplinäres Ambulatorium (a) 60-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Walk-in Permanence (a) 60-90% OP Management OP Lagerungspflegerin/OP Lagerungspfleger 100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Frauenklinik/Urologie (a) 40-60% 1 2 3 4 5 … 9",
   "extractedLinks": [
     {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-onkologie-haematologie/6cb59668-398c-43bf-a706-a766141ce22c"
+      "text": "80%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-handtherapie-a/5fc7f687-5abe-403f-9023-e69362addc2b"
+    },
+    {
+      "text": "50%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/5a44cfa3-22f0-41da-bad3-9f6eeaf5e1af"
+    },
+    {
+      "text": "80-90%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-onkologie-haematologie-a/6cb59668-398c-43bf-a706-a766141ce22c"
     },
     {
       "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-operationstechnik-hf/ebc48735-21de-4fde-989d-4961bd905f75"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-operationstechnik-hf-a/ebc48735-21de-4fde-989d-4961bd905f75"
     },
     {
       "text": "80-100%",
@@ -35,7 +43,7 @@
     },
     {
       "text": "60-90%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-walk-in-permanence/5df8da51-893d-4505-9ac1-cddf589befeb"
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-walk-in-permanence-a/5df8da51-893d-4505-9ac1-cddf589befeb"
     },
     {
       "text": "100%",
@@ -44,14 +52,6 @@
     {
       "text": "40-60%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-frauenklinik-urologie-a/a96ae29f-2cfc-4996-8467-7e0d4bf04fd0"
-    },
-    {
-      "text": "40-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-zentrum-bauch/6d5f5c01-d3ca-4bf7-88ca-8fb19d346af8"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-onkologie-a/892539ac-ddf6-43a4-a1fc-118387c12b14"
     },
     {
       "text": "2",
