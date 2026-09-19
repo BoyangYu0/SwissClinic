@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-09-18T07:30:59.554Z
+Generated at: 2026-09-19T07:26:24.054Z
 
 ## Summary
 
 - Records needing review: 45
 - Low-confidence records: 23
-- Parser warnings: 73
-- Failed pages: 2
+- Parser warnings: 74
+- Failed pages: 1
 - Recent changes: 0
 
 ## Placement Records
@@ -705,6 +705,8 @@ Generated at: 2026-09-18T07:30:59.554Z
   Source: https://www.ehnv.ch/emplois
 - `ehnv-nord-vaudois-formation` (generic): No medium-confidence record was extracted.
   Source: https://www.ehnv.ch/emplois
+- `eoc-ticino-formazione` (generic): Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html.
+  Source: https://www.eoc.ch/lavorare-in-eoc.html
 - `eoc-ticino-lavoro-formazione` (generic): Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html.
   Source: https://www.eoc.ch/lavorare-in-eoc.html
 - `gzo-wetzikon-karriere` (generic): Generic parser found no medical placement signal on https://www.gzo.ch/karriere.
@@ -848,9 +850,6 @@ Generated at: 2026-09-18T07:30:59.554Z
   Label: Estimated lead time is low confidence and should not be treated as fact.
 ## Failed Pages
 
-- `eoc-ticino-formazione`: HTTP 520 <none>
-  Status: 520
-  URL: https://www.eoc.ch/lavorare-in-eoc.html
 - `see-spital-karriere`: fetch failed
   Status: unknown
   URL: https://www.see-spital.ch/karriere

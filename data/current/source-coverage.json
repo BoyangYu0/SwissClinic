@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T07:31:07.707Z",
+  "generatedAt": "2026-09-19T07:26:30.264Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 2,
+  "failedCrawlCount": 1,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {

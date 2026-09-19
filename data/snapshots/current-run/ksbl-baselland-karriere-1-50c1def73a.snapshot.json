@@ -1,14 +1,26 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-09-18T07:27:46.003Z",
+  "fetchedAt": "2026-09-19T07:23:37.784Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "8398d0b9e1f119fa85c6bfe64f4e0f43cf0793f7582811d95bb78c82dd8d9dd9",
-  "textHash": "4e46f7b15f8b98cc6c3a6fd4eba0e7291447cb2837664b5c3764c7b2703d8274",
+  "rawHash": "92ec43a7ec2d2f7098073498bbd6cc102ad87cb977612fed2bd1e051c3a19ca6",
+  "textHash": "67266c6979bc6947b1a3c24aa6a1f2317326ebcdb42cdd400c9107a4e42a3da1",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Chirurgie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Radiologie & Nuklearmedizin Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 97 offene Stellen Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie & Hämatologie (a) 80-90% OP Management Fachfrau/Fachmann Operationstechnik HF (a) 80-100% Frauenklinik / Urologie Stv. Stationsleiterin/Stationsleiter Frauenklinik / Urologie (a) 80-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann (a) 50-100% Pflege FaGe Akutgeriatrie (a) 40-50% Interdisziplinäres Ambulatorium MPA interdisziplinäres Ambulatorium (a) 60-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Walk-in Permanence (a) 60-90% OP Management OP Lagerungspflegerin/OP Lagerungspfleger 100% Pflege Dipl. Pflegefachfrau/Pflegefachmann Frauenklinik/Urologie (a) 40-60% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Chirurgie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Frauenklinik/Urologie Gastronomie Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Radiologie & Nuklearmedizin Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 98 offene Stellen Interdisziplinäres Ambulatorium MPA interdisziplinäres Ambulatorium (a) 60-100% Altersmedizin & Rehabilitation Mitarbeiter/in Verpflegungsservice auf Bettenstation 30% Frauenklinik/Urologie MPA Ambulatorium Frauenklinik (a) 60% Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie & Hämatologie (a) 80-90% OP Management Fachfrau/Fachmann Operationstechnik HF (a) 80-100% Frauenklinik / Urologie Stv. Stationsleiterin/Stationsleiter Frauenklinik / Urologie (a) 80-100% Pflege Dipl. Pflegefachfrau/Pflegefachmann (a) 50-100% Pflege FaGe Akutgeriatrie (a) 40-50% Pflege Dipl. Pflegefachfrau/Pflegefachmann Walk-in Permanence (a) 60-90% 1 2 3 4 5 … 9",
   "extractedLinks": [
+    {
+      "text": "60-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-interdisziplinaeres-ambulatorium-a/24ab203d-0c06-4ac8-a979-7afb0b9fee84"
+    },
+    {
+      "text": "30%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiter-in-verpflegungsservice-auf-bettenstation/4ae9ffa5-2880-49ec-b882-63c1ca773507"
+    },
+    {
+      "text": "60%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-ambulatorium-frauenklinik-a/9eae992b-de03-4984-8647-2a2259f1355e"
+    },
     {
       "text": "80%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-handtherapie-a/5fc7f687-5abe-403f-9023-e69362addc2b"
@@ -38,20 +50,8 @@
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-akutgeriatrie-a/eb9969da-45ee-4e00-b3e9-1ff70293dd93"
     },
     {
-      "text": "60-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-interdisziplinaeres-ambulatorium-a/1627c87e-1c3c-4a9a-817d-3580cc549494"
-    },
-    {
       "text": "60-90%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-walk-in-permanence-a/5df8da51-893d-4505-9ac1-cddf589befeb"
-    },
-    {
-      "text": "100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/op-lagerungspflegerin-op-lagerungspfleger/d2d478d0-76b2-43bb-94cf-85f3588f9cb6"
-    },
-    {
-      "text": "40-60%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-frauenklinik-urologie-a/a96ae29f-2cfc-4996-8467-7e0d4bf04fd0"
     },
     {
       "text": "2",
