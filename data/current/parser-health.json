@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-18T07:30:42.688Z",
+  "generatedAt": "2026-09-19T07:26:11.166Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 2,
+  "pagesFailed": 1,
   "recordsExtracted": 47,
   "confidenceCounts": {
     "high": 5,
@@ -28,7 +28,7 @@
   },
   "recordsNeedingReview": 45,
   "parserCounts": {
-    "generic": 44,
+    "generic": 45,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -37,12 +37,6 @@
     "usz": 7
   },
   "failedPages": [
-    {
-      "sourceId": "eoc-ticino-formazione",
-      "url": "https://www.eoc.ch/lavorare-in-eoc.html",
-      "statusCode": 520,
-      "error": "HTTP 520 <none>"
-    },
     {
       "sourceId": "see-spital-karriere",
       "url": "https://www.see-spital.ch/karriere",
@@ -98,6 +92,12 @@
       "url": "https://www.ehnv.ch/emplois",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
+    },
+    {
+      "sourceId": "eoc-ticino-formazione",
+      "url": "https://www.eoc.ch/lavorare-in-eoc.html",
+      "parserName": "generic",
+      "warning": "Generic parser found no medical placement signal on https://www.eoc.ch/lavorare-in-eoc.html."
     },
     {
       "sourceId": "eoc-ticino-lavoro-formazione",
