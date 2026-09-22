@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-18T07:27:46.003Z",
+  "generatedAt": "2026-09-22T07:46:25.286Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 59,
-  "failureCount": 2,
+  "successCount": 60,
+  "failureCount": 1,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -518,11 +518,11 @@
       "sourceId": "eoc-ticino-formazione",
       "url": "https://www.eoc.ch/lavoro/formazione",
       "fetchMode": "html",
-      "status": "failed",
-      "statusCode": 520,
+      "status": "success",
+      "statusCode": 200,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/eoc-ticino-formazione-1-35ded9a0e4.snapshot.json",
       "rawHtmlPath": null,
-      "error": "HTTP 520 <none>"
+      "error": null
     },
     {
       "sourceId": "eoc-ticino-lavoro-formazione",

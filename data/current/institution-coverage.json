@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T07:31:07.707Z",
+  "generatedAt": "2026-09-22T07:49:23.316Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -976,27 +976,6 @@
     }
   ],
   "institutionsWithFailedCrawl": [
-    {
-      "institutionName": "Ente Ospedaliero Cantonale",
-      "normalizedName": "ente ospedaliero cantonale",
-      "canton": "TI",
-      "city": "Bellinzona",
-      "sourceIds": [
-        "eoc-ticino-formazione",
-        "eoc-ticino-lavoro-formazione"
-      ],
-      "sourceCount": 2,
-      "recordCount": 0,
-      "status": [
-        "needs-review"
-      ],
-      "sourceLanguage": [
-        "it"
-      ],
-      "region": [
-        "it-CH"
-      ]
-    },
     {
       "institutionName": "See-Spital",
       "normalizedName": "see hospital",
