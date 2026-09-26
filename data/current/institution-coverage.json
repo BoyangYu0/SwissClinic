@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:49:23.316Z",
+  "generatedAt": "2026-09-26T07:52:11.291Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -386,26 +386,6 @@
       ]
     },
     {
-      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
-      "normalizedName": "universitat zuerich uzh medizinische fakultaet",
-      "canton": "ZH",
-      "city": "Zuerich",
-      "sourceIds": [
-        "uzh-medizin-studium"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "de"
-      ],
-      "region": [
-        "de-CH"
-      ]
-    },
-    {
       "institutionName": "Universitätsspital Basel (USB)",
       "normalizedName": "universitaetsspital basel usb",
       "canton": "BS",
@@ -449,26 +429,6 @@
       ],
       "region": [
         "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
-      "normalizedName": "universitat de geneve unige faculte de medecine",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "unige-medecine-enseignement"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
       ]
     },
     {
@@ -935,6 +895,26 @@
       ]
     },
     {
+      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
+      "normalizedName": "universitat zuerich uzh medizinische fakultaet",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "sourceIds": [
+        "uzh-medizin-studium"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
       "institutionName": "Universitätsklinik Balgrist",
       "normalizedName": "universitaetsklinik balgrist",
       "canton": "ZH",
@@ -952,6 +932,26 @@
       ],
       "region": [
         "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
       ]
     },
     {
@@ -994,6 +994,46 @@
       ],
       "region": [
         "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
+      "normalizedName": "universitat zuerich uzh medizinische fakultaet",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "sourceIds": [
+        "uzh-medizin-studium"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "de"
+      ],
+      "region": [
+        "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
       ]
     }
   ],
@@ -1799,7 +1839,7 @@
         "uzh-medizin-studium"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],
@@ -1885,7 +1925,7 @@
         "unige-medecine-enseignement"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],

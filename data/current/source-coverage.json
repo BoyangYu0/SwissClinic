@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:49:23.316Z",
+  "generatedAt": "2026-09-26T07:52:11.291Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 1,
+  "failedCrawlCount": 3,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {
@@ -105,6 +105,18 @@
       "region": "de-CH",
       "urls": [
         "https://www.stadt-zuerich.ch/stadtspital"
+      ]
+    },
+    {
+      "id": "uzh-medizin-studium",
+      "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
+      "canton": "ZH",
+      "city": "Zuerich",
+      "status": "candidate",
+      "sourceLanguage": "de",
+      "region": "de-CH",
+      "urls": [
+        "https://www.med.uzh.ch/de/Medizinstudium.html"
       ]
     },
     {
@@ -225,6 +237,18 @@
       "region": "fr-CH",
       "urls": [
         "https://www.hug.ch/formation-de-base"
+      ]
+    },
+    {
+      "id": "unige-medecine-enseignement",
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "status": "candidate",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "urls": [
+        "https://www.unige.ch/medecine/fr/enseignement/"
       ]
     },
     {
