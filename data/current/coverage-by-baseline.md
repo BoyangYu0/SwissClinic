@@ -1,8 +1,8 @@
 # Coverage By Baseline
 
-Generated at: 2026-09-22T07:49:23.316Z
+Generated at: 2026-09-26T07:52:11.291Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-09-22T07%3A49%3A23.316Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-09-26T07%3A52%3A11.291Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured against selected baselines. Candidate sources may not yet be verified, and some hospitals may not publish placement availability online.
 
@@ -12,8 +12,8 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
 | --- | ---: |
 | Baseline entries | 17 |
 | Ambiguous | 2 |
-| Covered | 9 |
-| Likely Covered | 3 |
+| Covered | 8 |
+| Likely Covered | 4 |
 | Missing | 3 |
 
 ## Baseline entries by baseline source
@@ -30,8 +30,8 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
 | Value | Count |
 | --- | ---: |
 | ambiguous | 2 |
-| covered | 9 |
-| likely-covered | 3 |
+| covered | 8 |
+| likely-covered | 4 |
 | missing | 3 |
 
 
@@ -107,11 +107,11 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Baseline source: manual-example-university-catalogue
   Source URL: https://www.medizin.unibe.ch/
   Notes: Matched source registry institution is source-only; no records extracted yet.
-- `university-zurich-medicine` Universitaet Zuerich Medizinische Fakultaet (ZH, Zuerich): covered (fuzzy)
+- `university-zurich-medicine` Universitaet Zuerich Medizinische Fakultaet (ZH, Zuerich): likely-covered (fuzzy)
   Matched institutions: Universität Zürich (UZH), Medizinische Fakultät
   Baseline source: manual-example-university-catalogue
   Source URL: https://www.med.uzh.ch/
-  Notes: Matched source registry institution has extracted placement records.
+  Notes: Matched source registry institution is source-only; no records extracted yet.
 - `university-lausanne-medicine` Universite de Lausanne Ecole de medecine (VD, Lausanne): covered (fuzzy)
   Matched institutions: Université de Lausanne (UNIL), École de médecine
   Baseline source: manual-example-university-catalogue
@@ -251,7 +251,7 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Status: candidate
 - Université de Genève (UNIGE), Faculté de médecine (GE, Geneve)
   Sources: unige-medecine-enseignement
-  Records: 1
+  Records: 0
   Status: candidate
 - Zuger Kantonsspital (ZG, Baar)
   Sources: zuger-kantonsspital-ausbildung

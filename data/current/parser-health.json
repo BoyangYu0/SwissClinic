@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-09-22T07:48:57.541Z",
+  "generatedAt": "2026-09-26T07:51:45.746Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 1,
-  "recordsExtracted": 47,
+  "pagesFailed": 3,
+  "recordsExtracted": 45,
   "confidenceCounts": {
     "high": 5,
     "medium": 19,
-    "low": 23
+    "low": 21
   },
   "sourceLanguageCounts": {
-    "de": 32,
+    "de": 31,
     "en": 1,
-    "fr": 9,
+    "fr": 8,
     "it": 2,
     "mixed": 3
   },
   "regionCounts": {
-    "de-CH": 31,
-    "fr-CH": 8,
+    "de-CH": 30,
+    "fr-CH": 7,
     "it-CH": 2,
     "mixed": 6
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 45
+    "needs-human-review": 43
   },
-  "recordsNeedingReview": 45,
+  "recordsNeedingReview": 43,
   "parserCounts": {
-    "generic": 45,
+    "generic": 43,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -40,6 +40,18 @@
     {
       "sourceId": "see-spital-karriere",
       "url": "https://www.see-spital.ch/karriere",
+      "statusCode": null,
+      "error": "fetch failed"
+    },
+    {
+      "sourceId": "unige-medecine-enseignement",
+      "url": "https://www.unige.ch/medecine/fr/enseignement/",
+      "statusCode": null,
+      "error": "fetch failed"
+    },
+    {
+      "sourceId": "uzh-medizin-studium",
+      "url": "https://www.med.uzh.ch/de/Medizinstudium.html",
       "statusCode": null,
       "error": "fetch failed"
     }
@@ -400,18 +412,6 @@
       "warning": "Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html."
     },
     {
-      "sourceId": "unige-medecine-enseignement",
-      "url": "https://www.unige.ch/medecine/enseignement1",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review."
-    },
-    {
-      "sourceId": "unige-medecine-enseignement",
-      "url": "https://www.unige.ch/medecine/enseignement1",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
-    },
-    {
       "sourceId": "unil-ecole-medecine-stages",
       "url": "https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html",
       "parserName": "generic",
@@ -470,18 +470,6 @@
       "url": "https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/",
       "parserName": "usz",
       "warning": "usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/radiologie/ needs human review."
-    },
-    {
-      "sourceId": "uzh-medizin-studium",
-      "url": "https://www.med.uzh.ch/de/studium.html",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.med.uzh.ch/de/studium.html needs human review."
-    },
-    {
-      "sourceId": "uzh-medizin-studium",
-      "url": "https://www.med.uzh.ch/de/studium.html",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
     },
     {
       "sourceId": "zuger-kantonsspital-ausbildung",

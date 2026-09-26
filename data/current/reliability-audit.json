@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-22T07:49:31.889Z",
+  "generatedAt": "2026-09-26T07:52:19.849Z",
   "sourceCount": 61,
-  "placementCount": 47,
+  "placementCount": 45,
   "countsBySourceLanguage": {
     "de": 41,
     "en": 1,
@@ -10,9 +10,9 @@
     "mixed": 3
   },
   "placementCountsBySourceLanguage": {
-    "de": 32,
+    "de": 31,
     "en": 1,
-    "fr": 9,
+    "fr": 8,
     "it": 2,
     "mixed": 3
   },
@@ -23,21 +23,21 @@
     "mixed": 6
   },
   "placementCountsByRegion": {
-    "de-CH": 31,
-    "fr-CH": 8,
+    "de-CH": 30,
+    "fr-CH": 7,
     "it-CH": 2,
     "mixed": 6
   },
   "manualVerificationSourceCount": 61,
-  "sparsePlacementCount": 47,
+  "sparsePlacementCount": 45,
   "riskyPublishedPlacementCount": 0,
   "languageSummaries": [
     {
       "sourceLanguage": "de",
       "sources": 41,
-      "placements": 32,
-      "recordsNeedingReview": 30,
-      "sparseRecords": 32,
+      "placements": 31,
+      "recordsNeedingReview": 29,
+      "sparseRecords": 31,
       "manualVerificationSources": 41,
       "status": "needs-review"
     },
@@ -53,9 +53,9 @@
     {
       "sourceLanguage": "fr",
       "sources": 11,
-      "placements": 9,
-      "recordsNeedingReview": 9,
-      "sparseRecords": 9,
+      "placements": 8,
+      "recordsNeedingReview": 8,
+      "sparseRecords": 8,
       "manualVerificationSources": 11,
       "status": "needs-review"
     },
@@ -87,7 +87,7 @@
     {
       "phase": "B",
       "status": "pass",
-      "summary": "47 placement records validate with multilingual source metadata."
+      "summary": "45 placement records validate with multilingual source metadata."
     },
     {
       "phase": "C",
@@ -107,7 +107,7 @@
     {
       "phase": "F",
       "status": "pass",
-      "summary": "47 sparse placement records and 0 risky auto-published records found."
+      "summary": "45 sparse placement records and 0 risky auto-published records found."
     },
     {
       "phase": "G",
@@ -1362,24 +1362,6 @@
     },
     {
       "severity": "info",
-      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
-      "sourceId": "uzh-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "uzh-unknown-wahlstudienjahr-4a72385481cd",
-      "sourceId": "uzh-medizin-studium",
-      "sourceLanguage": "de",
-      "region": "de-CH",
-      "reason": "sparse availability: not-specified",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
       "id": "medizinstudierende-unknown-unterassistenz-0d01166ec59a",
       "sourceId": "usb-basel-career-education",
       "sourceLanguage": "de",
@@ -1466,24 +1448,6 @@
       "sourceLanguage": "de",
       "region": "de-CH",
       "reason": "sparse availability: application-only",
-      "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
-    },
-    {
-      "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "low-confidence review queue marker",
-      "action": "Review this placement against the official source page."
-    },
-    {
-      "severity": "info",
-      "id": "unige-unknown-unknown-dcc038c510a5",
-      "sourceId": "unige-medecine-enseignement",
-      "sourceLanguage": "fr",
-      "region": "fr-CH",
-      "reason": "sparse availability: not-specified",
       "action": "Keep the record visible as review-needed and avoid implying confirmed availability."
     },
     {

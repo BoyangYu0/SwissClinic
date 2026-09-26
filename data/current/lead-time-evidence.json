@@ -1,6 +1,6 @@
 [
   {
-    "id": "leadtime-evidence-8b634d37a9f7",
+    "id": "leadtime-evidence-46d455acfe5f",
     "placementId": "universitatsspital-zurich-anesthesiology-unterassistenz-bbc088793b1a",
     "placementKey": "usz-zuerich-anaesthesiologie-medizinstudium|universitatsspital-zurich-usz|anesthesiology|unterassistenz",
     "sourceId": "usz-zuerich-anaesthesiologie-medizinstudium",
@@ -8,13 +8,13 @@
     "evidenceType": "historical-observed",
     "monthsAhead": 39,
     "targetStartMonth": "2029-12",
-    "observedAt": "2026-09-22T07:46:25.286Z",
+    "observedAt": "2026-09-26T07:48:49.279Z",
     "confidence": "low",
     "label": "Estimated from public page history: observed 39 months ahead.",
     "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
   },
   {
-    "id": "leadtime-evidence-d25dc35f953e",
+    "id": "leadtime-evidence-fa563c823ab2",
     "placementId": "universitatsspital-zurich-surgery-unterassistenz-a85f4377c788",
     "placementKey": "usz-zuerich-chirurgie-medizinstudium|universitatsspital-zurich-usz|surgery|unterassistenz",
     "sourceId": "usz-zuerich-chirurgie-medizinstudium",
@@ -22,13 +22,13 @@
     "evidenceType": "historical-observed",
     "monthsAhead": 39,
     "targetStartMonth": "2029-12",
-    "observedAt": "2026-09-22T07:46:25.286Z",
+    "observedAt": "2026-09-26T07:48:49.279Z",
     "confidence": "low",
     "label": "Estimated from public page history: observed 39 months ahead.",
     "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
   },
   {
-    "id": "leadtime-evidence-2877c678efdd",
+    "id": "leadtime-evidence-13b6f291271e",
     "placementId": "universitatsspital-zurich-gynecology-unterassistenz-ddbfc0f2fadf",
     "placementKey": "usz-zuerich-frauenheilkunde-medizinstudium|universitatsspital-zurich-usz|gynecology|unterassistenz",
     "sourceId": "usz-zuerich-frauenheilkunde-medizinstudium",
@@ -36,13 +36,13 @@
     "evidenceType": "explicit-source",
     "monthsAhead": 12,
     "targetStartMonth": null,
-    "observedAt": "2026-09-22T07:46:25.286Z",
+    "observedAt": "2026-09-26T07:48:49.279Z",
     "confidence": "medium",
     "label": "Explicitly stated by source: apply 12 months ahead.",
     "notes": "Unterassistenzen Frauenheilkunde – USZ. Unterassistenzen Frauenheilkunde Die Frauenheilkunde am Universitätsspital Zürich bietet Ihnen einen umfassenden Einblick in das gesamte Spektrum der Gynäkologie und Geburtshilfe. Im Medizinbereich Frau–Kind arbeiten wir interdisziplinär, praxisnah und wissenschaftlich fundiert – ein ideales Umfeld für Ihre klinische Ausbildung im Wahlstudienjahr bzw. Praktischen Jahr. Ihre Einblicksbereiche Während Ihrer Unterassistenz gewinnen Sie tiefgehende Einblicke in drei zentrale Bereiche der Frauenheilkunde: Klinik für Gynäkologie Mitbetreuung von Patientinnen auf der Bettenstation Assistenz im Operationssaal bei gynäkologischen Eingriffen Teilnahme an Sprechs"
   },
   {
-    "id": "leadtime-evidence-be4ca29b99d1",
+    "id": "leadtime-evidence-de63bcbfc014",
     "placementId": "universitatsspital-zurich-internal-medicine-unterassistenz-30be2762a054",
     "placementKey": "usz-zuerich-medizin-medizinstudium|universitatsspital-zurich-usz|internal-medicine|unterassistenz",
     "sourceId": "usz-zuerich-medizin-medizinstudium",
@@ -50,7 +50,7 @@
     "evidenceType": "historical-observed",
     "monthsAhead": 4,
     "targetStartMonth": "2027-01",
-    "observedAt": "2026-09-22T07:46:25.286Z",
+    "observedAt": "2026-09-26T07:48:49.279Z",
     "confidence": "low",
     "label": "Estimated from public page history: observed 4 months ahead.",
     "notes": "One historical observation describes what was visible when checked; it is not a recommendation by itself."
