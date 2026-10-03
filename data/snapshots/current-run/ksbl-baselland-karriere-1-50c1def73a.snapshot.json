@@ -1,57 +1,57 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-09-22T07:46:25.286Z",
+  "fetchedAt": "2026-10-03T08:13:53.420Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "dd186229025bf2122ce15802bc7cf0e90bbcff2365b3772e7db2fe5f75938018",
-  "textHash": "b610ad1dc03caa806728faad5b3de2a3e4172cd720ce1bbe6acbdad1d1fe8d89",
+  "rawHash": "d5d0c25480ccb78fc4cc9c6db2f5a9d805bc33e76b6e7659bf0218b000cadfe9",
+  "textHash": "18417c749c7c294d9ae3fc7f2c2648d939d00a16ae4b5d245ceddfba82238c70",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration AEMP Altersmedizin & Rehabilitation Altersmedizin und Rehabilitation Alterstraumatologie / Altersmedizin Anästhesie Chirurgie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Frauenklinik/Urologie Gastronomie Gefäss Gefäss & Thorax Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Interdisziplinäres Ambulatorium Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie Orthopädie & Traumatologie Orthopädie<br/>Orthopädie Pflege Pneumologie Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Thorax und HNO Urologie Zentrallaboratorien Zentrum für Herz Zentrum Herz Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 97 offene Stellen Pflege MPA oder FaGe Pneumologie & Angiologie (a) 60% Orthopädie & Traumatologie Studentische Hilfskraft (a) 40% Gefäss- & Thoraxchirurgie Leitende Ärztin/Leitender Arzt Gefässchirurgie (a) 100% Interdisziplinäres Ambulatorium MPA interdisziplinäres Ambulatorium (a) 60-100% Altersmedizin & Rehabilitation Mitarbeiter/in Verpflegungsservice auf Bettenstation 30% Frauenklinik/Urologie MPA Ambulatorium Frauenklinik (a) 60% Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 80% Hauswirtschaft Mitarbeiterin/Mitarbeiter Hauswirtschaft (a) 50% Pflege Dipl. Pflegefachfrau/Pflegefachmann Onkologie & Hämatologie (a) 80-90% OP Management Fachfrau/Fachmann Operationstechnik HF (a) 80-100% Frauenklinik / Urologie Stv. Stationsleiterin/Stationsleiter Frauenklinik / Urologie (a) 80-100% 1 2 3 4 5 … 9",
+  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration Altersmedizin & Rehabilitation Anästhesie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Gastronomie Gefäss & Thorax Gefäss & Thorax / HNO Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Pneumologie & Angiologie Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Zentrum für Herz Zentrum Herz Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 89 offene Stellen Pneumologie Chefärztin/Chefarzt Pneumologie (a) 100% Pflege FaGe Privatstation (a) 60-100% Pflege FaGe Herz, Gefäss & Thorax und HNO (a) 80-100% Pflege Stv. Stationsleiterin/Stationsleiter (a) 80-100% Innere Medizin Oberärztin/Oberarzt Palliative Care (a) 50% Gastronomie Mitarbeiterin/Mitarbeiter Küche (a) 65% Therapien Dipl. Ergotherapeutin/Ergotherapeut (a) 50-70% Pneumologie & Angiologie MPA oder FaGe Pneumologie & Angiologie (a) 60% Gefäss- & Thoraxchirurgie Leitende Ärztin/Leitender Arzt Gefässchirurgie (a) 100% Orthopädie & Traumatologie Studentische Hilfskraft (a) 40% Therapien Dipl. Ergotherapeutin/Ergotherapeut Handtherapie (a) 80% 1 2 3 4 5 … 9",
   "extractedLinks": [
+    {
+      "text": "100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/chefaerztin-chefarzt-pneumologie-a/000b154c-45ae-42a1-9da3-68b23f8fe90e"
+    },
+    {
+      "text": "60-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-privatstation-a/b7c0faf5-1b39-4d01-86a1-68cb231c1799"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-herz-gefaess-thorax-und-hno-a/3294ead5-a210-431d-8596-80d9d22a3f57"
+    },
+    {
+      "text": "80-100%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stationsleiter-a/9b35358c-2a23-4b2f-bb40-b84ec4ef8648"
+    },
+    {
+      "text": "50%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-palliative-care-a/c25168df-f4bf-42c3-b166-058f95ddc722"
+    },
+    {
+      "text": "65%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-kueche-a/c8b1261b-dcff-4ada-b677-1125e9127619"
+    },
+    {
+      "text": "50-70%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-a/ad99f44c-3ecd-4779-9bc1-7fca3271c64a"
+    },
     {
       "text": "60%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-oder-fage-pneumologie-angiologie-a/94f31fe9-3cec-4dda-9882-ffa9b063fd8c"
-    },
-    {
-      "text": "40%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/studentische-hilfskraft-a/123885bc-22d5-42e5-ac4c-cb5d32004319"
     },
     {
       "text": "100%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/leitende-aerztin-leitender-arzt-gefaesschirurgie-a/ba1b0f8c-a6be-43db-ba64-c2241ff2699d"
     },
     {
-      "text": "60-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-interdisziplinaeres-ambulatorium-a/24ab203d-0c06-4ac8-a979-7afb0b9fee84"
-    },
-    {
-      "text": "30%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiter-in-verpflegungsservice-auf-bettenstation/4ae9ffa5-2880-49ec-b882-63c1ca773507"
-    },
-    {
-      "text": "60%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-ambulatorium-frauenklinik-a/9eae992b-de03-4984-8647-2a2259f1355e"
+      "text": "40%",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/studentische-hilfskraft-a/123885bc-22d5-42e5-ac4c-cb5d32004319"
     },
     {
       "text": "80%",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-handtherapie-a/5fc7f687-5abe-403f-9023-e69362addc2b"
-    },
-    {
-      "text": "50%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-hauswirtschaft-a/5a44cfa3-22f0-41da-bad3-9f6eeaf5e1af"
-    },
-    {
-      "text": "80-90%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann-onkologie-haematologie-a/6cb59668-398c-43bf-a706-a766141ce22c"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fachfrau-fachmann-operationstechnik-hf-a/ebc48735-21de-4fde-989d-4961bd905f75"
-    },
-    {
-      "text": "80-100%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stationsleiter-frauenklinik-urologie-a/c930825b-fc1f-4cd7-b0e9-ee6c284af8ca"
     },
     {
       "text": "2",

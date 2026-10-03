@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:48:57.541Z",
+  "generatedAt": "2026-10-03T08:16:40.191Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
   "pagesFailed": 1,
@@ -391,7 +391,7 @@
       "sourceId": "unibas-medizin-studium",
       "url": "https://medizin.unibas.ch/de/",
       "parserName": "generic",
-      "warning": "Generic parser found no medical placement signal on https://medizin.unibas.ch/de/."
+      "warning": "Generic parser skipped likely irrelevant job page https://medizin.unibas.ch/de/."
     },
     {
       "sourceId": "unibe-medizin-studium",
