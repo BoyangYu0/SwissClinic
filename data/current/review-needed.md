@@ -1,6 +1,6 @@
 # Manual Review Needed
 
-Generated at: 2026-09-22T07:49:15.035Z
+Generated at: 2026-10-07T08:49:51.180Z
 
 ## Summary
 
@@ -130,7 +130,7 @@ Generated at: 2026-09-22T07:49:15.035Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les candidatures aux offres de stage se font en ligne, aucun dossier papier ne sera accepté.
+- Snippet: Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les HUG proposent chaque année plus de 2'000 stages dans le domaine des soins, mais aussi administratif, médico-technique ainsi que de nombreux autres domaines.
 
 ### Inselspital, Universitätsspital Bern / Not specified / Wahlstudienjahr
 
@@ -535,7 +535,7 @@ Generated at: 2026-09-22T07:49:15.035Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Barbara Marte, Senior Editor, Nature Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
+- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Nicola Segata, CIBIO Department of the University of Trento, IT Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
 
 ### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
 
@@ -550,7 +550,7 @@ Generated at: 2026-09-22T07:49:15.035Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Skip to main content University Study at USI Research Innovation News & Events Who we are What we do Faculties and Institutes Organisation Partnerships Where to find us Practical information Work with us Contact us At a glance Key figures History Mission Dies academicus Accolades Images and logotype Publications Overview Rankings Students Graduates Education Academic mobility Research Staff Honorary Doctorate Honorary Member Medal Education Research Innovation Cultural activities In the region Sustainability Annual report Organisational structure Administration and services Official documents Libraries and archives Student Corporation Organisational chart University Council Rectorate Academi
+- Snippet: Skip to main content University Study at USI Research Innovation News & Events Who we are What we do Faculties and Institutes Organisation Partnerships Where to find us Practical information Work with us Contact us At a glance Key figures Foundations History Dies academicus Inaugural lectures Accolades Overview Rankings Students Graduates Education Academic mobility Research Staff Honorary Doctorate Honorary Member Medal Education Research Third mandate Sustainability Equal opportunities Annual report Innovation Cultural activities In the region Organisational structure Administration and services Official documents Libraries and archives Student Corporation Organisational chart University C
 
 ### Universität Zürich (UZH), Medizinische Fakultät / Not specified / Wahlstudienjahr
 
@@ -803,7 +803,7 @@ Generated at: 2026-09-22T07:49:15.035Z
   Source: https://www.swissmedical.net/it/carriera
 - `swiss-medical-network-it-carriera` (generic): No medium-confidence record was extracted.
   Source: https://www.swissmedical.net/it/carriera
-- `unibas-medizin-studium` (generic): Generic parser found no medical placement signal on https://medizin.unibas.ch/de/.
+- `unibas-medizin-studium` (generic): Generic parser skipped likely irrelevant job page https://medizin.unibas.ch/de/.
   Source: https://medizin.unibas.ch/de/
 - `unibe-medizin-studium` (generic): Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html.
   Source: https://www.medizin.unibe.ch/studium/index_ger.html
