@@ -1,57 +1,57 @@
 {
   "sourceId": "ksbl-baselland-karriere",
   "url": "https://karriere.ksbl.ch/de/offene-stellen/jobs/",
-  "fetchedAt": "2026-10-07T08:46:59.104Z",
+  "fetchedAt": "2026-10-10T08:35:53.263Z",
   "statusCode": 200,
   "contentType": "text/html; charset=utf-8",
-  "rawHash": "f6d7439a5efa60eb721c64f7614cbb82739b736b3f2435734443762801b6e134",
-  "textHash": "6a6468ae5b76f3a40067e994400a079a3374661ba61c3191287f0c95c18fcb3a",
+  "rawHash": "a6c0f319ad72c59ada4e087aab73fc7a2d4c15eeb1d902546fa9bb99f819e2de",
+  "textHash": "41274ab24d2fb8f0d888cb34ce15930af69a19444bdd27ddee546391a8046681",
   "title": "Arbeiten im KSBL - Jobs",
-  "visibleText": "Suchen Stellenprozent Teilzeit Vollzeit Fachgebiete Administration Altersmedizin & Rehabilitation Anästhesie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Gastronomie Gefäss & Thorax Gefäss & Thorax / HNO Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Pneumologie & Angiologie Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Zentrum für Herz Zentrum Herz Berufsgruppe MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst 88 offene Stellen Administration Kliniksekretär / in (a) 80% Therapien Disponentin / Disponent Therapien (a) 90-100% Facility Management Mitarbeiterin/Mitarbeiter Medizintechnik (a) 100% Pneumologie Chefärztin/Chefarzt Pneumologie (a) 100% Pflege FaGe Privatstation (a) 60-100% Pflege FaGe Herz, Gefäss & Thorax und HNO (a) 80-100% Pflege Stv. Stationsleiterin/Stationsleiter (a) 80-100% Innere Medizin Oberärztin/Oberarzt Palliative Care (a) 50% Gastronomie Mitarbeiterin/Mitarbeiter Küche (a) 65% Therapien Dipl. Ergotherapeutin/Ergotherapeut (a) 50-70% Pneumologie & Angiologie MPA oder FaGe Pneumologie & Angiologie (a) 60% 1 2 3 4 5 … 8",
+  "visibleText": "Suche Suchen Berufsgruppe Option auswählen MPA & weitere Berufe Administration & Verwaltung Ärzteschaft Ausbildung & Praktikum Gastronomie & Hauswirtschaft Medizintherapeutische Berufe Medizintechnische Berufe und OP Pflege Studierende Technischer Dienst Fachgebiete Administration Altersmedizin & Rehabilitation Anästhesie Ertragsmanagement Facility Management Frauenklinik Frauenklinik / Urologie Gastronomie Gefäss & Thorax Gefäss & Thorax / HNO Gefäss- & Thoraxchirurgie Gesundheitszentrum Laufen Hauswirtschaft HNO Klinik Innere Medizin Intensivpflege Interdisziplinäre Privatstation Kardiologie Klinik Gastroenterologie und Hepatologie Medizin Diagnostik Notfallporte Notfallzentrum OP Management Orthopädie & Traumatologie Pflege Pneumologie Pneumologie & Angiologie Rettungsdienst Spital zuhause Spitalhygiene Technischer Dienst Therapien Urologie Zentrallaboratorien Zentrum für Herz Zentrum Herz Standorte Option auswählen Bruderholz Gelterkinden Laufen Liestal Pratteln Stellenprozent Von % Bis % Filter zurücksetzen 89 offene Stellen Pflege Dipl. Pflegefachfrau/Pflegefachmann 80-100% Pflege Liestal Zur Stellenanzeige Administration Kliniksekretär / in (a) 80% Administration & Verwaltung Liestal Zur Stellenanzeige Therapien Disponentin / Disponent Therapien (a) 90-100% Medizintherapeutische Berufe Bruderholz Zur Stellenanzeige Facility Management Mitarbeiterin/Mitarbeiter Medizintechnik (a) 100% Medizintechnische Berufe und OP Bruderholz Zur Stellenanzeige Pneumologie Chefärztin/Chefarzt Pneumologie (a) 100% Ärzteschaft Bruderholz, Liestal Zur Stellenanzeige Pflege FaGe Privatstation (a) 60-100% Pflege Liestal Zur Stellenanzeige Pflege FaGe Herz, Gefäss & Thorax und HNO (a) 80-100% Pflege Liestal Zur Stellenanzeige Pflege Stv. Stationsleiterin/Stationsleiter (a) 80-100% Pflege Bruderholz Zur Stellenanzeige Innere Medizin Oberärztin/Oberarzt Palliative Care (a) 50% Ärzteschaft Liestal Zur Stellenanzeige Gastronomie Mitarbeiterin/Mitarbeiter Küche (a) 65% Gastronomie & Hauswirtschaft Bruderholz Zur Stellenanzeige Therapien Dipl. Ergotherapeutin/Ergotherapeut (a) 50-70% Medizintherapeutische Berufe Liestal Zur Stellenanzeige 1 2 3 4 5 … 9",
   "extractedLinks": [
     {
-      "text": "80%",
+      "text": "Zur Stellenanzeige",
+      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-pflegefachfrau-pflegefachmann/ffb3fac4-59b0-44b7-b09d-2943ce038bfb"
+    },
+    {
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/kliniksekretaer-in-a/006abcaf-062e-4028-9b24-7c70effb22e0"
     },
     {
-      "text": "90-100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/disponentin-disponent-therapien-a/c7e4734f-ffd0-4b47-beb8-f72a087bd4ee"
     },
     {
-      "text": "100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-medizintechnik-a/ebe6c672-caf4-4566-821c-5813f466a57d"
     },
     {
-      "text": "100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/chefaerztin-chefarzt-pneumologie-a/000b154c-45ae-42a1-9da3-68b23f8fe90e"
     },
     {
-      "text": "60-100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-privatstation-a/b7c0faf5-1b39-4d01-86a1-68cb231c1799"
     },
     {
-      "text": "80-100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/fage-herz-gefaess-thorax-und-hno-a/3294ead5-a210-431d-8596-80d9d22a3f57"
     },
     {
-      "text": "80-100%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/stv-stationsleiterin-stationsleiter-a/9b35358c-2a23-4b2f-bb40-b84ec4ef8648"
     },
     {
-      "text": "50%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/oberaerztin-oberarzt-palliative-care-a/c25168df-f4bf-42c3-b166-058f95ddc722"
     },
     {
-      "text": "65%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mitarbeiterin-mitarbeiter-kueche-a/c8b1261b-dcff-4ada-b677-1125e9127619"
     },
     {
-      "text": "50-70%",
+      "text": "Zur Stellenanzeige",
       "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/dipl-ergotherapeutin-ergotherapeut-a/ad99f44c-3ecd-4779-9bc1-7fca3271c64a"
-    },
-    {
-      "text": "60%",
-      "href": "https://karriere.ksbl.ch/de/offene-stellen/jobs/detail/job/mpa-oder-fage-pneumologie-angiologie-a/94f31fe9-3cec-4dda-9882-ffa9b063fd8c"
     },
     {
       "text": "2",

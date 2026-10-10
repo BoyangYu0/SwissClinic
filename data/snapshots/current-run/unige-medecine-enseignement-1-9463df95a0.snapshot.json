@@ -1,10 +1,10 @@
 {
   "sourceId": "unige-medecine-enseignement",
   "url": "https://www.unige.ch/medecine/enseignement1",
-  "fetchedAt": "2026-10-07T08:46:59.104Z",
+  "fetchedAt": "2026-10-10T08:35:53.263Z",
   "statusCode": 200,
   "contentType": "text/html; charset=UTF-8",
-  "rawHash": "0d4f0451e72746c38b8f1a96436e3da05eeeb40140dbe6fbd3f2bd9922058645",
+  "rawHash": "d7af26be5c182d7f6550f513ee73b67c5d27cd0d127559f4fabb98bc7bb42aa3",
   "textHash": "2fa9e63d49fb34371215bd1d44cb157114a5540cda1952c1bd4f890f2b3b46e2",
   "title": "ENSEIGNEMENT - Faculté de médecine - UNIGE",
   "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées",
