@@ -1,92 +1,15 @@
 {
   "sourceId": "hug-geneve-stages",
   "url": "https://www.hug.ch/emploi/offres-stage",
-  "fetchedAt": "2026-10-07T08:46:59.104Z",
-  "statusCode": 200,
-  "contentType": "text/html; charset=UTF-8",
-  "rawHash": "68761badadd68d9c1d1b253f4a6df348cc5a7a9796e240cbe4368e324c2ced03",
-  "textHash": "705fbca22bd01c5976609171a5f985aed3d8834614e21b4b808dbc3f1765cc02",
-  "title": "Les offres de stage aux HUG - HUG",
-  "visibleText": "Aller au contenu principal Vous avez activé la version contrastée du site. Pour plus d'infos à ce sujet veuillez consulter cette page. Saisissez vos mots clés Annuler Rechercher Consultations Contacter les HUG Partager Les offres de stage Les HUG proposent chaque année plus de 2'000 stages dans le domaine des soins, mais aussi administratif, médico-technique ainsi que de nombreux autres domaines. Ces stages sont exclusivement réalisés dans le cadre d’une formation, d’un règlement d’admission ou d’une mesure d’insertion professionnelle liée à l’AI ou à l'ORP.Les candidatures doivent être déposées uniquement en ligne via la plateforme de recrutement des HUG. Les candidatures spontanées envoyées par courriel ne sont pas prise en compte.Seules les demandes de stages relevant des filières suivantes sont traitées : Soins infirmiers hors HEDS / Physiothérapie hors HEDS / Spécialisation postgrade dans le domaine des soins / Logopédie / Psychologie / Ambulanciers (MEDI) / Puéricultrice (École Rockefeller Lyon)Pour prendre connaissance des opportunités disponibles, vous pouvez consulter les offres de stage publiées sur la plateforme des HUG et postuler directement en ligne :Allez sur le titre du stage qui vous intéresse pour en afficher le détailCliquez sur «Postuler en ligne» en bas de l'offre pour saisir votre candidatureAccéder aux offres de stageSuite à votre postulation en ligne, les candidatures sont étudiées en plusieurs étapes. Ce contenu vous a-t-il été utile ? Oui Non Comment pourrions-nous l'améliorer ? Ce formulaire est destiné à améliorer les contenus de notre site Internet. Vos soumissions sont anonymes, de ce fait aucune réponse ne pourra être apportée. Pour toute question, vous pouvez utiliser notre chatbot ou appeler la centrale téléphonique au +41 22 372 33 11. CAPTCHA Plus d'informations ActualitésMagazine PulsationsEmission Pulsations TV Actualités PresseCommuniqués de presseDossiers de presse Documents institutionnelsRapport d’activitéChiffres-clésRapport de durabilitéRapport de gestionÉtats financiersStratégie 26-30 Les HUG entrent dans le top 20 mondial du classement 2026 de NewsweekEn savoir plus Dernière mise à jour : 02/10/2026",
-  "extractedLinks": [
-    {
-      "text": "Aller au contenu principal",
-      "href": "https://www.hug.ch/emploi/offres-stage"
-    },
-    {
-      "text": "cette page",
-      "href": "https://www.hug.ch/accessibilite"
-    },
-    {
-      "text": "Rechercher",
-      "href": "https://www.hug.ch/search"
-    },
-    {
-      "text": "Consultations",
-      "href": "https://www.hug.ch/liste-consultations"
-    },
-    {
-      "text": "Contacter les HUG",
-      "href": "https://www.hug.ch/contact"
-    },
-    {
-      "text": "Accéder aux offres de stage",
-      "href": "https://careers.smartrecruiters.com/HUG/apprentissage-stage"
-    },
-    {
-      "text": "en plusieurs étapes",
-      "href": "https://www.hug.ch/emploi/comment-postuler"
-    },
-    {
-      "text": "Magazine Pulsations",
-      "href": "https://www.hug.ch/pulsations-magazine"
-    },
-    {
-      "text": "Emission Pulsations TV",
-      "href": "https://www.hug.ch/pulsations-tv"
-    },
-    {
-      "text": "Actualités",
-      "href": "https://www.hug.ch/actualites"
-    },
-    {
-      "text": "Communiqués de presse",
-      "href": "https://www.hug.ch/medias/communiques-presse"
-    },
-    {
-      "text": "Dossiers de presse",
-      "href": "https://www.hug.ch/medias/dossiers-presse"
-    },
-    {
-      "text": "Rapport d’activité",
-      "href": "https://panorama.hug.ch/2025/rapport-dactivite-2025"
-    },
-    {
-      "text": "Chiffres-clés",
-      "href": "https://panorama.hug.ch/sites/default/files/2026-05/factsheet-hug_2025_v-6-mai-26_fr_0.pdf"
-    },
-    {
-      "text": "Rapport de durabilité",
-      "href": "https://www.hug.ch/durabilite"
-    },
-    {
-      "text": "Rapport de gestion",
-      "href": "https://panorama.hug.ch/sites/default/files/2026-03/hug-rapport-gestion-2025.pdf"
-    },
-    {
-      "text": "États financiers",
-      "href": "https://panorama.hug.ch/sites/default/files/2026-03/hug-etats-financiers-2025_0.pdf"
-    },
-    {
-      "text": "Stratégie 26-30",
-      "href": "https://www.hug.ch/strategie-institutionnelle-2026-2030"
-    },
-    {
-      "text": "En savoir plus",
-      "href": "https://www.hug.ch/actualite/hug-entrent-dans-top-20-mondial-classement-2026-newsweek"
-    }
-  ],
+  "fetchedAt": "2026-10-31T09:45:13.007Z",
+  "statusCode": 403,
+  "contentType": "text/html; charset=utf-8",
+  "rawHash": "817ac815cdc6025ed024d83421ed3bd0b2779fa2be96f43c7641402585066279",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
   "extractedEmails": [],
   "fetchModeUsed": "html",
-  "error": null
+  "error": "HTTP 403 Forbidden"
 }

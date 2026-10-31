@@ -1,47 +1,14 @@
 {
   "sourceId": "unige-medecine-enseignement",
-  "url": "https://www.unige.ch/medecine/enseignement1",
-  "fetchedAt": "2026-10-07T08:46:59.104Z",
+  "url": "https://www.unige.ch/medecine/fr/enseignement/",
+  "fetchedAt": "2026-10-31T09:45:13.007Z",
   "statusCode": 200,
-  "contentType": "text/html; charset=UTF-8",
-  "rawHash": "0d4f0451e72746c38b8f1a96436e3da05eeeb40140dbe6fbd3f2bd9922058645",
-  "textHash": "2fa9e63d49fb34371215bd1d44cb157114a5540cda1952c1bd4f890f2b3b46e2",
-  "title": "ENSEIGNEMENT - Faculté de médecine - UNIGE",
-  "visibleText": "ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées",
-  "extractedLinks": [
-    {
-      "text": "Rentrée académique 2026-2027",
-      "href": "https://www.unige.ch/medecine/enseignement/Rentree2026-2027"
-    },
-    {
-      "text": "Contacts et liens",
-      "href": "https://www.unige.ch/medecine/fr/contacts-acces/enseignement"
-    },
-    {
-      "text": "Bachelor et Master en médecine humaine",
-      "href": "https://www.unige.ch/medecine/enseignement1/bachelor-et-master-en-medecine-humaine"
-    },
-    {
-      "text": "Bachelor et Master en médecine dentaire",
-      "href": "https://www.unige.ch/medecine/dentaire/fr/en/formation-de-base"
-    },
-    {
-      "text": "Bachelor en sciences biomédicales",
-      "href": "https://www.unige.ch/medecine/enseignement1/bachelorscienessbiomedicales"
-    },
-    {
-      "text": "Master en neurosciences",
-      "href": "https://www.unige.ch/medecine/enseignement1/master-en-neurosciences"
-    },
-    {
-      "text": "Master en santé globale",
-      "href": "https://unige.ch/medecine/isg/en/teaching/master-of-science-in-global-health-mscgh"
-    },
-    {
-      "text": "Formations post-graduées",
-      "href": "https://www.unige.ch/medecine/enseignement1/formationpostgrade"
-    }
-  ],
+  "contentType": "text/html",
+  "rawHash": "da2f95791a26242b82b7a414a9792224810be3f55263272eea13ea177d7bb73e",
+  "textHash": "0ba2f41551d51afea04558ac56a3484f0cf870adb010cbbed0e955ad5db2dd27",
+  "title": null,
+  "visibleText": "This question is for testing whether you are a human visitor and to prevent automated spam submission. Audio is not supported in your browser. What code is in the image? submit Your support ID is: 17935407270598530510.",
+  "extractedLinks": [],
   "extractedEmails": [],
   "fetchModeUsed": "html",
   "error": null

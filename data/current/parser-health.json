@@ -1,34 +1,32 @@
 {
-  "generatedAt": "2026-10-07T08:49:33.941Z",
+  "generatedAt": "2026-10-31T09:48:07.236Z",
   "snapshotsDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "pagesCrawled": 61,
-  "pagesFailed": 1,
-  "recordsExtracted": 47,
+  "pagesFailed": 5,
+  "recordsExtracted": 43,
   "confidenceCounts": {
     "high": 5,
     "medium": 19,
-    "low": 23
+    "low": 19
   },
   "sourceLanguageCounts": {
     "de": 32,
-    "en": 1,
-    "fr": 9,
-    "it": 2,
+    "fr": 7,
+    "it": 1,
     "mixed": 3
   },
   "regionCounts": {
     "de-CH": 31,
-    "fr-CH": 8,
-    "it-CH": 2,
+    "fr-CH": 6,
     "mixed": 6
   },
   "reviewStatusCounts": {
     "auto-published": 2,
-    "needs-human-review": 45
+    "needs-human-review": 41
   },
-  "recordsNeedingReview": 45,
+  "recordsNeedingReview": 41,
   "parserCounts": {
-    "generic": 45,
+    "generic": 41,
     "ksa": 2,
     "ksb": 3,
     "ksgr": 1,
@@ -38,10 +36,34 @@
   },
   "failedPages": [
     {
+      "sourceId": "hug-geneve-enseignement-formation",
+      "url": "https://www.hug.ch/formation-de-base",
+      "statusCode": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "sourceId": "hug-geneve-stages",
+      "url": "https://www.hug.ch/emploi/offres-stage",
+      "statusCode": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
       "sourceId": "see-spital-karriere",
       "url": "https://www.see-spital.ch/karriere",
       "statusCode": null,
       "error": "fetch failed"
+    },
+    {
+      "sourceId": "usi-biomed-faculty",
+      "url": "https://www.biomed.usi.ch/it",
+      "statusCode": 403,
+      "error": "HTTP 403 Forbidden"
+    },
+    {
+      "sourceId": "usi-biomed-master-medicine",
+      "url": "https://www.usi.ch/en/education/master/medicine",
+      "statusCode": 403,
+      "error": "HTTP 403 Forbidden"
     }
   ],
   "warnings": [
@@ -150,24 +172,6 @@
     {
       "sourceId": "hopital-valais-formation",
       "url": "https://www.hopitalduvalais.ch/formations-professionnels",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
-    },
-    {
-      "sourceId": "hug-geneve-enseignement-formation",
-      "url": "https://www.hug.ch/formation-de-base",
-      "parserName": "generic",
-      "warning": "Generic parser found no medical placement signal on https://www.hug.ch/formation-de-base."
-    },
-    {
-      "sourceId": "hug-geneve-stages",
-      "url": "https://www.hug.ch/emploi/offres-stage",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.hug.ch/emploi/offres-stage needs human review."
-    },
-    {
-      "sourceId": "hug-geneve-stages",
-      "url": "https://www.hug.ch/emploi/offres-stage",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
     },
@@ -401,15 +405,9 @@
     },
     {
       "sourceId": "unige-medecine-enseignement",
-      "url": "https://www.unige.ch/medecine/enseignement1",
+      "url": "https://www.unige.ch/medecine/fr/enseignement/",
       "parserName": "generic",
-      "warning": "Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review."
-    },
-    {
-      "sourceId": "unige-medecine-enseignement",
-      "url": "https://www.unige.ch/medecine/enseignement1",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
+      "warning": "Generic parser found no medical placement signal on https://www.unige.ch/medecine/fr/enseignement/."
     },
     {
       "sourceId": "unil-ecole-medecine-stages",
@@ -426,30 +424,6 @@
     {
       "sourceId": "usb-basel-career-education",
       "url": "https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
-    },
-    {
-      "sourceId": "usi-biomed-faculty",
-      "url": "https://www.biomed.usi.ch/it",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.biomed.usi.ch/it needs human review."
-    },
-    {
-      "sourceId": "usi-biomed-faculty",
-      "url": "https://www.biomed.usi.ch/it",
-      "parserName": "generic",
-      "warning": "No medium-confidence record was extracted."
-    },
-    {
-      "sourceId": "usi-biomed-master-medicine",
-      "url": "https://www.usi.ch/en/education/master/medicine",
-      "parserName": "generic",
-      "warning": "Generic parser output for https://www.usi.ch/en/education/master/medicine needs human review."
-    },
-    {
-      "sourceId": "usi-biomed-master-medicine",
-      "url": "https://www.usi.ch/en/education/master/medicine",
       "parserName": "generic",
       "warning": "No medium-confidence record was extracted."
     },
@@ -485,9 +459,9 @@
     },
     {
       "sourceId": "zuger-kantonsspital-ausbildung",
-      "url": "https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber",
+      "url": "https://www.zgks.ch/jobs-und-karriere/das-zgks-als-arbeitgeber",
       "parserName": "generic",
-      "warning": "Generic parser found no medical placement signal on https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber."
+      "warning": "Generic parser skipped likely irrelevant job page https://www.zgks.ch/jobs-und-karriere/das-zgks-als-arbeitgeber."
     }
   ]
 }
