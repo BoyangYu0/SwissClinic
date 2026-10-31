@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-07T08:46:59.104Z",
+  "generatedAt": "2026-10-31T09:45:13.007Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 60,
-  "failureCount": 1,
+  "successCount": 56,
+  "failureCount": 5,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -428,21 +428,21 @@
       "sourceId": "hug-geneve-enseignement-formation",
       "url": "https://www.hug.ch/formation-de-base",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hug-geneve-enseignement-formation-1-59cfffa3f4.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "hug-geneve-stages",
       "url": "https://www.hug.ch/emploi/offres-stage",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hug-geneve-stages-1-754a961c81.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "unige-medecine-enseignement",
@@ -538,21 +538,21 @@
       "sourceId": "usi-biomed-master-medicine",
       "url": "https://www.usi.ch/en/education/master/medicine",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/usi-biomed-master-medicine-1-cadee34918.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "usi-biomed-faculty",
       "url": "https://www.biomed.usi.ch/it",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/usi-biomed-faculty-1-f24051f617.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "ksbl-baselland-karriere",
