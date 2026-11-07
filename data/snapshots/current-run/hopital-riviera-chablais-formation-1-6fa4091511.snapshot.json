@@ -1,20 +1,15 @@
 {
   "sourceId": "hopital-riviera-chablais-formation",
-  "url": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/404-page-not-found",
-  "fetchedAt": "2026-10-07T08:46:59.104Z",
-  "statusCode": 200,
-  "contentType": "text/html;charset=UTF-8",
-  "rawHash": "de0139f8005949cf8ccdf3c2fdb7c56354dbbacd114f601f50a820034e4d4ee4",
-  "textHash": "a57f5ea43ddd6f48114cf86fc83202279df465c1b533e6861ee1ee883cf1061b",
-  "title": "Hôpital Riviera Chablais (HRC) - 404 Page Not Found",
-  "visibleText": "404 La page demandée n'existe pas ! Avez-vous essayé de faire une recherche ? Revenir à l'accueil",
-  "extractedLinks": [
-    {
-      "text": "Revenir à l'accueil",
-      "href": "https://www.hopitalrivierachablais.ch/jcms/hrc_12761/fr/index.jsp"
-    }
-  ],
+  "url": "https://www.hopitalrivierachablais.ch/formation",
+  "fetchedAt": "2026-11-07T10:22:40.654Z",
+  "statusCode": 503,
+  "contentType": "text/html",
+  "rawHash": "0f8bf946c691321d448e4290927cd7c05dcdb0222845bc0de42b24b3746d3c38",
+  "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "title": null,
+  "visibleText": "",
+  "extractedLinks": [],
   "extractedEmails": [],
   "fetchModeUsed": "html",
-  "error": null
+  "error": "HTTP 503 Service Unavailable"
 }

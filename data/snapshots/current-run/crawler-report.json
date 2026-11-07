@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-07T08:46:59.104Z",
+  "generatedAt": "2026-11-07T10:22:40.654Z",
   "sourcesPath": "/home/runner/work/SwissClinic/SwissClinic/packages/sources/sources.yaml",
   "outDir": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run",
   "sourceCount": 61,
   "urlCount": 61,
-  "successCount": 60,
-  "failureCount": 1,
+  "successCount": 57,
+  "failureCount": 4,
   "skippedCount": 0,
   "duplicateUrlCount": 0,
   "fetchedUrls": [
@@ -468,11 +468,11 @@
       "sourceId": "hopital-riviera-chablais-formation",
       "url": "https://www.hopitalrivierachablais.ch/formation",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 503,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/hopital-riviera-chablais-formation-1-6fa4091511.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 503 Service Unavailable"
     },
     {
       "sourceId": "hfr-fribourg-formation",
@@ -538,21 +538,21 @@
       "sourceId": "usi-biomed-master-medicine",
       "url": "https://www.usi.ch/en/education/master/medicine",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/usi-biomed-master-medicine-1-cadee34918.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "usi-biomed-faculty",
       "url": "https://www.biomed.usi.ch/it",
       "fetchMode": "html",
-      "status": "success",
-      "statusCode": 200,
+      "status": "failed",
+      "statusCode": 403,
       "snapshotPath": "/home/runner/work/SwissClinic/SwissClinic/data/snapshots/current-run/usi-biomed-faculty-1-f24051f617.snapshot.json",
       "rawHtmlPath": null,
-      "error": null
+      "error": "HTTP 403 Forbidden"
     },
     {
       "sourceId": "ksbl-baselland-karriere",
