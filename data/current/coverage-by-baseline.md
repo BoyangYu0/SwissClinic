@@ -1,8 +1,8 @@
 # Coverage By Baseline
 
-Generated at: 2026-10-07T08:49:59.533Z
+Generated at: 2026-11-14T10:40:11.496Z
 
-[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-10-07T08%3A49%3A59.533Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
+[Report error](https://github.com/BoyangYu0/SwissClinic/issues/new?title=%5BFeedback%5D+Missing+hospital%2Fsource%3A+coverage-by-baseline.md&body=Structured+static+feedback+submission.%0A%0AFeedback+type%3A+Missing+hospital%2Fsource+%28missing-hospital-source%29%0A%0APlease+describe+what+should+change%3A%0A%0A%60%60%60json%0A%7B%0A++%22feedbackType%22%3A+%22missing-hospital-source%22%2C%0A++%22coverageReport%22%3A+%7B%0A++++%22reportName%22%3A+%22Coverage+By+Baseline%22%2C%0A++++%22reportPath%22%3A+%22coverage-by-baseline.md%22%2C%0A++++%22generatedAt%22%3A+%222026-11-14T10%3A40%3A11.496Z%22%0A++%7D%0A%7D%0A%60%60%60%0A%0APlease+do+not+paste+private+emails%2C+patient+information%2C+or+unredacted+screenshots.)
 
 Coverage is measured against selected baselines. Candidate sources may not yet be verified, and some hospitals may not publish placement availability online.
 
@@ -239,7 +239,7 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Status: candidate
 - Università della Svizzera italiana (USI), Facoltà di scienze biomediche (TI, Lugano)
   Sources: usi-biomed-faculty, usi-biomed-master-medicine
-  Records: 2
+  Records: 0
   Status: candidate
 - Universitätsklinik Balgrist (ZH, Zuerich)
   Sources: balgrist-zuerich-karriere
@@ -251,7 +251,7 @@ Coverage is measured against selected baselines. Candidate sources may not yet b
   Status: candidate
 - Université de Genève (UNIGE), Faculté de médecine (GE, Geneve)
   Sources: unige-medecine-enseignement
-  Records: 1
+  Records: 0
   Status: candidate
 - Zuger Kantonsspital (ZG, Baar)
   Sources: zuger-kantonsspital-ausbildung

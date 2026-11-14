@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:49:59.533Z",
+  "generatedAt": "2026-11-14T10:40:11.496Z",
   "uniqueInstitutionCount": 46,
   "institutionsByCanton": {
     "AG": 2,
@@ -364,28 +364,6 @@
       ]
     },
     {
-      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
-      "normalizedName": "universitat della svizzera italiana usi facolta di scienze biomediche",
-      "canton": "TI",
-      "city": "Lugano",
-      "sourceIds": [
-        "usi-biomed-faculty",
-        "usi-biomed-master-medicine"
-      ],
-      "sourceCount": 2,
-      "recordCount": 2,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "en",
-        "it"
-      ],
-      "region": [
-        "it-CH"
-      ]
-    },
-    {
       "institutionName": "Universität Zürich (UZH), Medizinische Fakultät",
       "normalizedName": "universitat zuerich uzh medizinische fakultaet",
       "canton": "ZH",
@@ -449,26 +427,6 @@
       ],
       "region": [
         "de-CH"
-      ]
-    },
-    {
-      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
-      "normalizedName": "universitat de geneve unige faculte de medecine",
-      "canton": "GE",
-      "city": "Geneve",
-      "sourceIds": [
-        "unige-medecine-enseignement"
-      ],
-      "sourceCount": 1,
-      "recordCount": 1,
-      "status": [
-        "candidate"
-      ],
-      "sourceLanguage": [
-        "fr"
-      ],
-      "region": [
-        "fr-CH"
       ]
     },
     {
@@ -895,6 +853,28 @@
       ]
     },
     {
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "normalizedName": "universitat della svizzera italiana usi facolta di scienze biomediche",
+      "canton": "TI",
+      "city": "Lugano",
+      "sourceIds": [
+        "usi-biomed-faculty",
+        "usi-biomed-master-medicine"
+      ],
+      "sourceCount": 2,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "en",
+        "it"
+      ],
+      "region": [
+        "it-CH"
+      ]
+    },
+    {
       "institutionName": "Universität Basel, Medizinische Fakultät",
       "normalizedName": "universitat basel medizinische fakultaet",
       "canton": "BS",
@@ -955,6 +935,26 @@
       ]
     },
     {
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "normalizedName": "universitat de geneve unige faculte de medecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "sourceIds": [
+        "unige-medecine-enseignement"
+      ],
+      "sourceCount": 1,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "fr"
+      ],
+      "region": [
+        "fr-CH"
+      ]
+    },
+    {
       "institutionName": "Zuger Kantonsspital",
       "normalizedName": "zuger kantonsspital",
       "canton": "ZG",
@@ -994,6 +994,28 @@
       ],
       "region": [
         "de-CH"
+      ]
+    },
+    {
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "normalizedName": "universitat della svizzera italiana usi facolta di scienze biomediche",
+      "canton": "TI",
+      "city": "Lugano",
+      "sourceIds": [
+        "usi-biomed-faculty",
+        "usi-biomed-master-medicine"
+      ],
+      "sourceCount": 2,
+      "recordCount": 0,
+      "status": [
+        "candidate"
+      ],
+      "sourceLanguage": [
+        "en",
+        "it"
+      ],
+      "region": [
+        "it-CH"
       ]
     }
   ],
@@ -1738,7 +1760,7 @@
         "usi-biomed-master-medicine"
       ],
       "sourceCount": 2,
-      "recordCount": 2,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],
@@ -1885,7 +1907,7 @@
         "unige-medecine-enseignement"
       ],
       "sourceCount": 1,
-      "recordCount": 1,
+      "recordCount": 0,
       "status": [
         "candidate"
       ],
