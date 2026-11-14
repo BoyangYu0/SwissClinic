@@ -1,13 +1,13 @@
 # Manual Review Needed
 
-Generated at: 2026-10-07T08:49:51.180Z
+Generated at: 2026-11-14T10:40:03.449Z
 
 ## Summary
 
-- Records needing review: 45
-- Low-confidence records: 23
-- Parser warnings: 74
-- Failed pages: 1
+- Records needing review: 42
+- Low-confidence records: 20
+- Parser warnings: 69
+- Failed pages: 3
 - Recent changes: 0
 
 ## Placement Records
@@ -190,7 +190,7 @@ Generated at: 2026-10-07T08:49:51.180Z
 - Availability: not-specified
 - Reasons: low confidence; parser warnings; availability is not-specified
 - Warnings: KSB parser could not determine a department.; KSB page does not state explicit availability; no date was inferred.
-- Snippet: Unterassistenzen | Kantonsspital Baden. Erfahrung sammelnDas Wahlstudienjahr bietet eine Menge. Vielleicht hältst du im OP-Saal Haken und nähst Wunden oder behandelst eine Mittelohrentzündungen. Sicher ist: Du sammelst in deiner Unterassistenz-Stelle eine Menge Praxiserfahrung.Noch an der Uni?Das Pflegepraktikum kannst du sogar schon vor dem Studium bei uns absolvieren.Unterassistenz-StellenAnästhesieChirurgieGynäkologie & GeburtshilfeInnere MedizinInterdisziplinäres Notfallzentrum INZPädiatrieUrologieDas könnte dich auch interessierenPersonalwohnungenDeine Vorteile am KSBÄrzteschaftWar diese Seite hilfreich?
+- Snippet: Unterassistenzen | Kantonsspital Baden. Erfahrung sammelnWährend deiner Unterassistenz wirst du Teil unseres Spitalteams und sammelst wertvolle praktische Erfahrungen. Du begleitest medizinische Untersuchungen und Behandlungen, übernimmst erste Aufgaben und lernst den abwechslungsreichen Berufsalltag im Spital kennen.Noch vor dem Studium?Du möchtest bereits vor deinem Medizinstudium erste Erfahrungen im Spital sammeln? Entdecke unsere Praktikumsmöglichkeiten am KSB und lerne den Berufsalltag kennen.Unterassistenz-StellenAnästhesieChirurgieGynäkologie & GeburtshilfeInnere MedizinInterdisziplinäres Notfallzentrum INZPädiatrieUrologieDas könnte dich auch interessierenPersonalwohnungenDeine Vort
 
 ### Kantonsspital Baden (KSB) / Chirurgie / Unterassistenz
 
@@ -522,36 +522,6 @@ Generated at: 2026-10-07T08:49:51.180Z
 - Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
 - Snippet: TelefonTelefon Für Ärzte Kontakt Jobs News / Events Internationale Patienten Blog DEEN FR DE ITAlle offenen Stellen Finden Sie Ihren Traumberuf bei unsBei Swiss Medical Network zum Greifen nah: Ob Pflege, Gastronomie oder Administration, wir bieten Ihnen spannende Aufgaben in einem motivierten und engagierten Umfeld.
 
-### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / ClinicalPlacement
-
-- ID: `biomedicina-unknown-clinicalplacement-154087f75ba9`
-- Source ID: `usi-biomed-faculty`
-- Source URL: https://www.biomed.usi.ch/it
-- Confidence: low
-- Review status: needs-human-review
-- Source language: it
-- Region: it-CH
-- Extraction language: it
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: 2026 IOR PhD Program Lecture Series - Lecture of Nicola Segata, CIBIO Department of the University of Trento, IT Tutti gli eventi Calendario accademico Università della Svizzera italiana - USI La Facoltà di scienze biomediche dell’Università della Svizzera italiana La Facoltà di scienze biomediche dell’USI è nata nel 2014 con l’obiettivo di contribuire alla soluzione di un importante problema nazionale: la penuria di medici formati in Svizzera.
-
-### Università della Svizzera italiana (USI), Facoltà di scienze biomediche / Not specified / Unknown
-
-- ID: `usi-ch-unknown-unknown-2e4c85a4286c`
-- Source ID: `usi-biomed-master-medicine`
-- Source URL: https://www.usi.ch/en/education/master/medicine
-- Confidence: low
-- Review status: needs-human-review
-- Source language: en
-- Region: it-CH
-- Extraction language: en
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: Skip to main content University Study at USI Research Innovation News & Events Who we are What we do Faculties and Institutes Organisation Partnerships Where to find us Practical information Work with us Contact us At a glance Key figures Foundations History Dies academicus Inaugural lectures Accolades Overview Rankings Students Graduates Education Academic mobility Research Staff Honorary Doctorate Honorary Member Medal Education Research Third mandate Sustainability Equal opportunities Annual report Innovation Cultural activities In the region Organisational structure Administration and services Official documents Libraries and archives Student Corporation Organisational chart University C
-
 ### Universität Zürich (UZH), Medizinische Fakultät / Not specified / Wahlstudienjahr
 
 - ID: `uzh-unknown-wahlstudienjahr-4a72385481cd`
@@ -656,21 +626,6 @@ Generated at: 2026-10-07T08:49:51.180Z
 - Reasons: parser warnings; availability is application-only
 - Warnings: usz page does not state explicit availability; no date was inferred.; usz parser found no application URL.
 - Snippet: Unterassistenzen Radiologie – USZ. Unterassistenzen Radiologie Wir bieten Unterassistenten und Unterassistentinnen die Möglichkeit, im Rahmen ihres Wahlstudien- bzw. Praktischen Jahrs bei uns am Institut für Diagnostische und Interventionelle Radiologie USZ zu arbeiten. Voraussetzung ist die Herkunft aus einem EU-/EFTA Staat. Dauer Sie können sich für 1 oder 3 Monate bewerben (Dauer ist jeweils vom Ersten bis Letzten des Monats); die Plätze sind begrenzt. Wir bieten keine 4-monatige Famulaturen an. Fachgebiete Ultraschall Befund Computertomographie Magnetresonanztomographie Interventionelle Radiologie Freie Ausbildungsplätze Bitte kontaktieren Sie andrea.bisculm@usz.ch wegen eines Ausbildung
-
-### Université de Genève (UNIGE), Faculté de médecine / Not specified / Unknown
-
-- ID: `unige-unknown-unknown-dcc038c510a5`
-- Source ID: `unige-medecine-enseignement`
-- Source URL: https://www.unige.ch/medecine/enseignement1
-- Confidence: low
-- Review status: needs-human-review
-- Source language: fr
-- Region: fr-CH
-- Extraction language: fr
-- Availability: not-specified
-- Reasons: low confidence; parser warnings; availability is not-specified
-- Warnings: Generic parser output requires human review.; No department was detected.; No explicit availability status was detected.
-- Snippet: ENSEIGNEMENT ENSEIGNEMENT Rentrée académique 2026-2027 Contacts et liens Bachelor et Master en médecine humaine Bachelor et Master en médecine dentaire Bachelor en sciences biomédicales Master en neurosciences Master en santé globale Formations post-graduées
 
 ### Université de Lausanne (UNIL), École de médecine / Urgences / ClinicalPlacement
 
@@ -807,24 +762,14 @@ Generated at: 2026-10-07T08:49:51.180Z
   Source: https://medizin.unibas.ch/de/
 - `unibe-medizin-studium` (generic): Generic parser found no medical placement signal on https://www.medizin.unibe.ch/studium/index_ger.html.
   Source: https://www.medizin.unibe.ch/studium/index_ger.html
-- `unige-medecine-enseignement` (generic): Generic parser output for https://www.unige.ch/medecine/enseignement1 needs human review.
-  Source: https://www.unige.ch/medecine/enseignement1
-- `unige-medecine-enseignement` (generic): No medium-confidence record was extracted.
-  Source: https://www.unige.ch/medecine/enseignement1
+- `unige-medecine-enseignement` (generic): Generic parser found no medical placement signal on https://www.unige.ch/medecine/fr/enseignement/.
+  Source: https://www.unige.ch/medecine/fr/enseignement/
 - `unil-ecole-medecine-stages` (generic): Generic parser output for https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html needs human review.
   Source: https://www.unil.ch/fbm/fr/home/ressources/espaces/espace-interne-em.html
 - `usb-basel-career-education` (generic): Generic parser output for https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende needs human review.
   Source: https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende
 - `usb-basel-career-education` (generic): No medium-confidence record was extracted.
   Source: https://www.unispital-basel.ch/lernen-studieren/maturanden-und-angehende-studierende/medizinstudierende
-- `usi-biomed-faculty` (generic): Generic parser output for https://www.biomed.usi.ch/it needs human review.
-  Source: https://www.biomed.usi.ch/it
-- `usi-biomed-faculty` (generic): No medium-confidence record was extracted.
-  Source: https://www.biomed.usi.ch/it
-- `usi-biomed-master-medicine` (generic): Generic parser output for https://www.usi.ch/en/education/master/medicine needs human review.
-  Source: https://www.usi.ch/en/education/master/medicine
-- `usi-biomed-master-medicine` (generic): No medium-confidence record was extracted.
-  Source: https://www.usi.ch/en/education/master/medicine
 - `usz-zuerich-frauenheilkunde-medizinstudium` (usz): usz parser output for https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/ needs human review.
   Source: https://www.usz.ch/bildung/aerzte/medizinstudium/frauenheilkunde/
 - `usz-zuerich-medizinstudium-overview` (usz): usz parser found no placement section on https://www.usz.ch/bildung/aerzte/medizinstudium/.
@@ -835,8 +780,8 @@ Generated at: 2026-10-07T08:49:51.180Z
   Source: https://www.med.uzh.ch/de/studium.html
 - `uzh-medizin-studium` (generic): No medium-confidence record was extracted.
   Source: https://www.med.uzh.ch/de/studium.html
-- `zuger-kantonsspital-ausbildung` (generic): Generic parser found no medical placement signal on https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber.
-  Source: https://www.zgks.ch/jobs-karriere/ihr-arbeitgeber
+- `zuger-kantonsspital-ausbildung` (generic): Generic parser skipped likely irrelevant job page https://www.zgks.ch/jobs-und-karriere/das-zgks-als-arbeitgeber.
+  Source: https://www.zgks.ch/jobs-und-karriere/das-zgks-als-arbeitgeber
 ## Lead Time Warnings
 
 - `leadtime-summary-a0fc5ffb997c` (historical-observed, low)
@@ -853,6 +798,12 @@ Generated at: 2026-10-07T08:49:51.180Z
 - `see-spital-karriere`: fetch failed
   Status: unknown
   URL: https://www.see-spital.ch/karriere
+- `usi-biomed-faculty`: HTTP 403 Forbidden
+  Status: 403
+  URL: https://www.biomed.usi.ch/it
+- `usi-biomed-master-medicine`: HTTP 403 Forbidden
+  Status: 403
+  URL: https://www.usi.ch/en/education/master/medicine
 ## Changed Pages
 
 No recent changes.
