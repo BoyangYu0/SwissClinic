@@ -59,3 +59,13 @@ jobs:
 
       - name: Validate static data
         run: pnpm data:validate -- --data data/current
+
+  deploy:
+    name: Publish GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: checks
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
