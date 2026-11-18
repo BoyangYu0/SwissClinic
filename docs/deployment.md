@@ -2,7 +2,7 @@
 
 This project deploys as a static site. The recommended first deployment target is GitHub Pages because it can publish the checked-in static dataset without adding a backend.
 
-Do not deploy publicly until the manual checks in this document are complete.
+Complete the public launch checks in this guide before enabling GitHub Pages for a new repository.
 
 ## Build Locally
 
@@ -62,17 +62,9 @@ The workflow is:
 .github/workflows/deploy.yml
 ```
 
-It is manual-only via `workflow_dispatch`. It:
+CI runs on every push to `master`, including merges of reviewed data PRs. When all CI checks pass, CI calls the deployment workflow for the same commit. The deployment workflow builds the site, uploads `apps/web/dist/site`, and publishes it to GitHub Pages if the commit is still the tip of `master`.
 
-1. checks out the repository
-2. installs dependencies
-3. validates `data/current`
-4. runs typecheck and tests
-5. builds the static site
-6. uploads `apps/web/dist/site`
-7. deploys to GitHub Pages
-
-Before the first run, configure GitHub Pages in repository settings to use GitHub Actions as the source.
+You can also run **Deploy Static Site** manually from `master`. Manual runs validate `data/current` and run typecheck, lint, and tests before publishing. In repository settings, use **GitHub Actions** as the Pages source and allow `master` to deploy to the `github-pages` environment.
 
 ## Crawl Updates
 
@@ -82,7 +74,7 @@ The crawl workflow is:
 .github/workflows/crawl.yml
 ```
 
-It runs daily at 04:17 UTC and can also be started manually. Runs are serialized and limited to 60 minutes so a slow crawl cannot overlap the next update.
+It runs daily at 04:17 Europe/Zurich time and can also be started manually.
 
 The crawl workflow:
 
@@ -92,16 +84,16 @@ The crawl workflow:
 4. generates lead-time, review-needed, source-coverage, and reliability reports
 5. validates generated data
 6. builds the static site
-7. enforces crawl-failure, record-drop, identifier, source-reference, availability-consistency, and review-status quality gates
-8. uploads the static site, reports, crawler report, and raw snapshots as a workflow artifact
-9. opens or updates a review pull request containing only `data/current` and `data/exports`
+7. uploads the static site, generated data, exports, and crawler report as a workflow artifact
+8. opens or updates a review pull request containing only `data/current` and `data/exports`
+9. approves the matching CI run when GitHub requires approval for the bot-created PR
 
 The 2026-07-24 local full-crawl baseline is 61 registry URLs, 61 successful snapshots, 0 crawl failures, 0 duplicate URLs, and 55 extracted records. A future crawl can still legitimately produce failed pages if an official site changes, times out, or blocks access; review the crawler report and generated review reports before merging.
 
-Recommended early operation:
+The daily update follows this sequence.
 
 ```txt
-Daily crawl -> automated quality gate -> review generated PR/artifact -> merge if sane -> run deploy workflow manually
+Daily crawl -> automatic CI -> review and merge the generated PR -> CI and Pages deployment
 ```
 
 Do not push crawler outputs directly to the default branch without review.
@@ -122,10 +114,9 @@ When rerunning crawls locally or in Actions, the crawler clears generated files 
 To rollback a bad deployment:
 
 1. Revert the commit that changed `data/current`, `data/exports`, parser code, or frontend code.
-2. Run CI and confirm `pnpm build` passes.
-3. Run the manual GitHub Pages deployment workflow again from the reverted commit.
+2. Merge the revert into `master` and verify CI and Pages deployment succeed.
 
-For an urgent rollback, redeploy the last known-good commit from GitHub Actions or revert the generated data PR before deploying again.
+For an urgent rollback, revert the generated data PR on `master`.
 
 ## Disable Crawler Quickly
 

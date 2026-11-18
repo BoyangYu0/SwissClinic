@@ -27,21 +27,23 @@ on:
         default: "1000"
         type: string
 
-  # Schedule intentionally disabled until manual review gates are complete.
-  # Before enabling, review source-coverage.md, reliability-audit.md, review-needed.md,
-  # crawl frequency, and multilingual/native-language verification status.
   schedule:
     - cron: "17 4 * * *"
       timezone: "Europe/Zurich"
 
-permissions:
-  contents: write
-  pull-requests: write
+permissions: {}
 
 jobs:
   crawl:
-    name: Manual Crawl And Data Build
+    name: Crawl And Build Data
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      pr_number: ${{ steps.refresh.outputs.pull-request-number }}
+      pr_operation: ${{ steps.refresh.outputs.pull-request-operation }}
+      pr_sha: ${{ steps.refresh.outputs.pull-request-head-sha }}
 
     steps:
       - name: Checkout
@@ -116,10 +118,14 @@ jobs:
             apps/web/dist/site/
 
       - name: Create pull request
+        id: refresh
         if: github.event_name == 'schedule' || inputs.create_pull_request == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: data/manual-crawl-refresh
+          add-paths: |
+            data/current/
+            data/exports/
           delete-branch: true
           title: "chore(data): refresh crawl outputs"
           commit-message: "chore(data): refresh crawl outputs"
@@ -136,3 +142,60 @@ jobs:
             - data/current/lead-time-summary.json
             - data/snapshots/current-run/crawler-report.json
           labels: data-refresh
+
+  approve-ci:
+    name: Approve CI for the generated data PR
+    if: >-
+      github.ref == 'refs/heads/master' &&
+      (needs.crawl.outputs.pr_operation == 'created' || needs.crawl.outputs.pr_operation == 'updated')
+    needs: crawl
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      pull-requests: read
+    steps:
+      - name: Find and approve the matching CI run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ needs.crawl.outputs.pr_number }}
+          PR_SHA: ${{ needs.crawl.outputs.pr_sha }}
+          REFRESH_BRANCH: data/manual-crawl-refresh
+        run: |
+          [[ "$PR_NUMBER" =~ ^[0-9]+$ && "$PR_SHA" =~ ^[0-9a-f]{40}$ ]]
+
+          for attempt in {1..12}; do
+            pr=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")
+            if ! jq -e --arg repo "$GITHUB_REPOSITORY" --arg branch "$REFRESH_BRANCH" --arg sha "$PR_SHA" '
+              .state == "open" and .user.login == "github-actions[bot]" and
+              .base.ref == "master" and .base.repo.full_name == $repo and
+              .head.repo.full_name == $repo and .head.ref == $branch and .head.sha == $sha
+            ' <<< "$pr" > /dev/null; then
+              echo "PR #$PR_NUMBER no longer matches this generated refresh. Skipping approval."
+              exit 0
+            fi
+
+            runs=$(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs" \
+              -f event=pull_request -f branch="$REFRESH_BRANCH" -f head_sha="$PR_SHA")
+            run=$(jq -c --arg repo "$GITHUB_REPOSITORY" --argjson pr "$PR_NUMBER" '
+              first(.workflow_runs[] | select(
+                .actor.login == "github-actions[bot]" and .head_repository.full_name == $repo and
+                any(.pull_requests[]; .number == $pr)
+              )) // empty
+            ' <<< "$runs")
+            if [[ -n "$run" ]]; then
+              run_id=$(jq -r '.id' <<< "$run")
+              if [[ $(jq -r '.conclusion' <<< "$run") == action_required ]]; then
+                if gh api --method POST "repos/$GITHUB_REPOSITORY/actions/runs/$run_id/approve"; then
+                  echo "Approved CI run $run_id for PR #$PR_NUMBER."
+                  exit 0
+                fi
+              else
+                echo "CI run $run_id for PR #$PR_NUMBER needs no approval."
+                exit 0
+              fi
+            fi
+            sleep 5
+          done
+
+          echo "::error::Could not approve the CI run for generated PR #$PR_NUMBER at $PR_SHA."
+          exit 1

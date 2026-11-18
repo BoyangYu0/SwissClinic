@@ -2,38 +2,19 @@ name: Deploy Static Site
 
 on:
   workflow_dispatch:
-  
-  push:
-    branches:
-      - master
-    paths:
-      - "data/current/**"
-      - "data/exports/**"
-      - "apps/web/**"
-      - "packages/**"
-      - "package.json"
-      - "pnpm-lock.yaml"
-  
-  schedule:
-    - cron: "47 5 * * *"
-      timezone: "Europe/Zurich"
-
-# Public deployment is intentionally manual until source accuracy, reliability,
-# and lead-time display checks have been reviewed.
+  workflow_call:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
     name: Build Static Site
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
 
     steps:
       - name: Checkout
@@ -54,15 +35,19 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Validate static data
+        if: github.event_name == 'workflow_dispatch'
         run: pnpm data:validate -- --data data/current
 
       - name: Typecheck
+        if: github.event_name == 'workflow_dispatch'
         run: pnpm typecheck
 
       - name: Lint
+        if: github.event_name == 'workflow_dispatch'
         run: pnpm lint
 
       - name: Test
+        if: github.event_name == 'workflow_dispatch'
         run: pnpm test
 
       - name: Build static site
@@ -83,11 +68,31 @@ jobs:
     name: Deploy To GitHub Pages
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Check that this is still the master tip
+        id: freshness
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          latest_sha=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/master" --jq '.object.sha')
+          if [[ "$latest_sha" == "$GITHUB_SHA" ]]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "A newer revision is on master. Skipping deployment of $GITHUB_SHA."
+          fi
+
       - name: Deploy
+        if: steps.freshness.outputs.current == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
