@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:49:59.533Z",
+  "generatedAt": "2026-11-28T11:59:01.925Z",
   "sourceEntryCount": 61,
   "sourceUrlCount": 61,
   "countsByCanton": {
@@ -56,7 +56,7 @@
     "ksw": 1,
     "usz": 7
   },
-  "failedCrawlCount": 1,
+  "failedCrawlCount": 4,
   "manualPdfPlaywrightCount": 1,
   "sourcesWithNoExtractedRecords": [
     {
@@ -216,6 +216,18 @@
       ]
     },
     {
+      "id": "unil-ecole-medecine-stages",
+      "institutionName": "Université de Lausanne (UNIL), École de médecine",
+      "canton": "VD",
+      "city": "Lausanne",
+      "status": "needs-review",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "urls": [
+        "https://www.unil.ch/ecoledemedecine/fr/home/menuinst/enseignement/stages.html"
+      ]
+    },
+    {
       "id": "hug-geneve-enseignement-formation",
       "institutionName": "Hôpitaux universitaires de Genève (HUG)",
       "canton": "GE",
@@ -225,6 +237,18 @@
       "region": "fr-CH",
       "urls": [
         "https://www.hug.ch/formation-de-base"
+      ]
+    },
+    {
+      "id": "unige-medecine-enseignement",
+      "institutionName": "Université de Genève (UNIGE), Faculté de médecine",
+      "canton": "GE",
+      "city": "Geneve",
+      "status": "candidate",
+      "sourceLanguage": "fr",
+      "region": "fr-CH",
+      "urls": [
+        "https://www.unige.ch/medecine/fr/enseignement/"
       ]
     },
     {
@@ -261,6 +285,30 @@
       "region": "it-CH",
       "urls": [
         "https://www.eoc.ch/lavoro"
+      ]
+    },
+    {
+      "id": "usi-biomed-master-medicine",
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "canton": "TI",
+      "city": "Lugano",
+      "status": "candidate",
+      "sourceLanguage": "en",
+      "region": "it-CH",
+      "urls": [
+        "https://www.usi.ch/en/education/master/medicine"
+      ]
+    },
+    {
+      "id": "usi-biomed-faculty",
+      "institutionName": "Università della Svizzera italiana (USI), Facoltà di scienze biomediche",
+      "canton": "TI",
+      "city": "Lugano",
+      "status": "candidate",
+      "sourceLanguage": "it",
+      "region": "it-CH",
+      "urls": [
+        "https://www.biomed.usi.ch/it"
       ]
     },
     {
